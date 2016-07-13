@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /installation/
+permalink: /documentation/installation/
 title: 'Installation'
 ---
 
