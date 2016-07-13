@@ -4,6 +4,8 @@ permalink: /documentation/architecture-overview/
 title: 'Architecture overview'
 ---
 
+<span class="label label-warning">To be updated</span>
+
 # eRegistrations Application Architecture
 
 **eRegistrations** is full-stack JavaScript project, that means both **client** and **server** side logic is programmed in **JavaScript**.  

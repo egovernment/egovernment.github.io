@@ -4,6 +4,8 @@ permalink: /documentation/codebase/model/
 title: 'Model'
 ---
 
+<span class="label label-warning">To be updated</span>
+
 # Model
 
 ## An overview of eregistrations model
