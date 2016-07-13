@@ -1,0 +1,48 @@
+<header class="site-header sticky navbar-fullwidth navbar-transparent">
+
+  <!-- Top navbar & branding -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+
+      <!-- Toggle buttons and brand -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+          <span class="glyphicon glyphicon-option-vertical"></span>
+        </button>
+
+        <button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="/">{{ site.title }}</a>
+      </div>
+      <!-- END Toggle buttons and brand -->
+
+      <!-- Top navbar -->
+      <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="{% if page.path != 'faq.markdown' %}active{% endif %}"><a href="/">Documentation</a></li>
+          <li class="{% if page.path == 'faq.markdown' %}active{% endif %}"><a href="/faq">FAQ</a></li>
+        </ul>
+      </div>
+      <!-- END Top navbar -->
+    </div>
+  </nav>
+  <!-- END Top navbar & branding -->
+
+  <!--
+  {% if page.path == 'index.html' %}  
+  <div class="banner banner-full-height overlay-black" style="background-image: url({{ site.baseurl }}/assets/img/banner1.jpg);">
+    <div class="container text-center">
+      <h1>eRegistrations documentation</h1>
+      <h5><strong>eRegistrations</strong> is an eGovernment system, designed to computerize simple or complex administrative procedures.</h5>
+      <br><br><br><br>
+      <p><a class="btn btn-white btn-xl btn-outline" href="#content" role="button"> Getting Started </a></p>
+    </div>
+  </div>
+  {% endif %}
+  -->
+
+</header>
