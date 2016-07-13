@@ -12,7 +12,7 @@ email: info@eregistrations.com
 description: > # this means to ignore newlines until "baseurl:"
   Help for eRegistrations
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "egovernment.github.io" # the base hostname & protocol for your site
+url: "help.eregistrations.org" # the base hostname & protocol for your site
 github_username:  egovernment
 port: 4001
 
