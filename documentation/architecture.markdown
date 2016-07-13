@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
-permalink: /framework/
-title: 'Base framework'
+permalink: /documentation/architecture-overview/
+title: 'Architecture overview'
 ---
 
 # eRegistrations
