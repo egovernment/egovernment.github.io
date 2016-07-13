@@ -58,6 +58,7 @@ Each HTML file constitutes the view, which can be extended with other view (anot
 Let's say we have a view for a content `<body>` element
 
 _body.html (content for `<body>` element)_:
+
 ```html
 <header>
   <nav>
@@ -75,6 +76,7 @@ _body.html (content for `<body>` element)_:
 Then let's then define a homepage extension, which will define a content for `<main>` element
 
 _homepage.html (content for `<main>` element)_
+
 ```html
 <h1>Homepage of eRegistrations system</h1>
 <p>Here you can register your Company</p>
@@ -88,12 +90,14 @@ _homepage.html (content for `<main>` element)_
 Now let's define _main_ content for few other sub pages: _individual-trader_ and _company_ :
 
 _individual-trader.html (content for `<main>` element)_
+
 ```html
 <h1>Information on Individual Trader registration</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 ```
 
 _company.html (content for `<main>` element)_
+
 ```html
 <h1>Information on Company registration</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

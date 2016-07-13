@@ -6,8 +6,6 @@ title: 'Front-end'
 
 # CSS organization and conventions style guide
 
----
-
 ## Introduction
 
 Common styles for all eRegistrations system components are developed as part of _prototype_ project, which can be browsed at [proto.eregistrations.org](http://proto.eregistrations.org).

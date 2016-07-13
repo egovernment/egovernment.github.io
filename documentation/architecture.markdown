@@ -21,8 +21,8 @@ Below you can find diagram presenting bird's eye view of multilayerd architectur
 Application server-side process runs on [Node.js](http://nodejs.org/) platform. It can be multiplied and load balanced among many different machines.
 
 ---
-### Data tier
 
+### Data tier
 
 #### Server
 

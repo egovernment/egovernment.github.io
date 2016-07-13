@@ -87,7 +87,7 @@
                             <a href="/documentation/codebase/client-side-services">Client-side services</a>
                         </li>
                         <li class="">
-                            <a href="/documentation/codebase/model">model</a>
+                            <a href="/documentation/codebase/model">Model</a>
                         </li>
                         <li class="">
                             <a href="/documentation/codebase/front-end">Front-end (CSS & HTML)</a>
@@ -157,45 +157,49 @@ On basis of that index, one CSS file is generated, which is then accessed at <co
 
 <p>Let’s say we have a view for a content <code class="highlighter-rouge">&lt;body&gt;</code> element</p>
 
-<p><em>body.html (content for <code class="highlighter-rouge">&lt;body&gt;</code> element)</em>:
-```html</p>
-<header>
-  <nav>
-    <ul>
-      <li><a href="/">Main page</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <!-- To be filled by extension views -->
-</main>
-<footer><p>© 2015 eRegistrations Team</p></footer>
-<div class="highlighter-rouge"><pre class="highlight"><code>
-Then let's then define a homepage extension, which will define a content for `&lt;main&gt;` element
+<p><em>body.html (content for <code class="highlighter-rouge">&lt;body&gt;</code> element)</em>:</p>
 
-_homepage.html (content for `&lt;main&gt;` element)_
-```html
-&lt;h1&gt;Homepage of eRegistrations system&lt;/h1&gt;
-&lt;p&gt;Here you can register your Company&lt;/p&gt;
-&lt;p&gt;Click below links for more information&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="/individual-trader/"&gt;Individual trader&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="/company/"&gt;Company registration&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;header&gt;</span>
+  <span class="nt">&lt;nav&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>Main page<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+<span class="nt">&lt;main&gt;</span>
+  <span class="c">&lt;!-- To be filled by extension views --&gt;</span>
+<span class="nt">&lt;/main&gt;</span>
+<span class="nt">&lt;footer&gt;&lt;p&gt;</span>© 2015 eRegistrations Team<span class="nt">&lt;/p&gt;&lt;/footer&gt;</span>
+</code></pre>
+</div>
+
+<p>Then let’s then define a homepage extension, which will define a content for <code class="highlighter-rouge">&lt;main&gt;</code> element</p>
+
+<p><em>homepage.html (content for <code class="highlighter-rouge">&lt;main&gt;</code> element)</em></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Homepage of eRegistrations system<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>Here you can register your Company<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Click below links for more information<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/individual-trader/"</span><span class="nt">&gt;</span>Individual trader<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/company/"</span><span class="nt">&gt;</span>Company registration<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
 </code></pre>
 </div>
 
 <p>Now let’s define <em>main</em> content for few other sub pages: <em>individual-trader</em> and <em>company</em> :</p>
 
-<p><em>individual-trader.html (content for <code class="highlighter-rouge">&lt;main&gt;</code> element)</em>
-```html</p>
-<h1>Information on Individual Trader registration</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>
-_company.html (content for `&lt;main&gt;` element)_
-```html
-&lt;h1&gt;Information on Company registration&lt;/h1&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+<p><em>individual-trader.html (content for <code class="highlighter-rouge">&lt;main&gt;</code> element)</em></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Information on Individual Trader registration<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span class="nt">&lt;/p&gt;</span>
+</code></pre>
+</div>
+
+<p><em>company.html (content for <code class="highlighter-rouge">&lt;main&gt;</code> element)</em></p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Information on Company registration<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<span class="nt">&lt;/p&gt;</span>
 </code></pre>
 </div>
 

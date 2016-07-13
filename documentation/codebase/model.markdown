@@ -6,7 +6,7 @@ title: 'Model'
 
 <span class="label label-warning">To be updated</span>
 
-# Model
+# Model  
 
 ## An overview of eregistrations model
 
