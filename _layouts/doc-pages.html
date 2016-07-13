@@ -7,10 +7,10 @@
 
     {% include header.html %}
 
-    <main class="container">
+    <main class="container-fluid">
     	<div class="row">
     		
-    		<aside class="col-md-3 col-sm-3 sidebar">
+    		<aside class="col-lg-2 col-md-3 col-sm-3 sidebar">
     			<ul class="sidenav dropable sticky">
     			 <li class="{% if page.path == 'index.html' %}active{% endif %}"><a href="/">Overview</a></li> 
     			 <li class="{% if page.path == 'framework.markdown' %}active{% endif %}"><a href="/framework">Base framework</a></li>
@@ -18,7 +18,7 @@
     			</ul>
     		</aside>
 
-    		<article class="col-md-9 col-sm-9 main-content" role="main" id="content">
+    		<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
     			{{ content }}
     		</article>
 

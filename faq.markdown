@@ -4,4 +4,8 @@ permalink: /faq/
 title: 'FAQ'
 ---
 
-# FAQ
+## Most frequenly asked questions
+
+<span class="label label-primary">test</span>
+
+## Find something
