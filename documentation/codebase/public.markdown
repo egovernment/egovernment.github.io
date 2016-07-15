@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
 permalink: /documentation/codebase/public-pages/
-title: 'Public pages'
+title: 'eRegistrations - Public pages'
 ---
 
 # Public Pages
