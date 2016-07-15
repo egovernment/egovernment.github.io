@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /documentation/architecture-overview/
+permalink: /architecture-overview/
 title: 'eRegistrations - Architecture overview'
 ---
 

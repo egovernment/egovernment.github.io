@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /documentation/codebase/public-pages/
+permalink: /codebase/public-pages/
 title: 'eRegistrations - Public pages'
 ---
 

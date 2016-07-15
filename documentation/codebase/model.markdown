@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /documentation/codebase/model/
+permalink: /codebase/model/
 title: 'eRegistrations - Model'
 ---
 

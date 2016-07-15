@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /documentation/installation/
+permalink: /installation/
 title: 'eRegistrations - Installation'
 ---
 

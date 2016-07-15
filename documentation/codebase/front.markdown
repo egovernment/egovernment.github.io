@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /documentation/codebase/front-end/
+permalink: /codebase/front-end/
 title: 'eRegistrations - Front-end'
 ---
 
