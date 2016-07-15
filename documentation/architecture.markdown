@@ -14,7 +14,7 @@ Below you can find diagram presenting bird's eye view of multilayerd architectur
 
 ---
 
-<img src="../eregistrations.jpg" />
+<img src="/img/eregistrations.jpg" />
 
 ---
 
