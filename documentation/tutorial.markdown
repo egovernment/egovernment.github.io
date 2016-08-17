@@ -21,6 +21,7 @@ Requirements:
 3. The minimum value accepted should be `0`.
 4. The field is mandatory, and has label "Expected income".
 5. The field should have defined step (the amount by which it changes) - the step should be set to `1`.
+6. The field should have an `inputHint`: "If your organization is non-profit, put '0'"
 
 To begin go to your project root directory and type: 
 
