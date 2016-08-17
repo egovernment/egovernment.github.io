@@ -61,5 +61,6 @@ To begin go to your project root directory and type:
 Solution commits:
 [
 [1](https://github.com/egovernment/eregistrations-demo/commit/cc29ee53f53d26447a908c5aea6c95569b4cd1a7),
-[2](https://github.com/egovernment/eregistrations-demo/commit/814d1e322ad8d0c09baa098674ef2017689735b0)
+[2](https://github.com/egovernment/eregistrations-demo/commit/814d1e322ad8d0c09baa098674ef2017689735b0),
+[3](https://github.com/egovernment/eregistrations-demo/commit/671bd683f1a0bd2c2d04fc283a0058be1414286f)
 ]
