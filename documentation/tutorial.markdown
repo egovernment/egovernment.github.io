@@ -102,3 +102,15 @@ To begin go to your project root directory and type:
 `git checkout split-one-section-form-into-form-section-group-with-two-sections`
 
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/4105a4dce63c797b4c872dfea74f3f65bd2089d4)
+
+### Update cost value
+
+The cost of company registration has changed. We need to adjust it.
+
+The new cost is 2% of `assets` but not less than 25 USD.
+
+To begin go to your project root directory and type: 
+
+`git checkout update-cost-value`
+
+[Solution](https://github.com/egovernment/eregistrations-demo/commit/cf17c913e3d6281e1d37764773c7869f648cf299)
