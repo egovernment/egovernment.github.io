@@ -25,8 +25,7 @@ Requirements:
 
 To begin go to your project root directory and type: 
 
-1. `git pull`
-2. `git checkout add-new-field-to-section`
+`git checkout add-new-field-to-section`
 
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/e095edadbea1d6896c255c6b7008a56efa5a1c0a)
 
@@ -40,12 +39,13 @@ but there is also one new field you need to configure on the representative.
 
 Section's specification:
 
-1. Section should display following fields: `representative/firstName`, `representative/lastName`, `representative/email`, `representative/idNumber` (in this order).
+1. Section should display following fields (of the representative): `firstName`, `lastName`, `email`, `idNumber` (in this order).
 2. Section's controller should be under this url: `representative-details`.
 3. Section should have label: "Representative details".
 4. Section should be the first section displayed in the forms.
+5. Section should have legend: "The data of the contact person".
 
-`representative/idNumber` field requirements:
+`representative.idNumber` field requirements:
 
 1. It should be string type (no new lines).
 2. Label: "Identification number".
@@ -56,8 +56,7 @@ Section's specification:
 
 To begin go to your project root directory and type: 
 
-1. `git pull`
-2. `git checkout add-new-form-section`
+`git checkout add-new-form-section`
 
 Solution commits:
 [
