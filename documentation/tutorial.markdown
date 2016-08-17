@@ -101,4 +101,4 @@ To begin go to your project root directory and type:
 
 `git checkout split-one-section-form-into-form-section-group-with-two-sections`
 
-[Solution](https://github.com/egovernment/eregistrations-demo/commits/split-one-section-form-into-form-section-group-with-two-sections-solution)
+[Solution](https://github.com/egovernment/eregistrations-demo/commit/4105a4dce63c797b4c872dfea74f3f65bd2089d4)
