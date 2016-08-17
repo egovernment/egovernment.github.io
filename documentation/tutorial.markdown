@@ -23,6 +23,7 @@ Requirements:
 5. The field should have defined step (the amount by which it changes) - the step should be set to `1`.
 
 To begin go to your project root directory and type: 
+
 1. `git pull`
 2. `git checkout add-new-field-to-section`
 
