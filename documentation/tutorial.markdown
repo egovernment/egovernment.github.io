@@ -67,3 +67,38 @@ Solution commits:
 [2](https://github.com/egovernment/eregistrations-demo/commit/814d1e322ad8d0c09baa098674ef2017689735b0),
 [3](https://github.com/egovernment/eregistrations-demo/commit/671bd683f1a0bd2c2d04fc283a0058be1414286f)
 ]
+
+### Split one section form into form section group with two sections
+
+This task is about changing the `companyInformation` section.
+
+We want to make `companyInformation` section a group section with two 
+
+sub sections (each a regular FormSection).
+
+First section should be called `details`.
+
+Section's specification:
+
+1. Fields: `businessName`, `expectedIncome`,
+2. No label
+
+Second section shall be called `address`.
+
+Section's specification:
+
+1. Fields (as defined on businessProcessDemo.address nested): `country`, `city`, `street`
+2. Label: "Address"
+
+The label of the parent section (`companyInformation`) remains unchanged.
+
+####Additional notes
+
+For the proper setup you will need to include this line: `require('eregistrations/view/dbjs/form-section-group-to-dom');`
+in this [file](https://github.com/egovernment/eregistrations-demo/blob/master/apps/business-process-demo/client/dbjs-dom.js). It's a DOM binding for client (so that the browser knows how to render group sections).
+
+To begin go to your project root directory and type: 
+
+`git checkout split-one-section-form-into-form-section-group-with-two-sections`
+
+[Solution](https://github.com/egovernment/eregistrations-demo/commits/split-one-section-form-into-form-section-group-with-two-sections-solution)
