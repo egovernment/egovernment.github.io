@@ -15,6 +15,7 @@ title: 'eRegistrations - Tutorial'
 Add a field `expectedIncome` to the `companyInformation` section in the `businessProcessDemo` service.
 
 Requirements:
+
 1. The field should be added after `businessName` field and before address.
 2. The field should accept values in us dollars.
 3. The minimum value accepted should be `0`.
