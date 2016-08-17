@@ -33,7 +33,7 @@ To begin go to your project root directory and type:
 ### Add new form section
 
 Add new section (regular form section) `representativeDetails` to the `businessProcessDemo` service.
-Section should display data of company's `representative`. The `representative` is a nested defined already in `eregistrations` system (https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/representative.js). For this task you will have to use some fields that already exist in the model, but there is also one new field you need to configure on the representative.
+Section should display data of company's `representative`. The `representative` is a nested defined already in `eregistrations` [system](https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/representative.js). For this task you will have to use some fields that already exist in the model, but there is also one new field you need to configure on the representative.
 
 Section's specification:
 
@@ -58,6 +58,6 @@ To begin go to your project root directory and type:
 
 Solution commits:
 [
-https://github.com/egovernment/eregistrations-demo/commit/cc29ee53f53d26447a908c5aea6c95569b4cd1a7,
-https://github.com/egovernment/eregistrations-demo/commit/814d1e322ad8d0c09baa098674ef2017689735b0
+[1](https://github.com/egovernment/eregistrations-demo/commit/cc29ee53f53d26447a908c5aea6c95569b4cd1a7),
+[2](https://github.com/egovernment/eregistrations-demo/commit/814d1e322ad8d0c09baa098674ef2017689735b0)
 ]
