@@ -10,6 +10,12 @@ title: 'eRegistrations - Tutorial'
 
 ## Exercises
 
+###Assumptions
+
+In the exercises we assume that we work with `businessProcessDemo` service unless explictly stated otherwise.
+
+All texts that appear to user should be translatable (wrapped in the `_` [`i18n2`] function).
+
 ### Add new field to section
 
 Add a field `expectedIncome` to the `companyInformation` section in the `businessProcessDemo` service.
@@ -114,3 +120,26 @@ To begin go to your project root directory and type:
 `git checkout update-cost-value`
 
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/cf17c913e3d6281e1d37764773c7869f648cf299)
+
+### Configure extra determinant for registration
+
+We want to add a new field in the guide form.
+
+Requirements:
+
+1. The field should be added after `workers`.
+2. The field's value can be `true` or `false`.
+3. The field is mandatory, and has label "Is the investment local or foreign?".
+4. The field should have an `inputHint`: "Answer 'Yes' for local".
+5. If the value of the field is `true`, then the cost of the `companyRegistration` is: 1% of `assets` but not less than 25 USD.
+
+
+To begin go to your project root directory and type: 
+
+`git checkout configure-extra-determinant-for-registration`
+
+Solution commits:
+[
+[1](https://github.com/egovernment/eregistrations-demo/commit/5c6b6e413882ac70e818163c9a93d33b2428f572),
+[2](https://github.com/egovernment/eregistrations-demo/commit/e9c5e3c73b90f4e6f1c867a89a10ba226b08ef85)
+]
