@@ -9,7 +9,7 @@ title: 'eRegistrations - Tutorial'
 
 ## Exercises
 
-###Assumptions
+### Assumptions
 
 In the exercises we assume that we work with `businessProcessDemo` service unless explictly stated otherwise.
 
