@@ -231,15 +231,13 @@ Notification requirements:
 
 1. Email should be sent when user has successfully completed forms.
 2. Email subject: "Form completion"
-3. Email text: "Congratulations ${ fullName }.\n\n" +
-	"You have completed the form. " +
-	"You are one step closer to complete following requests: ${ registrations }"
+3. Email text: "Congratulations ${ fullName }.\n\nYou have completed the form. You are one step closer to complete following requests: ${ registrations }"
 
 Where ${ fullName } is the name of the user of the given `businessProcess`
 
 and where ${ registrations } is a list of registrations requested in the given businessProcess.
 
-Example of filled in email text (notice the formatting of requested registrations):
+Example of filled in email text as seen in console (notice the formatting of requested registrations):
 
 "Congratulations test1 test1.\n\nYou have completed the form. You are one step closer to complete following requests: \n- Company registration\n- Certificate of incentives"
 
