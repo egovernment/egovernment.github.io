@@ -10,7 +10,7 @@ title: 'eRegistrations - Model'
 
 ## An overview of eregistrations model
 
-<img src="/img/eregistrations-business-process.png" />
+<a href="/img/eregistrations-business-process.png" download="eregistrations-business-process.png"><img width="1000" src="/img/eregistrations-business-process.png" /></a>
 
 _Currently just a stub linking latest versions of models which will be used in new systems, and to which existing systems will be updated_.
 
