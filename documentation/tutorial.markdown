@@ -221,3 +221,31 @@ Solution commits:
 [4](https://github.com/egovernment/eregistrations-demo/commit/61b80de69a4b2080bf16522f2965a641273d20b5)
 ]
 
+### Configure some new email notification
+
+We want to add new email notfication.
+
+The email should be sent to a regular user (to his email address as given by registration).
+
+Notification requirements:
+
+1. Email should be sent when user has successfully completed forms.
+2. Email subject: "Form completion"
+3. Email text: "Congratulations ${ fullName }.\n\n" +
+	"You have completed the form. " +
+	"You are one step closer to complete following requests: ${ registrations }"
+
+Where ${ fullName } is the name of the user of the given `businessProcess`
+
+and where ${ registrations } is a list of registrations requested in the given businessProcess.
+
+Example of filled in email text (notice the formatting of requested registrations):
+
+"Congratulations test1 test1.\n\nYou have completed the form. You are one step closer to complete following requests: \n- Company registration\n- Certificate of incentives"
+
+
+To begin go to your project root directory and type: 
+
+`git checkout configure-new-email-notification`
+
+[Solution](https://github.com/egovernment/eregistrations-demo/commit/756783c09d94c1110e6ec15e0744fd7c9f10e4fe)
