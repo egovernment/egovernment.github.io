@@ -164,3 +164,60 @@ Solution commits:
 [2](https://github.com/egovernment/eregistrations-demo/commit/c9a2a2dfd5899719f74eefcf0881fda021682b1c),
 [3](https://github.com/egovernment/eregistrations-demo/commit/f82dfcbe2af1a0b84a221ce775e453fbf7357fcf)
 ]
+
+### Configure requirement that may resolve to two different uploads
+
+We have a new `requirement` for `certificateOfIncentives`.
+
+We also have one new field to add to the model and to the "Representative details" section
+
+and one new document.
+
+The new field is called `isCitizen` and is a property of `representative`.
+
+Field requirements:
+
+1. Value is `true` or `false`.
+2. Label: "Are you a citizen of our country?"
+3. The field is mandatory.
+4. Field should be visible at the end of `representativeDetails` section.
+
+The new document is called `NationalId` and has the label... "National id"!
+
+Let's now specify the new requirement. The requirement is associated with `certificateOfIncentives` registration.
+
+It has the following label: "National Id for citizens or passport for foreigners".
+
+The resolution logic:
+
+If the user chooses `certificateOfIncentives` registration in the guide, he should see the new requirement.
+
+If the value of our newly added field `isCitizen` is `true` and the new requirement is visible in the guide,
+
+we should ask the user to upload the `NationalId` document (this should be visible in uploads sections).
+
+In other case (`isCitizen` is not `true` and the new requirement is visible) the user should not be asked to upload
+
+`NationalId`, he should be instead asked to upload `Passport`.
+
+####Hint
+
+You can (in this case you should) create a requirement
+
+as a stand alone class, let's call it `IdDocumentRequirement`. Let's also put this class in 
+
+`model/business-process/requirements/id-document.js` so we can reuse it for other services.
+ 
+
+To begin go to your project root directory and type: 
+
+`git checkout configure-requirement-that-may-resolve-to-two-different-uploads`
+
+Solution commits:
+[
+[1](https://github.com/egovernment/eregistrations-demo/commit/d90bad2ae2e759e69feb9e84b42da5e754cdf33d),
+[2](https://github.com/egovernment/eregistrations-demo/commit/5105d4c3e6f0a49e3e03a6799d4adb7188ba7bd3),
+[3](https://github.com/egovernment/eregistrations-demo/commit/12174c45054a8b2d189575acd61ef37edae2217e),
+[4](https://github.com/egovernment/eregistrations-demo/commit/61b80de69a4b2080bf16522f2965a641273d20b5)
+]
+
