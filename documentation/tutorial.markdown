@@ -143,3 +143,25 @@ Solution commits:
 [1](https://github.com/egovernment/eregistrations-demo/commit/5c6b6e413882ac70e818163c9a93d33b2428f572),
 [2](https://github.com/egovernment/eregistrations-demo/commit/e9c5e3c73b90f4e6f1c867a89a10ba226b08ef85)
 ]
+
+### Configure extra requirement that happens only for given registration and given determinant
+
+A new requirement has been added for `companyRegistration`.
+
+The new required document is called "Social security certificate".
+
+It is required to upload this document when a user wants to register
+
+a company and will employ at least 5 people (`workers` field).
+
+
+To begin go to your project root directory and type: 
+
+`git checkout configure-extra-requirement-that-happens-only-for-given-registration-and-determinant`
+
+Solution commits:
+[
+[1](https://github.com/egovernment/eregistrations-demo/commit/919c8fec1c8c09c35040a9a185f7490e00adfe5a),
+[2](https://github.com/egovernment/eregistrations-demo/commit/c9a2a2dfd5899719f74eefcf0881fda021682b1c),
+[3](https://github.com/egovernment/eregistrations-demo/commit/f82dfcbe2af1a0b84a221ce775e453fbf7357fcf)
+]
