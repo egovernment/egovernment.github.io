@@ -11,9 +11,8 @@ title: 'eRegistrations - Tutorial'
 
 ### Assumptions
 
-In the exercises we assume that we work with `businessProcessDemo` service unless explictly stated otherwise.
+In the exercises we assume that we work in `eregistrations-demo` project [https://github.com/egovernment/eregistrations-demo](https://github.com/egovernment/eregistrations-demo).
 
-All texts that appear to user should be translatable (wrapped in the `_` [`i18n2`] function).
 
 ### Add new field to section
 
@@ -66,12 +65,8 @@ To begin go to your project root directory and type:
 
 `git checkout add-new-form-section`
 
-Solution commits:
-[
-[1](https://github.com/egovernment/eregistrations-demo/commit/cc29ee53f53d26447a908c5aea6c95569b4cd1a7),
-[2](https://github.com/egovernment/eregistrations-demo/commit/814d1e322ad8d0c09baa098674ef2017689735b0),
-[3](https://github.com/egovernment/eregistrations-demo/commit/671bd683f1a0bd2c2d04fc283a0058be1414286f)
-]
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/add-new-form-section...add-new-form-section-solution)
+
 
 ### Split one section form into form section group with two sections
 
@@ -108,6 +103,7 @@ To begin go to your project root directory and type:
 
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/4105a4dce63c797b4c872dfea74f3f65bd2089d4)
 
+
 ### Update cost value
 
 The cost of company registration has changed. We need to adjust it.
@@ -119,6 +115,7 @@ To begin go to your project root directory and type:
 `git checkout update-cost-value`
 
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/cf17c913e3d6281e1d37764773c7869f648cf299)
+
 
 ### Configure extra determinant for registration
 
@@ -137,11 +134,7 @@ To begin go to your project root directory and type:
 
 `git checkout configure-extra-determinant-for-registration`
 
-Solution commits:
-[
-[1](https://github.com/egovernment/eregistrations-demo/commit/5c6b6e413882ac70e818163c9a93d33b2428f572),
-[2](https://github.com/egovernment/eregistrations-demo/commit/e9c5e3c73b90f4e6f1c867a89a10ba226b08ef85)
-]
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/configure-extra-determinant-for-registration...configure-extra-determinant-for-registration-solution)
 
 ### Configure extra requirement that happens only for given registration and given determinant
 
@@ -158,12 +151,9 @@ To begin go to your project root directory and type:
 
 `git checkout configure-extra-requirement-that-happens-only-for-given-registration-and-determinant`
 
-Solution commits:
-[
-[1](https://github.com/egovernment/eregistrations-demo/commit/919c8fec1c8c09c35040a9a185f7490e00adfe5a),
-[2](https://github.com/egovernment/eregistrations-demo/commit/c9a2a2dfd5899719f74eefcf0881fda021682b1c),
-[3](https://github.com/egovernment/eregistrations-demo/commit/f82dfcbe2af1a0b84a221ce775e453fbf7357fcf)
-]
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/configure-extra-requirement-that-happens-only-for-given-registration-and-determinant...configure-extra-requirement-that-happens-only-for-given-registration-and-determinant-solution)
+
+
 
 ### Configure requirement that may resolve to two different uploads
 
@@ -213,13 +203,8 @@ To begin go to your project root directory and type:
 
 `git checkout configure-requirement-that-may-resolve-to-two-different-uploads`
 
-Solution commits:
-[
-[1](https://github.com/egovernment/eregistrations-demo/commit/d90bad2ae2e759e69feb9e84b42da5e754cdf33d),
-[2](https://github.com/egovernment/eregistrations-demo/commit/5105d4c3e6f0a49e3e03a6799d4adb7188ba7bd3),
-[3](https://github.com/egovernment/eregistrations-demo/commit/12174c45054a8b2d189575acd61ef37edae2217e),
-[4](https://github.com/egovernment/eregistrations-demo/commit/61b80de69a4b2080bf16522f2965a641273d20b5)
-]
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/configure-requirement-that-may-resolve-to-two-different-uploads...configure-requirement-that-may-resolve-to-two-different-uploads-solution)
+
 
 ### Configure some new email notification
 
@@ -247,3 +232,20 @@ To begin go to your project root directory and type:
 `git checkout configure-new-email-notification`
 
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/756783c09d94c1110e6ec15e0744fd7c9f10e4fe)
+
+
+### Configure some new status log
+
+We want to have a new `statusLog`.
+
+Requirements for the `statusLog`:
+
+1. Trigger only once after a reviewer has started his work (when a first `requirementUpload` has been reviewed).
+2. `statusLog` has following label: "Review in progress"
+3. `statusLog` has the following body: "A review of your request has been started"
+
+To begin go to your project root directory and type: 
+
+`git checkout configure-new-status-log`
+
+[Solution](https://github.com/egovernment/eregistrations-demo/commit/a269ee6b48eb3b0a9271b272e4cb157d3e8b3e12)
