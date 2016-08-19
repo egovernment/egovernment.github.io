@@ -67,7 +67,7 @@ To begin go to your project root directory and type:
 
 #### Overview:
 
-<img src="/img/exercises/add-new-form-section-solution.png"/>
+<a href="/img/exercises/add-new-form-section-solution.png" download="add-new-form-section-solution.png"><img width="1000" src="/img/exercises/add-new-form-section-solution.png" /></a>
 
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/add-new-form-section...add-new-form-section-solution)
 
