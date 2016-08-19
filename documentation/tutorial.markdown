@@ -65,6 +65,10 @@ To begin go to your project root directory and type:
 
 `git checkout add-new-form-section`
 
+#### Overview:
+
+<img src="/img/exercises/add-new-form-section-solution.png"/>
+
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/add-new-form-section...add-new-form-section-solution)
 
 
@@ -100,6 +104,12 @@ in this [file](https://github.com/egovernment/eregistrations-demo/blob/master/ap
 To begin go to your project root directory and type: 
 
 `git checkout split-one-section-form-into-form-section-group-with-two-sections`
+
+
+#### Overview
+
+<img src="/img/exercises/split-one-section-form-into-form-section-group-with-two-sections-solution.png" />
+
 
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/4105a4dce63c797b4c872dfea74f3f65bd2089d4)
 
@@ -203,6 +213,23 @@ To begin go to your project root directory and type:
 
 `git checkout configure-requirement-that-may-resolve-to-two-different-uploads`
 
+
+#### Overview
+
+<img src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-1.png" />
+
+Flow 1
+
+<img src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-2a.png" />
+
+<img src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-3a.png" />
+
+Flow 2
+
+<img src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-2b.png" />
+
+<img src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-3b.png" />
+
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/configure-requirement-that-may-resolve-to-two-different-uploads...configure-requirement-that-may-resolve-to-two-different-uploads-solution)
 
 
@@ -263,18 +290,18 @@ Requirements for the `socialSecurity`:
 2. Step should be in the flow right after revision (before processing).
 3. Step is applicable only when user was required to upload `SocialSecurityCertificate` (see `Configure extra requirement that happens only for given registration and given determinant` exercise).
 4. The step should have following fields:
-4.a. `isSealConfirmed` (Boolean, required, label: "Is the seal of the certificate confirmed")
-4.b. `sealDate` (DateType, required, label: "When was the document sealed")
-5. The step has a form which needs to be filled before the step can be approved.
-5.a. The form should be defined with `FormSection` labeled `Seal Confirmation`.
-5.b. The section's controller should be under this url: `[0-9][a-z0-9]+/social-security-form`.
-5.c. The section should contain following fields (of `socialSecurity` step): `isSealConfirmed`, `sealDate`.
-6. When the step is ready for approval (the form has been completed) the "Approve" button appears.
-7. When the official clicks the "Approve" button the step besomes approved and moves to the next step.
-8. The step has `statusLog`:
-8.a. `statusLog` is triggered once, when the step becomes approved.
-8.b. `statusLog` has label: "Social Security"
-8.c. `statusLog` has text: "Approved by social security"
+5. `isSealConfirmed` (Boolean, required, label: "Is the seal of the certificate confirmed")
+6. `sealDate` (DateType, required, label: "When was the document sealed")
+7. The step has a form which needs to be filled before the step can be approved.
+8. The form should be defined with `FormSection` labeled `Seal Confirmation`.
+9. The section's controller should be under this url: `[0-9][a-z0-9]+/social-security-form`.
+10. The section should contain following fields (of `socialSecurity` step): `isSealConfirmed`, `sealDate`.
+11. When the step is ready for approval (the form has been completed) the "Approve" button appears.
+12. When the official clicks the "Approve" button the step besomes approved and moves to the next step.
+13. The step has `statusLog`:
+14. `statusLog` is triggered once, when the step becomes approved.
+15. `statusLog` has label: "Social Security"
+16. `statusLog` has text: "Approved by social security"
 
 All natural mechanisms for `processingStep` should work (businessPorcess goes to next step after approval).
 
@@ -303,5 +330,20 @@ It doesn't have to contain the form, and can have only very basic model, but it 
 Now you should configure model, form (section), view and controllers.
 
 If everything works as expected you have just completed the first part of the exercises, congratulations!
+
+#### Overview:
+
+Initial
+
+<img src="/img/exercises/add-new-processing-role-solution-1.png" />
+
+After form has been completed
+
+<img src="/img/exercises/add-new-processing-role-solution-2.png" />
+
+After approval
+
+<img src="/img/exercises/add-new-processing-role-solution-3.png" />
+
 
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/add-new-processing-role...add-new-processing-role-solution)
