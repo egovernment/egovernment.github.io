@@ -67,7 +67,7 @@ To begin go to your project root directory and type:
 
 #### Overview:
 
-<a href="/img/exercises/add-new-form-section-solution.png" download="add-new-form-section-solution.png"><img width="1000" src="/img/exercises/add-new-form-section-solution.png" /></a>
+<a href="/img/exercises/add-new-form-section-solution.png"><img width="1000" src="/img/exercises/add-new-form-section-solution.png" /></a>
 
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/add-new-form-section...add-new-form-section-solution)
 
@@ -108,7 +108,7 @@ To begin go to your project root directory and type:
 
 #### Overview
 
-<img src="/img/exercises/split-one-section-form-into-form-section-group-with-two-sections-solution.png" />
+<a href="/img/exercises/split-one-section-form-into-form-section-group-with-two-sections-solution.png"><img width="1000" src="/img/exercises/split-one-section-form-into-form-section-group-with-two-sections-solution.png" /></a>
 
 
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/4105a4dce63c797b4c872dfea74f3f65bd2089d4)
@@ -216,19 +216,20 @@ To begin go to your project root directory and type:
 
 #### Overview
 
-<img src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-1.png" />
+<a href="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-1.png"><img width="1000" src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-1.png" /></a>
 
 Flow 1
 
-<img src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-2a.png" />
+<a href="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-2a.png"><img width="1000" src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-2a.png" /></a>
 
-<img src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-3a.png" />
+<a href="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-3a.png"><img width="1000" src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-3a.png" /></a>
+
 
 Flow 2
 
-<img src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-2b.png" />
+<a href="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-2b.png"><img width="1000" src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-2b.png" /></a>
 
-<img src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-3b.png" />
+<a href="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-3b.png"><img width="1000" src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-3b.png" /></a>
 
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/configure-requirement-that-may-resolve-to-two-different-uploads...configure-requirement-that-may-resolve-to-two-different-uploads-solution)
 
@@ -335,15 +336,14 @@ If everything works as expected you have just completed the first part of the ex
 
 Initial
 
-<img src="/img/exercises/add-new-processing-role-solution-1.png" />
+<a href="/img/exercises/add-new-processing-role-solution-1.png"><img width="1000" src="/img/exercises/add-new-processing-role-solution-1.png" /></a>
 
 After form has been completed
 
-<img src="/img/exercises/add-new-processing-role-solution-2.png" />
+<a href="/img/exercises/add-new-processing-role-solution-2.png"><img width="1000" src="/img/exercises/add-new-processing-role-solution-2.png" /></a>
 
 After approval
 
-<img src="/img/exercises/add-new-processing-role-solution-3.png" />
-
+<a href="/img/exercises/add-new-processing-role-solution-3.png"><img width="1000" src="/img/exercises/add-new-processing-role-solution-3.png" /></a>
 
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/add-new-processing-role...add-new-processing-role-solution)
