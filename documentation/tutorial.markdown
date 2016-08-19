@@ -249,3 +249,59 @@ To begin go to your project root directory and type:
 `git checkout configure-new-status-log`
 
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/a269ee6b48eb3b0a9271b272e4cb157d3e8b3e12)
+
+
+### Add new processing role
+
+We want to add whole new `processingStep` (official role that is part of Part B flow).
+
+The new step will be called `socialSecurity`.
+
+Requirements for the `socialSecurity`:
+
+1. Label: "Social Security"
+2. Step should be in the flow right after revision (before processing).
+3. Step is applicable only when user was required to upload `SocialSecurityCertificate` (see `Configure extra requirement that happens only for given registration and given determinant` exercise).
+4. The step should have following fields:
+4.a. `isSealConfirmed` (Boolean, required, label: "Is the seal of the certificate confirmed")
+4.b. `sealDate` (DateType, required, label: "When was the document sealed")
+5. The step has a form which needs to be filled before the step can be approved.
+5.a. The form should be defined with `FormSection` labeled `Seal Confirmation`.
+5.b. The section's controller should be under this url: `[0-9][a-z0-9]+/social-security-form`.
+5.c. The section should contain following fields (of `socialSecurity` step): `isSealConfirmed`, `sealDate`.
+6. When the step is ready for approval (the form has been completed) the "Approve" button appears.
+7. When the official clicks the "Approve" button the step besomes approved and moves to the next step.
+8. The step has `statusLog`:
+8.a. `statusLog` is triggered once, when the step becomes approved.
+8.b. `statusLog` has label: "Social Security"
+8.c. `statusLog` has text: "Approved by social security"
+
+All natural mechanisms for `processingStep` should work (businessPorcess goes to next step after approval).
+
+After approval the user should not be able to edit step's form anymore etc.
+
+To begin go to your project root directory and type: 
+
+`git checkout add-new-processing-role`
+
+#### Guidelines
+
+Start by generating app, go to project's root directory and type:
+
+`node_modules/eregistrations/bin/generate-app official-social-security`
+
+In the console you will see a list of things that need to be done in order for the app to work.
+
+Don't worry if you don't understand it all (You will be guided through this part in case of problems).
+
+We're working on making the process more automated, but right now you still need to setup some things manually.
+
+When you're done with the listed steps you should be able to launch the system with the new step added to it.
+
+It doesn't have to contain the form, and can have only very basic model, but it should run without errors and be visible.
+
+Now you should configure model, form (section), view and controllers.
+
+If everything works as expected you have just completed the first part of the exercises, congratulations!
+
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/add-new-processing-role...add-new-processing-role-solution)
