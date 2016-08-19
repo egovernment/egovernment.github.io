@@ -92,7 +92,7 @@ Section's specification:
 
 The label of the parent section (`companyInformation`) remains unchanged.
 
-####Additional notes
+#### Additional notes
 
 For the proper setup you will need to include this line: `require('eregistrations/view/dbjs/form-section-group-to-dom');`
 in this [file](https://github.com/egovernment/eregistrations-demo/blob/master/apps/business-process-demo/client/dbjs-dom.js). It's a DOM binding for client (so that the browser knows how to render group sections).
@@ -190,7 +190,7 @@ In other case (`isCitizen` is not `true` and the new requirement is visible) the
 
 `NationalId`, he should be instead asked to upload `Passport`.
 
-####Hint
+#### Hint
 
 You can (in this case you should) create a requirement
 
