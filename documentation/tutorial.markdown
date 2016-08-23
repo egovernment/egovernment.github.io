@@ -367,7 +367,7 @@ Service specification:
 The service's model should have following fields defined:
 1. `hasDegreeInComputerScience` (Bollean, label: "Do you have a degree in computer science?", is mandatory).
 2. `isTrainingAbroad` (Boolean, label: "Is this training performed abroad, or in your country?", inputHint: _("Choose yes for abroad"), is mandatory).
-3. `yearsOfExperience` (non zero natural number, label: "How many years of experience in IT do you have?", is manadatory).
+3. `yearsOfExperience` (positive integer, label: "How many years of experience in IT do you have?", is manadatory).
 4. `programmingLanguage` (type: `ProgrammingLanguage` (to be defined later), label: "What is your favourite programming language?", is manadatory).
 5. hobby (StringLine, label: "Hobby").
 6. businessName (as defined in core, label: "Nickname", is mandatory).
@@ -384,7 +384,7 @@ The service's model should have following fields defined:
 
 `quiz` properties:
 
-1. `howManyNonValues` (non zero integer, label: "How many non values are there?", is mandatory).
+1. `howManyNonValues` (positive integer, label: "How many non values are there?", is mandatory).
 2. `nullToUndefinedComparison` (Boolean, label: "Is the result of: null == undefined; true?", is mandatory).
 3. `concatOperator` (StringLine, "What is the concatenation operator?", is mandatory).
 
@@ -422,3 +422,30 @@ There are two form sections which constitute `dataForms`: `personalInformation`,
 
 1. Based on the same document (label: "Transportation ticket").
 2. Is applicable only when `isTrainingAbroad` === true.
+
+The registration has one cost (`eregistrationsDeveloperCertificate`).
+
+#### Cost requirements
+
+1. label: "Eregistrations Developer Certificate".
+2. the amount of cost (in USD) is given by the following formula:
+3. If chosen `programmingLanguage` is `javaScript`, then cost is 0.
+4. Otherwise the cost is: 5 * `yearsOfExperience`.
+
+#### Part B
+
+The service should reuse the already existing steps `revision` and `frontDesk`.
+For the processing we need to configure a new step called `edcProcessing`.
+
+`edcProcessing` step specification
+
+1. label: "EDC Processing".
+2. One field in the form - `socre` (positive integer, maximum value: 3, label: "Certificate score").
+3. The form should be exposed on a section with label: "EDC approval".
+
+
+To begin go to your project root directory and type: 
+
+`git checkout configure-new-service`
+
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/configure-new-service-solution?expand=1)
