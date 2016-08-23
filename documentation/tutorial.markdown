@@ -347,3 +347,78 @@ After approval
 <a href="/img/exercises/add-new-processing-role-solution-3.png"><img width="1000" src="/img/exercises/add-new-processing-role-solution-3.png" /></a>
 
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/add-new-processing-role...add-new-processing-role-solution)
+
+
+### Configure new service
+
+This task is a final test. It's about adding whole new service.
+
+The service shall be called "Final Test".
+
+Service specification:
+
+1. The service has exactly one registration (`eregistrationsDeveloperCertificate`).
+2. The registration has 3 requirements.
+3. First requirement is passport (this document is already defined in documents).
+4. Second requirement is `GraduationDiplomaRequirement` (to be specified later).
+5. Third requirement is `TransportationTicketRequirement` (to be specified later).
+6. The registrtion is associated with the certificate (`EregistratonsDeveloperCertificate`).
+
+The service's model should have following fields defined:
+1. `hasDegreeInComputerScience` (Bollean, label: "Do you have a degree in computer science?", is mandatory).
+2. `isTrainingAbroad` (Boolean, label: "Is this training performed abroad, or in your country?", inputHint: _("Choose yes for abroad"), is mandatory).
+3. `yearsOfExperience` (non zero natural number, label: "How many years of experience in IT do you have?", is manadatory).
+4. `programmingLanguage` (type: `ProgrammingLanguage` (to be defined later), label: "What is your favourite programming language?", is manadatory).
+5. hobby (StringLine, label: "Hobby").
+6. businessName (as defined in core, label: "Nickname", is mandatory).
+7. birthDate (Date, label: "Date of birth", is mandatory).
+8. quiz (Object, is nested).
+
+`ProgrammingLanguage` enum (`'value' - 'label'`):
+
+1. 'c'          - "C"
+2. 'java'       - "Java"
+3. 'javaScript' - "JavaScript"
+4. 'php'        - "PHP"
+5. 'python'     - "Python"
+
+`quiz` properties:
+
+1. `howManyNonValues` (non zero integer, label: "How many non values are there?", is mandatory).
+2. `nullToUndefinedComparison` (Boolean, label: "Is the result of: null == undefined; true?", is mandatory).
+3. `concatOperator` (StringLine, "What is the concatenation operator?", is mandatory).
+
+#### Forms
+
+Guide
+
+1. Is regular `FormSection`.
+2. properies: 'yearsOfExperience', 'programmingLanguage', 'hasDegreeInComputerScience', 'isTrainingAbroad'.
+
+Forms
+
+There are two form sections which constitute `dataForms`: `personalInformation`, `quiz`
+
+`personalInformation`
+
+1. label: "Personal Information".
+2. url to submit: `personal-information`.
+3. properties: 'businessName', 'hobby', 'birthDate'.
+
+`quiz`
+
+1. label: "JavaScript Quiz".
+2. url to submit: `quiz`.
+3. properties: 'quiz/howManyNonValues', 'quiz/nullToUndefinedComparison', 'quiz/concatOperator'.
+
+### Requirements
+
+`GraduationDiplomaRequirement`
+
+1. Based on the same document (label: "Any School Graduation Diploma").
+2. Is applicable only when `hasDegreeInComputerScience` === true.
+
+`TransportationTicketRequirement`
+
+1. Based on the same document (label: "Transportation ticket").
+2. Is applicable only when `isTrainingAbroad` === true.
