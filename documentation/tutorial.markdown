@@ -411,7 +411,7 @@ There are two form sections which constitute `dataForms`: `personalInformation`,
 2. url to submit: `quiz`.
 3. properties: 'quiz/howManyNonValues', 'quiz/nullToUndefinedComparison', 'quiz/concatOperator'.
 
-### Requirements
+#### Requirements
 
 `GraduationDiplomaRequirement`
 
