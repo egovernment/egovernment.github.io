@@ -1,11 +1,11 @@
 ---
-layout: page
-permalink: /faq/
-title: 'Search page'
+layout: doc-pages
+permalink: /search/
+title: 'How to...'
 ---
 
 <div class="faq">
-
+	
 	<input class="faq-search" type="text" placeholder="Type to search, for example 'add a cost to a registration'...">
 
 	<div class="code-preview">

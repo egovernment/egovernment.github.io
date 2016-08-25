@@ -36,6 +36,27 @@
                     </ul>
                  </li>
                  <li class="{% if page.path == 'documentation/tutorial.markdown' %}active{% endif %}"><a href="/tutorial">Configuration tutorial</a></li>
+                 <li>
+	                 <a href="#" class="has-child {% if page.path contains 'how-to' %}active open{% endif %}">How to...</a>
+	                    <ul>
+	                        <li class="{% if page.path == 'documentation/how-to/101-add-a-registration-to-a-service.markdown' %}active{% endif %}">
+	                            <a href="/how-to/add-a-registration-to-a-service/">101 - add a registration to a service</a>
+	                        </li>
+	                        <li class="{% if page.path == 'documentation/how-to/102-modify-the-name-of-a-registration.markdown' %}active{% endif %}">
+	                            <a href="/how-to/modify-the-name-of-a-registration">102 - modify the name of a registration</a>
+	                        </li>
+	                        <li class="{% if page.path == 'documentation/codebase/model.markdown' %}active{% endif %}">
+	                            <a href="/codebase/model">Model</a>
+	                        </li>
+	                        <li class="{% if page.path == 'documentation/codebase/front.markdown' %}active{% endif %}">
+	                            <a href="/codebase/front-end">Front-end (CSS & HTML)</a>
+	                        </li>
+	                        <li class="{% if page.path == 'documentation/codebase/public.markdown' %}active{% endif %}">
+	                            <a href="/codebase/public-pages">Public pages</a>
+	                        </li>
+	                    </ul>
+                 </li>
+                 <li class="{% if page.path == 'documentation/search.markdown' %}active{% endif %}"><a href="/search">Search</a></li>
     			</ul>
     		</aside>
 
