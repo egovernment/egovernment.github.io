@@ -5,7 +5,7 @@
 4 verbose stack Error: ENOENT: no such file or directory, open '/Users/vianney/egovernment.github.io/package.json'
 4 verbose stack     at Error (native)
 5 verbose cwd /Users/vianney/egovernment.github.io
-6 error Darwin 15.4.0
+6 error Darwin 15.5.0
 7 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
 8 error node v4.4.7
 9 error npm  v2.15.8
