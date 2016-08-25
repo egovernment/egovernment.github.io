@@ -1,5 +1,5 @@
 ---
-layout: doc-pages
+layout: page
 permalink: /search/
 title: 'How to...'
 ---
