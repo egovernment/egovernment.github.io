@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/modify-the-name-of-a-registration/
-title: '102 - modify the name of a registration.markdown'
+title: 'Modify the name of a registration'
 category: 'Part A'
 number: '102'
 ---
