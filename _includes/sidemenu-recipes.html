@@ -1,0 +1,22 @@
+<ul class="sidenav dropable sticky">
+    <li class="{% if page.path == 'index.html' %}active{% endif %}">
+        <a href="/">Overview</a>
+    </li>
+    <li>
+        <a href="#" class="has-child {% if page.path contains 'part-a' %}active open{% endif %}">Part A</a>
+        <ul>
+            <li class="{% if page.path == 'how-to/part-a/101.markdown' %}active{% endif %}">
+                <a href="/how-to/part-a/101">101 - add a registration to a service</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#" class="has-child {% if page.path contains 'part-b' %}active open{% endif %}">Part B</a>
+        <ul>
+            <li class="{% if page.path == 'how-to/part-b/201.markdown' %}active{% endif %}">
+                <a href="/how-to/part-b/201">201 - add a registration to a service</a>
+            </li>
+        </ul>
+    </li>
+
+</ul>
