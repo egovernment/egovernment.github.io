@@ -1,5 +1,5 @@
 ---
-layout: recipes
+layout: recipe
 permalink: /how-to/
 title: 'How to...'
 ---

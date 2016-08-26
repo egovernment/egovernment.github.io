@@ -1,6 +1,6 @@
 ---
-layout: recipes
-permalink: /how-to/part-a/add-a-registration-to-a-service/
+layout: recipe
+permalink: /how-to/add-a-registration-to-a-service/
 title: 'Add a registration to a service'
 category: 'Part A'
 number: '1O1'
