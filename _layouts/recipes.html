@@ -23,14 +23,16 @@
                     <h1>{{ page.title }}</h1>
                 </div>
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="{{ if page.introduction-img }}col-md-7{{ else }}col-md-12{{ endif }}">
                         {{ page.introduction-text }}
                     </div>
+                    {{ if page.introduction-img }}
                     <div class="col-md-5">
                         <a href="img/recipes/{{ page.introduction-img }}" data-lity>
                             <img class="img-responsive img-thumbnail" src="img/recipes/{{ page.introduction-img }}">
                         </a>
                     </div>
+                    {{ endif }}
                 <div class="row">
                     {{ content }}
                 </div>
