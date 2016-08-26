@@ -20,11 +20,11 @@ h4 { font-size: 22px; }
     color: #ccc;
 }
 
-.sidenav {
+/*.sidenav {
 	max-height: 50%;
 	overflow-y: scroll;
 	max-width: 190px;
-}
+}*/
 
 .sidenav li li {
 	padding-bottom: 5px;
