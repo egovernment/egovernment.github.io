@@ -15,30 +15,42 @@
     		</aside>
 
     		<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
-                <div class="row">
-                    <span class="category-label pull-left">{{ page.category }}</span>
-                    <span class="label label-warning pull-right">{{ page.number }}</span>
-                </div>
-                <div class="row">
-                    <h1>{{ page.title }}</h1>
-                </div>
-                <div class="row">
-                    <div class="{% if page.introduction-img %}col-md-7{% else %}col-md-12{% endif %}">
-                        {{ page.introduction-text }}
+                <div class="row recipe-content">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span class="category-label pull-left">{{ page.category }}</span>
+                                <span class="label label-warning pull-right">{{ page.number }}</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1>{{ page.title }}</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="{% if page.introduction-img %}col-md-7{% else %}col-md-12{% endif %}">
+                                {{ page.introduction-text }}
+                            </div>
+                            {% if page.introduction-img %}
+                            <div class="col-md-5">
+                                <a href="img/recipes/{{ page.introduction-img }}" data-lity>
+                                    <img class="img-responsive img-thumbnail" src="img/recipes/{{ page.introduction-img }}">
+                                </a>
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                {{ content }}
+                            </div>
+                        </div>
                     </div>
-                    {% if page.introduction-img %}
-                    <div class="col-md-5">
-                        <a href="img/recipes/{{ page.introduction-img }}" data-lity>
-                            <img class="img-responsive img-thumbnail" src="img/recipes/{{ page.introduction-img }}">
-                        </a>
-                    </div>
-                    {% endif %}
-                </div>
-                <div class="row">
-                    <hr>
-                </div>
-                <div class="row">
-                    {{ content }}
                 </div>
     		</article>
 

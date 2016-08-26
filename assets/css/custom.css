@@ -24,3 +24,8 @@ h4 { font-size: 22px; }
 .sidenav li li a {
 	line-height: normal;
 }
+
+.recipe-content {
+	border-radius: 3px;
+	border: 1px solid #eee;
+}
