@@ -17,17 +17,20 @@
     		<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
                 <div class="row {% unless page.path == 'search.markdown' %}recipe-content{% endunless %}">
                     <div class="col-md-12">
+                        {% unless page.path == 'search.markdown' %}
                         <div class="row">
                             <div class="col-md-12">
                                 <span class="category-label pull-left">{{ page.category }}</span>
                                 <span class="label label-warning pull-right">{{ page.number }}</span>
                             </div>
                         </div>
+                        {% endunless %}
                         <div class="row">
                             <div class="col-md-12">
-                                <h1>{{ page.title }}</h1>
+                                <h1 class="{% if page.path == 'search.markdown' %}mt0{% endif %}">{{ page.title }}</h1>
                             </div>
                         </div>
+                        {% unless page.path == 'search.markdown' %}
                         <div class="row">
                             <div class="{% if page.introduction-img %}col-md-7{% else %}col-md-12{% endif %}">
                                 {{ page.introducion-text }}
@@ -45,6 +48,7 @@
                                 <hr>
                             </div>
                         </div>
+                        {% endunless %}
                         <div class="row">
                             <div class="col-md-12">
                             {{ content }}

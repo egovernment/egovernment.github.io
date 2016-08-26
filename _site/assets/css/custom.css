@@ -7,6 +7,10 @@ h2 { font-size: 32px; margin-top: 42px; }
 h3 { font-size: 26px; }
 h4 { font-size: 22px; }
 
+.mt0 {
+	margin-top: 0;
+}
+
 .code-preview>h5 {
     font-size: 15px;
     font-weight: 500;
