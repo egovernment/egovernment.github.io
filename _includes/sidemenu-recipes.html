@@ -1,22 +1,18 @@
 <ul class="sidenav dropable sticky">
-    <li class="{% if page.path == 'index.html' %}active{% endif %}">
-        <a href="/">Overview</a>
+    <li class="{% if page.path == 'search.markdown' %}active{% endif %}">
+        <a href="/how-to">Overview</a>
     </li>
     <li>
         <a href="#" class="has-child {% if page.path contains 'part-a' %}active open{% endif %}">Part A</a>
         <ul>
-            <li class="{% if page.path == 'how-to/part-a/101.markdown' %}active{% endif %}">
-                <a href="/how-to/part-a/101">101 - add a registration to a service</a>
+            <li class="{% if page.path == 'how-to/part-a/101-add-a-registration-to-a-service.markdown' %}active{% endif %}">
+                <a href="/how-to/part-a/add-a-registration-to-a-service">101 - add a registration to a service</a>
+            </li>
+            <li class="{% if page.path == 'how-to/part-a/102-modify-the-name-of-a-registration.markdown' %}active{% endif %}">
+                <a href="/how-to/part-a/modify-the-name-of-a-registration">102 - modify the name of a registration</a>
             </li>
         </ul>
     </li>
-    <li>
-        <a href="#" class="has-child {% if page.path contains 'part-b' %}active open{% endif %}">Part B</a>
-        <ul>
-            <li class="{% if page.path == 'how-to/part-b/201.markdown' %}active{% endif %}">
-                <a href="/how-to/part-b/201">201 - add a registration to a service</a>
-            </li>
-        </ul>
-    </li>
+
 
 </ul>

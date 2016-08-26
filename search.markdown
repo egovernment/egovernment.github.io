@@ -1,6 +1,6 @@
 ---
-layout: page
-permalink: /search/
+layout: recipes
+permalink: /how-to/
 title: 'How to...'
 ---
 
