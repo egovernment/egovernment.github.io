@@ -15,9 +15,9 @@
     		</aside>
 
     		<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
-                <div class="row {% unless page.path == 'search.markdown' %}recipe-content{% endunless %}">
+                <div class="row {% unless page.path == 'how-to/search.markdown' %}recipe-content{% endunless %}">
                     <div class="col-md-12">
-                        {% unless page.path == 'search.markdown' %}
+                        {% unless page.path == 'how-to/search.markdown' %}
                         <div class="row">
                             <div class="col-md-12">
                                 <span class="category-label pull-left">{{ page.category }}</span>
@@ -27,10 +27,10 @@
                         {% endunless %}
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="{% if page.path == 'search.markdown' %}mt0{% endif %}">{{ page.title }}</h1>
+                                <h1 class="{% if page.path == 'how-to/search.markdown' %}mt0{% endif %}">{{ page.title }}</h1>
                             </div>
                         </div>
-                        {% unless page.path == 'search.markdown' %}
+                        {% unless page.path == 'how-to/search.markdown' %}
                         <div class="row">
                             <div class="{% if page.introduction-img %}col-md-7{% else %}col-md-12{% endif %}">
                                 {{ page.introducion-text }}
