@@ -21,7 +21,17 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <span class="category-label pull-left">{{ page.category }}</span>
+                                {% if page.nextUrl %}
+                                <a href="{{ page.nextUrl }}" class="next-link pull-right">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                {% endif %}
                                 <span class="label recipe-label label-warning pull-right">{{ page.number }}</span>
+                                {% if page.prevUrl %}
+                                <a href="{{ page.prevUrl }}" class="prev-link pull-right">
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                                {% endif %}
                             </div>
                         </div>
                         {% endunless %}
