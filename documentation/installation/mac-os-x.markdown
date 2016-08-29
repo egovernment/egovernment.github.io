@@ -22,12 +22,11 @@ On OSX we recommend to use [Homebrew](http://brew.sh/) to install below utilitie
 * __GraphicsMagick__ - http://www.graphicsmagick.org/download.html
 * __GhostScript__ - http://www.ghostscript.com/download/gsdnld.html __it needs to be in the same architecture version (32bit or 64bit) as GraphicsMagick__. GhostScript helps GraphicsMagick to generate thumbnails of PDF documents.
 
-To do that, go in the terminal and do:   
+To do that, the following command must be run from the terminal:   
 
 - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` to install homebrew
 - `brew install GraphicsMagick` to install GraphicsMagick
 - `brew install GhostScript` to install GhostScript
-
 
 ## Download application code
 
@@ -129,7 +128,7 @@ To be able to additionally access site administrator functionality, _users admin
 
 * `$ npm run create-users-admin`
 
-Suggestion for the credentials : _admin@eregistrations.org_ / _abc123_. 
+Suggestion for the credentials : _admin@eregistrations.org_ / _abc123_. Note that you need to manually quit after having set the password, by typing <kbd><kbd>command</kbd> + <kbd>c</kbd></kbd>.
 
 While logged in as users admin, you can create accounts of institution workers, which can review and process files.
 
