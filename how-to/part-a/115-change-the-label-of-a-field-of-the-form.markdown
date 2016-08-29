@@ -4,7 +4,7 @@ permalink: /how-to/change-the-label-of-a-field-of-the-form/
 title: 'Change the label of a field of the form'
 category: 'Part A'
 number: '115'
-introduction-text: 'In this recipe we will see how to modify the labels of the fields of the form. This only applies to the fields in english language, as the translations are modified directly from the Translation interface of the system.'
+introduction-text: 'This recipe explains how to modify the labels of the fields of the form. This only applies to the fields in english language, as the translations are modified directly from the Translation interface of the system.'
 introduction-img: '115.png'
 ---
 

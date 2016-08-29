@@ -4,7 +4,7 @@ permalink: /how-to/remove-a-cost-in-a-registration/
 title: 'Remove a cost in a registration'
 category: 'Part A'
 number: '113'
-introduction-text: 'In this recipe we will see how to remove, from a registration, a cost that does not apply anymore.'
+introduction-text: 'This recipe explains how to remove, from a registration, a cost that does not apply anymore.'
 introduction-img: '113.png'
 ---
 

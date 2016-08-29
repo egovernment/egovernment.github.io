@@ -4,7 +4,7 @@ permalink: /how-to/set-the-type-of-a-field/
 title: 'Set the type of a field'
 category: 'Part A'
 number: '119'
-introduction-text: 'In this recipe we will see how to modify the types of each fields of the form. The available types of fields are : normal-input, selector, currency, date, radios, checks, etc.'
+introduction-text: 'This recipe explains how to modify the types of each fields of the form. The available types of fields are : normal-input, selector, currency, date, radios, checks, etc.'
 introduction-img: '119.png'
 ---
 

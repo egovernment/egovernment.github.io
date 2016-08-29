@@ -4,7 +4,7 @@ permalink: /how-to/add-a-legend-for-the-field-of-the-form/
 title: 'Add a legend for a field of the form'
 category: 'Part A'
 number: '116'
-introduction-text: 'In this recipe we will see how to add and edit the legend text that can be set below each field to give more information to the user filling the form.'
+introduction-text: 'This recipe explains how to add and edit the legend text that can be set below each field to give more information to the user filling the form.'
 introduction-img: '116.png'
 ---
 

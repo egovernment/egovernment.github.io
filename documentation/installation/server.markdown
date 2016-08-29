@@ -1,10 +1,12 @@
 ---
 layout: doc-pages
-permalink: /installation/requirements
+permalink: /installation/server
 title: 'Requirements for eRegistrations server'
 ---
 
-# Requirements for eRegistrations server
+# Installation of eRegistrations on a server
+
+### Requirements for eRegistrations server
 
 Here is the minimum requirement configuration that the server must have in order to have the best user experience on eRegistrations system : 
 
@@ -19,4 +21,11 @@ Here is the minimum requirement configuration that the server must have in order
 - **Guaranteed bandwidth** : 200 Mbit/s
 
 - **Dedicated server** only
+
+
+### Installation 
+
+The installation on a server is the same as the installation on the local machines on [Linux](/installation/ubuntu) or [Windows 10](/installation/windows10).
+
+### Data download
 

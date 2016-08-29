@@ -4,7 +4,7 @@ permalink: /how-to/configure-a-determinant-for-a-field/
 title: 'Configure a determinant for a field'
 category: 'Part A'
 number: '121'
-introduction-text: ''
+introduction-text: 'Some fields appear only if certain determinant(s) are fulfilled. Those determinant can be a registration  that is selected or the value(s) of a field of the form. This receipt explains how to set such determinant(s) to a field, or to remove it.'
 introduction-img: '121.gif'
 ---
 

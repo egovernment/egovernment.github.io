@@ -4,7 +4,7 @@ permalink: /how-to/make-a-field-of-the-form-mandatory/
 title: 'Make a field of the form mandatory'
 category: 'Part A'
 number: '117s'
-introduction-text: 'In this recipe we will see how to set a field as mandatory : the users will be obliged to fill the field to be able to save the form.<br>Note that changing the mandatory aspect of a field will have no impact on previously sent files.'
+introduction-text: 'This recipe explains how to set a field as mandatory : the users will be obliged to fill the field to be able to save the form.<br>Note that changing the mandatory aspect of a field will have no impact on previously sent files.'
 introduction-img: '117.png'
 ---
 
