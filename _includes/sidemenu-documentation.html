@@ -2,8 +2,19 @@
     <li class="{% if page.path == 'index.html' %}active{% endif %}">
         <a href="/">Overview</a>
     </li>
-    <li class="{% if page.path == 'documentation/installation.markdown' %}active{% endif %}">
-        <a href="/installation">Installation</a>
+    <li>
+        <a href="#" class="has-child {% if page.path contains 'installation' %}active open{% endif %}">Installation</a>
+        <ul>
+            <li class="{% if page.path == 'documentation/installation/mac-os-x.markdown' %}active{% endif %}">
+                <a href="/installation/mac-os-x">Mac OS X</a>
+            </li>
+            <li class="{% if page.path == 'documentation/installation/ubuntu.markdown' %}active{% endif %}">
+                <a href="/installation/ubuntu">Linux (Ubuntu)</a>
+            </li>
+            <li class="{% if page.path == 'documentation/installation/windows10.markdown' %}active{% endif %}">
+                <a href="/installation/windows10">Windows 10</a>
+            </li>
+        </ul>
     </li>
     <li class="{% if page.path == 'documentation/architecture.markdown' %}active{% endif %}">
         <a href="/architecture-overview">Architecture overview</a>

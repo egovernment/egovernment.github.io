@@ -4,7 +4,8 @@ permalink: /how-to/add-a-determinant-to-a-registration/
 title: 'Add a determinant to a registration'
 category: 'Part A'
 number: '103'
-introduction-text: ''
+introduction-text: 'A registration can be **mandatory**, **optional** or **un-applicable** for certain situations. Example : the registration at the Business registry in El Salvador is optional for assets inferior to 12'000$.<br/>
+The determinant(s) of a registration are set through the initial questions of the guide.'
 introduction-img: '103.gif'
 ---
 

@@ -1,10 +1,10 @@
 ---
 layout: doc-pages
-permalink: /installation/
-title: 'eRegistrations - Installation'
+permalink: /installation/ubuntu
+title: 'eRegistrations - Installation on Linux (Ubuntu)'
 ---
 
-# Installation of eRegistrations system
+# Installation of eRegistrations system - Linux (Ubuntu)
 
 ## Needed software
 

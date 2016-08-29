@@ -4,7 +4,7 @@ permalink: /how-to/add-a-certificate-to-a-registration/
 title: 'Add a certificate to a registration'
 category: 'Part A'
 number: '104'
-introduction-text: ''
+introduction-text: 'dsfasd'
 introduction-img: '101.png'
 ---
 
