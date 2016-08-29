@@ -56,3 +56,16 @@ h4 { font-size: 22px; }
  	font-size: 24px;
  	border-radius:0;
  }
+
+ .prev-link,
+ .next-link {
+ 	font-size: 38px;
+ }
+
+ .prev-link {
+ 	margin-right: 16px;
+ }
+
+ .next-link {
+ 	margin-left: 16px;
+ }
