@@ -32,11 +32,6 @@
                         </div>
                         {% unless page.path == 'how-to/search.markdown' %}
                         <div class="row">
-                            {% if page.introduction-text %}  
-                            <div class="{% if page.introduction-img %}col-md-7{% else %}col-md-12{% endif %}">
-                                {{ page.introduction-text | markdownify }}
-                            </div>
-                            {% endif %}
                             {% if page.introduction-img %}
                             <div class="col-md-5">
                                 <a href="../../img/recipes/{{ page.introduction-img }}" data-lity>
@@ -44,6 +39,12 @@
                                 </a>
                             </div>
                             {% endif %}
+                            {% if page.introduction-text %}  
+                            <div class="{% if page.introduction-img %}col-md-7{% else %}col-md-12{% endif %}">
+                                {{ page.introduction-text | markdownify }}
+                            </div>
+                            {% endif %}
+
                         </div>
                         <div class="row">
                             <div class="col-md-12">
