@@ -6,38 +6,56 @@ title: 'eRegistrations - Installation on Mac OS X'
 
 # Installation of eRegistrations system - Mac OS X
 
+This installation is set for the all the versions of OS X from 10.7 "Lion" included to the most recent. Installation on previous versions is not recommended.
+
+
 ## Needed software
 
-Application can be deployed on both OSX/\*nix and Windows systems. It needs following software to be installed:
+In order to run the system on your local machine, the following software needs to be installed:
 
-* __Node.js__ - http://nodejs.org/ - v4 in it's **latest** release
+* __Node.js__ - [http://nodejs.org/](http://nodejs.org/) - v4 in it's **latest** recommended release.
 
 ### Image processing utilties:
 
-On OSX we recommend to use [Homebrew](http://brew.sh/) to install below utitlites
+On OSX we recommend to use [Homebrew](http://brew.sh/) to install below utilities:
 
 * __GraphicsMagick__ - http://www.graphicsmagick.org/download.html
 * __GhostScript__ - http://www.ghostscript.com/download/gsdnld.html __it needs to be in the same architecture version (32bit or 64bit) as GraphicsMagick__. GhostScript helps GraphicsMagick to generate thumbnails of PDF documents.
 
-### Compilation related utilities
+To do that, go in the terminal and do:   
 
-In \*nix systems normally no additional work needs to be done. Still for Windows, it's important that all dependencies mentioned below are ensured.
+- `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` to install homebrew
+- `brew install GraphicsMagick` to install GraphicsMagick
+- `brew install GhostScript` to install GhostScript
 
-Few packages that we use are written in C++ and need to be compiled. For that needed software needs to be ensured:
-- [node-gyp](https://github.com/TooTallNate/node-gyp#installation) ("You will also need to install" section)
-- [node.bcrypt.js](https://github.com/ncb000gt/node.bcrypt.js#dependencies) need to be installed on your machine. _Note: On Windows install full (not lite) version of OpenSSL_.
 
-After all needed software is installed and application code is downloaded, compile packages with following command (needs to be run in application path):
+## Download application code
+
+eRegistrations system are hosted on Github under private folders, therefore a github account is needed to install and configure an eRegistrations system.
+
+- Create your Github account [here](https://github.com/join).
+- Contact the people in charge of eRegistrations to link your account to the expected folder(s) on [egovernment](https://github.com/egovernment).
+
+It is recommended to use **Github desktop** software to easily configure the system and use all the github functionalities. It can be downloaded [here](https://desktop.github.com/).  
+
+In Github desktop, you must : 
+
+- connect to your Github account in the **Preferences** (click on <kbd><kbd>command</kbd> + <kbd>,</kbd></kbd>)
+- clone the expected eregistrations folder, by doing *New Repository* -> *Clone* -> select the repository -> *Clone the repository*
+
+This will copy a version of the eregistrations folder on your local machine. It might take up to 2 minutes.
+
 
 ## Project compilation
 
-Few packages needs compilation, running below ensures that
+Few packages needs compilation. To do that, the following command must be run, with the Terminal and at the root of the cloned folder:
 
-* `$ npm rebuild` __[Note: on Windows 8 it needs to be run in VS Command Prompt](https://github.com/TooTallNate/node-gyp/issues/177#issuecomment-12184651)__
+* `$ npm rebuild` 
+
 
 ## Environment configuration
 
-What's left is environment configuration. Create _env.js_ file in main path of application, as follows:
+What's left is environment configuration. Create a file called _env.js_ in the root of the cloned folder, and copy the following in the file:
 
 ```javascript
 'use strict';
@@ -103,11 +121,15 @@ module.exports = require('mano').env = {
 };
 ```
 
+Do not forget to save _env.js_ before closing it.
+
 ## Setup administrator account
 
 To be able to additionally access site administrator functionality, _users admin_ account needs to be created. To do so run following command and follow instructions:
 
 * `$ npm run create-users-admin`
+
+Suggestion for the credentials : _admin@eregistrations.org_ / _abc123_. 
 
 While logged in as users admin, you can create accounts of institution workers, which can review and process files.
 
@@ -119,4 +141,5 @@ Start server:
 
 * `npm start` - starts the server
 
-After that application should be running on port as configured in env.js
+When <span class="text-purple">health:master</span> is displayed in the Terminal (after ~40 seconds), the application is running and can be accessed at [http://localhost:3177/](http://localhost:3177/) (or any other port as set in _env.js_).
+
