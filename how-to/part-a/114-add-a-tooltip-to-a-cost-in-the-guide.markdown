@@ -6,6 +6,8 @@ category: 'Part A'
 number: '114'
 introduction-text: 'This recipe explains how to set the tooltip in front of a cost, in the guide. Tooltips are used to give more information about a cost without putting to much text on the page. It is recommended to add one meaningful tooltip per cost to give more information to the user.'
 introduction-img: '114.png'
+prevUrl: /how-to/remove-a-cost-in-a-registration/
+nextUrl: /how-to/change-the-label-of-a-field-of-the-form/
 ---
 
 Introduction lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
