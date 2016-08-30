@@ -3,6 +3,8 @@ layout: recipe
 permalink: /how-to/add-a-zone-in-the-system/
 title: 'Add a zone in the system'
 category: 'Other'
+sub-category: ''
+rate: '4'
 number: '504'
 prevUrl: /how-to/see-a-system-locally-after-installation/
 nextUrl: /how-to/change-the-format-of-the-passwords-of-the-accounts/

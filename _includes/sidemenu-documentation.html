@@ -19,6 +19,9 @@
             </li>
         </ul>
     </li>
+    <li class="{% if page.path == 'documentation/fundamentals.markdown' %}active{% endif %}">
+        <a href="/fundamentals">Fundamentals of JavaScript</a>
+    </li>
     <li class="{% if page.path == 'documentation/architecture.markdown' %}active{% endif %}">
         <a href="/architecture-overview">Architecture overview</a>
     </li>
@@ -48,5 +51,7 @@
     <li class="{% if page.path == '../how-to/search.markdown' %}active{% endif %}">
         <a href="/how-to/">How to...</a>
     </li>
-
+    <li class="{% if page.path == '../trainings/list.markdown' %}active{% endif %}">
+        <a href="/trainings">Trainings</a>
+    </li>
 </ul>

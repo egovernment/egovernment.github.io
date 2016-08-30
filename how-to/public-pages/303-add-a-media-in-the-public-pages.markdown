@@ -3,6 +3,8 @@ layout: recipe
 permalink: /how-to/add-a-media-in-the-public-pages/
 title: 'Add a media in the public pages (video, image)'
 category: 'Public pages'
+sub-category: 'Content'
+rate: '1'
 number: '303'
 introduction-text: ''
 introduction-img: '101.png'

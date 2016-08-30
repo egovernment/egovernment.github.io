@@ -3,6 +3,8 @@ layout: recipe
 permalink: /how-to/solve-something-that-is-not-covered-by-the-sheets/
 title: 'Solve something that is not covered by the sheets'
 category: 'Other'
+sub-category: ''
+rate: '1'
 number: '507'
 prevUrl: /how-to/request-a-server-reboot-to-see-changes-online/
 nextUrl: 

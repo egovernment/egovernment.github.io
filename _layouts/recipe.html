@@ -20,7 +20,7 @@
                         {% unless page.path == 'how-to/search.markdown' %}
                         <div class="row">
                             <div class="col-md-12">
-                                <span class="category-label pull-left">{{ page.category }}</span>
+                                <span class="category-label pull-left">{{ page.category }} <small>- {{ page.sub-category }} - Level {{ page.rate }}</small></span>
                                 {% if page.nextUrl %}
                                 <a href="{{ page.nextUrl }}" class="next-link pull-right">
                                     <i class="fa fa-angle-right"></i>

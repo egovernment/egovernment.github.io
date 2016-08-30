@@ -3,6 +3,8 @@ layout: recipe
 permalink: /how-to/change-the-format-of-the-passwords-of-the-accounts/
 title: 'Change the format of the passwords of the accounts'
 category: 'Other'
+sub-category: ''
+rate: '4'
 number: '505'
 prevUrl: /how-to/add-a-zone-in-the-system/
 nextUrl: /how-to/request-a-server-reboot-to-see-changes-online/

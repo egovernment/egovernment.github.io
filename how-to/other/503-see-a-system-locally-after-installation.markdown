@@ -3,6 +3,8 @@ layout: recipe
 permalink: /how-to/see-a-system-locally-after-installation/
 title: 'See a system locally after installation'
 category: 'Other'
+sub-category: ''
+rate: '1'
 number: '503'
 prevUrl: /how-to/make-translatable-an-element-of-the-system/
 nextUrl: /how-to/add-a-zone-in-the-system/

@@ -3,6 +3,8 @@ layout: recipe
 permalink: /how-to/request-a-server-reboot-to-see-changes-online/
 title: 'Request a server reboot to see changes online'
 category: 'Other'
+sub-category: ''
+rate: '1'
 number: '506'
 prevUrl: /how-to/change-the-format-of-the-passwords-of-the-accounts/
 nextUrl: /how-to/solve-something-that-is-not-covered-by-the-sheets/

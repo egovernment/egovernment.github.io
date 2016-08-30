@@ -3,8 +3,10 @@ layout: recipe
 permalink: /how-to/publish-a-change-in-the-live-app-using-github/
 title: 'Publish a change in the live app using github'
 category: 'Other'
+sub-category: ''
+rate: '1'
 number: '501'
-prevUrl: 
+prevUrl: /how-to/change-the-footer/
 nextUrl: /how-to/make-translatable-an-element-of-the-system/
 ---
 

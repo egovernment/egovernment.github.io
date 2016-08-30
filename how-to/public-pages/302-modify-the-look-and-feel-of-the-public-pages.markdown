@@ -3,6 +3,8 @@ layout: recipe
 permalink: /how-to/modify-the-look-and-feel-of-the-public-pages/
 title: 'Modify the look and feel of the public pages'
 category: 'Public pages'
+sub-category: 'Content'
+rate: '2'
 number: '302'
 introduction-text: ''
 introduction-img: '101.png'
