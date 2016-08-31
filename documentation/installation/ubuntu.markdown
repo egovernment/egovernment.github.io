@@ -81,6 +81,12 @@ It's required for server setups to use [NGINX](https://nginx.org/en/) HTTP and r
 $ sudo apt-get install nginx
 ```
 
+### Live installation consolecast
+
+The video below shows all the steps from `Installation of required software` section performed in live Ubuntu Server 16.04 installation:
+
+<script type="text/javascript" src="https://asciinema.org/a/6rhohyhwfb9qqvysy0whq4gti.js" id="asciicast-6rhohyhwfb9qqvysy0whq4gti" async></script>
+
 ## Setup of eRegistrations system
 
 ### Clone the repository
