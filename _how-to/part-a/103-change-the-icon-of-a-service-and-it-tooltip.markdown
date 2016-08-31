@@ -7,7 +7,7 @@ sub-category: 'Service'
 rate: '2'
 number: '103'
 introduction-text: ''
-introduction-img: '101.png'
+introduction-img: '103.png'
 prevUrl: /how-to/change-the-description-of-a-service-from-myAccount/
 nextUrl: /how-to/make-a-service-unavailable/
 ---
