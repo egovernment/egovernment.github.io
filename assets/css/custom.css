@@ -28,7 +28,7 @@ h4 { font-size: 22px; }
 
 .sidenav>li>ul {
 	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-bottom: 20px;
 }
 
 .sidenav>li>ul a.active:before, .sidenav>li>ul li.active a:before {
@@ -41,7 +41,7 @@ h4 { font-size: 22px; }
 }
 
 .sidenav li a {
-	line-height: normal;
+	line-height: 1.4;
 }
 
 .recipe-content {
