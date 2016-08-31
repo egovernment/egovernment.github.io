@@ -7,7 +7,7 @@ sub-category: 'Service'
 rate: '3'
 number: '105'
 introduction-text: ''
-introduction-img: '101.png'
+introduction-img: '105.png'
 prevUrl: /how-to/make-a-service-unavailable/
 nextUrl: /how-to/configure-the-determinant-of-a-service/
 ---

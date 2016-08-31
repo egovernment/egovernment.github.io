@@ -7,7 +7,7 @@ sub-category: 'Service'
 rate: '4'
 number: '106'
 introduction-text: ''
-introduction-img: '101.png'
+introduction-img: '106.png'
 prevUrl: /how-to/add-a-service/
 nextUrl: /how-to/change-the-name-and-the-short-name-of-a-registration/
 ---

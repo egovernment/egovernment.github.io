@@ -7,7 +7,7 @@ sub-category: 'Service'
 rate: '3'
 number: '104'
 introduction-text: ''
-introduction-img: '101.png'
+introduction-img: '104.png'
 prevUrl: /how-to/change-the-icon-of-a-service-and-it-tooltip/
 nextUrl: /how-to/add-a-service/
 ---
