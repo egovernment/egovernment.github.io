@@ -18,3 +18,12 @@ port: 4001
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+  documentation:
+    output: true
+  how-to:
+    output: true
+  trainings:
+    output: true
