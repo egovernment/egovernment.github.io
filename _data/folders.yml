@@ -1,0 +1,17 @@
+how-to:
+  name: how to
+  categories:
+    - Part A:
+      weight: 1
+
+    - Part B:
+      weight: 2
+
+    - Public pages:
+      weight: 3
+
+    - Design:
+      weight: 4
+
+    - Other:
+      weight: 5
