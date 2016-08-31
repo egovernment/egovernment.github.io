@@ -26,12 +26,21 @@ h4 { font-size: 22px; }
 	max-width: 190px;
 }*/
 
-.sidenav li li {
+.sidenav>li>ul {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.sidenav>li>ul a.active:before, .sidenav>li>ul li.active a:before {
+	top: 7px;
+}
+
+.sidenav li {
 	padding-bottom: 5px;
 	padding-top: 5px;
 }
 
-.sidenav li li a {
+.sidenav li a {
 	line-height: normal;
 }
 
