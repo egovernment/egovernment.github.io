@@ -6,38 +6,110 @@ title: 'eRegistrations - Installation on Linux (Ubuntu)'
 
 # Installation of eRegistrations system - Linux (Ubuntu)
 
-## Needed software
+This guide will detail all the steps needed to get a working version of eRegistrations system on [Ubuntu Linux](www.ubuntu.com/) operating system.
 
-Application can be deployed on both OSX/\*nix and Windows systems. It needs following software to be installed:
+**Supported Ubuntu versions:**
 
-* __Node.js__ - http://nodejs.org/ - v4 in it's **latest** release
+Both Desktop and Server installations of the following versions can be used for eRegistrations system:
 
-### Image processing utilties:
+* Ubuntu 14.04 LTS (Trusty Tahr)
+* Ubuntu 15.10 (Wily Werewolf)
+* Ubuntu 16.04 LTS (Xenial Xerus)
 
-On OSX we recommend to use [Homebrew](http://brew.sh/) to install below utitlites
+**User account:**
 
-* __GraphicsMagick__ - http://www.graphicsmagick.org/download.html
-* __GhostScript__ - http://www.ghostscript.com/download/gsdnld.html __it needs to be in the same architecture version (32bit or 64bit) as GraphicsMagick__. GhostScript helps GraphicsMagick to generate thumbnails of PDF documents.
+It's assumed that normal user account (not `root`) is used to perform all the installation steps. For command that needs to be run as `root`, `sudo` is used to execute the command as the superuser.
 
-### Compilation related utilities
+## Installation of required software
 
-In \*nix systems normally no additional work needs to be done. Still for Windows, it's important that all dependencies mentioned below are ensured.
+**Note:** In this guide, commands to be executed starts with `$` sign, eg: `$ echo 'foo'`. Do not enter the leading dollar sign into the command line while running the commands.
 
-Few packages that we use are written in C++ and need to be compiled. For that needed software needs to be ensured:
-- [node-gyp](https://github.com/TooTallNate/node-gyp#installation) ("You will also need to install" section)
-- [node.bcrypt.js](https://github.com/ncb000gt/node.bcrypt.js#dependencies) need to be installed on your machine. _Note: On Windows install full (not lite) version of OpenSSL_.
+### Update the package database and the system
 
-After all needed software is installed and application code is downloaded, compile packages with following command (needs to be run in application path):
+In order to process with dependencies installation package database must be updated. Additionally, all the released security and stability patches should be installed.
 
-## Project compilation
+```console
+# Update the package database
+$ sudo apt-get update
+# Install the security patches
+$ sudo apt-get upgrade
+```
+
+### Version control system
+
+[Git](https://git-scm.com/), that is needed to checkout (download) each project repository, can be installed on Ubuntu using `apt` tool:
+
+```console
+$ sudo apt-get install git
+```
+
+After the installation succeeds, we need to set it up:
+
+```console
+# Set the name that is going to be used to author the commits
+$ git config --global user.name "Your Name"
+# Set the email that is going to be associated with the commits
+$ git config --global user.email "youremail@example.com"
+```
+
+That should be sufficient to have a working git instance, for further reference, visit [documentation on Git's website](https://git-scm.com/doc).
+
+### Node.js and NPM
+
+The easiest way to install both [Node.js](http://nodejs.org/) runtime environment and [NPM](https://www.npmjs.com/) package manager is to use the [NodeSource](https://nodesource.com/) Debian and Ubuntu binary distributions repository.
+
+```console
+$ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+```
+
+### Image processing utilities
+
+The system uses [GraphicsMagick](http://www.graphicsmagick.org/) and [GhostScript](http://www.ghostscript.com/) libraries to handle image processing. They are both needed to start any eregistrations application, so they have to be installed.
+
+```console
+$ sudo apt-get install ghostscript graphicsmagick
+```
+
+### Web and proxy server
+
+**Note:** This step is not needed for local (development) installation.
+
+It's required for server setups to use [NGINX](https://nginx.org/en/) HTTP and reverse proxy server to act as intermediate gate between Node.js server and client connections.
+
+```console
+$ sudo apt-get install nginx
+```
+
+## Setup of eRegistrations system
+
+### Clone the repository
+
+In the user home directory, type the following (change repository address if needed):
+
+```console
+$ git clone git@github.com:egovernment/eregistrations-demo.git
+```
+
+This will download the source code of eRegistrations system (`eregistrations-demo` in this example) to the `eregistrations-demo` directory.
+
+`cd` into that directory (adjust the path if needed):
+
+```console
+$ cd eregistrations-demo
+```
+
+### Compile packages
 
 Few packages needs compilation, running below ensures that
 
-* `$ npm rebuild` __[Note: on Windows 8 it needs to be run in VS Command Prompt](https://github.com/TooTallNate/node-gyp/issues/177#issuecomment-12184651)__
+```console
+$ npm rebuild
+```
 
-## Environment configuration
+### Create environment configuration
 
-What's left is environment configuration. Create _env.js_ file in main path of application, as follows:
+Create `env.js` file in the root directory of application, with editor of your choice, and insert as follows:
 
 ```javascript
 'use strict';
@@ -59,7 +131,7 @@ module.exports = require('mano').env = {
 	// URL at which application would be served
 	// Information used e.g. for email notifications, but also for cookies resolution
 	// It must be accurate, for application to work properly
-	url: 'http://localhost:3177/',
+	url: 'http://localhost/',
 
 	// Legacy pool functionality
 	// It's about server-side HTML rendering for legacy browsers. Leave it to 'true'
@@ -81,42 +153,131 @@ module.exports = require('mano').env = {
 };
 ```
 
-### Database configuration
+### Create administrator account
 
-The eRegistrations system is built to work with any database. By default [plain text](https://github.com/medikoo/dbjs-persistence/tree/master/text-file) database driver is used, it's efficient enough for common eRegistrations setup and it doesn't require any specific configuration to be provided.
+To be able to additionally access site administrator functionality, `users admin` account needs to be created. To do so run following command and follow instructions:
 
-The following database engines have prepared dedicated dbjs drivers (engines not mentioned in a list can have a driver prepared on request in 1-3 days)
-
-- [LevelDB](http://leveldb.org/) -> [dbjs-level](https://github.com/medikoo/dbjs-level)
-- [MongoDB](https://www.mongodb.com) -> [dbjs-mongo](https://github.com/medikoo/dbjs-mongo)
-
-If there's intention to use one of above engines, the database engine and dbjs driver need to be installed separately (installation instructions can be found in driver repository), and it's usage needs to be configured in  `env.js`, as g.:
-
-```javascript
-module.exports = require('mano').env = {
-	...
-  db: {
-    driver: require('dbjs-level'), // Store data in LevelDB database
-    // .. Driver configuration properties if needed ..
-  }
-	...
-};
+```console
+$ npm run create-users-admin
 ```
-
-## Setup administrator account
-
-To be able to additionally access site administrator functionality, _users admin_ account needs to be created. To do so run following command and follow instructions:
-
-* `$ npm run create-users-admin`
 
 While logged in as users admin, you can create accounts of institution workers, which can review and process files.
 
-User administrators and institution workers log in into application using same login form as regular merchants.
+User administrators and institution workers log in into application using same login form as regular users.
 
-## Deployment
+### Setup NGINX site
 
-Start server:
+**Note:** This step is not needed for local (development) installation.
 
-* `npm start` - starts the server
+In case of server setup, NGINX needs to be configured to properly serve our website.
 
-After that application should be running on port as configured in env.js
+First, remove default nginx example configuration site:
+
+```console
+$ sudo rm /etc/nginx/sites-{available,enabled}/default
+```
+
+Then create a file inside `/etc/nginx/sites-available/` directory named `eregistrations` and insert the following configuration (based on whether or not SSL is going to be used):
+
+**Without SSL:**
+
+```javascript
+upstream eregistrations.localhost {
+	server 127.0.0.1:3177;
+}
+
+server {
+	listen 0.0.0.0:80;
+	server_name eregistrations.localhost;
+
+	access_log  /var/log/nginx/eregistrations.localhost.access.log;
+	error_log  /var/log/nginx/eregistrations.localhost.error.log;
+
+	client_max_body_size 0;
+	send_timeout 600s;
+	location / {
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_set_header Host $http_host;
+		proxy_set_header X-NginX-Proxy true;
+
+		proxy_pass http://eregistrations.localhost/;
+		proxy_redirect off;
+
+		proxy_set_header Connection '';
+		proxy_http_version 1.1;
+		proxy_buffering off;
+		proxy_read_timeout 24h;
+		chunked_transfer_encoding off;
+
+		if ($request_filename ~* ^.*?\.(eot)|(ttf)|(woff)$){
+			add_header Access-Control-Allow-Origin *;
+		}
+	}
+}
+```
+
+**With SSL:**
+
+```javascript
+upstream eregistrations.localhost {
+	server 127.0.0.1:3177;
+}
+
+server {
+	listen 0.0.0.0:80;
+	server_name eregistrations.localhost;
+	return 301 https://eregistrations.localhost$request_uri;
+}
+
+server {
+	listen 0.0.0.0:443;
+	server_name	eregistrations.localhost;
+
+	access_log  /var/log/nginx/eregistrations.localhost.access.log;
+	error_log  /var/log/nginx/eregistrations.localhost.error.log;
+
+	ssl on;
+	ssl_certificate /etc/nginx/ssl/server.pem;
+	ssl_certificate_key /etc/nginx/ssl/server.key;
+
+	client_max_body_size 0;
+	send_timeout 600s;
+	location / {
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_set_header Host $http_host;
+		proxy_set_header X-NginX-Proxy true;
+
+		proxy_pass http://eregistrations.localhost/;
+		proxy_redirect off;
+
+		proxy_set_header Connection '';
+		proxy_http_version 1.1;
+		proxy_buffering off;
+		proxy_read_timeout 24h;
+		chunked_transfer_encoding off;
+
+		if ($request_filename ~* ^.*?\.(eot)|(ttf)|(woff)$){
+			add_header Access-Control-Allow-Origin *;
+		}
+	}
+}
+```
+
+At last, it's needed to enable the site and restart NGINX:
+
+```console
+$ sudo ln -s /etc/nginx/sites-available/eregistrations /etc/nginx/sites-enabled/
+$ sudo systemctl restart nginx.service
+```
+
+### Start eRegistrations node.js server
+
+While in the eRegistrations system root directory, type the following:
+
+```console
+$ npm start
+```
+
+After few seconds, the application will be accessible at http://localhost:3177/ (or any other port as set in `env.js`). For server setups, it will be available from public server address as well.
