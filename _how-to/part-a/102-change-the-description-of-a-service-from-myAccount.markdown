@@ -7,7 +7,7 @@ sub-category: 'Service'
 rate: '1'
 number: '102'
 introduction-text: ''
-introduction-img: '101.png'
+introduction-img: '102.png'
 prevUrl: /how-to/change-the-name-of-a-service/
 nextUrl: /how-to/change-the-icon-of-a-service-and-it-tooltip/
 ---
