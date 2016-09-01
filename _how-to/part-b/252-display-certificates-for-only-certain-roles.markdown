@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/display-certificates-for-only-certain-roles/
 title: 'Display certificates for only certain roles'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Other'
 rate: '4'
 number: '252'

@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-place-of-a-role-in-the-Part-B-flow/
 title: 'Change the place of a role in the Part B flow'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Roles'
 rate: '1'
 number: '203'

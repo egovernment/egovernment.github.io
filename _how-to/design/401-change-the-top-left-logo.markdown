@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-top-left-logo/
 title: 'Change the top-left logo'
-category: 'Design'
+category: '4. Design'
 sub-category: ''
 rate: '1'
 number: '401'

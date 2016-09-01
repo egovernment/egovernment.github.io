@@ -15,18 +15,18 @@
     		</aside>
 
     		<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
-                <div class="row {% unless page.path == 'how-to/search.markdown' %}recipe-content{% endunless %}">
+                <div class="row {% unless page.path == '_how-to/search.markdown' %}recipe-content{% endunless %}">
                     <div class="col-md-12">
-                        {% unless page.path == 'how-to/search.markdown' %}
+                        {% unless page.path == '_how-to/search.markdown' %}
                         <div class="row">
                             <div class="col-md-12">
-                                <span class="category-label pull-left">{{ page.category }} <small>- {{ page.sub-category }} - Level {{ page.rate }}</small></span>
+                                <span class="category-label pull-left">{{ page.category }} <small>{% if page.sub-category != '' %}- {{ page.sub-category }}{% endif %} <span class="badge recipe-badge rate-{{ page.rate }}">{{ page.rate }}</span></small></span>
                                 {% if page.nextUrl %}
                                 <a href="{{ page.nextUrl }}" class="next-link pull-right">
                                     <i class="fa fa-angle-right"></i>
                                 </a>
                                 {% endif %}
-                                <span class="label recipe-label label-warning pull-right">{{ page.number }}</span>
+                                <span class="label recipe-label {% if page.category == '1. Part A' %}label-warning{% endif %}{% if page.category == '2. Part B' %}label-info{% endif %}{% if page.category == '3. Public pages' %}label-purple{% endif %}{% if page.category == '4. Design' %}label-danger{% endif %}{% if page.category == '5. Other' %}label-dark{% endif %} label-cat pull-right">{{ page.number }}</span>
                                 {% if page.prevUrl %}
                                 <a href="{{ page.prevUrl }}" class="prev-link pull-right">
                                     <i class="fa fa-angle-left"></i>
@@ -40,7 +40,7 @@
                                 <h1 class="mt0">{{ page.title }}</h1>
                             </div>
                         </div>
-                        {% unless page.path == 'how-to/search.markdown' %}
+                        {% unless page.path == '_how-to/search.markdown' %}
                         <div class="row">
                             {% if page.introduction-img %}
                             <div class="col-md-5">

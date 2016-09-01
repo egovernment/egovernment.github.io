@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-special-format-for-a-field/
 title: 'Add a special format for a field'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Data'
 rate: '4'
 number: '170'

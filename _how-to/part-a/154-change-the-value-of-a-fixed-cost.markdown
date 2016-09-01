@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-value-of-a-fixed-cost/
 title: 'Change a fixed cost in a registration'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Costs'
 rate: '1'
 number: '154'

@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/create-a-new-section-with-tables-in-the-form/
 title: 'Create a new section with tables in the form'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Data'
 rate: '4'
 number: '173'

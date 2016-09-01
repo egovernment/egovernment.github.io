@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/configure-the-Reject-file-feature-to-a-role/
 title: 'Configure the "Reject file" feature of a role'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Roles'
 rate: '2'
 number: '206'

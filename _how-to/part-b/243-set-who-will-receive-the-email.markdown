@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/set-who-will-receive-the-email/
 title: 'Set who will receive the email'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Notifications'
 rate: '2'
 number: '243'

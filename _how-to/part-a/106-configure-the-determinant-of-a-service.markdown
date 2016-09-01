@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/configure-the-determinant-of-a-service/
 title: 'Configure the determinant of a service'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Service'
 rate: '4'
 number: '106'

@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/remove-a-cost-in-a-registration/
 title: 'Remove a cost in a registration'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Costs'
 rate: '2'
 number: '155'

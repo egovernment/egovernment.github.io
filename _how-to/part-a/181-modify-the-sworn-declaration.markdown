@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/modify-the-sworn-declaration/
 title: 'Change the sworn declaration'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Other'
 rate: '2'
 number: '181'

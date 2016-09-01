@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-trigger-for-an-initial-question-of-the-guide/
 title: 'Add a trigger for an initial question of the guide'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Determinants'
 rate: '4'
 number: '122'

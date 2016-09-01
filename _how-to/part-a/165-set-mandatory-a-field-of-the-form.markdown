@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/set-mandatory-a-field-of-the-form/
 title: 'Make a field of the form mandatory'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Data'
 rate: '1'
 number: '165'

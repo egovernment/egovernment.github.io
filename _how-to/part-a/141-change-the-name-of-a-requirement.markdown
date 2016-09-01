@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-name-of-a-requirement/
 title: 'Change the name of a requirement'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Requirements'
 rate: '1'
 number: '141'

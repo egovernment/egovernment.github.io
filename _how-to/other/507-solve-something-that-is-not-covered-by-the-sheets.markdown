@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/solve-something-that-is-not-covered-by-the-sheets/
 title: 'Solve something that is not covered by the sheets'
-category: 'Other'
+category: '5. Other'
 sub-category: ''
 rate: '1'
 number: '507'

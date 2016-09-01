@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-legend-for-the-field-of-the-form/
 title: 'Add a legend for a field of the form'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Data'
 rate: '1'
 number: '164'

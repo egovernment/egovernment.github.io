@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/remove-a-certificate-from-a-registration/
 title: 'Remove a certificate from a registration'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Certificates'
 rate: '2'
 number: '132'
