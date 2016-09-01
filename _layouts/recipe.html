@@ -20,7 +20,7 @@
                         {% unless page.path == '_how-to/search.markdown' %}
                         <div class="row">
                             <div class="col-md-12">
-                                <span class="category-label pull-left">{{ page.category }} <small>{% if page.sub-category != '' %}- {{ page.sub-category }}{% endif %} <span class="badge recipe-badge rate-{{ page.rate }}">Level {{ page.rate }}</span></small></span>
+                                <span class="category-label pull-left">{{ page.category }} <small>{% if page.sub-category != '' %}- {{ page.sub-category }}{% endif %} <span class="badge recipe-badge rate-{{ page.rate }}">{{ page.rate }}</span></small></span>
                                 {% if page.nextUrl %}
                                 <a href="{{ page.nextUrl }}" class="next-link pull-right">
                                     <i class="fa fa-angle-right"></i>
