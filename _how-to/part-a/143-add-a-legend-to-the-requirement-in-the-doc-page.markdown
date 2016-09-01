@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-legend-to-the-requirement-in-the-doc-page/
 title: 'Add a legend to the requirement in the Doc page'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Requirements'
 rate: '3'
 number: '143'

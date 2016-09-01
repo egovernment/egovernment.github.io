@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/modify-the-texts-of-the-file-history/
 title: 'Modify the texts of the file history'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Roles'
 rate: '1'
 number: '204'

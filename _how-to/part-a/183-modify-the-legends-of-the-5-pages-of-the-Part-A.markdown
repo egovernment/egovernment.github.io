@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/modify-the-legends-of-the-5-pages-of-the-Part-A/
 title: 'Modify the legends of the 5 pages of the Part A'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Other'
 rate: '1'
 number: '183'

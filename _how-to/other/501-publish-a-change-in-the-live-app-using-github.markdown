@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/publish-a-change-in-the-live-app-using-github/
 title: 'Publish a change in the live app using github'
-category: 'Other'
+category: '5. Other'
 sub-category: ''
 rate: '1'
 number: '501'

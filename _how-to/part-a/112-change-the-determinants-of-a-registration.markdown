@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-determinants-of-a-registration/
 title: 'Add a determinant to a registration'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Registration'
 rate: '2'
 number: '112'

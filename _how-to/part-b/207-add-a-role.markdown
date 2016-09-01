@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-role/
 title: 'Add a role'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Roles'
 rate: '3'
 number: '207'

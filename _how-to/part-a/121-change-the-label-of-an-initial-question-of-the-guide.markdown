@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-label-of-an-initial-question-of-the-guide/
 title: 'Change the label of an initial question of the guide'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Determinants'
 rate: '1'
 number: '121'

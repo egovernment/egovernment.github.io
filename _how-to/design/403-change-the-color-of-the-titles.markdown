@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-color-of-the-titles/
 title: 'Change the color of the titles'
-category: 'Design'
+category: '4. Design'
 sub-category: ''
 rate: '2'
 number: '403'

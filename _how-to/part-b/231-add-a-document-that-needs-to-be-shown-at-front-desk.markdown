@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-document-that-needs-to-be-shown-at-front-desk/
 title: 'Add a document that needs to be shown at Front Desk'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Withdrawal'
 rate: '1'
 number: '231'

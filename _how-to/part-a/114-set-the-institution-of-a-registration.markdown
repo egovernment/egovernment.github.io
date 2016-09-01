@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/set-the-institution-of-a-registration/
 title: 'Set the institution of a registration'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Registration'
 rate: '3'
 number: '114'

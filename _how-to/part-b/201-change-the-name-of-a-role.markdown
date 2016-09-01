@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-name-of-a-role/
 title: 'Change the name of a role'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Roles'
 rate: '1'
 number: '201'

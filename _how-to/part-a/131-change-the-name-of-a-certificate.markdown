@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-name-of-a-certificate/
 title: 'Change the name of a certificate'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Certificates'
 rate: '1'
 number: '131'

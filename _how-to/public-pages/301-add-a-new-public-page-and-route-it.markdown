@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-new-public-page-and-route-it/
 title: 'Add a new public page and route it'
-category: 'Public pages'
+category: '3. Public pages'
 sub-category: 'Content'
 rate: '1'
 number: '301'

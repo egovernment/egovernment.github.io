@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-label-of-a-field-in-the-form/
 title: 'Change the label of a field of the form'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Data'
 rate: '1'
 number: '163'

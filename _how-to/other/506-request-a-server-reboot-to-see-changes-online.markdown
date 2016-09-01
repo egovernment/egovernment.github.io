@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/request-a-server-reboot-to-see-changes-online/
 title: 'Request a server reboot to see changes online'
-category: 'Other'
+category: '5. Other'
 sub-category: ''
 rate: '1'
 number: '506'

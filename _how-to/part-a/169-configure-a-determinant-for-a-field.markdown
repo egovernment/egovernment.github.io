@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/configure-a-determinant-for-a-field/
 title: 'Configure a determinant for a field'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Data'
 rate: '2'
 number: '169'

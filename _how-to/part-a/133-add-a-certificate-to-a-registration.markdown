@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-certificate-to-a-registration/
 title: 'Add a certificate to a registration'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Certificates'
 rate: '3'
 number: '133'
