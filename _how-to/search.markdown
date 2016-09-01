@@ -10,76 +10,35 @@ title: 'How to...'
 
 	<div class="code-preview">
 
-	<h5>Part A</h5>
+	{% assign howtos = site.how-to | group_by:"category" %}
 
-		{% assign hows = site.how-to | group_by:"sub-category" | sort:"name" | where_exp:"item","item.category == 'Part A'" %}
+	{% for howto in howtos %}
+		{{ howto.name }}
+		
+		{% if howto.name == 'Part A' %}
+		<h5>Part A</h5>
+		{% endif %}
 
-		<ul class="list-unstyled row">
-		{% for how in hows %}
-			{% if how.name != '' %}
-			<li>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xs-12 col-md-2 pt8">{{ how.name }}</div>
-						<div class="col-xs-12 col-md-10">
-							<ul class="list-unstyled">
-								{% for h in how.items %}
-								<li>
-									<div class="container-fluid">
-										<div class="row recipe-row">
-											<div class="col-xs-6 col-sm-9"><a href="{{ h.url }}">{{ h.title }}</a></div>
-											<div class="col-xs-2 col-sm-1 recipe-extra"><span class="label label-warning label-cat">{{ h.number }}</span></div>
-											<div class="col-xs-2 col-sm-1 recipe-extra"><span class="badge rate-{{ h.rate }}">{{ h.rate }}</span></div>
-											<div class="col-xs-2 col-sm-1 recipe-extra">{% if h.rate %}{{ h.status }}{% endif %}</div>
-										</div>
-									</div>
-								</li>
-								{% endfor %}
+		{% if howto.name == 'Part B' %}
+		<h5>Part B</h5>
+		{% endif %}
 
-							</ul>
-						</div>
-					</div>
-				</div>
-			</li>
-			{% endif %}
-		{% endfor %}
-		</ul>
+		{% if howto.name == 'Design' %}
+		<h5>Design</h5>
+		{% endif %}
+
+		{% if howto.name == 'Public pages' %}
+		<h5>Public pages</h5>
+		{% endif %}
+
+		{% if howto.name == 'Other' %}
+		<h5>Other</h5>
+		{% endif %}
+
+	{% endfor %}
 
 	    
-	<h5>Part B</h5>
-
-	    {% assign howsb = site.how-to | group_by:"sub-category" | sort:"name" | where_exp:"item","item.category == 'Part B'" %}
-
-		<ul class="list-unstyled row">
-		{% for howb in howsb %}
-			{% if howb.name != '' %}
-			<li>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xs-12 col-md-2 pt8">{{ howb.name }}</div>
-						<div class="col-xs-12 col-md-10">
-							<ul class="list-unstyled">
-								{% for hb in howb.items %}
-								<li>
-									<div class="container-fluid">
-										<div class="row recipe-row">
-											<div class="col-xs-6 col-sm-9"><a href="{{ hb.url }}">{{ hb.title }}</a></div>
-											<div class="col-xs-2 col-sm-1 recipe-extra"><span class="label label-info label-cat">{{ hb.number }}</span></div>
-											<div class="col-xs-2 col-sm-1 recipe-extra"><span class="badge rate-{{ hb.rate }}">{{ hb.rate }}</span></div>
-											<div class="col-xs-2 col-sm-1 recipe-extra">{% if hb.rate %}{{ hb.status }}{% endif %}</div>
-										</div>
-									</div>
-								</li>
-								{% endfor %}
-
-							</ul>
-						</div>
-					</div>
-				</div>
-			</li>
-			{% endif %}
-		{% endfor %}
-		</ul>
+		
 
 	<h5>Public pages</h5>
 
