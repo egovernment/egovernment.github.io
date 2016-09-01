@@ -5,20 +5,20 @@ title: 'Training 1'
 objective: 'Modify an existing service - simple'
 ---
 
-##### Requirements
+### Requirements
 
 Basic knowledge of JavaScript
 
 ----------
 
-##### Needed software
+### Needed software
 
 Local installation of eregistrations-demo, github account
 
 
 ----------
 
-##### Agenda
+### Agenda
 
 
 <table class="table table-bordered table-striped">
@@ -55,6 +55,50 @@ Local installation of eregistrations-demo, github account
 	    <td>Publishing on Github - presentation by @medikoo</td>
 	    <td><a href="/how-to/publish-a-change-in-the-live-app-using-github/">501</a></td>
 	  </tr>
-
+	  <tr>
+	    <td>Day 2 PM</td>
+	    <td>2 hours</td>
+	    <td>Exercice 1 "Modify Service-1 name and description"</td>
+	    <td><a href="/how-to/change-the-name-of-a-service/">101</a><br><a href="/how-to/change-the-description-of-a-service-from-myAccount/">102</a></td>
+	  </tr>
+	  <tr>
+	    <td>Day 2 PM</td>
+	    <td>2 hours</td>
+	    <td>Exercice 2 "Modify Registration-1 name and description"</td>
+	    <td><a href="/how-to/change-the-name-and-the-short-name-of-a-registration/">111</a></td>
+	  </tr>	
+	  <tr>
+	    <td>etc.</td>
+	    <td>etc.</td>
+	    <td>etc.</td>
+	    <td><a href="">link</a></td>
+	  </tr>		    	  
 	</tbody>
-	</table>
+</table>
+
+
+----------
+
+### Exercices
+
+#### Exercice 1 : Modify Service-1 name and description
+
+Change the name of "Service-1" to "XXX" and add the following description "Lorem ipsum blabla".
+
+Requirements :
+ 
+1. the change must be done in a branch "nnnnn"
+
+2. the Github commit must be under the "..." format
+
+3. etc
+
+
+#### Exercice 2 : modify "Registration 1" 
+
+Change the name of "Registration-1" to "XXX" and ....
+
+
+
+
+
