@@ -15,9 +15,9 @@
     		</aside>
 
     		<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
-                <div class="row {% unless page.path == 'how-to/search.markdown' %}recipe-content{% endunless %}">
+                <div class="row {% unless page.path == '_how-to/search.markdown' %}recipe-content{% endunless %}">
                     <div class="col-md-12">
-                        {% unless page.path == 'how-to/search.markdown' %}
+                        {% unless page.path == '_how-to/search.markdown' %}
                         <div class="row">
                             <div class="col-md-12">
                                 <span class="category-label pull-left">{{ page.category }} <small>- {{ page.sub-category }} - Level {{ page.rate }}</small></span>
@@ -40,7 +40,7 @@
                                 <h1 class="mt0">{{ page.title }}</h1>
                             </div>
                         </div>
-                        {% unless page.path == 'how-to/search.markdown' %}
+                        {% unless page.path == '_how-to/search.markdown' %}
                         <div class="row">
                             {% if page.introduction-img %}
                             <div class="col-md-5">
