@@ -35,7 +35,7 @@ title: 'How to...'
 												<span class="label {% if howto.name == '1. Part A' %}label-warning{% endif %}{% if howto.name == '2. Part B' %}label-info{% endif %}{% if howto.name == '3. Public pages' %}label-purple{% endif %}{% if howto.name == '4. Design' %}label-danger{% endif %}{% if howto.name == '5. Other' %}label-dark{% endif %} label-cat">{{ h.number }}</span>
 												</div>
 											<div class="col-xs-2 col-sm-1 recipe-extra"><span class="badge rate-{{ h.rate }}">{{ h.rate }}</span></div>
-											<div class="col-xs-2 col-sm-1 recipe-extra">{% if h.rate %}{{ h.status }}{% endif %}</div>
+											<div class="col-xs-2 col-sm-1 recipe-extra">{% if h.done %}{{ h.done }}{% endif %}</div>
 										</div>
 									</div>
 								</li>
