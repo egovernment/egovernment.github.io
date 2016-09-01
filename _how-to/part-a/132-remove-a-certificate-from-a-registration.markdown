@@ -10,6 +10,7 @@ introduction-text: 'A certificate is the result of the registration that the use
 introduction-img: '132.png'
 prevUrl: /how-to/change-the-name-of-a-certificate/
 nextUrl: /how-to/add-a-certificate-to-a-registration/
+done: ''
 ---
 
 Introduction lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

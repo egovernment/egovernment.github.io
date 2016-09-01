@@ -10,6 +10,7 @@ introduction-text: 'This recipe explains how to modify the types of each fields 
 introduction-img: '167.png'
 prevUrl: /how-to/set-optional-a-field-of-the-form/
 nextUrl: /how-to/create-the-options-of-a-field-that-is-a-selector/
+done: ''
 ---
 
 Introduction lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

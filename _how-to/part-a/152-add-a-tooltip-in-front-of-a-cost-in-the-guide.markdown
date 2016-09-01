@@ -10,6 +10,7 @@ introduction-text: 'This recipe explains how to set the tooltip in front of a co
 introduction-img: '152.png'
 prevUrl: /how-to/change-the-name-of-a-cost/
 nextUrl: /how-to/add-a-legend-to-the-cost-in-the-payment-page/
+done: ''
 ---
 
 Introduction lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
