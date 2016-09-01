@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-the-zone-feature-to-a-role/
 title: 'Add the Zone feature to a role'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Roles'
 rate: '4'
 number: '209'

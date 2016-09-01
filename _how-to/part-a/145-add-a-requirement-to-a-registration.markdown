@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-requirement-to-a-registration/
 title: 'Add a requirement to a registration'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Requirements'
 rate: '1'
 number: '145'

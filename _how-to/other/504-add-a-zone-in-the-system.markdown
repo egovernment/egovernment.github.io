@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-zone-in-the-system/
 title: 'Add a zone in the system'
-category: 'Other'
+category: '5. Other'
 sub-category: ''
 rate: '4'
 number: '504'

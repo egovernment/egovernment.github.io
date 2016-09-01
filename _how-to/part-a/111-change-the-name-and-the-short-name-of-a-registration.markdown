@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-name-and-the-short-name-of-a-registration/
 title: 'Change the name and the short name of a registration'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Registration'
 rate: '1'
 number: '111'

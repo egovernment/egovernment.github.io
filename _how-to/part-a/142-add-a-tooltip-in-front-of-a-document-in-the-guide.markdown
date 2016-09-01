@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-tooltip-in-front-of-a-document-in-the-guide/
 title: 'Add a tooltip to a requirement in the guide'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Requirements'
 rate: '1'
 number: '142'

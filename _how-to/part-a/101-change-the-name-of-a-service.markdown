@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-name-of-a-service/
 title: 'Change the name of a service'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Service'
 rate: '1'
 number: '101'

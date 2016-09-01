@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-type-of-a-role/
 title: 'Change the type of a role'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Roles'
 rate: '2'
 number: '202'

@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-format-of-the-passwords-of-the-accounts/
 title: 'Change the format of the passwords of the accounts'
-category: 'Other'
+category: '5. Other'
 sub-category: ''
 rate: '4'
 number: '505'

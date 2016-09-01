@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/see-a-system-locally-after-installation/
 title: 'See a system locally after installation'
-category: 'Other'
+category: '5. Other'
 sub-category: ''
 rate: '1'
 number: '503'

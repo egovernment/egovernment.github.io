@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-registration-to-a-service/
 title: 'Add a registration to a service'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Registration'
 rate: '3'
 number: '113'

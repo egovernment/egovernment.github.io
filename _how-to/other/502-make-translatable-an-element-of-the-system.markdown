@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/make-translatable-an-element-of-the-system/
 title: 'Make translatable an element of the system'
-category: 'Other'
+category: '5. Other'
 sub-category: ''
 rate: '1'
 number: '502'

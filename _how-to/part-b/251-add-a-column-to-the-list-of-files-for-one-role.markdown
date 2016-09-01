@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-column-to-the-list-of-files-for-one-role/
 title: 'Add a column to the list of files for one role'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Other'
 rate: '4'
 number: '251'

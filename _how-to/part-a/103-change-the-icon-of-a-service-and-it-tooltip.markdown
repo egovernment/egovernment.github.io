@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-icon-of-a-service-and-it-tooltip/
 title: 'Set the icon that represents a service'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Service'
 rate: '2'
 number: '103'

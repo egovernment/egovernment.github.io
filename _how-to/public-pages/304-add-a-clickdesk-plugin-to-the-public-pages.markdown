@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-clickdesk-plugin-to-the-public-pages/
 title: 'Add a Clickdesk plugin to the public pages'
-category: 'Public pages'
+category: '3. Public pages'
 sub-category: 'Content'
 rate: '4'
 number: '304'

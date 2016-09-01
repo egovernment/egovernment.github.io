@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/set-a-certificate-that-has-no-file-attached/
 title: 'Set a certificate that has no file attached'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Certificates'
 rate: '2'
 number: '134'

@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/set-the-emails-sent-for-a-certain-status-of-the-file/
 title: 'Set the emails sent for a certain status of the file'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Notifications'
 rate: '1'
 number: '241'

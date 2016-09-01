@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-cost-to-a-registration-variable/
 title: 'Add a cost to a registration variable'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Costs'
 rate: '3'
 number: '157'

@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/configure-the-Send-back-for-correction-feature-to-a-role/
 title: 'Configure the "Sent back for correction" feature to a role'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Roles'
 rate: '2'
 number: '205'

@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-footer/
 title: 'Change the footer'
-category: 'Design'
+category: '4. Design'
 sub-category: ''
 rate: '4'
 number: '407'

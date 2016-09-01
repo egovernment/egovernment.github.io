@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-variable-in-an-email/
 title: 'Add a variable in an email'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Notifications'
 rate: '2'
 number: '242'

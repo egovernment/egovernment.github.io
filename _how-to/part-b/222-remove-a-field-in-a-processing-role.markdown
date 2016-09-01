@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/remove-a-field-in-a-processing-role/
 title: 'Remove a field in a processing role'
-category: 'Part B'
+category: '2. Part B'
 sub-category: 'Processing'
 rate: '1'
 number: '222'

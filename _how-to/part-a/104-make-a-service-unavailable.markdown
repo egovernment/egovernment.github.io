@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/make-a-service-unavailable/
 title: 'Make a service unavailable'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Service'
 rate: '3'
 number: '104'

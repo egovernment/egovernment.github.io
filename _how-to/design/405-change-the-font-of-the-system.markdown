@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-font-of-the-system/
 title: 'Change the font of the system'
-category: 'Design'
+category: '4. Design'
 sub-category: ''
 rate: '3'
 number: '405'

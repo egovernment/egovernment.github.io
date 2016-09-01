@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-cost-to-a-registration-fixed/
 title: 'Add a cost to a registration (fixed)'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Costs'
 rate: '1'
 number: '156'

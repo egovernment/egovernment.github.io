@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-the-legend-text-of-a-section-of-the-form/
 title: 'Add and edit the legend text of a section of the form'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Data'
 rate: '1'
 number: '162'

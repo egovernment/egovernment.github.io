@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-legend-to-the-cost-in-the-payment-page/
 title: 'Add a legend to the cost in the payment page'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Costs'
 rate: '1'
 number: '153'

@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/add-a-determinant-to-a-requirement/
 title: 'Add a determinant to a requirement'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Requirements'
 rate: '2'
 number: '146'

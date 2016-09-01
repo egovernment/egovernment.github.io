@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-name-of-a-cost/
 title: 'Change the name of a cost'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Costs'
 rate: '1'
 number: '151'

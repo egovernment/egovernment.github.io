@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/change-the-color-of-the-top-menu/
 title: 'Change the color of the top menu'
-category: 'Design'
+category: '4. Design'
 sub-category: ''
 rate: '2'
 number: '402'

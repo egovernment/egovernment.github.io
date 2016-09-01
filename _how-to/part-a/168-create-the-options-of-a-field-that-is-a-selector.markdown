@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/create-the-options-of-a-field-that-is-a-selector/
 title: 'Create the options of a field that is a selector'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Data'
 rate: '2'
 number: '168'

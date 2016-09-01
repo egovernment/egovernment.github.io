@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/respect-the-vertical-rhythm-of-the-elements/
 title: 'Respect the vertical rhythm of the elements'
-category: 'Design'
+category: '4. Design'
 sub-category: ''
 rate: '4'
 number: '406'

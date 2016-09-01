@@ -2,7 +2,7 @@
 layout: recipe
 permalink: /how-to/modify-the-form-generated-with-the-data-of-the-user/
 title: 'Edit the form generated with the data of the user'
-category: 'Part A'
+category: '1. Part A'
 sub-category: 'Other'
 rate: '4'
 number: '182'
