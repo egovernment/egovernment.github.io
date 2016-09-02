@@ -10,8 +10,17 @@ introduction-text: 'The name of a registration appears in the guide, in the emai
 introduction-img: '111.png'
 prevUrl: /how-to/configure-the-determinant-of-a-service/
 nextUrl: /how-to/change-the-determinants-of-a-registration/
-done: ''
+done: 'yes'
 ---
 
-Introduction lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The name of a registeration is by default inherited from the document corresponding to it. We must first determine if we want to change the name of a document or just the name of the registration.
 
+Here we will focus on the scenario where we want to change only the name of the registration, not of the document.
+
+Every registration is associated with a service. So, first we have to determine the service in which registration occurs. Let's assume that the service's model class name is `BusinessProcessMyService` and your registrations name is `myRegistration`.
+
+Registrations can be found either together under `<PROJECT_ROOT>model/business-process-my-service/registrations.js`, or in separate files in the following directory `<PROJECT_ROOT>model/business-process-my-service/registrations` (the file name should be hyphened version of the registration's name (in our example `my-registration.js`)).
+
+1. Depending on your case, go to: `<PROJECT_ROOT>model/business-process-my-service/registrations.js`, or to `<PROJECT_ROOT>model/business-process-my-service/registrations/my-registration.js`.
+
+2. Set the value of the label property of `myRegistration` to the name you want your registration to have.
