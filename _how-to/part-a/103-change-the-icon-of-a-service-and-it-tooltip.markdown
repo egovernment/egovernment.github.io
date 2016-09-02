@@ -4,7 +4,7 @@ permalink: /how-to/change-the-icon-of-a-service-and-it-tooltip/
 title: 'Set the icon that represents a service'
 category: '1. Part A'
 sub-category: 'Service'
-rate: '2'
+rate: '1'
 number: '103'
 introduction-text: ''
 introduction-img: '103.png'
