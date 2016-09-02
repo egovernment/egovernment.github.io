@@ -24,3 +24,5 @@ Registrations can be found either together under `<PROJECT_ROOT>model/business-p
 1. Depending on your case, go to: `<PROJECT_ROOT>model/business-process-my-service/registrations.js`, or to `<PROJECT_ROOT>model/business-process-my-service/registrations/my-registration.js`.
 
 2. Set the value of the label property of `myRegistration` to the name you want your registration to have.
+
+If you want to change the short name of the service, then to the above steps but instead of `label` edit `shortLabel` property.
