@@ -10,8 +10,12 @@ introduction-text: ''
 introduction-img: '103.png'
 prevUrl: /how-to/change-the-description-of-a-service-from-myAccount/
 nextUrl: /how-to/make-a-service-unavailable/
-done: ''
+done: 'yes'
 ---
 
-Introduction lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The service icon is a font character.
+
+We assume that the icon (proper font character) already exists and has associated css class i.e. 'fa fa-file'.
+
+Go to: `<PROJECT_ROOT>view/user.js`, find the proper `<i>` element and set it's css class to the proper class i.e. ('fa fa-file').
 
