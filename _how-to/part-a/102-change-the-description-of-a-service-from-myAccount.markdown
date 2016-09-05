@@ -17,7 +17,7 @@ Go to: `view/user.js`, find the description of the service and change it.
 
 # Exercise
 
-Change the descripton of the service from "Short description of demo registration process" to "Demo service was created for demo purposes only.".
+Change the description of the service from "Short description of demo registration process" to "Demo service was created for demo purposes only.".
 
 Start with:
 
