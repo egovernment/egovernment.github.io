@@ -19,10 +19,22 @@ Here we will focus on the scenario where we want to change only the name of the 
 
 Every registration is associated with a service. So, first we have to determine the service in which registration occurs. Let's assume that the service's model class name is `BusinessProcessMyService` and your registrations name is `myRegistration`.
 
-Registrations can be found either together under `<PROJECT_ROOT>model/business-process-my-service/registrations.js`, or in separate files in the following directory `<PROJECT_ROOT>model/business-process-my-service/registrations` (the file name should be hyphened version of the registration's name (in our example `my-registration.js`)).
+Registrations can be found either together under `model/business-process-my-service/registrations.js`, or in separate files in the following directory `model/business-process-my-service/registrations` (the file name should be hyphened version of the registration's name (in our example `my-registration.js`)).
 
-1. Depending on your case, go to: `<PROJECT_ROOT>model/business-process-my-service/registrations.js`, or to `<PROJECT_ROOT>model/business-process-my-service/registrations/my-registration.js`.
+1. Depending on your case, go to: `model/business-process-my-service/registrations.js`, or to `model/business-process-my-service/registrations/my-registration.js`.
 
 2. Set the value of the label property of `myRegistration` to the name you want your registration to have.
 
 If you want to change the short name of the service, then to the above steps but instead of `label` edit `shortLabel` property.
+
+# Exercise
+
+Change the name of the `certificateOfIncentives` registration from to "Certificate of incentives (business facilitation program)". 
+
+Start with:
+
+`git checkout change-the-name-of-the-registration`
+
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/change-the-name-of-the-registration...change-the-name-of-the-registration-solution)
+
+
