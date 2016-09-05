@@ -17,5 +17,14 @@ The service icon is a font character.
 
 We assume that the icon (proper font character) already exists and has associated css class i.e. 'fa fa-file'.
 
-Go to: `<PROJECT_ROOT>view/user.js`, find the proper `<i>` element and set it's css class to the proper class i.e. ('fa fa-file').
+Go to: `view/user.js`, find the proper `<i>` element and set it's css class to the proper class i.e. ('fa fa-file').
 
+# Exercise
+
+Change the icon of the "Demo" service. Use 'fa fa-file' as new icon classes.
+
+Start with:
+
+`git checkout change-the-icon-of-a-service`
+
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/change-the-icon-of-a-service...change-the-icon-of-a-service-solution)
