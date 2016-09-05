@@ -13,4 +13,14 @@ nextUrl: /how-to/change-the-description-of-a-service-from-myAccount/
 done: 'yes'
 ---
 
-Go to: `<PROJECT_ROOT>view/user.js`, find the name of the service and change it.
+Go to: `view/user.js`, find the name of the service and change it.
+
+#Exercise
+
+Change the name of the Demo registration from "Register Demo" to "Register company".
+
+Start with:
+
+`git checkout change-the-name-of-the-service`
+
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/change-the-name-of-the-service...change-the-name-of-the-service-solution?expand=1)
