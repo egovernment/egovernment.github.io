@@ -15,7 +15,7 @@ done: 'yes'
 
 Go to: `view/user.js`, find the name of the service and change it.
 
-#Exercise
+# Exercise
 
 Change the name of the Demo registration from "Register Demo" to "Register company".
 
