@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/change-the-name-of-a-service/
-title: 'Change the name of a service'
+title: 'Change name of a service on My Account page'
 category: '1. Part A'
 sub-category: 'Service'
 rate: '1'
