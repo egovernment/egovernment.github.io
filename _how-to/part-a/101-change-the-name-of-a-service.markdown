@@ -21,3 +21,5 @@ done: 'yes'
 Starting Branch: [change-the-name-of-the-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-the-service)
 
 Let's change the name of the service from "Register Demo" to "Register company".
+
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/change-the-name-of-the-service...change-the-name-of-the-service-solution?expand=1)
