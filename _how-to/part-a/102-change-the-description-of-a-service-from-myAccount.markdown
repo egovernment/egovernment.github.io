@@ -10,8 +10,19 @@ introduction-text: ''
 introduction-img: '102.png'
 prevUrl: /how-to/change-the-name-of-a-service/
 nextUrl: /how-to/change-the-icon-of-a-service-and-it-tooltip/
-done: ''
+done: 'yes'
 ---
 
-Introduction lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Go to: `view/user.js`, find the description of the service and change it.
+
+# Exercise
+
+Change the description of the service from "Short description of demo registration process" to "Demo service was created for demo purposes only.".
+
+Start with:
+
+`git checkout change-the-description-of-the-service`
+
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/change-the-description-of-the-service...change-the-description-of-the-service-solution?expand=1)
+
 

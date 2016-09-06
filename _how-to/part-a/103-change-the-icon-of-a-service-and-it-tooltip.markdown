@@ -4,14 +4,27 @@ permalink: /how-to/change-the-icon-of-a-service-and-it-tooltip/
 title: 'Set the icon that represents a service'
 category: '1. Part A'
 sub-category: 'Service'
-rate: '2'
+rate: '1'
 number: '103'
 introduction-text: ''
 introduction-img: '103.png'
 prevUrl: /how-to/change-the-description-of-a-service-from-myAccount/
 nextUrl: /how-to/make-a-service-unavailable/
-done: ''
+done: 'yes'
 ---
 
-Introduction lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The service icon is a font character.
 
+We assume that the icon (proper font character) already exists and has associated css class i.e. 'fa fa-file'.
+
+Go to: `view/user.js`, find the proper `<i>` element and set it's css class to the proper class i.e. ('fa fa-file').
+
+# Exercise
+
+Change the icon of the "Demo" service. Use 'fa fa-file' as new icon classes.
+
+Start with:
+
+`git checkout change-the-icon-of-a-service`
+
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/change-the-icon-of-a-service...change-the-icon-of-a-service-solution)
