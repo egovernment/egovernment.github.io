@@ -20,7 +20,7 @@ title: 'How to...'
 		{% assign hows = howto %}
 
 		<ul class="list-unstyled row recipe-category-row">
-		{% for h in hows.items | sort: "number" %}
+		{% for h in hows.items %}
 			<li>
 				<div class="container-fluid">
 					<div class="row">
