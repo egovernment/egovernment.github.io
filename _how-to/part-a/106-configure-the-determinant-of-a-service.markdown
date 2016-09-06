@@ -4,7 +4,7 @@ permalink: /how-to/configure-the-determinant-of-a-service/
 title: 'Configure the determinant of a service'
 category: '1. Part A'
 sub-category: 'Service'
-rate: '4'
+rate: '2'
 number: '106'
 introduction-text: ''
 introduction-img: '106.png'
