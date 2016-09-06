@@ -13,15 +13,14 @@ nextUrl: /how-to/change-the-icon-of-a-service-and-it-tooltip/
 done: 'yes'
 ---
 
-Go to: `view/user.js`, find the description of the service and change it.
+1. Open file `view/user.js`.
+2. In a `exports._servicesBoxList` block (it's responsible for "Available Services") find description of service which should be changed and update it.
 
-# Exercise
+### Example
 
-Change the description of the service from "Short description of demo registration process" to "Demo service was created for demo purposes only.".
+Starting Branch: [change-the-description-of-the-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-description-of-the-service)
 
-Start with:
-
-`git checkout change-the-description-of-the-service`
+Let's change the description of the service from "Short description of demo registration process" to "Demo service was created for demo purposes only.".
 
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/change-the-description-of-the-service...change-the-description-of-the-service-solution?expand=1)
 
