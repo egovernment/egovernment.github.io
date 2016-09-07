@@ -8,7 +8,7 @@ rate: '1'
 number: '203'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/change-the-type-of-a-role/
+prevUrl: /how-to/change-the-name-of-a-role/
 nextUrl: /how-to/modify-the-texts-of-the-file-history/
 done: ''
 ---
