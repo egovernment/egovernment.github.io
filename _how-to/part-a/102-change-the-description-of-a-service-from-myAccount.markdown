@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/change-the-description-of-a-service-from-my-account/
-title: 'Change the description of a service at My Account homepat'
+title: 'Change the description of a service at My Account homepage'
 category: '1. Part A'
 sub-category: 'Service'
 rate: '1'
