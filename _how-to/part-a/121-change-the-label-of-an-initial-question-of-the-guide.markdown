@@ -7,11 +7,19 @@ sub-category: 'Determinants'
 rate: '1'
 number: '121'
 introduction-text: ''
-introduction-img: '101.png'
+introduction-img: '121.png'
 prevUrl: /how-to/set-the-institution-of-a-registration/
 nextUrl: /how-to/add-a-trigger-for-an-initial-question-of-the-guide/
-done: ''
+done: 'yes'
 ---
 
-Introduction lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+1. Open file `model/<business-process-your-service>/fields.js`.
+2. Inside `<BusinessProcessYourService>.prototype` definitions, locate the property and change its label.
 
+### Example
+
+Starting Branch: [change-the-label-of-an-determinant](https://github.com/egovernment/eregistrations-demo/tree/change-the-label-of-an-determinant)
+
+Let's change assets label to `Local assets`.
+
+[Solution](https://github.com/egovernment/eregistrations-demo/compare/change-the-label-of-an-determinant...change-the-label-of-an-determinant-solution?expand=1)
