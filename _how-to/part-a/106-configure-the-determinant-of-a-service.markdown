@@ -30,7 +30,7 @@ After the new field is defined, include the new field in the guide section:
 
 ### Example
 
-Starting Branch: [configure-the-determinant-of-a-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-the-service)
+Starting Branch: [configure-the-determinant-of-a-service](https://github.com/egovernment/eregistrations-demo/tree/configure-the-determinant-of-a-service)
 
 Let's add a new determinant to the guide.
 
