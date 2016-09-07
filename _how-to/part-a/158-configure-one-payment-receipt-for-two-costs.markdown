@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-cost-to-a-registration-variable/
-title: 'Add a cost to a registration variable'
+permalink: /how-to/configure-one-payment-receipt-for-two-costs/
+title: 'Configure one payment receipt for many costs'
 category: '1. Part A'
 sub-category: 'Costs'
 rate: '3'
-number: '157'
+number: '158'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/add-a-cost-to-a-registration-fixed/
-nextUrl: /how-to/configure-one-payment-receipt-for-two-costs/
+prevUrl: /how-to/add-a-cost-to-a-registration-variable/
+nextUrl: /how-to/change-the-name-of-a-section-of-the-form/
 done: ''
 ---
 

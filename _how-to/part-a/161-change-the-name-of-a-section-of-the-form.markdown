@@ -9,7 +9,7 @@ number: '161'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: /how-to/add-a-cost-to-a-registration-variable/
-nextUrl: /how-to/add-the-legend-text-of-a-section-of-the-form/
+nextUrl: /how-to/configure-one-payment-receipt-for-two-costs/
 done: ''
 ---
 
