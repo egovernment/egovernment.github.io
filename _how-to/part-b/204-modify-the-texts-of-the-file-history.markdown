@@ -8,7 +8,7 @@ rate: '1'
 number: '204'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/change-the-place-of-a-role-in-the-Part-B-flow/
+prevUrl: /how-to/change-the-place-of-a-role-in-the-part-b-flow/
 nextUrl: /how-to/configure-the-Send-back-for-correction-feature-to-a-role/
 done: ''
 ---
