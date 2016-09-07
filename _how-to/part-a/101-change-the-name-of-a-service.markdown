@@ -9,7 +9,7 @@ number: '101'
 introduction-text: 'This recipe explains how to change the name of a service on the My Account homepage.'
 introduction-img: '101.png'
 prevUrl: 
-nextUrl: /how-to/change-the-description-of-a-service-from-myAccount/
+nextUrl: /how-to/change-the-description-of-a-service-from-my-account/
 done: 'yes'
 ---
 

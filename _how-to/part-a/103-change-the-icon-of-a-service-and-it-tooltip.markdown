@@ -8,7 +8,7 @@ rate: '1'
 number: '103'
 introduction-text: ''
 introduction-img: '103.png'
-prevUrl: /how-to/change-the-description-of-a-service-from-myAccount/
+prevUrl: /how-to/change-the-description-of-a-service-from-my-account/
 nextUrl: /how-to/make-a-service-unavailable/
 done: ''
 ---
