@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/modify-the-texts-of-the-file-history/
-title: 'Modify the texts of the file history'
-category: '2. Part B'
-sub-category: 'Roles'
+permalink: /how-to/modify-the-legends-of-the-5-pages-of-the-part-a/
+title: 'Modify the legends of the 5 pages of the Part A'
+category: '1. Part A'
+sub-category: 'Other'
 rate: '1'
-number: '204'
+number: '181'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/change-the-place-of-a-role-in-the-Part-B-flow/
-nextUrl: /how-to/configure-the-Send-back-for-correction-feature-to-a-role/
+prevUrl: /how-to/create-a-new-section-with-tables-in-the-form/
+nextUrl: /how-to/change-the-name-of-a-role/
 done: ''
 ---
 
