@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/change-the-name-of-a-section-of-the-form/
-title: 'Change the name of the section of the form'
+title: 'Change the label of the section of the form'
 category: '1. Part A'
 sub-category: 'Data'
 rate: '1'
