@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/remove-a-requirement-from-a-registration/
-title: 'Remove a requirement from a registration'
+title: 'Remove a need for a requirement in chosen registration'
 category: '1. Part A'
 sub-category: 'Requirements'
 rate: '4'

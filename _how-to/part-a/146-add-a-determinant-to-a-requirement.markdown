@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/add-a-determinant-to-a-requirement/
-title: 'Add a determinant to a requirement'
+title: 'Make requirement of registration conditionally required (via determinant)'
 category: '1. Part A'
 sub-category: 'Requirements'
 rate: '2'
