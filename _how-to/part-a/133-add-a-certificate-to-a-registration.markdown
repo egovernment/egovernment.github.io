@@ -9,7 +9,7 @@ number: '133'
 introduction-text: 'Usually registration results with one certificate (of same name). Still there can be the case where result of registration is more than one certificate'
 introduction-img: '133.png'
 prevUrl: /how-to/remove-a-certificate-from-a-registration/
-nextUrl: /how-to/set-a-certificate-that-has-no-file-attached/
+nextUrl: /how-to/change-the-name-of-a-requirement/
 done: ''
 ---
 

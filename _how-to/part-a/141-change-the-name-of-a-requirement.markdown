@@ -8,7 +8,7 @@ rate: '1'
 number: '141'
 introduction-text: 'Changing the name of a requirement will impact all the screens and the email notifications where this requirement happens.'
 introduction-img: '141.png'
-prevUrl: /how-to/set-a-certificate-that-has-no-file-attached/
+prevUrl: /how-to/add-a-certificate-to-a-registration/
 nextUrl: /how-to/add-a-tooltip-in-front-of-a-document-in-the-guide/
 done: ''
 ---
