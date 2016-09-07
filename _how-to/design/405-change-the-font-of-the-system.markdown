@@ -9,7 +9,7 @@ number: '405'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: /how-to/change-the-color-of-the-table-headers/
-nextUrl: /how-to/respect-the-vertical-rhythm-of-the-elements/
+nextUrl: /how-to/change-the-footer/
 done: ''
 ---
 

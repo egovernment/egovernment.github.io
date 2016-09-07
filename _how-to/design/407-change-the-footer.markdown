@@ -8,7 +8,7 @@ rate: '4'
 number: '407'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/respect-the-vertical-rhythm-of-the-elements/
+prevUrl: /how-to/change-the-font-of-the-system/
 nextUrl: /how-to/publish-a-change-in-the-live-app-using-github/
 done: ''
 ---
