@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Service'
 rate: '1'
 number: '101'
-introduction-text: 'This recipe explains how to change the name of a service on the My Account homepage.'
+introduction-text: 'This recipe is about changing the name of the service in the "Available services" section of My Account.<br>The "Available services" section of MyAccount is managed by the `servicesBoxList` block.'
 introduction-img: '101.png'
 prevUrl: 
 nextUrl: /how-to/change-the-description-of-a-service-from-my-account/
@@ -14,15 +14,16 @@ done: 'yes'
 ---
 
 1. Open file `view/user.js`
-2. In a `exports._servicesBoxList` block (it's responsible for "Available Services") find name of service which should be changed and update it.
+2. Identify `exports._servicesBoxList` block (it's responsible for "Available Services" list)
+3. Find name of service which should be changed and update it.
 
 ---
 
 ## Example
 
-__Starting Branch: [change-the-name-of-the-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-the-service)__
+In the branch "[change-the-name-of-the-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-the-service)" of eregistrations-demo :
 
-Let's change the name of the service from `Register Demo` to `Register company`
+Change the name of the service from `Register Demo` to `Register company`
 
 ### Solution
 
