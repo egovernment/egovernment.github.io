@@ -8,7 +8,7 @@ rate: '1'
 number: '121'
 introduction-text: ''
 introduction-img: '121.png'
-prevUrl: /how-to/set-the-institution-of-a-registration/
+prevUrl: /how-to/add-a-registration-to-a-service/
 nextUrl: /how-to/add-a-trigger-for-an-initial-question-of-the-guide/
 done: 'yes'
 ---
