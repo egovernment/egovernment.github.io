@@ -10,7 +10,7 @@ introduction-text: ''
 introduction-img: '103.png'
 prevUrl: /how-to/change-the-description-of-a-service-from-myAccount/
 nextUrl: /how-to/make-a-service-unavailable/
-done: 'yes'
+done: ''
 ---
 
 The service icon is a font character.
