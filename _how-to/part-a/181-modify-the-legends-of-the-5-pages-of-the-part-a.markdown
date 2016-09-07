@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/modify-the-sworn-declaration/
-title: 'Change the sworn declaration'
+permalink: /how-to/modify-the-legends-of-the-5-pages-of-the-part-a/
+title: 'Modify the legends of the 5 pages of the Part A'
 category: '1. Part A'
 sub-category: 'Other'
-rate: '2'
+rate: '1'
 number: '181'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: /how-to/create-a-new-section-with-tables-in-the-form/
-nextUrl: /how-to/modify-the-form-generated-with-the-data-of-the-user/
+nextUrl: /how-to/change-the-name-of-a-role/
 done: ''
 ---
 
