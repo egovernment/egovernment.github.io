@@ -9,7 +9,7 @@ number: '407'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: /how-to/change-the-font-of-the-system/
-nextUrl: /how-to/publish-a-change-in-the-live-app-using-github/
+nextUrl: /how-to/change-the-format-of-the-passwords-of-the-accounts/
 done: ''
 ---
 
