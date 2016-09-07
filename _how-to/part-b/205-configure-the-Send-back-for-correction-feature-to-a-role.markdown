@@ -8,8 +8,8 @@ rate: '2'
 number: '205'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/modify-the-texts-of-the-file-history/
-nextUrl: /how-to/configure-the-Reject-file-feature-to-a-role/
+prevUrl: /how-to/change-the-place-of-a-role-in-the-part-b-flow/
+nextUrl: /how-to/configure-the-reject-file-feature-to-a-role/
 done: ''
 ---
 
