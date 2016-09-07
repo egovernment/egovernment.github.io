@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/add-a-role/
-title: 'Add a role'
+title: 'Add a role (processing step)'
 category: '2. Part B'
 sub-category: 'Roles'
 rate: '3'

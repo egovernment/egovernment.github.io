@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/remove-a-role/
-title: 'Remove a role'
+title: 'Remove a role (processing step)'
 category: '2. Part B'
 sub-category: 'Roles'
 rate: '2'
