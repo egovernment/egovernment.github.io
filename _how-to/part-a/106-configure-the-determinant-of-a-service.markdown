@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/configure-the-determinant-of-a-service/
-title: 'Define new determinant of a service'
+title: 'Define new determinant of a service (field of the guide)'
 category: '1. Part A'
 sub-category: 'Service'
 rate: '2'
