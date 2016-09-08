@@ -15,7 +15,7 @@ done: ''
 
 The service icon is a [Font Awesome](http://fontawesome.io/cheatsheet/) character.
 
-First check if the character you want to use for the icon exists (You can use the characters for which css classes have been defined here: https://github.com/egovernment/eregistrations/blob/master/css/components/fa.css#L33-L378).
+First check if the character you want to use for the icon exists (You can use the characters for which css classes have been defined here: (https://github.com/egovernment/eregistrations/blob/master/css/components/fa.css#L33-L378) ).
 
 If the character you want to use does not have it's css class defined, then create a pull-request in [eregistrations](https://github.com/egovernment/eregistrations) system. In the issue comment write what Font Awesome character you would like to use.
 
