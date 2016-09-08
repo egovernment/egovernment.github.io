@@ -23,7 +23,7 @@ done: 'yes'
 
 In the branch "[change-the-description-of-the-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-description-of-the-service)" of eregistrations-demo :
 
-Change the description of the service from "Short description of demo registration process" to "Demo service was created for demo purposes only.".
+Change the description of the service from *"Short description of demo registration process"* to *"Demo service was created for demo purposes only."*.
 
 ### Solution
 
