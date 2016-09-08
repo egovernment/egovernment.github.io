@@ -13,15 +13,28 @@ nextUrl: /how-to/make-a-service-unavailable/
 done: ''
 ---
 
-The service icon is a font character.
+The service icon is a [Font Awesome](http://fontawesome.io/cheatsheet/) character.
 
-We assume that the icon (proper font character) already exists and has associated css class i.e. 'fa fa-file'.
+First check if the character you want to use for the icon exists (You can use the characters for which css classes have been defined here: https://github.com/egovernment/eregistrations/blob/master/css/components/fa.css#L33-L378).
 
+If the character you want to use does not have it's css class defined, then create a pull-request in [eregistrations](https://github.com/egovernment/eregistrations) system. In the issue comment write what Font Awesome character you would like to use.
+
+From now on we assume that the icon (proper font character) already exists (the css class for it is defined i.e. 'fa fa-file').
+
+First we need to adjust "My acount" page.
 1. Open file `view/user.js`.
-2. Find the proper `<i>` element.
-3. Set `<i>` element's css class to the proper class e.g. ('fa fa-file').
-4. Find in `views` directory a file containing `getServiceIcon` method (It overrides the method from [eregistrations/view/components/business-process-table-columns](https://github.com/egovernment/eregistrations/blob/master/view/components/business-process-table-columns.js)).
-5. Modify the method so it returns `<i>` with your class name when the proper condition is met. 
+2. Find `exports._servicesBoxList` block.
+3. Identify the `<i>` element inside `buttonContent` block.
+4. Set `<i>` element's css class to the desired class e.g. ('fa fa-file').
+
+After "My account" is updated we need to overwrite `getServiceIcon` method in view.
+This method may or may not by available in you system.
+
+First, let's check if the method is in the system:
+
+1. Open `view/components/business-process-table-columns.js` file (if there is no such file, then your system is not up to date with current version, so you should create a pull request in your system to include new setup).
+2. Look for the `getServiceIcon` method (It overrides the method from [eregistrations/view/components/business-process-table-columns](https://github.com/egovernment/eregistrations/blob/master/view/components/business-process-table-columns.js)). If there is no such method, you will have to create it.
+3. Create/Modify the `columns.getServiceIcon` method (`getServiceIcon` method takes `businessProcess` instance as an argument, and is expected to return an icon (`<i>` with chosen Font Awesome class name) that corresponds to provided `businesProcess`. The method needs to return correct icon (`<i>` element) for provided businessProcess).
 
 ---
 
