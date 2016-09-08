@@ -21,7 +21,8 @@ If the character you want to use does not have it's css class defined, then crea
 
 From now on we assume that the icon (proper font character) already exists (the css class for it is defined i.e. 'fa fa-file').
 
-First we need to adjust "My acount" page.
+First we need to adjust "My acount" page:
+
 1. Open file `view/user.js`.
 2. Find `exports._servicesBoxList` block.
 3. Identify the `<i>` element inside `buttonContent` block.
