@@ -13,8 +13,8 @@ nextUrl: /how-to/change-the-description-of-a-service-from-my-account/
 done: 'yes'
 ---
 
-1. Open file `view/user.js`
-2. Identify `exports._servicesBoxList` block (it's responsible for "Available Services" list)
+1. Open file `view/user.js`.
+2. Identify `exports._servicesBoxList` block (it's responsible for "Available Services" list).
 3. Find name of service which should be changed and update it.
 
 ---
@@ -23,7 +23,7 @@ done: 'yes'
 
 In the branch "[change-the-name-of-the-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-the-service)" of eregistrations-demo :
 
-Change the name of the service from `Register Demo` to `Register company`
+Change the name of the service from *"Register Demo"* to *"Register company"*
 
 ### Solution
 
