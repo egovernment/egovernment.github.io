@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang }}">
 
   {% include head.html %}
 
@@ -15,23 +15,29 @@
     		</aside>
 
     		<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
-                <div class="row {% unless page.path == '_how-to/search.markdown' %}recipe-content{% endunless %}">
+                <div class="row {% unless page.ref == 'how-to' %}recipe-content{% endunless %}">
                     <div class="col-md-12">
-                        {% unless page.path == '_how-to/search.markdown' %}
+                        {% unless page.ref == 'how-to' %}
                         <div class="row">
                             <div class="col-md-12">
                                 <span class="category-label pull-left">{{ page.category }} <small>{% if page.sub-category != '' %}- {{ page.sub-category }}{% endif %} <span class="badge recipe-badge rate-{{ page.rate }}">{{ page.rate }}</span></small></span>
+                                
+                                {% assign nextp = site.how-to | where: 'number', page.nextUrl | where: 'lang', page.lang | first %}
                                 {% if page.nextUrl %}
-                                <a href="{{ page.nextUrl }}" class="next-link pull-right">
+                                <a href="{{ nextp.url }}" class="next-link pull-right">
                                     <i class="fa fa-angle-right"></i>
                                 </a>
                                 {% endif %}
-                                <span class="label recipe-label {% if page.category == '1. Part A' %}label-warning{% endif %}{% if page.category == '2. Part B' %}label-info{% endif %}{% if page.category == '3. Public pages' %}label-purple{% endif %}{% if page.category == '4. Design' %}label-danger{% endif %}{% if page.category == '5. Other' %}label-dark{% endif %} label-cat pull-right">{{ page.number }}</span>
+                                
+                                <span class="label recipe-label {% if page.category contains '1.' %}label-warning{% endif %}{% if page.category contains '2.' %}label-info{% endif %}{% if page.category contains '3.' %}label-purple{% endif %}{% if page.category contains '4.' %}label-danger{% endif %}{% if page.category contains '5.' %}label-dark{% endif %} label-cat pull-right">{{ page.number }}</span>
+                                
+                                {% assign prevp = site.how-to | where: 'number', page.prevUrl | where: 'lang', page.lang | first %}
                                 {% if page.prevUrl %}
-                                <a href="{{ page.prevUrl }}" class="prev-link pull-right">
+                                <a href="{{ prevp.url }}" class="prev-link pull-right">
                                     <i class="fa fa-angle-left"></i>
                                 </a>
                                 {% endif %}
+                                
                             </div>
                         </div>
                         {% endunless %}
@@ -40,7 +46,7 @@
                                 <h1 class="mt0">{{ page.title }}</h1>
                             </div>
                         </div>
-                        {% unless page.path == '_how-to/search.markdown' %}
+                        {% unless page.ref == 'how-to' %}
                         <div class="row">
                             {% if page.introduction-img %}
                             <div class="col-md-5">
@@ -67,6 +73,7 @@
                             {{ content }}
                             </div>
                         </div>
+                        
                     </div>
                 </div>
     		</article>
@@ -75,6 +82,7 @@
     </main>
 
     {% include footer.html %}
+
 
   </body>
 

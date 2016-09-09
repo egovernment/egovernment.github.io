@@ -1,10 +1,11 @@
 <ul class="sidenav dropable">
-    <li class="{% if page.path == '_how-to/search.markdown' %}active{% endif %}">
-        <a href="/how-to">Search</a>
+    <li class="{% if page.ref == 'how-to' %}active{% endif %}">
+        {% assign col = site.collections | where: "label", "how-to" | first %}
+        <a href="{{ col.baseurl[page.lang] }}">{{ col.link-title[page.lang] }}</a>
     </li>
 
 
-    {% assign howtos = site.how-to | group_by: "category" | sort: "name" %}
+    {% assign howtos = site.how-to | where:"lang", page.lang | group_by: "category" | sort: "name" %}
 
     {% for howto in howtos %}
     

@@ -2,6 +2,8 @@
 layout: recipe
 permalink: /how-to/
 title: 'How to...'
+lang: en
+ref: how-to
 ---
 
 <div class="faq">
@@ -10,7 +12,7 @@ title: 'How to...'
 
 	<div class="code-preview">
 
-	{% assign howtos = site.how-to | group_by: "category" | sort: "name" %}
+	{% assign howtos = site.how-to | where:"lang", page.lang | group_by: "category" | sort: "name" %}
 
 	{% for howto in howtos %}
 		

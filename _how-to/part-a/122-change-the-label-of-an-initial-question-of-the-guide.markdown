@@ -8,9 +8,11 @@ rate: '1'
 number: '122'
 introduction-text: ''
 introduction-img: '121.png'
-prevUrl: /how-to/add-a-registration-to-a-service/
-nextUrl: /how-to/add-a-trigger-for-an-initial-question-of-the-guide/
+prevUrl: 121
+nextUrl: 123
 done: 'yes'
+lang: en
+ref: 122
 ---
 
 1. Open file `model/<business-process-your-service>/fields.js`.

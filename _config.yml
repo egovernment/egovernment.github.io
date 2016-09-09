@@ -9,12 +9,16 @@
 title: eRegistrations
 main_title: Help eRegistrations
 email: info@eregistrations.com
-description: > # this means to ignore newlines until "baseurl:"
-  Help for eRegistrations
+description:
+  en: Help for eRegistrations
+  es: Ayada pro eRegistrations
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "help.eregistrations.org" # the base hostname & protocol for your site
 github_username:  egovernment
 port: 4001
+index:
+  en:
+  es: inicio.html
 
 # Build settings
 markdown: kramdown
@@ -23,7 +27,29 @@ markdown: kramdown
 collections:
   documentation:
     output: true
+    title:
+        en: 'Documentation'
+        es: 'Documentación'
+    baseurl:
+        en: '/documentation'
+        es: '/documentacion'
   how-to:
     output: true
+    title:
+        en: 'How-to'
+        es: 'Cómo hacer'
+    link-title:
+        en: 'Search'
+        es: 'Buscar'
+    baseurl:
+        en: '/how-to'
+        es: '/como-hacer'
   trainings:
     output: true
+    title:
+        en: 'Trainings'
+        es: 'Capacitaciones'
+    baseurl:
+        en: '/trainings'
+        es: '/capacitaciones'
+

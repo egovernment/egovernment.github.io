@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /installation/server
 title: 'Requirements for eRegistrations server'
+lang: en
+ref: server
 ---
 
 # Installation of eRegistrations on a server

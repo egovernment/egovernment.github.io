@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /codebase/server-side-services/
 title: 'eRegistrations - Server-side services'
+lang: en
+ref: server-side
 ---
 
 <span class="label label-info">Coming soon</span>

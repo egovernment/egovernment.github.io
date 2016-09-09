@@ -8,9 +8,11 @@ rate: '1'
 number: '174'
 introduction-text: 'Section legends are used for Part A forms to provide additional explanation for the user.'
 introduction-img: '162.png'
-prevUrl: /how-to/change-the-name-of-a-section-of-the-form/
-nextUrl: /how-to/change-the-label-of-a-field-in-the-form/
+prevUrl: 173
+nextUrl: 175
 done: ''
+lang: en
+ref: 174
 ---
 
 Every section in Part A is associated with a service, so to change it's legend, we have to know the service to which it applies. Additionally, sections can be defined in one of two places, as part of a business process or as part of a nested entity (for example branch, legal representative, etc.) of a business process.

@@ -8,9 +8,11 @@ rate: '2'
 number: '104'
 introduction-text: ''
 introduction-img: '103.png'
-prevUrl: /how-to/change-the-description-of-a-service-from-my-account/
-nextUrl: /how-to/make-a-service-unavailable/
+prevUrl: 103
+nextUrl: 105
 done: 'yes'
+lang: en
+ref: 104
 ---
 
 The service icon is a [Font Awesome](http://fontawesome.io/cheatsheet/) character.

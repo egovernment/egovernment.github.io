@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /architecture-overview/
 title: 'eRegistrations - Architecture overview'
+lang: en
+ref: architecture
 ---
 
 <span class="label label-warning">To be updated</span>

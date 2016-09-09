@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /codebase/front-end/
 title: 'eRegistrations - Front-end'
+lang: en
+ref: front-end
 ---
 
 # CSS organization and conventions style guide

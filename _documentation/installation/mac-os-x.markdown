@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /installation/mac-os-x
 title: 'eRegistrations - Installation on Mac OS X'
+lang: en
+ref: osx
 ---
 
 # Installation of eRegistrations system - Mac OS X

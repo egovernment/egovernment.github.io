@@ -8,9 +8,11 @@ rate: '1'
 number: '132'
 introduction-text: 'Changing the name of a certificate impacts on all the certificates already processed in the system.'
 introduction-img: '131.png'
-prevUrl: /how-to/add-a-trigger-for-an-initial-question-of-the-guide/
-nextUrl: /how-to/remove-a-certificate-from-a-registration/
+prevUrl: 131
+nextUrl: 133
 done: 'yes'
+lang: en
+ref: 132
 ---
 
 The name of a certificate is defined on a document that it's extended from. Changing document name will also change the certificate name.

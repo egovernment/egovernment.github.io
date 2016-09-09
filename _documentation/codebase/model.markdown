@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /codebase/model/
 title: 'eRegistrations - Model'
+lang: en
+ref: model
 ---
 
 <span class="label label-warning">To be updated</span>

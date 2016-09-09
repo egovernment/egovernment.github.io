@@ -2,6 +2,8 @@
 layout: training
 permalink: /trainings/
 title: 'Trainings for eRegistrations system'
+lang: en
+ref: training
 ---
 
 
