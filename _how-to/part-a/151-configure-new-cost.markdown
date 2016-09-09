@@ -8,9 +8,11 @@ rate: '2'
 number: '151'
 introduction-text: 'Cost name is used for both Part A and Part B as well as print views. Changing it will affect all of those places.'
 introduction-img: '151.png'
-prevUrl: /how-to/add-a-determinant-to-a-requirement/
-nextUrl: /how-to/add-a-tooltip-in-front-of-a-cost-in-the-guide/
+prevUrl: 148
+nextUrl: 152
 done: ''
+lang: en
+ref: 151
 ---
 
 Every cost is associated with a service, so to change it's name, we have to know the service to which it applies.

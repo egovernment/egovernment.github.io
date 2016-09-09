@@ -8,9 +8,11 @@ rate: '2'
 number: '121'
 introduction-text: ''
 introduction-img: '106.png'
-prevUrl: /how-to/add-a-service/
-nextUrl: /how-to/change-the-name-and-the-short-name-of-a-registration/
+prevUrl: 113
+nextUrl: 121
 done: ''
+lang: en
+ref: 121
 ---
 
 To acomplish this task we need two things:

@@ -8,9 +8,10 @@ rate: '1'
 number: '103'
 introduction-text: 'This recipe is about changing the description of the service in the "Available services" section of My Account.<br>The "Available services" section of MyAccount is managed by the `servicesBoxList` block.'
 introduction-img: '102.png'
-prevUrl: /how-to/change-the-name-of-a-service/
-nextUrl: /how-to/change-the-icon-of-a-service-and-it-tooltip/
+prevUrl: 102
+nextUrl: 104
 done: 'yes'
+ref: 103
 ---
 
 1. Open file `view/user.js`.
