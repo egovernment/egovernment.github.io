@@ -16,13 +16,13 @@ done: ''
 Every cost is associated with a service, so to change it's tooltip, we have to know the service to which it applies.
 
 1. Open file `model/<business-process-your-service>/costs/<your-cost>.js`.
-2. Set the value of the optionalInfo property of the cost to the desired tooltip text.
+2. Set the value of the `optionalInfo` property of the cost to the desired tooltip text.
 
 ## Example
 
 In the branch "[add-a-tooltip-in-front-of-a-cost-in-the-guide](https://github.com/egovernment/eregistrations-demo/tree/add-a-tooltip-in-front-of-a-cost-in-the-guide)" of eregistrations-demo :
 
-Let's change the tooltip of the `companyRegistration` cost for `BusinessProcessDemo` service to `The registration fee will be charged in your next invoice of municipal taxes.`.
+Change the tooltip of the `companyRegistration` cost for `BusinessProcessDemo` service to *"The registration fee will be charged in your next invoice of municipal taxes."*.
 
 ### Solution
 

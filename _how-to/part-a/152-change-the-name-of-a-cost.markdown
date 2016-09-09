@@ -22,7 +22,7 @@ Every cost is associated with a service, so to change it's name, we have to know
 
 In the branch "[change-the-name-of-a-cost](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-cost)" of eregistrations-demo :
 
-Let's change the name of the `companyRegistration` cost for `BusinessProcessDemo` service to `Company registration in the Neverland`.
+Change the name of the `companyRegistration` cost for `BusinessProcessDemo` service to *"Company registration in the Neverland"*.
 
 ### Solution
 

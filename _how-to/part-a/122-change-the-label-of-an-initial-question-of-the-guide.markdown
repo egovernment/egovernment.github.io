@@ -20,7 +20,7 @@ done: 'yes'
 
 **Starting Branch: [change-the-label-of-an-determinant](https://github.com/egovernment/eregistrations-demo/tree/change-the-label-of-an-determinant)**
 
-Let's change assets label to `Local assets`.
+Change assets label to *"Local assets"*.
 
 ### Solution
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-label-of-an-determinant...change-the-label-of-an-determinant-solution#files')">
