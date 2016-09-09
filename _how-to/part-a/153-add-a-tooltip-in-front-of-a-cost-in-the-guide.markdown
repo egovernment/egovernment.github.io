@@ -16,7 +16,7 @@ done: ''
 Every cost is associated with a service, so to change it's tooltip, we have to know the service to which it applies.
 
 1. Open file `model/<business-process-your-service>/costs/<your-cost>.js`.
-2. Set the value of the optionalInfo property of the cost to the desired tooltip text.
+2. Set the value of the `optionalInfo` property of the cost to the desired tooltip text.
 
 ## Example
 
