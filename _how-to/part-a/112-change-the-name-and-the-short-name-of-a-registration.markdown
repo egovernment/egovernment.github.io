@@ -29,7 +29,7 @@ If you want to change the short name of the service, then to the above steps but
 
 # Exercise
 
-Change the name of the `certificateOfIncentives` registration from to "Certificate of incentives (business facilitation program)". 
+Change the name of the `certificateOfIncentives` registration to *"Certificate of incentives (business facilitation program)"*.
 
 Start with:
 

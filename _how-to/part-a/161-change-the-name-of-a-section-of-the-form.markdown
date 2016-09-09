@@ -22,7 +22,7 @@ Every section is associated with a service, so to change it's name, we have to k
 
 In the branch "[change-the-name-of-a-section-of-the-form](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-section-of-the-form)" of eregistrations-demo :
 
-Let's change the name of the `attorney` section for `BusinessProcessDemo` service to `Company attorney`.
+Change the name of the `attorney` section for `BusinessProcessDemo` service to *"Company attorney"*.
 
 ### Solution
 
