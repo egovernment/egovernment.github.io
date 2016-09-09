@@ -16,12 +16,16 @@ title: 'Trainings for eRegistrations system'
       <td>Modify an existing service - simple</td>
     </tr>
     <tr>
+      <td>Aptitude developed</td>
+      <td>eRegistrations administrator level 1</td>
+    </tr>
+    <tr>
       <td>Requirements</td>
-      <td>Basic knowledge of JavaScript</td>
+      <td>Basic knowledge of JavaScript .... </td>
     </tr>
     <tr>
       <td>Needed software</td>
-      <td>Local installation of eregistrations-demo, github account</td>
+      <td>Local installation of eregistrations-demo, Github account</td>
     </tr>
     <tr>
       <td>Duration</td>
@@ -41,12 +45,18 @@ title: 'Trainings for eRegistrations system'
       <td>Modify an existing service - advanced</td>
     </tr>
     <tr>
+      <td>Aptitude developed</td>
+      <td>eRegistrations administrator level 2</td>
+    </tr>
+    <tr>
       <td>Requirements</td>
-      <td>Basic knowledge of JavaScript</td>
+      <td>Basic knowledge of JavaScript ...<br>
+	      "Training 1" must have been completed
+      </td>
     </tr>
     <tr>
       <td>Needed software</td>
-      <td>Local installation of eregistrations-demo, github account</td>
+      <td>Local installation of eregistrations-demo, Github account</td>
     </tr>
     <tr>
       <td>Duration</td>
@@ -66,12 +76,18 @@ title: 'Trainings for eRegistrations system'
       <td>Create new service - simple</td>
     </tr>
     <tr>
+      <td>Aptitude developed</td>
+      <td>eRegistrations developer level 1</td>
+    </tr>
+    <tr>
       <td>Requirements</td>
-      <td>Basic knowledge of JavaScript</td>
+      <td>Strong knowledge of JavaScript<br>
+	      Training 2 must have been completed
+      </td>
     </tr>
     <tr>
       <td>Needed software</td>
-      <td>Local installation of eregistrations-demo, github account</td>
+      <td>Local installation of eregistrations-demo, Github account</td>
     </tr>
     <tr>
       <td>Duration</td>
@@ -91,12 +107,18 @@ title: 'Trainings for eRegistrations system'
       <td>Create new service - advanced (with multiple registrations)</td>
     </tr>
     <tr>
+      <td>Aptitude developed</td>
+      <td>eRegistrations developer level 2</td>
+    </tr>
+    <tr>
       <td>Requirements</td>
-      <td>Basic knowledge of JavaScript</td>
+      <td>Strong knowledge of JavaScript<br>
+	      Training 3 must have been completed
+      </td>
     </tr>
     <tr>
       <td>Needed software</td>
-      <td>Local installation of eregistrations-demo, github account</td>
+      <td>Local installation of eregistrations-demo, Github account</td>
     </tr>
     <tr>
       <td>Duration</td>
@@ -113,19 +135,23 @@ title: 'Trainings for eRegistrations system'
     </tr>
     <tr>
       <td>Objective</td>
-      <td>Full configuration of public pages?? Webservices?? Create new views??</td>
+      <td>Modify the existing public pages of an eRegistrations system and add new pages</td>
+    </tr>
+    <tr>
+      <td>Aptitude developed</td>
+      <td>eRegistrations public administrator</td>
     </tr>
     <tr>
       <td>Requirements</td>
-      <td>Basic knowledge of JavaScript</td>
+      <td>Knowledge in HTML and CSS, experience with Bootstrap is a +</td>
     </tr>
     <tr>
       <td>Needed software</td>
-      <td>Local installation of eregistrations-demo, github account</td>
+      <td>Local installation of eregistrations-salvador, Github account</td>
     </tr>
     <tr>
       <td>Duration</td>
-      <td>...</td>
+      <td>1 day</td>
     </tr>
   </tbody>
 </table>

@@ -5,20 +5,22 @@ title: 'Training 1'
 objective: 'Modify an existing service - simple'
 ---
 
+The result of this training is a diploma of "eRegistrations administrator (level 1)".
+
+
 ### Requirements
 
-Basic knowledge of JavaScript
+Basic knowledge of JavaScript....
 
 ----------
 
 ### Needed software
 
-Local installation of eregistrations-demo, github account
-
+Local installation of eregistrations-demo - see the installation chapter in the [documentation](index.html).
 
 ----------
 
-### Agenda
+### Training plan
 
 
 <table class="table table-bordered table-striped">
@@ -33,7 +35,7 @@ Local installation of eregistrations-demo, github account
 	<tbody>
 	  <tr>
 	    <td>Day 1 AM</td>
-	    <td>2 hours</td>
+	    <td>1 hour</td>
 	    <td>Verification of installation on local machines</td>
 	    <td><a href="/installation/mac-os-x">Mac OS X</a><br><a href="/installation/ubuntu">Linux</a><br><a href="/installation/windows10">Windows 10</a></td>
 	  </tr>
@@ -68,11 +70,29 @@ Local installation of eregistrations-demo, github account
 	    <td><a href="/how-to/change-the-name-and-the-short-name-of-a-registration/">111</a></td>
 	  </tr>	
 	  <tr>
-	    <td>etc.</td>
-	    <td>etc.</td>
-	    <td>etc.</td>
-	    <td><a href="">link</a></td>
+	    <td>Day 3 AM</td>
+	    <td>3 hours</td>
+	    <td>Exercice 3 "Modify elements of the guide"</td>
+	    <td><a href="/how-to/change-the-label-of-an-initial-question-of-the-guide/">121</a><br><a href="/how-to/change-the-name-of-a-requirement/">141</a><br><a href="/how-to/add-a-tooltip-in-front-of-a-document-in-the-guide/">142</a><br><a href="/how-to/change-the-name-of-a-cost/">151</a></td>
 	  </tr>		    	  
+	  <tr>
+	    <td>Day 3 AM</td>
+	    <td></td>
+	    <td></td>
+	    <td><a href="">link</a></td>
+	  </tr>	
+	  <tr>
+	    <td>Day 3 AM</td>
+	    <td></td>
+	    <td></td>
+	    <td><a href="">link</a></td>
+	  </tr>	
+	  <tr>
+	    <td>Day 3 AM</td>
+	    <td></td>
+	    <td></td>
+	    <td><a href="">link</a></td>
+	  </tr>	
 	</tbody>
 </table>
 
@@ -99,6 +119,7 @@ Requirements :
 Change the name of "Registration-1" to "XXX" and ....
 
 
+#### Exercice 3 : modify "Registration 1" 
 
-
+Change the name of "Registration-1" to "XXX" and ....
 
