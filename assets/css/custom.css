@@ -7,6 +7,23 @@ h2 { font-size: 32px; margin-top: 42px; }
 h3 { font-size: 26px; }
 h4 { font-size: 22px; }
 
+.navbar-default .navbar-nav>li>a.lang-select {
+    font-weight: 100;
+    display: inline-block;
+    padding: 15px 3px;
+}
+
+.navbar-default .navbar-nav>li>a.lang-select:first-child {
+	padding-left: 15px;
+}
+
+.navbar-default .navbar-nav>li>a.en:lang(en),
+.navbar-default .navbar-nav>li>a.fr:lang(fr),
+.navbar-default .navbar-nav>li>a.es:lang(es){
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
 .mt0 {
 	margin-top: 0;
 }
@@ -35,9 +52,10 @@ h4 { font-size: 22px; }
 	padding-bottom: 20px;
 }
 
-.sidenav>li>ul a.active:before, .sidenav>li>ul li.active a:before {
-																	top: 7px;
-																}
+.sidenav>li>ul a.active:before,
+.sidenav>li>ul li.active a:before {
+	top: 7px;
+}
 
 .sidenav li {
 	padding-bottom: 10px;

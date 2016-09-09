@@ -16,7 +16,7 @@
           <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand" href="/">{{ site.title }}</a>
+        <a class="navbar-brand" href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ site.title }}</a>
       </div>
       <!-- END Toggle buttons and brand -->
 
@@ -26,6 +26,13 @@
           <li class="{% unless page.url contains 'how-to' or page.url contains 'trainings' %}active{% endunless %}"><a href="/">Documentation</a></li>
           <li class="{% if page.url contains 'how-to' %}active{% endif %}"><a href="/how-to">How to</a></li>
           <li class="{% if page.url contains 'trainings' %}active{% endif %}"><a href="/trainings">Trainings</a></li>
+          <li>
+              {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+              {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="lang-select {{ post.lang }}">{{ post.lang }}</a> {% endfor %}
+
+              {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+              {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="lang-select {{ page.lang }}">{{ page.lang }}</a> {% endfor %}
+          </li>
         </ul>
       </div>
       <!-- END Top navbar -->
