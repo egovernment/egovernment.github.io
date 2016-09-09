@@ -10,7 +10,7 @@ introduction-text: 'Section names are used for Part A forms, Part B file data vi
 introduction-img: '161.png'
 prevUrl: /how-to/add-a-cost-to-a-registration-variable/
 nextUrl: /how-to/configure-one-payment-receipt-for-two-costs/
-done: 'yes'
+done: ''
 ---
 
 Every section is associated with a service, so to change it's name, we have to know the service to which it applies.
