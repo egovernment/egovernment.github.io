@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/set-the-type-of-a-field/
-title: 'Set the type of a field'
+title: 'Change the type of a field'
 category: '1. Part A'
 sub-category: 'Data'
 rate: '1'

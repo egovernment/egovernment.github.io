@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/change-the-name-of-a-requirement/
-title: 'Change the name of a requirement'
+title: 'Change a label of a requirement'
 category: '1. Part A'
 sub-category: 'Requirements'
 rate: '1'
@@ -10,7 +10,7 @@ introduction-text: 'Changing the name of a requirement will impact all the scree
 introduction-img: '141.png'
 prevUrl: /how-to/add-a-certificate-to-a-registration/
 nextUrl: /how-to/add-a-tooltip-in-front-of-a-document-in-the-guide/
-done: ''
+done: 'yes'
 ---
 
 The name of a requirement is, by default, taken from the document upon which the requirement is built.
@@ -34,13 +34,13 @@ Change the name of *"Passport"* requirement of `BusinessProcessDemo` service to 
 ### Solution
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-name-of-a-requirement...change-the-name-of-a-requirement-solution#files')">
-      
+
 <a name="diff-a941a7aba115931b72a56d41bfddd500"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/requirements.js">
@@ -62,13 +62,13 @@ Change the name of *"Passport"* requirement of `BusinessProcessDemo` service to 
       <span class="user-select-contain" title="model/business-process-demo/requirements.js">
         model/business-process-demo/requirements.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-a941a7aba115931b72a56d41bfddd500" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/4b1122099e5cdf61660dffa6a3a0c9526d21a735?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=11&amp;mode=100644&amp;next_line_num_left=2&amp;next_line_num_right=2&amp;path=model%2Fbusiness-process-demo%2Frequirements.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=15" data-left-range="1-1" data-right-range="1-1">
