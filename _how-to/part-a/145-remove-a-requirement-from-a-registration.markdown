@@ -4,7 +4,7 @@ permalink: /how-to/remove-a-requirement-from-a-registration/
 title: 'Remove a need for a requirement in chosen registration'
 category: '1. Part A'
 sub-category: 'Requirements'
-rate: '4'
+rate: '2'
 number: '145'
 introduction-text: 'A requirement is a document that needs to be uploaded with the registrations file. Here we will see how to remove a document that is not required anymore for a certain registration.'
 introduction-img: '144.png'

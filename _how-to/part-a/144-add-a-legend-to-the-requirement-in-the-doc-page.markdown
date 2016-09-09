@@ -4,7 +4,7 @@ permalink: /how-to/add-a-legend-to-the-requirement-in-the-doc-page/
 title: 'Add a legend to the requirement upload in the documents page'
 category: '1. Part A'
 sub-category: 'Requirements'
-rate: '3'
+rate: '2'
 number: '144'
 introduction-text: ''
 introduction-img: '101.png'

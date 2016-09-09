@@ -4,7 +4,7 @@ permalink: /how-to/set-the-emails-sent-for-a-certain-status-of-the-file/
 title: 'Set the emails sent for a certain status of the file'
 category: '2. Part B'
 sub-category: 'Notifications'
-rate: '1'
+rate: '3'
 number: '241'
 introduction-text: ''
 introduction-img: '101.png'

@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/configure-one-payment-receipt-for-two-costs/
-title: 'Configure one payment receipt for many costs'
+permalink: /how-to/change-the-value-of-a-fixed-cost/
+title: 'Change a fixed cost in a registration'
 category: '1. Part A'
 sub-category: 'Costs'
-rate: '3'
-number: '158'
-introduction-text: ''
-introduction-img: '101.png'
-prevUrl: /how-to/add-a-cost-to-a-registration-variable/
-nextUrl: /how-to/change-the-name-of-a-section-of-the-form/
+rate: '1'
+number: '155'
+introduction-text: 'In this recipe we will see how to edit the name of a cost, modify it value or modify it determinant.'
+introduction-img: '154.png'
+prevUrl: /how-to/add-a-legend-to-the-cost-in-the-payment-page/
+nextUrl: /how-to/remove-a-cost-in-a-registration/
 done: ''
 ---
 

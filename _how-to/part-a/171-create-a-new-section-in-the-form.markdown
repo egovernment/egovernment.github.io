@@ -4,7 +4,7 @@ permalink: /how-to/create-a-new-section-in-the-form/
 title: 'Create a new section in the form'
 category: '1. Part A'
 sub-category: 'Data'
-rate: '2'
+rate: '3'
 number: '171'
 introduction-text: ''
 introduction-img: '101.png'

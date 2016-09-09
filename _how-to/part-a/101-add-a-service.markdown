@@ -4,7 +4,7 @@ permalink: /how-to/add-a-service/
 title: 'Initialize (add) new service'
 category: '1. Part A'
 sub-category: 'Service'
-rate: '3'
+rate: '4'
 number: '101'
 introduction-text: ''
 introduction-img: '105.png'

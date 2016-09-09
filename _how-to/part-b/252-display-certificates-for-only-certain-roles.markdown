@@ -4,7 +4,7 @@ permalink: /how-to/display-certificates-for-only-certain-roles/
 title: 'Display specified subset of certificates for certain role'
 category: '2. Part B'
 sub-category: 'Other'
-rate: '4'
+rate: '3'
 number: '252'
 introduction-text: ''
 introduction-img: '101.png'

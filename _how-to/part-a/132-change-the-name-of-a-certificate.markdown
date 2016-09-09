@@ -24,7 +24,7 @@ Please bare in mind that, by default, registration name is also inherited from t
 
 **Starting Branch: [change-the-name-of-a-certificate](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-certificate)**
 
-Let's change label of company registration certificate to `Company registration in Ministry of Company Registrations`.
+Change label of company registration certificate to *"Company registration in Ministry of Company Registrations"*.
 
 ### Solution
 

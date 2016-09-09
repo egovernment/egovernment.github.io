@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/configure-the-reject-file-feature-to-a-role/
-title: 'Configure the "Reject file" feature of a role'
-category: '2. Part B'
-sub-category: 'Roles'
+permalink: /how-to/remove-a-cost-in-a-registration/
+title: 'Remove a cost in a registration'
+category: '1. Part A'
+sub-category: 'Costs'
 rate: '2'
-number: '206'
-introduction-text: ''
-introduction-img: '101.png'
-prevUrl: /how-to/configure-the-send-back-for-correction-feature-to-a-role/
-nextUrl: /how-to/add-a-role/
+number: '156'
+introduction-text: 'This recipe explains how to remove, from a registration, a cost that does not apply anymore.'
+introduction-img: '155.png'
+prevUrl: /how-to/change-the-value-of-a-fixed-cost/
+nextUrl: /how-to/add-a-cost-to-a-registration-fixed/
 done: ''
 ---
 

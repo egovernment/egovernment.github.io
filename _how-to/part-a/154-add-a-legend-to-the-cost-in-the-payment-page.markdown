@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-name-of-a-role/
-title: 'Change the name of a role'
-category: '2. Part B'
-sub-category: 'Roles'
-rate: '1'
-number: '201'
+permalink: /how-to/add-a-legend-to-the-cost-in-the-payment-page/
+title: 'Add a legend to payment receipt upload in the payments page'
+category: '1. Part A'
+sub-category: 'Costs'
+rate: '2'
+number: '154'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/modify-the-legends-of-the-5-pages-of-the-part-a/
-nextUrl: /how-to/change-the-place-of-a-role-in-the-part-b-flow/
+prevUrl: /how-to/add-a-tooltip-in-front-of-a-cost-in-the-guide/
+nextUrl: /how-to/change-the-value-of-a-fixed-cost/
 done: ''
 ---
 

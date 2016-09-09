@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-legend-to-the-cost-in-the-payment-page/
-title: 'Add a legend to payment receipt upload in the payments page'
-category: '1. Part A'
-sub-category: 'Costs'
-rate: '1'
-number: '153'
+permalink: /how-to/configure-the-reject-file-feature-to-a-role/
+title: 'Configure the "Reject file" feature of a role'
+category: '2. Part B'
+sub-category: 'Roles'
+rate: '3'
+number: '205'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/add-a-tooltip-in-front-of-a-cost-in-the-guide/
-nextUrl: /how-to/change-the-value-of-a-fixed-cost/
+prevUrl: /how-to/configure-the-send-back-for-correction-feature-to-a-role/
+nextUrl: /how-to/add-a-role/
 done: ''
 ---
 

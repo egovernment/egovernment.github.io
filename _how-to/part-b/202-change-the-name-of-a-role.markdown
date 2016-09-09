@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-cost-to-a-registration-variable/
-title: 'Add a cost to a registration variable'
-category: '1. Part A'
-sub-category: 'Costs'
-rate: '3'
-number: '157'
+permalink: /how-to/change-the-name-of-a-role/
+title: 'Change the name of a role'
+category: '2. Part B'
+sub-category: 'Roles'
+rate: '1'
+number: '202'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/add-a-cost-to-a-registration-fixed/
-nextUrl: /how-to/configure-one-payment-receipt-for-two-costs/
+prevUrl: /how-to/modify-the-legends-of-the-5-pages-of-the-part-a/
+nextUrl: /how-to/change-the-place-of-a-role-in-the-part-b-flow/
 done: ''
 ---
 
