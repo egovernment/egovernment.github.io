@@ -8,9 +8,11 @@ rate: '1'
 number: '143'
 introduction-text: 'The legends for requirements provide additional information about a requirement.'
 introduction-img: '143.png'
-prevUrl: /how-to/change-the-name-of-a-requirement/
-nextUrl: /how-to/add-a-legend-to-the-requirement-in-the-doc-page/
+prevUrl: 142
+nextUrl: 144
 done: 'yes'
+lang: en
+ref: 143
 ---
 
 The legend of requirement is, by default, taken from the document upon which the requirement is built.

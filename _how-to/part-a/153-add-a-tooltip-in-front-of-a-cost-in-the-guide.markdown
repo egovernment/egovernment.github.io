@@ -8,9 +8,11 @@ rate: '1'
 number: '153'
 introduction-text: 'This recipe explains how to set the tooltip in front of a cost, in the guide. Tooltips are used to give more information about a cost without putting to much text on the page. It is recommended to add one meaningful tooltip per cost to give more information to the user.'
 introduction-img: '152.png'
-prevUrl: /how-to/change-the-name-of-a-cost/
-nextUrl: /how-to/add-a-legend-to-the-cost-in-the-payment-page/
+prevUrl: 152
+nextUrl: 154
 done: ''
+lang: en
+ref: 153
 ---
 
 Every cost is associated with a service, so to change it's tooltip, we have to know the service to which it applies.

@@ -8,9 +8,11 @@ rate: '2'
 number: '161'
 introduction-text: 'Section names are used for Part A forms, Part B file data view, and print views. Changing it will affect all of those places.'
 introduction-img: '161.png'
-prevUrl: /how-to/add-a-cost-to-a-registration-variable/
-nextUrl: /how-to/configure-one-payment-receipt-for-two-costs/
+prevUrl: 159
+nextUrl: 162
 done: ''
+lang: en
+ref: 161
 ---
 
 Every section in Part A is associated with a service, so to change it's name, we have to know the service to which it applies. Additionally, sections can be defined in one of two places, as part of a business process or as part of a nested entity (for example branch, legal representative, etc.) of a business process.

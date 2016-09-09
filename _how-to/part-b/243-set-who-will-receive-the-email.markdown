@@ -8,9 +8,11 @@ rate: '2'
 number: '243'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/add-a-variable-in-an-email/
-nextUrl: /how-to/add-a-column-to-the-list-of-files-for-one-role/
+prevUrl: 242
+nextUrl: 251
 done: ''
+lang: en
+ref: 243
 ---
 
 The other address, should be secluded from some field
