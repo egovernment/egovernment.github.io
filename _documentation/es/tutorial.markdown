@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /tutoriales/
+permalink: /tutorial-de-configuracion/
 title: 'eRegistrations - Tutoriales'
 lang: es
 ref: tutorial

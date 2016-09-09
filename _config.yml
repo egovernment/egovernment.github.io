@@ -25,13 +25,35 @@ documentation-pages:
     title:
       en: 'Overview'
       es: 'Visión de conjunto'
-    urls:
-      en: '/'
-      es: '/inicio.html'
   installation:
     title:
       en: 'Installation'
       es: 'Instalación'
+  codebase:
+    title:
+      en: 'Codebase'
+      es: 'Base de código'
+  architecture:
+    title:
+      en: 'Architecture overview'
+      es: 'Introducción a la arquitectura'
+    urls:
+      en: /architecture-overview/
+      es: /introduccion-a-la-arquitectura/
+  fundamentals:
+    title: 
+      en: 'Fundamentals of JavaScript'
+      es: 'Fundamentos de JavaScript'
+    urls:
+      en: '/fundamentals'
+      es: '/fundamentos'
+  tutorial:
+    title:
+      en: 'Configuration tutorial'
+      es: 'Tutorial de configuración'
+    urls:
+      en: '/configuration-tutorial'
+      es: '/tutorial-de-configuracion'
 
 # Build settings
 markdown: kramdown
