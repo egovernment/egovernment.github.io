@@ -1,6 +1,6 @@
 ---
 layout: training
 permalink: /trainings/2/
-title: 'Training 2'
-objective: 'Modify an existing service - advanced'
+title: 'Training 2: Administrator eRegistration'
+objective: 'level 2'
 ---
