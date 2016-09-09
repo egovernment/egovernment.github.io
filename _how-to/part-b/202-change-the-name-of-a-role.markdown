@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/configure-the-send-back-for-correction-feature-to-a-role/
-title: 'Configure the "Sent back for correction" feature to a role'
+permalink: /how-to/change-the-name-of-a-role/
+title: 'Change the name of a role'
 category: '2. Part B'
 sub-category: 'Roles'
-rate: '2'
-number: '205'
+rate: '1'
+number: '202'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/change-the-place-of-a-role-in-the-part-b-flow/
-nextUrl: /how-to/configure-the-reject-file-feature-to-a-role/
+prevUrl: /how-to/modify-the-legends-of-the-5-pages-of-the-part-a/
+nextUrl: /how-to/change-the-place-of-a-role-in-the-part-b-flow/
 done: ''
 ---
 

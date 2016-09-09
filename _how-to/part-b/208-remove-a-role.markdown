@@ -5,7 +5,7 @@ title: 'Remove a role (processing step)'
 category: '2. Part B'
 sub-category: 'Roles'
 rate: '2'
-number: '208'
+number: '206'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: /how-to/add-a-role/

@@ -5,7 +5,7 @@ title: 'Configure the "Reject file" feature of a role'
 category: '2. Part B'
 sub-category: 'Roles'
 rate: '2'
-number: '206'
+number: '205'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: /how-to/configure-the-send-back-for-correction-feature-to-a-role/

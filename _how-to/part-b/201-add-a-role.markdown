@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-name-of-a-role/
-title: 'Change the name of a role'
+permalink: /how-to/add-a-role/
+title: 'Add a role (processing step)'
 category: '2. Part B'
 sub-category: 'Roles'
-rate: '1'
+rate: '3'
 number: '201'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/modify-the-legends-of-the-5-pages-of-the-part-a/
-nextUrl: /how-to/change-the-place-of-a-role-in-the-part-b-flow/
+prevUrl: /how-to/configure-the-reject-file-feature-to-a-role/
+nextUrl: /how-to/remove-a-role/
 done: ''
 ---
 
