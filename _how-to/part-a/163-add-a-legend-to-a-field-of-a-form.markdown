@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/set-the-type-of-a-field/
-title: 'Change the type of a field'
+permalink: /how-to/add-a-legend-for-the-field-of-the-form/
+title: 'Add a legend for a field of the form'
 category: '1. Part A'
 sub-category: 'Data'
 rate: '1'
-number: '167'
-introduction-text: 'This recipe explains how to modify the types of each fields of the form. The available types of fields are : normal-input, selector, currency, date, radios, checks, etc.'
-introduction-img: '167.png'
-prevUrl: /how-to/set-optional-a-field-of-the-form/
-nextUrl: /how-to/create-the-options-of-a-field-that-is-a-selector/
+number: '163'
+introduction-text: 'This recipe explains how to add and edit the legend text that can be set below each field to give more information to the user filling the form.'
+introduction-img: '164.png'
+prevUrl: /how-to/change-the-label-of-a-field-in-the-guide/
+nextUrl: /how-to/set-mandatory-a-field-of-the-form/
 done: ''
 ---
 

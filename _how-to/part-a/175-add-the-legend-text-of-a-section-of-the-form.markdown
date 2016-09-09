@@ -5,7 +5,7 @@ title: 'Add the legend text to the section of the form'
 category: '1. Part A'
 sub-category: 'Data'
 rate: '1'
-number: '162'
+number: '174'
 introduction-text: 'Section legends are used for Part A forms to provide additional explanation for the user.'
 introduction-img: '162.png'
 prevUrl: /how-to/change-the-name-of-a-section-of-the-form/

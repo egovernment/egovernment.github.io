@@ -5,7 +5,7 @@ title: 'Create selector field and add it to the form'
 category: '1. Part A'
 sub-category: 'Data'
 rate: '3'
-number: '168'
+number: '166'
 introduction-text: 'This recipe explains how to modify the options available for each field that is a selector. The options can come from the setting of the field or from an external list.'
 introduction-img: '168.png'
 prevUrl: /how-to/set-the-type-of-a-field/

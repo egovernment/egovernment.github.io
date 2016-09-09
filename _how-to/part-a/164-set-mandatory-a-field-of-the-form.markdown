@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-special-format-for-a-field/
-title: 'Add a special format for a field'
+permalink: /how-to/set-mandatory-a-field-of-the-form/
+title: 'Make a field of the form mandatory'
 category: '1. Part A'
 sub-category: 'Data'
-rate: '3'
-number: '170'
-introduction-text: ''
-introduction-img: '101.png'
-prevUrl: /how-to/configure-a-determinant-for-a-field/
-nextUrl: /how-to/create-a-new-section-in-the-form/
+rate: '1'
+number: '164'
+introduction-text: 'This recipe explains how to set a field as mandatory : the users will be obliged to fill the field to be able to save the form.<br>Note that changing the mandatory aspect of a field will have no impact on previously sent files.'
+introduction-img: '165.png'
+prevUrl: /how-to/add-a-legend-for-the-field-of-the-form/
+nextUrl: /how-to/set-optional-a-field-of-the-form/
 done: ''
 ---
 

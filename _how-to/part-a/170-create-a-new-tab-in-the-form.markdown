@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/set-optional-a-field-of-the-form/
-title: 'Make a field of the form optional'
+permalink: /how-to/create-a-new-tab-in-the-form/
+title: 'Create a new tab in tabbed view of forms page'
 category: '1. Part A'
 sub-category: 'Data'
-rate: '1'
-number: '166'
-introduction-text: 'In this recipe we will see how to set a mandatory field as optional : the users will not be anymore obliged to fill the field to be able to save the form.'
-introduction-img: '166.png'
-prevUrl: /how-to/set-mandatory-a-field-of-the-form/
-nextUrl: /how-to/set-the-type-of-a-field/
+rate: '4'
+number: '170'
+introduction-text: ''
+introduction-img: '101.png'
+prevUrl: /how-to/create-a-new-section-in-the-form/
+nextUrl: /how-to/create-a-new-section-with-tables-in-the-form/
 done: ''
 ---
 
