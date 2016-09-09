@@ -15,7 +15,7 @@ done: ''
 
 The service icon is a [Font Awesome](http://fontawesome.io/cheatsheet/) character.
 
-First check if the character you want to use for the icon exists (You can use the characters for which css classes have been defined here: (https://github.com/egovernment/eregistrations/blob/master/css/components/fa.css#L33-L378) ).
+First check if the character you want to use for the icon exists (You can use the characters for which css classes have been defined here: [https://github.com/egovernment/eregistrations/blob/master/css/components/fa.css#L33-L378](https://github.com/egovernment/eregistrations/blob/master/css/components/fa.css#L33-L378) ).
 
 If the character you want to use does not have it's css class defined, then create a pull-request in [eregistrations](https://github.com/egovernment/eregistrations) system. In the issue comment write what Font Awesome character you would like to use.
 
@@ -49,8 +49,236 @@ Change the icon of the "Demo" service. Use 'fa fa-file' as new icon classes.
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-icon-of-a-service...change-the-icon-of-a-service-solution#files')">
       
-<a name="diff-ff399868a2b79a6fc5aa0b527b07d602"></a>
+<a name="diff-007c6d9af20c4ac6b837960b8d799a0b"></a>
 <div id="diff-0" class="file js-details-container
+             
+             
+             
+             
+             show-inline-notes
+           ">
+  <div class="file-header" data-path="view/components/business-process-table-columns.js">
+    <div class="file-actions">
+        <span class="show-file-notes">
+          <label>
+            <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+            Show notes
+          </label>
+        </span>
+
+          <a href="/egovernment/eregistrations-demo/blob/33bc3e61fe1381f23a1be60fd4c6ff626eca18b0/view/components/business-process-table-columns.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 33bc3e6 ">View</a>
+
+
+    </div>
+    <div class="file-info">
+        <span class="diffstat tooltipped tooltipped-e" aria-label="8 additions &amp; 1 deletion">9 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span></span>
+
+      <span class="user-select-contain" title="view/components/business-process-table-columns.js">
+        view/components/business-process-table-columns.js
+      </span>
+      
+    </div>
+  </div>
+
+      <div class="data highlight blob-wrapper">
+        <table class="diff-table tab-size  " data-tab-size="8">
+          
+      <tbody><tr data-position="0">
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bL0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -1,6 +1,13 @@</td>
+  </tr>
+
+    <tr>
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bL1" data-line-number="1" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR1" data-line-number="1" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c">// Business process table columns global customization.</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bL2" data-line-number="2" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR2" data-line-number="2" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-s"><span class="pl-pds">'</span>use strict<span class="pl-pds">'</span></span>;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bL3" data-line-number="3" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR3" data-line-number="3" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bL4" data-line-number="4" class="blob-num blob-num-deletion js-linkable-line-number"></td>
+
+    <td class="blob-num blob-num-deletion empty-cell"></td>
+
+  <td class="blob-code blob-code-deletion">
+
+    <span class="blob-code-inner">-<span class="pl-k">var</span> columns <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>eregistrations/view/components/business-process-table-columns<span class="pl-pds">'</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR4" data-line-number="4" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-k">var</span> db      <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>../../db<span class="pl-pds">'</span></span>)</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR5" data-line-number="5" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+  , columns <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>eregistrations/view/components/business-process-table-columns<span class="pl-pds">'</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bL5" data-line-number="5" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR6" data-line-number="6" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> </span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bL6" data-line-number="6" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR7" data-line-number="7" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c1">module</span>.<span class="pl-smi">exports</span> <span class="pl-k">=</span> columns;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR8" data-line-number="8" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR9" data-line-number="9" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+<span class="pl-smi">columns</span>.<span class="pl-en">getServiceIcon</span> <span class="pl-k">=</span> <span class="pl-k">function</span> (<span class="pl-smi">businessProcess</span>) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR10" data-line-number="10" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+	<span class="pl-k">if</span> (<span class="pl-smi">businessProcess</span>.<span class="pl-c1">constructor</span> <span class="pl-k">===</span> <span class="pl-smi">db</span>.<span class="pl-smi">BusinessProcessDemo</span>) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR11" data-line-number="11" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+		<span class="pl-k">return</span> <span class="pl-en">i</span>({ class<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>fa fa-file<span class="pl-pds">"</span></span> });</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR12" data-line-number="12" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+	}</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR13" data-line-number="13" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+};</span>
+
+  </td>
+</tr>
+
+
+
+        </tbody></table>
+      </div>
+</div>
+
+      
+<a name="diff-ff399868a2b79a6fc5aa0b527b07d602"></a>
+<div id="diff-1" class="file js-details-container
              
              
              
@@ -66,7 +294,7 @@ Change the icon of the "Demo" service. Use 'fa fa-file' as new icon classes.
           </label>
         </span>
 
-          <a href="/egovernment/eregistrations-demo/blob/6d8d8775eb7573c74df374154128fd2fea22a2a8/view/user.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 6d8d877 ">View</a>
+          <a href="/egovernment/eregistrations-demo/blob/33bc3e61fe1381f23a1be60fd4c6ff626eca18b0/view/user.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 33bc3e6 ">View</a>
 
 
     </div>
