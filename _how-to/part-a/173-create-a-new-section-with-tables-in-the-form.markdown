@@ -5,7 +5,7 @@ title: 'Create a new section with tables in the form'
 category: '1. Part A'
 sub-category: 'Data'
 rate: '4'
-number: '173'
+number: '172'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: /how-to/create-a-new-tab-in-the-form/

@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/create-a-new-tab-in-the-form/
-title: 'Create a new tab in tabbed view of forms page'
+permalink: /how-to/add-a-legend-for-the-field-of-the-form/
+title: 'Add a legend for a field of the form'
 category: '1. Part A'
 sub-category: 'Data'
-rate: '4'
-number: '172'
-introduction-text: ''
-introduction-img: '101.png'
-prevUrl: /how-to/create-a-new-section-in-the-form/
-nextUrl: /how-to/create-a-new-section-with-tables-in-the-form/
+rate: '1'
+number: '163'
+introduction-text: 'This recipe explains how to add and edit the legend text that can be set below each field to give more information to the user filling the form.'
+introduction-img: '164.png'
+prevUrl: /how-to/change-the-label-of-a-field-in-the-guide/
+nextUrl: /how-to/set-mandatory-a-field-of-the-form/
 done: ''
 ---
 

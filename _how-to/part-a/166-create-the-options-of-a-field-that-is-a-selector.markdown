@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/set-optional-a-field-of-the-form/
-title: 'Make a field of the form optional'
+permalink: /how-to/create-the-options-of-a-field-that-is-a-selector/
+title: 'Create selector field and add it to the form'
 category: '1. Part A'
 sub-category: 'Data'
-rate: '1'
+rate: '3'
 number: '166'
-introduction-text: 'In this recipe we will see how to set a mandatory field as optional : the users will not be anymore obliged to fill the field to be able to save the form.'
-introduction-img: '166.png'
-prevUrl: /how-to/set-mandatory-a-field-of-the-form/
-nextUrl: /how-to/set-the-type-of-a-field/
+introduction-text: 'This recipe explains how to modify the options available for each field that is a selector. The options can come from the setting of the field or from an external list.'
+introduction-img: '168.png'
+prevUrl: /how-to/set-the-type-of-a-field/
+nextUrl: /how-to/configure-a-determinant-for-a-field/
 done: ''
 ---
 

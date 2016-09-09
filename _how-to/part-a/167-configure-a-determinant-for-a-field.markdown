@@ -5,7 +5,7 @@ title: 'Configure a determinant for a field'
 category: '1. Part A'
 sub-category: 'Data'
 rate: '2'
-number: '169'
+number: '167'
 introduction-text: 'Some fields appear only if certain determinant(s) are fulfilled. Those determinant can be a registration  that is selected or the value(s) of a field of the form. This receipt explains how to set such determinant(s) to a field, or to remove it.'
 introduction-img: '169.gif'
 prevUrl: /how-to/create-the-options-of-a-field-that-is-a-selector/

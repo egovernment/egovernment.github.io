@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/set-the-type-of-a-field/
-title: 'Set the type of a field'
+permalink: /how-to/create-a-new-tab-in-the-form/
+title: 'Create a new tab in tabbed view of forms page'
 category: '1. Part A'
 sub-category: 'Data'
-rate: '1'
-number: '167'
-introduction-text: 'This recipe explains how to modify the types of each fields of the form. The available types of fields are : normal-input, selector, currency, date, radios, checks, etc.'
-introduction-img: '167.png'
-prevUrl: /how-to/set-optional-a-field-of-the-form/
-nextUrl: /how-to/create-the-options-of-a-field-that-is-a-selector/
+rate: '4'
+number: '170'
+introduction-text: ''
+introduction-img: '101.png'
+prevUrl: /how-to/create-a-new-section-in-the-form/
+nextUrl: /how-to/create-a-new-section-with-tables-in-the-form/
 done: ''
 ---
 
