@@ -1,22 +1,39 @@
 ---
 layout: training
 permalink: /trainings/1/
-title: 'Training 1'
-objective: 'Modify an existing service - simple'
+title: 'Training 1: Administrator eRegistration'
+objective: 'level 1'
 ---
 
-The result of this training is a diploma of "eRegistrations administrator (level 1)".
+The result of this training is a UNCTAD diploma of "eRegistrations administrator (level 1)".
 
+### Objectives
 
-### Requirements
-
-Basic knowledge of JavaScript....
+- Acquire global knowledge about the eRegistrations architecture
+- Edit an existing service with simple modifications
 
 ----------
 
-### Needed software
+### Duration
 
-Local installation of eregistrations-demo - see the installation chapter in the [documentation](index.html).
+5 days
+
+----------
+
+### Trainee profile
+
+- Advanced knowledge in a programming language (it can be ASP, Python, PHP, JavaScript, etc.)
+- Basic knowledge of JavaScript an interest to use this language
+- Basic knowledge of Nodejs is a +
+- Basic knowledge of the concept of version control and it application with git
+
+
+----------
+
+### Requirements
+
+- A computer with eregistrations-demo installed - see installation steps for [Mac OsX](/installation/mac-os-x"), [Linux](/installation/ubuntu) or [Windows 10](/installation/windows10).
+
 
 ----------
 
