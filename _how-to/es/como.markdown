@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /como/
+permalink: /como-hacer/
 title: 'Cómo'
 lang: es
 ref: how-to

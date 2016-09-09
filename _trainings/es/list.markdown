@@ -1,6 +1,6 @@
 ---
 layout: training
-permalink: /entrenamientos/
+permalink: /capacitaciones/
 title: 'Entrenamientos para el sistema eRegistrations'
 lang: es
 ref: training
