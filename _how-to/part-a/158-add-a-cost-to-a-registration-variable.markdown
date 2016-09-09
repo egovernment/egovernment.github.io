@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/remove-a-cost-in-a-registration/
-title: 'Remove a cost in a registration'
+permalink: /how-to/add-a-cost-to-a-registration-variable/
+title: 'Add a cost to a registration variable'
 category: '1. Part A'
 sub-category: 'Costs'
-rate: '2'
-number: '155'
-introduction-text: 'This recipe explains how to remove, from a registration, a cost that does not apply anymore.'
-introduction-img: '155.png'
-prevUrl: /how-to/change-the-value-of-a-fixed-cost/
-nextUrl: /how-to/add-a-cost-to-a-registration-fixed/
+rate: '3'
+number: '158'
+introduction-text: ''
+introduction-img: '101.png'
+prevUrl: /how-to/add-a-cost-to-a-registration-fixed/
+nextUrl: /how-to/configure-one-payment-receipt-for-two-costs/
 done: ''
 ---
 

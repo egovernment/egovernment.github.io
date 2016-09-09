@@ -5,7 +5,7 @@ title: 'Add a cost to a registration (fixed)'
 category: '1. Part A'
 sub-category: 'Costs'
 rate: '1'
-number: '156'
+number: '157'
 introduction-text: 'A registration can be free or have a cost. If the registration is free, no configuration is needed for it cost. If the registration is not free, the cost can be set, either as a fixed cost or as a variable cost (set by it determinant).<br>Here we will see how to set either type of costs.'
 introduction-img: '156.png'
 prevUrl: /how-to/remove-a-cost-in-a-registration/

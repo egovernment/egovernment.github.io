@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-legend-to-the-cost-in-the-payment-page/
-title: 'Add a legend to payment receipt upload in the payments page'
+permalink: /how-to/remove-a-cost-in-a-registration/
+title: 'Remove a cost in a registration'
 category: '1. Part A'
 sub-category: 'Costs'
-rate: '1'
-number: '153'
-introduction-text: ''
-introduction-img: '101.png'
-prevUrl: /how-to/add-a-tooltip-in-front-of-a-cost-in-the-guide/
-nextUrl: /how-to/change-the-value-of-a-fixed-cost/
+rate: '2'
+number: '156'
+introduction-text: 'This recipe explains how to remove, from a registration, a cost that does not apply anymore.'
+introduction-img: '155.png'
+prevUrl: /how-to/change-the-value-of-a-fixed-cost/
+nextUrl: /how-to/add-a-cost-to-a-registration-fixed/
 done: ''
 ---
 
