@@ -5,7 +5,7 @@ title: 'Change the label of the section of the form'
 category: '1. Part A'
 sub-category: 'Data'
 rate: '1'
-number: '161'
+number: '173'
 introduction-text: 'Section names are used for Part A forms, Part B file data view, and print views. Changing it will affect all of those places.'
 introduction-img: '161.png'
 prevUrl: /how-to/add-a-cost-to-a-registration-variable/

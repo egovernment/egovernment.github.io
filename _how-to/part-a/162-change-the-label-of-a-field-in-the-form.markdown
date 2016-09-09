@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/create-a-new-tab-in-the-form/
-title: 'Create a new tab in tabbed view of forms page'
+permalink: /how-to/change-the-label-of-a-field-in-the-form/
+title: 'Change the label of a field of the form'
 category: '1. Part A'
 sub-category: 'Data'
-rate: '4'
-number: '172'
-introduction-text: ''
-introduction-img: '101.png'
-prevUrl: /how-to/create-a-new-section-in-the-form/
-nextUrl: /how-to/create-a-new-section-with-tables-in-the-form/
+rate: '1'
+number: '162'
+introduction-text: 'This recipe explains how to modify the labels of the fields of the form. This only applies to the fields in english language, as the translations are modified directly from the Translation interface of the system.'
+introduction-img: '163.png'
+prevUrl: /how-to/add-the-legend-text-of-a-section-of-the-form/
+nextUrl: /how-to/add-a-legend-for-the-field-of-the-form/
 done: ''
 ---
 
