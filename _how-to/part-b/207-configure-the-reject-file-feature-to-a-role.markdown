@@ -4,7 +4,7 @@ permalink: /how-to/configure-the-reject-file-feature-to-a-role/
 title: 'Configure the "Reject file" feature of a role'
 category: '2. Part B'
 sub-category: 'Roles'
-rate: '2'
+rate: '3'
 number: '205'
 introduction-text: ''
 introduction-img: '101.png'

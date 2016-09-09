@@ -4,7 +4,7 @@ permalink: /how-to/add-a-role/
 title: 'Add a role (processing step)'
 category: '2. Part B'
 sub-category: 'Roles'
-rate: '3'
+rate: '4'
 number: '201'
 introduction-text: ''
 introduction-img: '101.png'

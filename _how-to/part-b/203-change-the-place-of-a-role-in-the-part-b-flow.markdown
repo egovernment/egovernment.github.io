@@ -4,7 +4,7 @@ permalink: /how-to/change-the-place-of-a-role-in-the-part-b-flow/
 title: 'Change the place of a role in the Part B flow'
 category: '2. Part B'
 sub-category: 'Roles'
-rate: '1'
+rate: '2'
 number: '203'
 introduction-text: ''
 introduction-img: '101.png'

@@ -4,7 +4,7 @@ permalink: /how-to/configure-new-cost/
 title: 'Configure new cost'
 category: '1. Part A'
 sub-category: 'Costs'
-rate: '1'
+rate: '2'
 number: '151'
 introduction-text: 'Cost name is used for both Part A and Part B as well as print views. Changing it will affect all of those places.'
 introduction-img: '151.png'

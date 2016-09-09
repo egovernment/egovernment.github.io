@@ -4,7 +4,7 @@ permalink: /how-to/configure-the-send-back-for-correction-feature-to-a-role/
 title: 'Configure the "Sent back for correction" feature to a role'
 category: '2. Part B'
 sub-category: 'Roles'
-rate: '2'
+rate: '3'
 number: '204'
 introduction-text: ''
 introduction-img: '101.png'

@@ -4,7 +4,7 @@ permalink: /how-to/configure-one-payment-receipt-for-two-costs/
 title: 'Configure one payment receipt for many costs'
 category: '1. Part A'
 sub-category: 'Costs'
-rate: '3'
+rate: '2'
 number: '159'
 introduction-text: ''
 introduction-img: '101.png'

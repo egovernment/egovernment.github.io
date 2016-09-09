@@ -4,7 +4,7 @@ permalink: /how-to/add-a-trigger-for-an-initial-question-of-the-guide/
 title: 'Add a trigger for an initial question of the guide'
 category: '1. Part A'
 sub-category: 'Determinants'
-rate: '4'
+rate: '3'
 number: '123'
 introduction-text: ''
 introduction-img: '101.png'

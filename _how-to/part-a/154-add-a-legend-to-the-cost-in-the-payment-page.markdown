@@ -4,7 +4,7 @@ permalink: /how-to/add-a-legend-to-the-cost-in-the-payment-page/
 title: 'Add a legend to payment receipt upload in the payments page'
 category: '1. Part A'
 sub-category: 'Costs'
-rate: '1'
+rate: '2'
 number: '154'
 introduction-text: ''
 introduction-img: '101.png'

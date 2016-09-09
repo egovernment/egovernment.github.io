@@ -4,7 +4,7 @@ permalink: /how-to/remove-a-role/
 title: 'Remove a role (processing step)'
 category: '2. Part B'
 sub-category: 'Roles'
-rate: '2'
+rate: '3'
 number: '206'
 introduction-text: ''
 introduction-img: '101.png'

@@ -4,7 +4,7 @@ permalink: /how-to/add-a-column-to-the-list-of-files-for-one-role/
 title: 'Add a column to the list of files for one role'
 category: '2. Part B'
 sub-category: 'Other'
-rate: '4'
+rate: '3'
 number: '251'
 introduction-text: ''
 introduction-img: '101.png'
