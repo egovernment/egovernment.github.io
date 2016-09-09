@@ -40,6 +40,9 @@
               {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
               {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="lang-select {{ page.lang }}">{{ page.lang }}</a> {% endfor %}
 
+              {% assign docs=site.documentation | where:"ref", page.ref | sort: 'lang' %}
+              {% for doc in docs %} <a href="{{ doc.url | prepend: site.baseurl }}" class="lang-select {{ doc.lang }}">{{ doc.lang }}</a> {% endfor %}
+
               {% assign hows=site.how-to | where:"ref", page.ref | sort: 'lang' %}
               {% for how in hows %} <a href="{{ how.url | prepend: site.baseurl }}" class="lang-select {{ how.lang }}">{{ how.lang }}</a> {% endfor %}
 

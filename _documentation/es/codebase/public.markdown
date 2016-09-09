@@ -1,8 +1,8 @@
 ---
 layout: doc-pages
-permalink: /codebase/public-pages/
+permalink: /codigo-base/public-pages/
 title: 'eRegistrations - Public pages'
-lang: en
+lang: es
 ref: public-pages
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: doc-pages
-permalink: /installation/windows10
-title: 'eRegistrations - Installation on Windows 10'
-lang: en
+permalink: /instalacion/windows10
+title: 'eRegistrations - Instalación en Windows 10'
+lang: es
 ref: windows10
 ---
 

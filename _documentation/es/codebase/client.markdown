@@ -1,8 +1,8 @@
 ---
 layout: doc-pages
-permalink: /codebase/client-side-services/
+permalink: /codigo-base/client-side-services/
 title: 'eRegistrations - Client-side services'
-lang: en
+lang: es
 ref: client-side
 ---
 

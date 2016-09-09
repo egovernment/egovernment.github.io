@@ -1,8 +1,8 @@
 ---
 layout: doc-pages
-permalink: /codebase/model/
+permalink: /codigo-base/model/
 title: 'eRegistrations - Model'
-lang: en
+lang: es
 ref: model
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: doc-pages
-permalink: /codebase/server-side-services/
+permalink: /codigo-base/server-side-services/
 title: 'eRegistrations - Server-side services'
-lang: en
+lang: es
 ref: server-side
 ---
 

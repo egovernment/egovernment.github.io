@@ -1,8 +1,8 @@
 ---
 layout: doc-pages
-permalink: /codebase/front-end/
+permalink: /codigo-base/front-end/
 title: 'eRegistrations - Front-end'
-lang: en
+lang: es
 ref: front-end
 ---
 

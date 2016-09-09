@@ -1,8 +1,8 @@
 ---
 layout: doc-pages
-permalink: /installation/ubuntu
-title: 'eRegistrations - Installation on Linux (Ubuntu)'
-lang: en
+permalink: /instalacion/ubuntu
+title: 'eRegistrations - Instalación en Linux (Ubuntu)'
+lang: es
 ref: ubuntu
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: doc-pages
-permalink: /installation/server
-title: 'Requirements for eRegistrations server'
-lang: en
+permalink: /instalacion/server
+title: 'Requiridos por eRegistrations server'
+lang: es
 ref: server
 ---
 
