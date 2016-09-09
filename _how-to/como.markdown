@@ -1,14 +1,14 @@
 ---
 layout: recipe
-permalink: /how-to/
-title: 'How to...'
-lang: en
+permalink: /como/
+title: 'Cómo'
+lang: es
 ref: how-to
 ---
 
 <div class="faq">
 	
-	<input class="faq-search" type="text" placeholder="Type to search, for example 'add a cost to a registration'...">
+	<input class="faq-search" type="text" placeholder="Escribe para buscar, por ejemplo 'añadir un coste a un registro '...">
 
 	<div class="code-preview">
 
