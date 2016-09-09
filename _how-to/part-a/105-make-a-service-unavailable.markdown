@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-service/
-title: 'Initialize (add) new service'
+permalink: /how-to/make-a-service-unavailable/
+title: 'Make a service temporarily unavailable'
 category: '1. Part A'
 sub-category: 'Service'
 rate: '3'
 number: '105'
 introduction-text: ''
-introduction-img: '105.png'
-prevUrl: /how-to/make-a-service-unavailable/
-nextUrl: /how-to/configure-the-determinant-of-a-service/
+introduction-img: '104.png'
+prevUrl: /how-to/change-the-icon-of-a-service-and-it-tooltip/
+nextUrl: /how-to/add-a-service/
 done: ''
 ---
 
