@@ -1,33 +1,53 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-name-of-a-service/
-title: 'Change name of a service on My Account homepage'
+permalink: /how-to/change-the-icon-of-a-service-and-it-tooltip/
+title: 'Set the icon that represents a service'
 category: '1. Part A'
 sub-category: 'Service'
 rate: '1'
-number: '101'
-introduction-text: 'This recipe is about changing the name of the service in the "Available services" section of My Account.<br>The "Available services" section of MyAccount is managed by the `servicesBoxList` block.'
-introduction-img: '101.png'
-prevUrl: 
-nextUrl: /how-to/change-the-description-of-a-service-from-my-account/
-done: 'yes'
+number: '104'
+introduction-text: ''
+introduction-img: '103.png'
+prevUrl: /how-to/change-the-description-of-a-service-from-my-account/
+nextUrl: /how-to/make-a-service-unavailable/
+done: ''
 ---
 
+The service icon is a [Font Awesome](http://fontawesome.io/cheatsheet/) character.
+
+First check if the character you want to use for the icon exists (You can use the characters for which css classes have been defined here: (https://github.com/egovernment/eregistrations/blob/master/css/components/fa.css#L33-L378) ).
+
+If the character you want to use does not have it's css class defined, then create a pull-request in [eregistrations](https://github.com/egovernment/eregistrations) system. In the issue comment write what Font Awesome character you would like to use.
+
+From now on we assume that the icon (proper font character) already exists (the css class for it is defined i.e. 'fa fa-file').
+
+First we need to adjust "My acount" page:
+
 1. Open file `view/user.js`.
-2. Identify `exports._servicesBoxList` block (it's responsible for "Available Services" list).
-3. Find name of service which should be changed and update it.
+2. Find `exports._servicesBoxList` block.
+3. Identify the `<i>` element inside `buttonContent` block.
+4. Set `<i>` element's css class to the desired class e.g. ('fa fa-file').
+
+After "My account" is updated we need to overwrite `getServiceIcon` method in view.
+This method may or may not by available in you system.
+
+First, let's check if the method is in the system:
+
+1. Open `view/components/business-process-table-columns.js` file (if there is no such file, then your system is not up to date with current version, so you should create a pull request in your system to include new setup).
+2. Look for the `getServiceIcon` method (It overrides the method from [eregistrations/view/components/business-process-table-columns](https://github.com/egovernment/eregistrations/blob/master/view/components/business-process-table-columns.js)). If there is no such method, you will have to create it.
+3. Create/Modify the `columns.getServiceIcon` method (`getServiceIcon` method takes `businessProcess` instance as an argument, and is expected to return an icon (`<i>` with chosen Font Awesome class name) that corresponds to provided `businesProcess`. The method needs to return correct icon (`<i>` element) for provided businessProcess).
 
 ---
 
 ## Example
 
-In the branch "[change-the-name-of-the-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-the-service)" of eregistrations-demo :
+In the branch "[change-the-icon-of-a-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-icon-of-a-service)" of eregistrations-demo :
 
-Change the name of the service from *"Register Demo"* to *"Register company"*
+Change the icon of the "Demo" service. Use 'fa fa-file' as new icon classes.
 
 ### Solution
 
-<div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-name-of-the-service...change-the-name-of-the-service-solution#files')">
+<div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-icon-of-a-service...change-the-icon-of-a-service-solution#files')">
       
 <a name="diff-ff399868a2b79a6fc5aa0b527b07d602"></a>
 <div id="diff-0" class="file js-details-container
@@ -46,11 +66,8 @@ Change the name of the service from *"Register Demo"* to *"Register company"*
           </label>
         </span>
 
-          <a href="/egovernment/eregistrations-demo/blob/7a66dda3ef7d1267950dd1af9308a3349ad83ab2/view/user.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 7a66dda ">View</a>
+          <a href="/egovernment/eregistrations-demo/blob/6d8d8775eb7573c74df374154128fd2fea22a2a8/view/user.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 6d8d877 ">View</a>
 
-          <a class="btn-octicon tooltipped tooltipped-nw" href="github-mac://openRepo/https://github.com/egovernment/eregistrations-demo?branch=change-the-name-of-the-service-solution&amp;filepath=view%2Fuser.js" aria-label="Open this file in GitHub Desktop" data-ga-click="Repository, open with desktop, type:mac">
-              <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"></path></svg>
-          </a>
 
     </div>
     <div class="file-info">
@@ -68,7 +85,7 @@ Change the name of the service from *"Register Demo"* to *"Register company"*
           
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
-      <a href="#diff-ff399868a2b79a6fc5aa0b527b07d602" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/3eeb571f0c015deb2425d192a38e1d9b84d62c1d?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=36&amp;next_line_num_right=36&amp;path=view%2Fuser.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7" data-left-range="1-35" data-right-range="1-35">
+      <a href="#diff-ff399868a2b79a6fc5aa0b527b07d602" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/1262f42f7405ac992db007a61cd3825599bc6d80?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=36&amp;next_line_num_right=36&amp;path=view%2Fuser.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7" data-left-range="1-35" data-right-range="1-35">
         <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"></path></svg>
       </a>
     </td>
@@ -121,7 +138,7 @@ Change the name of the service from *"Register Demo"* to *"Register company"*
 
   <td class="blob-code blob-code-deletion">
 
-    <span class="blob-code-inner">-			<span class="pl-en">i</span>({ class<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>fa fa-user<span class="pl-pds">'</span></span> }), <span class="pl-en">_</span>(<span class="pl-s"><span class="pl-pds">"</span>Register <span class="x x-first x-last">Demo</span><span class="pl-pds">"</span></span>)),</span>
+    <span class="blob-code-inner">-			<span class="pl-en">i</span>({ class<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>fa fa-<span class="x x-first x-last">user</span><span class="pl-pds">'</span></span> }), <span class="pl-en">_</span>(<span class="pl-s"><span class="pl-pds">"</span>Register Demo<span class="pl-pds">"</span></span>)),</span>
 
   </td>
 </tr>
@@ -134,7 +151,7 @@ Change the name of the service from *"Register Demo"* to *"Register company"*
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+			<span class="pl-en">i</span>({ class<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>fa fa-user<span class="pl-pds">'</span></span> }), <span class="pl-en">_</span>(<span class="pl-s"><span class="pl-pds">"</span>Register <span class="x x-first x-last">company</span><span class="pl-pds">"</span></span>)),</span>
+    <span class="blob-code-inner">+			<span class="pl-en">i</span>({ class<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>fa fa-<span class="x x-first x-last">file</span><span class="pl-pds">'</span></span> }), <span class="pl-en">_</span>(<span class="pl-s"><span class="pl-pds">"</span>Register Demo<span class="pl-pds">"</span></span>)),</span>
 
   </td>
 </tr>
@@ -181,7 +198,7 @@ Change the name of the service from *"Register Demo"* to *"Register company"*
 
   <tr class="js-expandable-line">
    <td class="blob-num blob-num-expandable" colspan="2">
-     <a href="#diff-ff399868a2b79a6fc5aa0b527b07d602" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/3eeb571f0c015deb2425d192a38e1d9b84d62c1d?diff=unified&amp;in_wiki_context=&amp;mode=100644&amp;path=view%2Fuser.js&amp;prev_line_num_left=42&amp;prev_line_num_right=42" data-left-range="43-44" data-right-range="43-44">
+     <a href="#diff-ff399868a2b79a6fc5aa0b527b07d602" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/1262f42f7405ac992db007a61cd3825599bc6d80?diff=unified&amp;in_wiki_context=&amp;mode=100644&amp;path=view%2Fuser.js&amp;prev_line_num_left=42&amp;prev_line_num_right=42" data-left-range="43-44" data-right-range="43-44">
        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"></path></svg>
      </a>
    </td>

@@ -5,7 +5,7 @@ title: 'Change the description of a service at My Account homepage'
 category: '1. Part A'
 sub-category: 'Service'
 rate: '1'
-number: '102'
+number: '103'
 introduction-text: 'This recipe is about changing the description of the service in the "Available services" section of My Account.<br>The "Available services" section of MyAccount is managed by the `servicesBoxList` block.'
 introduction-img: '102.png'
 prevUrl: /how-to/change-the-name-of-a-service/
