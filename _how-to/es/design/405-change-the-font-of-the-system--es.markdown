@@ -8,8 +8,8 @@ rate: '3'
 number: '405'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/change-the-color-of-the-table-headers/
-nextUrl: /how-to/change-the-footer/
+prevUrl: 404
+nextUrl: 407
 done: ''
 lang: es
 ref: /how-to/change-the-font-of-the-system/

@@ -8,8 +8,8 @@ rate: '4'
 number: '407'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/change-the-font-of-the-system/
-nextUrl: /how-to/change-the-format-of-the-passwords-of-the-accounts/
+prevUrl: 406
+nextUrl: 505
 done: ''
 lang: en
 ref: /how-to/change-the-footer/

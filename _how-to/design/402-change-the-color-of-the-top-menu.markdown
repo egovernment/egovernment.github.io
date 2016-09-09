@@ -8,8 +8,8 @@ rate: '2'
 number: '402'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/change-the-top-left-logo/
-nextUrl: /how-to/change-the-color-of-the-titles/
+prevUrl: 401
+nextUrl: 403
 done: ''
 lang: en
 ref: /how-to/change-the-color-of-the-top-menu/

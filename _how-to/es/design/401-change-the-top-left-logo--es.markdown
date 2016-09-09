@@ -8,8 +8,8 @@ rate: '1'
 number: '401'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/add-a-Clickdesk-plugin-to-the-public-pages/
-nextUrl: /how-to/change-the-color-of-the-top-menu/
+prevUrl: 
+nextUrl: 402
 done: ''
 lang: es
 ref: /how-to/change-the-top-left-logo/

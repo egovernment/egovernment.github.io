@@ -8,8 +8,8 @@ rate: '2'
 number: '403'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/change-the-color-of-the-top-menu/
-nextUrl: /how-to/change-the-color-of-the-table-headers/
+prevUrl: 402
+nextUrl: 404
 done: ''
 lang: en
 ref: /how-to/change-the-color-of-the-titles/

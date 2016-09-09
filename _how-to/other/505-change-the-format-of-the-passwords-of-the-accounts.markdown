@@ -6,7 +6,7 @@ category: '5. Other'
 sub-category: ''
 rate: '4'
 number: '505'
-prevUrl: /how-to/change-the-footer/
+prevUrl: 407
 nextUrl:
 done: ''
 lang: en

@@ -9,7 +9,7 @@ number: '301'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: 
-nextUrl: /how-to/modify-the-look-and-feel-of-the-public-pages/
+nextUrl: 302
 done: ''
 lang: en
 ref: /how-to/add-a-new-public-page-and-route-it/
