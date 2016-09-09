@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-name-of-a-cost/
+permalink: /how-to/configure-new-cost/
 title: 'Configure new cost'
 category: '1. Part A'
 sub-category: 'Costs'
@@ -10,7 +10,7 @@ introduction-text: 'Cost name is used for both Part A and Part B as well as prin
 introduction-img: '151.png'
 prevUrl: /how-to/add-a-determinant-to-a-requirement/
 nextUrl: /how-to/add-a-tooltip-in-front-of-a-cost-in-the-guide/
-done: 'yes'
+done: ''
 ---
 
 Every cost is associated with a service, so to change it's name, we have to know the service to which it applies.
