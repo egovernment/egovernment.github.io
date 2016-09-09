@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /como-hacer/
-title: 'Cómo'
+title: 'Cómo hacer'
 lang: es
 ref: how-to
 ---
