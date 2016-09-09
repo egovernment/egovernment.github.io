@@ -21,17 +21,17 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <span class="category-label pull-left">{{ page.category }} <small>{% if page.sub-category != '' %}- {{ page.sub-category }}{% endif %} <span class="badge recipe-badge rate-{{ page.rate }}">{{ page.rate }}</span></small></span>
-                                {% if page.nextUrl %}
-                                <a href="{{ page.nextUrl }}" class="next-link pull-right">
+                                
+                                <a href="{{ page.next.url }}" class="next-link pull-right">
                                     <i class="fa fa-angle-right"></i>
                                 </a>
-                                {% endif %}
+                                
                                 <span class="label recipe-label {% if page.category contains '1.' %}label-warning{% endif %}{% if page.category contains '2.' %}label-info{% endif %}{% if page.category contains '3.' %}label-purple{% endif %}{% if page.category contains '4.' %}label-danger{% endif %}{% if page.category contains '5.' %}label-dark{% endif %} label-cat pull-right">{{ page.number }}</span>
-                                {% if page.prevUrl %}
-                                <a href="{{ page.prevUrl }}" class="prev-link pull-right">
+                                
+                                <a href="{{ page.previous.url }}" class="prev-link pull-right">
                                     <i class="fa fa-angle-left"></i>
                                 </a>
-                                {% endif %}
+                                
                             </div>
                         </div>
                         {% endunless %}
