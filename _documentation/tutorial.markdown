@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /tutorial/
 title: 'eRegistrations - Tutorial'
+lang: en
+ref: tutorial
 ---
 
 

@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /documentation/framework/
 title: 'eRegistrations - Framework'
+lang: en
+ref: framework
 ---
 
 # eRegistrations
