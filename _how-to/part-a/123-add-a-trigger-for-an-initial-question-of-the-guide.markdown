@@ -5,7 +5,7 @@ title: 'Add a trigger for an initial question of the guide'
 category: '1. Part A'
 sub-category: 'Determinants'
 rate: '4'
-number: '122'
+number: '123'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: /how-to/change-the-label-of-an-initial-question-of-the-guide/
