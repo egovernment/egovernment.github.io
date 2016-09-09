@@ -10,7 +10,7 @@ introduction-text: 'This recipe explains how to set the tooltip in front of a co
 introduction-img: '152.png'
 prevUrl: /how-to/change-the-name-of-a-cost/
 nextUrl: /how-to/add-a-legend-to-the-cost-in-the-payment-page/
-done: 'yes'
+done: ''
 ---
 
 Every cost is associated with a service, so to change it's tooltip, we have to know the service to which it applies.
