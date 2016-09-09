@@ -5,7 +5,7 @@ title: 'Add new registration to a service'
 category: '1. Part A'
 sub-category: 'Registration'
 rate: '3'
-number: '113'
+number: '111'
 introduction-text: 'This page explains how to add a registration that can be chosen by the user in the guide.<br>
 The registration will appear in the list of **mandatory** or **optional** registrations when it determinant is set in the preliminary questions. The user will then be able to select it or leave it unchecked if he/she has already process this registration.<br>A registration must be configured with it certificate(s), requirement(s), cost, etc.'
 introduction-img: '113.png'
