@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-name-of-a-requirement/
-title: 'Change the name of a requirement'
+permalink: /how-to/add-a-tooltip-in-front-of-a-document-in-the-guide/
+title: 'Add a tooltip to a requirement in the guide'
 category: '1. Part A'
 sub-category: 'Requirements'
 rate: '1'
-number: '141'
-introduction-text: 'Changing the name of a requirement will impact all the screens and the email notifications where this requirement happens.'
-introduction-img: '141.png'
-prevUrl: /how-to/add-a-certificate-to-a-registration/
-nextUrl: /how-to/add-a-tooltip-in-front-of-a-document-in-the-guide/
+number: '143'
+introduction-text: ''
+introduction-img: ''
+prevUrl: /how-to/change-the-name-of-a-requirement/
+nextUrl: /how-to/add-a-legend-to-the-requirement-in-the-doc-page/
 done: ''
 ---
 

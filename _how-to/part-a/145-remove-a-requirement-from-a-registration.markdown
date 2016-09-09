@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-tooltip-in-front-of-a-document-in-the-guide/
-title: 'Add a tooltip to a requirement in the guide'
+permalink: /how-to/remove-a-requirement-from-a-registration/
+title: 'Remove a need for a requirement in chosen registration'
 category: '1. Part A'
 sub-category: 'Requirements'
-rate: '1'
-number: '142'
-introduction-text: ''
-introduction-img: ''
-prevUrl: /how-to/change-the-name-of-a-requirement/
-nextUrl: /how-to/add-a-legend-to-the-requirement-in-the-doc-page/
+rate: '4'
+number: '145'
+introduction-text: 'A requirement is a document that needs to be uploaded with the registrations file. Here we will see how to remove a document that is not required anymore for a certain registration.'
+introduction-img: '144.png'
+prevUrl: /how-to/add-a-legend-to-the-requirement-in-the-doc-page/
+nextUrl: /how-to/add-a-requirement-to-a-registration/
 done: ''
 ---
 
