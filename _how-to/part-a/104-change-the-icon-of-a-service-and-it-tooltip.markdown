@@ -10,7 +10,7 @@ introduction-text: ''
 introduction-img: '103.png'
 prevUrl: /how-to/change-the-description-of-a-service-from-my-account/
 nextUrl: /how-to/make-a-service-unavailable/
-done: ''
+done: 'yes'
 ---
 
 The service icon is a [Font Awesome](http://fontawesome.io/cheatsheet/) character.
@@ -49,13 +49,13 @@ Change the icon of the "Demo" service. Use 'fa fa-file' as new icon classes.
 ### Solution
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-icon-of-a-service...change-the-icon-of-a-service-solution#files')">
-      
+
 <a name="diff-007c6d9af20c4ac6b837960b8d799a0b"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="view/components/business-process-table-columns.js">
@@ -77,13 +77,13 @@ Change the icon of the "Demo" service. Use 'fa fa-file' as new icon classes.
       <span class="user-select-contain" title="view/components/business-process-table-columns.js">
         view/components/business-process-table-columns.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr data-position="0">
     <td id="diff-007c6d9af20c4ac6b837960b8d799a0bL0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
     <td id="diff-007c6d9af20c4ac6b837960b8d799a0bR0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
@@ -277,13 +277,13 @@ Change the icon of the "Demo" service. Use 'fa fa-file' as new icon classes.
       </div>
 </div>
 
-      
+
 <a name="diff-ff399868a2b79a6fc5aa0b527b07d602"></a>
 <div id="diff-1" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="view/user.js">
@@ -305,13 +305,13 @@ Change the icon of the "Demo" service. Use 'fa fa-file' as new icon classes.
       <span class="user-select-contain" title="view/user.js">
         view/user.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-ff399868a2b79a6fc5aa0b527b07d602" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/1262f42f7405ac992db007a61cd3825599bc6d80?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=36&amp;next_line_num_right=36&amp;path=view%2Fuser.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7" data-left-range="1-35" data-right-range="1-35">
