@@ -10,7 +10,7 @@ introduction-text: 'The legends for requirements provide additional information 
 introduction-img: '143.png'
 prevUrl: /how-to/change-the-name-of-a-requirement/
 nextUrl: /how-to/add-a-legend-to-the-requirement-in-the-doc-page/
-done: ''
+done: 'yes'
 ---
 
 The legend of requirement is, by default, taken from the document upon which the requirement is built.
