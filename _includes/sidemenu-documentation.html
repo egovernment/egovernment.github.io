@@ -3,23 +3,12 @@
         <a href="/">Overview</a>
     </li>
     <li>
-        <a href="#" class="has-child {% if page.path contains 'installation' %}active open{% endif %}">Installation</a>
+        <a href="#" class="has-child {% if page.category contains 'installation' %}active open{% endif %}">{{ site.documentation-pages.installation.title[page.lang]}}</a>
         <ul>
-            <li class="{% if page.path == '_documentation/installation/server.markdown' %}active{% endif %}">
-                <a href="/installation/server">On a server</a>
-            </li>
-            <li class="{% if page.path == '_documentation/installation/mac-os-x.markdown' %}active{% endif %}">
-                <a href="/installation/mac-os-x">Mac OS X</a>
-            </li>
-            <li class="{% if page.path == '_documentation/installation/ubuntu.markdown' %}active{% endif %}">
-                <a href="/installation/ubuntu">Linux (Ubuntu)</a>
-            </li>
-            <li class="{% if page.path == '_documentation/installation/windows10.markdown' %}active{% endif %}">
-                <a href="/installation/windows10">Windows 10</a>
-            </li>
-            <li class="{% if page.path == '_documentation/installation/optional-software/nginx.markdown' %}active{% endif %}">
-                <a href="/installation/optional-software/nginx">Optional Software - NGINX</a>
-            </li>
+            {% assign installs = site.documentation | where: 'lang', page.lang | where: 'category', 'installation' | sort: 'weight' %}
+            {% for install in installs %}
+            <li class="{% if page.url == install.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ install.url }}">{{ install.title | remove: 'eRegistrations - ' }}</a></li>
+            {% endfor %}
         </ul>
     </li>
     <li class="{% if page.path == '_documentation/fundamentals.markdown' %}active{% endif %}">
@@ -29,23 +18,12 @@
         <a href="/architecture-overview">Architecture overview</a>
     </li>
     <li>
-        <a href="#" class="has-child {% if page.path contains 'codebase' %}active open{% endif %}">Codebase</a>
+        <a href="#" class="has-child {% if page.category contains 'codebase' %}active open{% endif %}">Codebase</a>
         <ul>
-            <li class="{% if page.path == '_documentation/codebase/server.markdown' %}active{% endif %}">
-                <a href="/codebase/server-side-services">Server-side services</a>
-            </li>
-            <li class="{% if page.path == '_documentation/codebase/client.markdown' %}active{% endif %}">
-                <a href="/codebase/client-side-services">Client-side services</a>
-            </li>
-            <li class="{% if page.path == '_documentation/codebase/model.markdown' %}active{% endif %}">
-                <a href="/codebase/model">Model</a>
-            </li>
-            <li class="{% if page.path == '_documentation/codebase/front.markdown' %}active{% endif %}">
-                <a href="/codebase/front-end">Front-end (CSS & HTML)</a>
-            </li>
-            <li class="{% if page.path == '_documentation/codebase/public.markdown' %}active{% endif %}">
-                <a href="/codebase/public-pages">Public pages</a>
-            </li>
+            {% assign codes = site.documentation | where: 'lang', page.lang | where: 'category', 'codebase' | sort: 'weight' %}
+            {% for code in codes %}
+            <li class="{% if page.url == code.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ code.url }}">{{ code.title | remove: 'eRegistrations - ' }}</a></li>
+            {% endfor %}
         </ul>
     </li>
     <li class="{% if page.path == '_documentation/tutorial.markdown' %}active{% endif %}">

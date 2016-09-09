@@ -1,7 +1,9 @@
 ---
 layout: doc-pages
 permalink: /codigo-base/front-end/
-title: 'eRegistrations - Front-end'
+title: 'eRegistrations - Front-end (CSS & HTML)'
+category: codebase
+weight: 4
 lang: es
 ref: front-end
 ---

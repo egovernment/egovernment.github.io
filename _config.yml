@@ -20,6 +20,19 @@ index:
   en:
   es: inicio.html
 
+documentation-pages:
+  overview:
+    title:
+      en: 'Overview'
+      es: 'Visión de conjunto'
+    urls:
+      en: '/'
+      es: '/inicio.html'
+  installation:
+    title:
+      en: 'Installation'
+      es: 'Instalación'
+
 # Build settings
 markdown: kramdown
 

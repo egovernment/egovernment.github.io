@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /codigo-base/public-pages/
 title: 'eRegistrations - Public pages'
+category: codebase
+weight: 5
 lang: es
 ref: public-pages
 ---
