@@ -1,18 +1,16 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-clickdesk-plugin-to-the-public-pages/
-title: 'Add a Clickdesk plugin to the public pages'
-category: '3. Public pages'
-sub-category: 'Content'
+permalink: /como/cambiar-el-formato-de-las-contrasenas-de-las-cuentas/
+title: 'Cambiar el formato de las contraseñas de las cuentas'
+category: '5. Otro'
+sub-category: ''
 rate: '4'
-number: '304'
-introduction-text: ''
-introduction-img: '101.png'
-prevUrl: /how-to/add-a-media-in-the-public-pages/
-nextUrl: /how-to/change-the-top-left-logo/
+number: '505'
+prevUrl: /how-to/change-the-footer/
+nextUrl:
 done: ''
-lang: en
-ref: /how-to/add-a-clickdesk-plugin-to-the-public-pages/
+lang: es
+ref: /how-to/change-the-format-of-the-passwords-of-the-accounts/
 ---
 
 Introduction lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

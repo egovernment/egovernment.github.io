@@ -29,6 +29,12 @@ collections:
     output: true
   how-to:
     output: true
+    link-title:
+        en: 'Search'
+        es: 'Buscar'
+    baseurl:
+        en: '/how-to'
+        es: '/como'
   trainings:
     output: true
 
