@@ -27,8 +27,17 @@ markdown: kramdown
 collections:
   documentation:
     output: true
+    title:
+        en: 'Documentation'
+        es: 'Documentación'
+    baseurl:
+        en: '/documentation'
+        es: '/documentacion'
   how-to:
     output: true
+    title:
+        en: 'How-to'
+        es: 'Cómo'
     link-title:
         en: 'Search'
         es: 'Buscar'
@@ -37,4 +46,10 @@ collections:
         es: '/como'
   trainings:
     output: true
+    title:
+        en: 'Trainings'
+        es: 'Entrenamientos'
+    baseurl:
+        en: '/trainings'
+        es: '/entrenamientos'
 
