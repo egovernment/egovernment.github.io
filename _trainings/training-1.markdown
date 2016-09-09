@@ -1,8 +1,8 @@
 ---
 layout: training
 permalink: /trainings/1/
-title: 'Training 1'
-objective: 'Modify an existing service - simple'
+title: 'Training 1: Administrator eRegistration'
+objective: 'level 1'
 ---
 
 The result of this training is a diploma of "eRegistrations administrator (level 1)".
