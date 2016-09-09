@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-legend-to-the-requirement-in-the-doc-page/
-title: 'Add a legend to the requirement upload in the documents page'
+permalink: /how-to/change-the-name-of-a-requirement/
+title: 'Change the name of a requirement'
 category: '1. Part A'
 sub-category: 'Requirements'
-rate: '3'
-number: '143'
-introduction-text: ''
-introduction-img: '101.png'
-prevUrl: /how-to/add-a-tooltip-in-front-of-a-document-in-the-guide/
-nextUrl: /how-to/remove-a-requirement-from-a-registration/
+rate: '1'
+number: '142'
+introduction-text: 'Changing the name of a requirement will impact all the screens and the email notifications where this requirement happens.'
+introduction-img: '141.png'
+prevUrl: /how-to/add-a-certificate-to-a-registration/
+nextUrl: /how-to/add-a-tooltip-in-front-of-a-document-in-the-guide/
 done: ''
 ---
 

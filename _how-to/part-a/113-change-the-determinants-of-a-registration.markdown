@@ -5,7 +5,7 @@ title: 'Make registration applicable and/or mandatory depending on a condition'
 category: '1. Part A'
 sub-category: 'Registration'
 rate: '2'
-number: '112'
+number: '113'
 introduction-text: 'A registration can be mandatory, optional or un-applicable for certain situations. Example : the registration at the Business registry in El Salvador is optional for assets inferior to 12 000$. The determinant(s) of a registration are set through the initial questions of the guide.'
 introduction-img: '112.gif'
 prevUrl: /how-to/change-the-name-and-the-short-name-of-a-registration

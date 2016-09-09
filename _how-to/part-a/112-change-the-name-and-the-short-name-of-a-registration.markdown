@@ -5,7 +5,7 @@ title: 'Change the label of a registration'
 category: '1. Part A'
 sub-category: 'Registration'
 rate: '1'
-number: '111'
+number: '112'
 introduction-text: 'The name of a registration appears in the guide, in the email sent to the users, in the history of the file... The name change will take place in all those places.<br>It is recommended to name the registration as "Name-of-certificate at Institution-in-charge".'
 introduction-img: '111.png'
 prevUrl: /how-to/configure-the-determinant-of-a-service/

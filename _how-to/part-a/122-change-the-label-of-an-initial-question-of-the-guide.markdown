@@ -5,7 +5,7 @@ title: 'Change the label of an initial question of the guide'
 category: '1. Part A'
 sub-category: 'Determinants'
 rate: '1'
-number: '121'
+number: '122'
 introduction-text: ''
 introduction-img: '121.png'
 prevUrl: /how-to/add-a-registration-to-a-service/

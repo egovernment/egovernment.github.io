@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-trigger-for-an-initial-question-of-the-guide/
-title: 'Add a trigger for an initial question of the guide'
+permalink: /how-to/add-a-certificate-to-a-registration/
+title: 'Add another certificate to a registration'
 category: '1. Part A'
-sub-category: 'Determinants'
-rate: '4'
-number: '122'
-introduction-text: ''
-introduction-img: '101.png'
-prevUrl: /how-to/change-the-label-of-an-initial-question-of-the-guide/
-nextUrl: /how-to/change-the-name-of-a-certificate/
+sub-category: 'Certificates'
+rate: '3'
+number: '131'
+introduction-text: 'Usually registration results with one certificate (of same name). Still there can be the case where result of registration is more than one certificate'
+introduction-img: '133.png'
+prevUrl: /how-to/remove-a-certificate-from-a-registration/
+nextUrl: /how-to/change-the-name-of-a-requirement/
 done: ''
 ---
 

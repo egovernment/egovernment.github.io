@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-tooltip-in-front-of-a-document-in-the-guide/
-title: 'Add a tooltip to a requirement in the guide'
+permalink: /how-to/add-a-trigger-for-an-initial-question-of-the-guide/
+title: 'Add a trigger for an initial question of the guide'
 category: '1. Part A'
-sub-category: 'Requirements'
-rate: '1'
-number: '142'
+sub-category: 'Determinants'
+rate: '4'
+number: '123'
 introduction-text: ''
-introduction-img: ''
-prevUrl: /how-to/change-the-name-of-a-requirement/
-nextUrl: /how-to/add-a-legend-to-the-requirement-in-the-doc-page/
+introduction-img: '101.png'
+prevUrl: /how-to/change-the-label-of-an-initial-question-of-the-guide/
+nextUrl: /how-to/change-the-name-of-a-certificate/
 done: ''
 ---
 

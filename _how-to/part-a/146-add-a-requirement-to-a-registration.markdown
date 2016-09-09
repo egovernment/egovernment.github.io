@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-determinant-to-a-requirement/
-title: 'Make requirement of registration conditionally required (via determinant)'
+permalink: /how-to/add-a-requirement-to-a-registration/
+title: 'Mark requirement as needed by chosen registration'
 category: '1. Part A'
 sub-category: 'Requirements'
-rate: '2'
+rate: '1'
 number: '146'
 introduction-text: 'A requirement is a document that needs to be uploaded with the registrations file. Very often this document needs to be shown at the Front Desk to withdraw the certificate(s). The requirement is triggered by it determinant(s) and appear in the guide only when the registration to which it is linked is checked by the user.<br>Here we will see how to add a requirement to a registration so the user must upload it in the "Documents" page, bring the original copy of the requirement to the Front Desk for withdrawal and set it eventual determinants.'
 introduction-img: '145.png'
-prevUrl: /how-to/add-a-requirement-to-a-registration/
-nextUrl: /how-to/change-the-name-of-a-cost/
+prevUrl: /how-to/remove-a-requirement-from-a-registration/
+nextUrl: /how-to/add-a-determinant-to-a-requirement/
 done: ''
 ---
 

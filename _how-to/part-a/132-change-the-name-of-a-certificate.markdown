@@ -5,7 +5,7 @@ title: 'Change the name of a certificate'
 category: '1. Part A'
 sub-category: 'Certificates'
 rate: '1'
-number: '131'
+number: '132'
 introduction-text: 'Changing the name of a certificate impacts on all the certificates already processed in the system.'
 introduction-img: '131.png'
 prevUrl: /how-to/add-a-trigger-for-an-initial-question-of-the-guide/

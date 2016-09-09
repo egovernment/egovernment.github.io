@@ -3,9 +3,9 @@ layout: recipe
 permalink: /how-to/configure-the-determinant-of-a-service/
 title: 'Define a new field for the guide'
 category: '1. Part A'
-sub-category: 'Service'
+sub-category: 'Determinants'
 rate: '2'
-number: '106'
+number: '121'
 introduction-text: ''
 introduction-img: '106.png'
 prevUrl: /how-to/add-a-service/
