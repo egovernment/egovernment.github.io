@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /como/modificar-la-apariencia-de-las-paginas-publicas/
+permalink: /como-hacer/modificar-la-apariencia-de-las-paginas-publicas/
 title: 'Modificar la apariencia de las páginas públicas'
 category: '3. Páginas públicas'
 sub-category: 'Contenido'

@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /como/cambiar-el-color-de-losencabezados-de-la-tabla/
+permalink: /como-hacer/cambiar-el-color-de-losencabezados-de-la-tabla/
 title: 'Cambiar el color de los encabezados de la tabla'
 category: '4. Design'
 sub-category: ''

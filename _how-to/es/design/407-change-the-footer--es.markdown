@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /como/cambiar-el-pie-de-pagina/
+permalink: /como-hacer/cambiar-el-pie-de-pagina/
 title: 'Cambiar el pie de página'
 category: '4. Design'
 sub-category: ''

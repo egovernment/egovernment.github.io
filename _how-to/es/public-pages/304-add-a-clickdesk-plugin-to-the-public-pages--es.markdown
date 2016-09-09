@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /como/anadir-un-plugin-clickdesk-a-las-paginas-publicas/
+permalink: /como-hacer/anadir-un-plugin-clickdesk-a-las-paginas-publicas/
 title: 'Añadir un plugin Clickdesk a las páginas públicas'
 category: '3. Páginas públicas'
 sub-category: 'Contenido'

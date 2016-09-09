@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /como/anadir-una-nueva-pagina-publica-y-la-ruta-se/
+permalink: /como-hacer/anadir-una-nueva-pagina-publica-y-la-ruta-se/
 title: 'Añadir una nueva página pública y la ruta se'
 category: '3. Páginas públicas'
 sub-category: 'Contenido'

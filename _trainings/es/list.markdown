@@ -1,8 +1,8 @@
 ---
 layout: training
-permalink: /trainings/
-title: 'Trainings for eRegistrations system'
-lang: en
+permalink: /entrenamientos/
+title: 'Entrenamientos para el sistema eRegistrations'
+lang: es
 ref: training
 ---
 

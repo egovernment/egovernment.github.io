@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /como/cambiar-el-color-de-los-titulos/
+permalink: /como-hacer/cambiar-el-color-de-los-titulos/
 title: 'Cambiar el color de los títulos'
 category: '4. Design'
 sub-category: ''

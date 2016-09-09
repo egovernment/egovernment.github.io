@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /como/cambiar-el-formato-de-las-contrasenas-de-las-cuentas/
+permalink: /como-hacer/cambiar-el-formato-de-las-contrasenas-de-las-cuentas/
 title: 'Cambiar el formato de las contraseñas de las cuentas'
 category: '5. Otro'
 sub-category: ''

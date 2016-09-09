@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /como/anadir-un-medio-de-comunicacion-en-las-paginas-publicas/
+permalink: /como-hacer/anadir-un-medio-de-comunicacion-en-las-paginas-publicas/
 title: 'Añadir un medio de comunicación en las páginas públicas (video, imagen)'
 category: '3. Páginas públicas'
 sub-category: 'Contenido'

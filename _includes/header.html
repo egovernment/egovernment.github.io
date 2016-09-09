@@ -27,9 +27,15 @@
       <!-- Top navbar -->
       <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
         <ul class="nav navbar-nav navbar-right">
-          <li class="{% unless page.url contains 'how-to' or page.url contains 'como' or page.url contains 'trainings' %}active{% endunless %}"><a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ doc.title[page.lang] }}</a></li>
-          <li class="{% if page.url contains 'how-to' or page.url contains 'como' %}active{% endif %}"><a href="{{ how.baseurl[page.lang] }}">{{ how.title[page.lang] }}</a></li>
-          <li class="{% if page.url contains 'trainings' %}active{% endif %}"><a href="{{ training.title[page.lang] }}">{{ training.title[page.lang] }}</a></li>
+          <li class="{% unless page.url contains 'how-to' or page.url contains 'como' or page.url contains 'trainings' or page.url contains 'capacitaciones' %}active{% endunless %}">
+            <a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ doc.title[page.lang] }}</a>
+          </li>
+          <li class="{% if page.url contains 'how-to' or page.url contains 'como' %}active{% endif %}">
+            <a href="{{ site.baseurl }}/{{ how.baseurl[page.lang] }}">{{ how.title[page.lang] }}</a>
+          </li>
+          <li class="{% if page.url contains 'trainings' or page.url contains 'capacitaciones' %}active{% endif %}">
+            <a href="{{ site.baseurl }}/{{ training.title[page.lang] }}">{{ training.title[page.lang] }}</a>
+          </li>
           <li>
               {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
               {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="lang-select {{ post.lang }}">{{ post.lang }}</a> {% endfor %}

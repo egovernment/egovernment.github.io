@@ -37,19 +37,19 @@ collections:
     output: true
     title:
         en: 'How-to'
-        es: 'Cómo'
+        es: 'Cómo hacer'
     link-title:
         en: 'Search'
         es: 'Buscar'
     baseurl:
         en: '/how-to'
-        es: '/como'
+        es: '/como-hacer'
   trainings:
     output: true
     title:
         en: 'Trainings'
-        es: 'Entrenamientos'
+        es: 'Capacitaciones'
     baseurl:
         en: '/trainings'
-        es: '/entrenamientos'
+        es: '/capacitaciones'
 
