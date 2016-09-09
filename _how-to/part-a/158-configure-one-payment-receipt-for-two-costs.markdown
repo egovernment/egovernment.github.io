@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/respect-the-vertical-rhythm-of-the-elements/
-title: 'Respect the vertical rhythm of the elements'
-category: '4. Design'
-sub-category: ''
-rate: '4'
-number: '406'
+permalink: /how-to/configure-one-payment-receipt-for-two-costs/
+title: 'Configure one payment receipt for many costs'
+category: '1. Part A'
+sub-category: 'Costs'
+rate: '3'
+number: '158'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/change-the-font-of-the-system/
-nextUrl: /how-to/change-the-footer/
+prevUrl: /how-to/add-a-cost-to-a-registration-variable/
+nextUrl: /how-to/change-the-name-of-a-section-of-the-form/
 done: ''
 ---
 

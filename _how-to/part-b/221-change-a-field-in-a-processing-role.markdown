@@ -8,7 +8,7 @@ rate: '1'
 number: '221'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/add-the-zone-feature-to-a-role/
+prevUrl: /how-to/remove-a-role/
 nextUrl: /how-to/remove-a-field-in-a-processing-role/
 done: ''
 ---

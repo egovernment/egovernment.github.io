@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/create-a-new-tab-in-the-form/
-title: 'Create a new tab in the form'
+title: 'Create a new tab in tabbed view of forms page'
 category: '1. Part A'
 sub-category: 'Data'
 rate: '4'

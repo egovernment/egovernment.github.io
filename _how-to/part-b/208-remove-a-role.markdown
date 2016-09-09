@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/remove-a-role/
-title: 'Remove a role'
+title: 'Remove a role (processing step)'
 category: '2. Part B'
 sub-category: 'Roles'
 rate: '2'
@@ -9,7 +9,7 @@ number: '208'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: /how-to/add-a-role/
-nextUrl: /how-to/add-the-zone-feature-to-a-role/
+nextUrl: /how-to/change-a-field-in-a-processing-role/
 done: ''
 ---
 

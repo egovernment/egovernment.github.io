@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/configure-the-determinant-of-a-service/
-title: 'Configure the determinant of a service'
+title: 'Define new determinant of a service (field of the guide)'
 category: '1. Part A'
 sub-category: 'Service'
 rate: '2'
@@ -10,7 +10,7 @@ introduction-text: ''
 introduction-img: '106.png'
 prevUrl: /how-to/add-a-service/
 nextUrl: /how-to/change-the-name-and-the-short-name-of-a-registration/
-done: 'yes'
+done: ''
 ---
 
 To acomplish this task we need two things:

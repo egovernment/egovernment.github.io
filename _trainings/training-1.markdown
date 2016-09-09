@@ -59,7 +59,7 @@ Local installation of eregistrations-demo, github account
 	    <td>Day 2 PM</td>
 	    <td>2 hours</td>
 	    <td>Exercice 1 "Modify Service-1 name and description"</td>
-	    <td><a href="/how-to/change-the-name-of-a-service/">101</a><br><a href="/how-to/change-the-description-of-a-service-from-myAccount/">102</a></td>
+	    <td><a href="/how-to/change-the-name-of-a-service/">101</a><br><a href="/how-to/change-the-description-of-a-service-from-my-account/">102</a></td>
 	  </tr>
 	  <tr>
 	    <td>Day 2 PM</td>

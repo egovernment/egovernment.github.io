@@ -9,7 +9,7 @@ number: '173'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: /how-to/create-a-new-tab-in-the-form/
-nextUrl: /how-to/modify-the-sworn-declaration/
+nextUrl: /how-to/modify-the-legends-of-the-5-pages-of-the-part-a/
 done: ''
 ---
 

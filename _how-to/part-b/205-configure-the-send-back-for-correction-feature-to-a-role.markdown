@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/configure-the-Reject-file-feature-to-a-role/
-title: 'Configure the "Reject file" feature of a role'
+permalink: /how-to/configure-the-send-back-for-correction-feature-to-a-role/
+title: 'Configure the "Sent back for correction" feature to a role'
 category: '2. Part B'
 sub-category: 'Roles'
 rate: '2'
-number: '206'
+number: '205'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/configure-the-Send-back-for-correction-feature-to-a-role/
-nextUrl: /how-to/add-a-role/
+prevUrl: /how-to/change-the-place-of-a-role-in-the-part-b-flow/
+nextUrl: /how-to/configure-the-reject-file-feature-to-a-role/
 done: ''
 ---
 

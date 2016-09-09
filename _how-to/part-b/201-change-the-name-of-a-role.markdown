@@ -8,8 +8,8 @@ rate: '1'
 number: '201'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/modify-the-legends-of-the-5-pages-of-the-Part-A/
-nextUrl: /how-to/change-the-type-of-a-role/
+prevUrl: /how-to/modify-the-legends-of-the-5-pages-of-the-part-a/
+nextUrl: /how-to/change-the-place-of-a-role-in-the-part-b-flow/
 done: ''
 ---
 

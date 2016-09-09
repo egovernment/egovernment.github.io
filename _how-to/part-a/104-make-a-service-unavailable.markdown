@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/make-a-service-unavailable/
-title: 'Make a service unavailable'
+title: 'Make a service temporarily unavailable'
 category: '1. Part A'
 sub-category: 'Service'
 rate: '3'

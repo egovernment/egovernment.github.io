@@ -9,7 +9,7 @@ number: '157'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: /how-to/add-a-cost-to-a-registration-fixed/
-nextUrl: /how-to/change-the-name-of-a-section-of-the-form/
+nextUrl: /how-to/configure-one-payment-receipt-for-two-costs/
 done: ''
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/create-the-options-of-a-field-that-is-a-selector/
-title: 'Create the options of a field that is a selector'
+title: 'Create selector field and add it to the form'
 category: '1. Part A'
 sub-category: 'Data'
 rate: '2'

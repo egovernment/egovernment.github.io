@@ -6,8 +6,8 @@ category: '5. Other'
 sub-category: ''
 rate: '4'
 number: '505'
-prevUrl: /how-to/add-a-zone-in-the-system/
-nextUrl: /how-to/request-a-server-reboot-to-see-changes-online/
+prevUrl: /how-to/change-the-footer/
+nextUrl:
 done: ''
 ---
 

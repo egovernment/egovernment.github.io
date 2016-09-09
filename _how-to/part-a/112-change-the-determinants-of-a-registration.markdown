@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/change-the-determinants-of-a-registration/
-title: 'Add a determinant to a registration'
+title: 'Make registration applicable and/or mandatory depending on determinant'
 category: '1. Part A'
 sub-category: 'Registration'
 rate: '2'

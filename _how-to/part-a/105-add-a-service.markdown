@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/add-a-service/
-title: 'Add a service'
+title: 'Initialize (add) new service'
 category: '1. Part A'
 sub-category: 'Service'
 rate: '3'

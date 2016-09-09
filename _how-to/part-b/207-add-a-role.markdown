@@ -1,14 +1,14 @@
 ---
 layout: recipe
 permalink: /how-to/add-a-role/
-title: 'Add a role'
+title: 'Add a role (processing step)'
 category: '2. Part B'
 sub-category: 'Roles'
 rate: '3'
 number: '207'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/configure-the-Reject-file-feature-to-a-role/
+prevUrl: /how-to/configure-the-reject-file-feature-to-a-role/
 nextUrl: /how-to/remove-a-role/
 done: ''
 ---

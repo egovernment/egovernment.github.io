@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/modify-the-sworn-declaration/
-title: 'Change the sworn declaration'
-category: '1. Part A'
-sub-category: 'Other'
+permalink: /how-to/configure-the-reject-file-feature-to-a-role/
+title: 'Configure the "Reject file" feature of a role'
+category: '2. Part B'
+sub-category: 'Roles'
 rate: '2'
-number: '181'
+number: '206'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: /how-to/create-a-new-section-with-tables-in-the-form/
-nextUrl: /how-to/modify-the-form-generated-with-the-data-of-the-user/
+prevUrl: /how-to/configure-the-send-back-for-correction-feature-to-a-role/
+nextUrl: /how-to/add-a-role/
 done: ''
 ---
 
