@@ -23,7 +23,7 @@
                                 <span class="category-label pull-left">{{ page.category }} <small>{% if page.sub-category != '' %}- {{ page.sub-category }}{% endif %} <span class="badge recipe-badge rate-{{ page.rate }}">{{ page.rate }}</span></small></span>
                                 
                                 {% assign nextp = site.how-to | where: 'number', page.nextUrl | where: 'lang', page.lang | first %}
-                                {% if nextp %}
+                                {% if page.nextUrl %}
                                 <a href="{{ nextp.url }}" class="next-link pull-right">
                                     <i class="fa fa-angle-right"></i>
                                 </a>
@@ -32,7 +32,7 @@
                                 <span class="label recipe-label {% if page.category contains '1.' %}label-warning{% endif %}{% if page.category contains '2.' %}label-info{% endif %}{% if page.category contains '3.' %}label-purple{% endif %}{% if page.category contains '4.' %}label-danger{% endif %}{% if page.category contains '5.' %}label-dark{% endif %} label-cat pull-right">{{ page.number }}</span>
                                 
                                 {% assign prevp = site.how-to | where: 'number', page.prevUrl | where: 'lang', page.lang | first %}
-                                {% if prevp %}
+                                {% if page.prevUrl %}
                                 <a href="{{ prevp.url }}" class="prev-link pull-right">
                                     <i class="fa fa-angle-left"></i>
                                 </a>
