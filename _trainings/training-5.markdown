@@ -2,7 +2,10 @@
 layout: training
 permalink: /trainings/5/
 title: 'Training 5: Integrator eRegistration'
+number: 5
 objective: ''
+category: 'training'
+level:
 lang: en
 ref: training-5
 ---

@@ -1,9 +1,12 @@
 ---
 layout: training
-permalink: /trainings/2/
-title: 'Training 2: Administrator eRegistration'
+permalink: /capacitaciones/2/
+title: 'Capacitación 2: Administrator eRegistration'
+number: 2
 objective: 'level 2'
-lang: en
+category: 'training'
+level: 2
+lang: es
 ref: training-2
 ---
 

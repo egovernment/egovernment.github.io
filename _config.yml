@@ -55,6 +55,15 @@ documentation-pages:
       en: '/configuration-tutorial'
       es: '/tutorial-de-configuracion'
 
+training-pages:
+  title:
+    single:
+      en: 'Training'
+      es: 'Capacitación'
+    plural:
+      en: 'Trainings'
+      es: 'Capacitaciones'
+
 # Build settings
 markdown: kramdown
 
@@ -84,6 +93,9 @@ collections:
     title:
         en: 'Trainings'
         es: 'Capacitaciones'
+    link-title:
+        en: 'List'
+        es: 'Lista'
     baseurl:
         en: '/trainings'
         es: '/capacitaciones'

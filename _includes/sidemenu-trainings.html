@@ -1,20 +1,15 @@
 <ul class="sidenav dropable sticky">
-    <li class="{% if page.path == '_trainings/list.markdown' %}active{% endif %}">
-        <a href="/trainings">List</a>
+    <li class="{% if page.ref == 'training' %}active{% endif %}">
+        {% assign col = site.collections | where: "label", "trainings" | first %}
+        <a href="{{ col.baseurl[page.lang] }}">{{ col.link-title[page.lang] }}</a>
     </li>
-    <li class="{% if page.path == '_trainings/training-1.markdown' %}active{% endif %}">
-        <a href="/trainings/1">Training 1</a>
+
+
+    {% assign trainings = site.trainings | where: "lang", page.lang | where: "category", "training" | sort: "number" %}
+
+    {% for training in trainings %}
+    <li class="{% if page.permalink contains training.permalink %}active{% endif %}">
+        <a href="{{ training.url }}">{{ site.training-pages.title.single[page.lang]}} {{ training.number }}</a>
     </li>
-    <li class="{% if page.path == '_trainings/training-2.markdown' %}active{% endif %}">
-        <a href="/trainings/2">Training 2</a>
-    </li>
-    <li class="{% if page.path == '_trainings/training-3.markdown' %}active{% endif %}">
-        <a href="/trainings/3">Training 3</a>
-    </li>
-    <li class="{% if page.path == '_trainings/training-4.markdown' %}active{% endif %}">
-        <a href="/trainings/4">Training 4</a>
-    </li>            
-    <li class="{% if page.path == '_trainings/training-5.markdown' %}active{% endif %}">
-        <a href="/trainings/5">Training 5</a>
-    </li>
+    {% endfor %}
 </ul>
