@@ -27,7 +27,7 @@ h4 { font-size: 22px; }
 }
 
 .navbar-default .navbar-nav>li>a>img {
-	margin-top: -2px;
+	height: 20px;
 }
 
 .mt0 {
