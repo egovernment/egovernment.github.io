@@ -1,7 +1,7 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-color-of-the-table-headers/
-title: 'Change the color of the table headers'
+permalink: /como/cambiar-el-color-de-los-encabezados-de-la-tabla/
+title: 'Cambiar el color de los encabezados de la tabla'
 category: '4. Design'
 sub-category: ''
 rate: '2'

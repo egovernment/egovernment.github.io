@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-tooltip-in-front-of-a-cost-in-the-guide/
-title: 'Add a tooltip to a cost in the guide'
+permalink: /como/anadir-un-tooltip-en-frente-de-un-costo-en-la-guia/
+title: 'Añadir un tooltip en frente de un costo en la guía'
 category: '1. Part A'
-sub-category: 'Costs'
+sub-category: 'Costos'
 rate: '1'
 number: '153'
 introduction-text: 'This recipe explains how to set the tooltip in front of a cost, in the guide. Tooltips are used to give more information about a cost without putting to much text on the page. It is recommended to add one meaningful tooltip per cost to give more information to the user.'

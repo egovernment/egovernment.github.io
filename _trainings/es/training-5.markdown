@@ -1,9 +1,12 @@
 ---
 layout: training
-permalink: /trainings/5/
-title: 'Training 5: Integrator eRegistration'
+permalink: /capacitaciones/5/
+title: 'Capacitación 5: Integrator eRegistration'
+number: 5
 objective: ''
-lang: en
+category: 'training'
+level: 1
+lang: es
 ref: training-5
 ---
 

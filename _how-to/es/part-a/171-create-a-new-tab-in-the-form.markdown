@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/create-a-new-tab-in-the-form/
-title: 'Create a new tab in tabbed view of forms page'
+permalink: /como/crear-una-nueva-pestana-en-el-formulario/
+title: 'Crear una nueva pestaña en el formulario'
 category: '1. Part A'
-sub-category: 'Data'
+sub-category: 'Datos'
 rate: '4'
 number: '170'
 introduction-text: ''

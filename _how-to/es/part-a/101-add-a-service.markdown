@@ -1,7 +1,7 @@
 ---
 layout: recipe
-permalink: /como-hacer/anadir-nuevo-servicio/
-title: 'Initialize (añadir) nuevo servicio'
+permalink: /como/anadir-nuevo-servicio/
+title: 'Añadir un nuevo servicio'
 category: '1. Part A'
 sub-category: 'Servicio'
 rate: '4'

@@ -1,7 +1,7 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-font-of-the-system/
-title: 'Change the font of the system'
+permalink: /como/cambiar-el-tipo-de-letras-del-sistema/
+title: 'Cambiar el tipo de letras en el sistema'
 category: '4. Design'
 sub-category: ''
 rate: '3'
@@ -9,7 +9,7 @@ number: '405'
 introduction-text: ''
 introduction-img: '101.png'
 prevUrl: 404
-nextUrl: 407
+nextUrl: 406
 done: ''
 lang: es
 ref: 405

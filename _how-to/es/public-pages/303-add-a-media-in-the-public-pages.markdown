@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-media-in-the-public-pages/
+permalink: /como/add-a-media-in-the-public-pages/
 title: 'Add a media in the public pages (video, image)'
 category: '3. Public pages'
-sub-category: 'Content'
+sub-category: 'Contenido'
 rate: '1'
 number: '303'
 introduction-text: ''

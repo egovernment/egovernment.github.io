@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/configure-one-payment-receipt-for-two-costs/
-title: 'Configure one payment receipt for many costs'
+permalink: /como/configurar-un-recibo-de-pago-para-varios-costos/
+title: 'Configurar un recibo de pago para varios costos'
 category: '1. Part A'
-sub-category: 'Costs'
+sub-category: 'Costos'
 rate: '2'
 number: '157'
 introduction-text: ''

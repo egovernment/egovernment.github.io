@@ -1,7 +1,7 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-place-of-a-role-in-the-part-b-flow/
-title: 'Change the place of a role in the Part B flow'
+permalink: /como/cambiar-el-lugar-de-retiro-de-un-registro/
+title: 'Cambiar el lugar de retiro de un registro'
 category: '2. Part B'
 sub-category: 'Roles'
 rate: '2'

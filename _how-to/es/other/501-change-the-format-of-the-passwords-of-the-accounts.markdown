@@ -1,8 +1,8 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-format-of-the-passwords-of-the-accounts/
-title: 'Change the format of the passwords of the accounts'
-category: '5. Other'
+permalink: /como/cambiar-el-formato-de-las-contrasenas-de-las-cuentas/
+title: 'Cambiar el formato de las contraseñas de las cuentas'
+category: '5. Otro'
 sub-category: ''
 rate: '4'
 number: '501'

@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-column-to-the-list-of-files-for-one-role/
-title: 'Add a column to the list of files for one role'
+permalink: /como/anadir-una-columna-a-la-lista-de-expedientes/
+title: 'Añadir una columna a la lista de expedientes'
 category: '2. Part B'
-sub-category: 'Other'
+sub-category: 'Otro'
 rate: '3'
 number: '251'
 introduction-text: ''

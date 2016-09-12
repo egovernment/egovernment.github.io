@@ -1,9 +1,12 @@
 ---
 layout: training
-permalink: /trainings/4/
-title: 'Training 4: Developer eRegistration'
+permalink: /capacitaciones/4/
+title: 'Capacitación 4: Developer eRegistration'
+number: 4
 objective: 'level 2'
-lang: en
+category: 'training'
+level: 2
+lang: es
 ref: training-4
 ---
 

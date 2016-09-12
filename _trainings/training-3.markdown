@@ -2,7 +2,10 @@
 layout: training
 permalink: /trainings/3/
 title: 'Training 3: Developer eRegistration'
+number: 3
 objective: 'level 1'
+category: 'training'
+level: 1
 lang: en
 ref: training-3
 ---

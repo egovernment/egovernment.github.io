@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /installation/windows10
 title: 'eRegistrations - Installation on Windows 10'
+category: 'installation'
+weight: 4
 lang: en
 ref: windows10
 ---

@@ -1,7 +1,9 @@
 ---
 layout: doc-pages
-permalink: /codigo-base/model/
-title: 'eRegistrations - Model'
+permalink: /codigo-base/modelo/
+title: 'eRegistrations - Modelo'
+category: codebase
+weight: 3
 lang: es
 ref: model
 ---

@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /codebase/model/
 title: 'eRegistrations - Model'
+category: codebase
+weight: 3
 lang: en
 ref: model
 ---

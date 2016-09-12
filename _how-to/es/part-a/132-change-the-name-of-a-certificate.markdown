@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-name-of-a-certificate/
-title: 'Change the name of a certificate'
+permalink: /como/cambiar-el-nombre-de-un-certificado/
+title: 'Cambiar el nombre de un certificado'
 category: '1. Part A'
-sub-category: 'Certificates'
+sub-category: 'Certificados'
 rate: '1'
 number: '132'
 introduction-text: 'Changing the name of a certificate impacts on all the certificates already processed in the system.'

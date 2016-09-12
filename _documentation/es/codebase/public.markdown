@@ -1,7 +1,9 @@
 ---
 layout: doc-pages
-permalink: /codigo-base/public-pages/
-title: 'eRegistrations - Public pages'
+permalink: /codigo-base/paginas-publicas/
+title: 'eRegistrations - Páginas públicas'
+category: codebase
+weight: 5
 lang: es
 ref: public-pages
 ---

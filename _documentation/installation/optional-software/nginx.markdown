@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /installation/optional-software/nginx
 title: 'eRegistrations - NGINX Installation'
+category: 'installation'
+weight: 5
 lang: en
 ref: nginx
 ---

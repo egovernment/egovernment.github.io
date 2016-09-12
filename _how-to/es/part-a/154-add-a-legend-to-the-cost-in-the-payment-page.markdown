@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-legend-to-the-cost-in-the-payment-page/
-title: 'Add a legend to payment receipt upload in the payments page'
+permalink: /como/anadir-una-leyenda-a-un-costo-en-la-pagina-de-pagos/
+title: 'Añadir una leyenda a un recibo de pago en la página de Pagos'
 category: '1. Part A'
-sub-category: 'Costs'
+sub-category: 'Costos'
 rate: '2'
 number: '154'
 introduction-text: ''

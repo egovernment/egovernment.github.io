@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/make-a-service-unavailable/
-title: 'Make a service temporarily unavailable'
+permalink: /como/desactivar-un-servicio/
+title: 'Desactivar un servicio'
 category: '1. Part A'
-sub-category: 'Service'
+sub-category: 'Servicio'
 rate: '3'
 number: '105'
 introduction-text: ''

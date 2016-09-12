@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-value-of-a-fixed-cost/
-title: 'Change a fixed cost in a registration'
+permalink: /como/cambiar-un-costo-fijo/
+title: 'Cambiar un costo fijo de un registro'
 category: '1. Part A'
-sub-category: 'Costs'
+sub-category: 'Costos'
 rate: '1'
 number: '155'
 introduction-text: 'In this recipe we will see how to edit the name of a cost, modify it value or modify it determinant.'

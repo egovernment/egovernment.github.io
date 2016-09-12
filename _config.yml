@@ -20,6 +20,50 @@ index:
   en:
   es: inicio.html
 
+documentation-pages:
+  overview:
+    title:
+      en: 'Overview'
+      es: 'Presentación'
+  installation:
+    title:
+      en: 'Installation'
+      es: 'Instalación'
+  codebase:
+    title:
+      en: 'Codebase'
+      es: 'Código base'
+  architecture:
+    title:
+      en: 'Architecture overview'
+      es: 'Arquitectura del sistema'
+    urls:
+      en: /architecture-overview/
+      es: /arquitectura/
+  fundamentals:
+    title: 
+      en: 'Fundamentals of JavaScript'
+      es: 'Fundamentos de JavaScript'
+    urls:
+      en: '/fundamentals'
+      es: '/fundamentos'
+  tutorial:
+    title:
+      en: 'Configuration tutorial'
+      es: 'Tutorial de configuración'
+    urls:
+      en: '/configuration-tutorial'
+      es: '/tutorial-de-configuracion'
+
+training-pages:
+  title:
+    single:
+      en: 'Training'
+      es: 'Capacitación'
+    plural:
+      en: 'Trainings'
+      es: 'Capacitaciones'
+
 # Build settings
 markdown: kramdown
 
@@ -43,12 +87,15 @@ collections:
         es: 'Buscar'
     baseurl:
         en: '/how-to'
-        es: '/como-hacer'
+        es: '/como'
   trainings:
     output: true
     title:
         en: 'Trainings'
         es: 'Capacitaciones'
+    link-title:
+        en: 'List'
+        es: 'Lista'
     baseurl:
         en: '/trainings'
         es: '/capacitaciones'

@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-tooltip-in-front-of-a-document-in-the-guide/
-title: 'Add a legend to a requirement in the guide'
+permalink: /como/anadir-una-leyenda-a-un-requisito-en-la-guia/
+title: 'Añadir una leyenda a un requisito en la guía'
 category: '1. Part A'
-sub-category: 'Requirements'
+sub-category: 'Requisitos'
 rate: '1'
 number: '143'
 introduction-text: 'The legends for requirements provide additional information about a requirement.'

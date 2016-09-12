@@ -2,6 +2,8 @@
 layout: doc-pages
 permalink: /installation/ubuntu
 title: 'eRegistrations - Installation on Linux (Ubuntu)'
+category: 'installation'
+weight: 3
 lang: en
 ref: ubuntu
 ---

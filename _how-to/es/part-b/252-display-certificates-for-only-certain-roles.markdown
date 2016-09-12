@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/display-certificates-for-only-certain-roles/
-title: 'Display specified subset of certificates for certain role'
+permalink: /como/mostrar-certificados-solamente-para-algunos-roles/
+title: 'Mostar certificados solamente para algunos roles'
 category: '2. Part B'
-sub-category: 'Other'
+sub-category: 'Otro'
 rate: '3'
 number: '252'
 introduction-text: ''

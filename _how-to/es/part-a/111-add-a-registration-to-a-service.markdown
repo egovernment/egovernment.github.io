@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-registration-to-a-service/
-title: 'Add new registration to a service'
+permalink: /como/anadir-un-registro-a-un-servicio/
+title: 'Añadir un registro a un servicio'
 category: '1. Part A'
-sub-category: 'Registration'
+sub-category: 'Registro'
 rate: '3'
 number: '111'
 introduction-text: 'This page explains how to add a registration that can be chosen by the user in the guide.<br>

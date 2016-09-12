@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/set-mandatory-a-field-of-the-form/
-title: 'Make a field of the form mandatory'
+permalink: /como/configurar-un-campo-como-obligatorio/
+title: 'Configurar un campo como obligatorio en el formulario'
 category: '1. Part A'
-sub-category: 'Data'
+sub-category: 'Datos'
 rate: '1'
 number: '164'
 introduction-text: 'This recipe explains how to set a field as mandatory : the users will be obliged to fill the field to be able to save the form.<br>Note that changing the mandatory aspect of a field will have no impact on previously sent files.'

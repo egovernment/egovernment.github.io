@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-name-and-the-short-name-of-a-registration/
-title: 'Change the label of a registration'
+permalink: /como/cambiar-el-nombre-de-un-registro/
+title: 'Cambiar el nombre y label de un registro'
 category: '1. Part A'
-sub-category: 'Registration'
+sub-category: 'Registro'
 rate: '1'
 number: '112'
 introduction-text: 'The name of a registration appears in the guide, in the email sent to the users, in the history of the file... The name change will take place in all those places.<br>It is recommended to name the registration as "Name-of-certificate at Institution-in-charge".'

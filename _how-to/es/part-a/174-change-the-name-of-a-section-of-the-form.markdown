@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-name-of-a-section-of-the-form/
-title: 'Change the label of the section of the form'
+permalink: /como/cambiar-el-label-de-una-seccion-del-formulario/
+title: 'Cambiar el nombre de una sección del formulario'
 category: '1. Part A'
-sub-category: 'Data'
+sub-category: 'Datos'
 rate: '1'
 number: '173'
 introduction-text: 'Section names are used for Part A forms, Part B file data view, and print views. Changing it will affect all of those places.'
