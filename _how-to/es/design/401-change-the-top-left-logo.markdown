@@ -1,7 +1,7 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-top-left-logo/
-title: 'Change the top-left logo'
+permalink: /como-hacer/cambiar-el-logotipo-de-la-parte-superior-izquierda/
+title: 'Cambia el logotipo de la parte superior izquierda'
 category: '4. Design'
 sub-category: ''
 rate: '1'

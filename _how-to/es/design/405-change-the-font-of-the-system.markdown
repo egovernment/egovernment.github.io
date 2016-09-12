@@ -1,7 +1,7 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-font-of-the-system/
-title: 'Change the font of the system'
+permalink: /como-hacer/cambiar-la-fuente-del-sistema/
+title: 'Cambiar la fuente del sistema'
 category: '4. Design'
 sub-category: ''
 rate: '3'

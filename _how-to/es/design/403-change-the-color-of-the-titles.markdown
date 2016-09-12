@@ -1,7 +1,7 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-color-of-the-titles/
-title: 'Change the color of the titles'
+permalink: /como-hacer/cambiar-el-color-de-los-titulos/
+title: 'Cambiar el color de los títulos'
 category: '4. Design'
 sub-category: ''
 rate: '2'

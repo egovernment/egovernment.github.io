@@ -1,15 +1,15 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-footer/
-title: 'Change the footer'
+permalink: /como-hacer/cambiar-el-pie-de-pagina/
+title: 'Cambiar el pie de página'
 category: '4. Design'
 sub-category: ''
 rate: '4'
 number: '407'
 introduction-text: ''
 introduction-img: '101.png'
-prevUrl: 406
-nextUrl: 505
+prevUrl: 405
+nextUrl: 501
 done: ''
 lang: es
 ref: 407
