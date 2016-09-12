@@ -11,6 +11,7 @@ h4 { font-size: 22px; }
     font-weight: 100;
     display: inline-block;
     padding: 15px 3px;
+    padding-left: 15px;
 }
 
 .navbar-default .navbar-nav>li>a.lang-select:first-child {
@@ -22,6 +23,11 @@ h4 { font-size: 22px; }
 .navbar-default .navbar-nav>li>a.es:lang(es){
     font-weight: 500;
     color: rgba(255, 255, 255, 1);
+    display: none;
+}
+
+.navbar-default .navbar-nav>li>a>img {
+	margin-top: -2px;
 }
 
 .mt0 {
