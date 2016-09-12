@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/set-the-type-of-a-field/
-title: 'Change the type of a field'
+permalink: /como/cambiar-el-tipo-de-campo/
+title: 'Cambiar el tipo de un campo'
 category: '1. Part A'
-sub-category: 'Data'
+sub-category: 'Datos'
 rate: '1'
 number: '165'
 introduction-text: 'This recipe explains how to modify the types of each fields of the form. The available types of fields are : normal-input, selector, currency, date, radios, checks, etc.'

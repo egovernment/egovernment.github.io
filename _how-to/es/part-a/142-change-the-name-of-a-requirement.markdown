@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-name-of-a-requirement/
-title: 'Change a label of a requirement'
+permalink: /como/cambiar-el-label-de-un-requisito/
+title: 'Cambiar el label de un requisito'
 category: '1. Part A'
-sub-category: 'Requirements'
+sub-category: 'Requisitos'
 rate: '1'
 number: '142'
 introduction-text: 'Changing the name of a requirement will impact all the screens and the email notifications where this requirement happens.'

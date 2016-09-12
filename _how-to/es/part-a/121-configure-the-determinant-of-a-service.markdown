@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/configure-the-determinant-of-a-service/
-title: 'Define a new field for the guide'
+permalink: /como/añadir-un-nuevo-campo-en-la-guia/
+title: 'Añadir un nuevo campo en la guía'
 category: '1. Part A'
-sub-category: 'Determinants'
+sub-category: 'Determinantes'
 rate: '2'
 number: '121'
 introduction-text: ''

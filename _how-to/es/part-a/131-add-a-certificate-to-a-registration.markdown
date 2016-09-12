@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-certificate-to-a-registration/
-title: 'Add another certificate to a registration'
+permalink: /como/anadir-un-cartificado-a-un-registro/
+title: 'Añadir un certificado a un registro'
 category: '1. Part A'
-sub-category: 'Certificates'
+sub-category: 'Certificados'
 rate: '3'
 number: '131'
 introduction-text: 'Usually registration results with one certificate (of same name). Still there can be the case where result of registration is more than one certificate'

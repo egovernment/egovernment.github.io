@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/create-a-new-section-with-tables-in-the-form/
-title: 'Create a new section with tables in the form'
+permalink: /como/crear-una-nueva-seccion-con-tablas-en-el-formulario/
+title: 'Crear una nueva sección con tables en el formulario'
 category: '1. Part A'
-sub-category: 'Data'
+sub-category: 'Datos'
 rate: '4'
 number: '172'
 introduction-text: ''

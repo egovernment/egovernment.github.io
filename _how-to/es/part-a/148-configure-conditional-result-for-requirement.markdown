@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/configure-conditional-upload-for-requirement/
-title: 'Configure requirement to resolve to different documents depending on some condition'
+permalink: /como/configurar-determinantes-para-requisitos/
+title: 'Configurar requisito con determinantes'
 category: '1. Part A'
-sub-category: 'Requirements'
+sub-category: 'Requisitos'
 rate: '3'
 number: '148'
 introduction-text: 'A requirement is a document that needs to be uploaded with the registrations file. Very often this document needs to be shown at the Front Desk to withdraw the certificate(s). The requirement is triggered by it determinant(s) and appear in the guide only when the registration to which it is linked is checked by the user.<br>Here we will see how to add a requirement to a registration so the user must upload it in the "Documents" page, bring the original copy of the requirement to the Front Desk for withdrawal and set it eventual determinants.'

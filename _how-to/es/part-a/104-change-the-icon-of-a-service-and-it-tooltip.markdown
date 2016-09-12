@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-icon-of-a-service-and-it-tooltip/
-title: 'Set the icon that represents a service'
+permalink: /como/cambiar-el-icono-de-un-servicio/
+title: 'Cambiar el icono de un servicio'
 category: '1. Part A'
-sub-category: 'Service'
+sub-category: 'Servicio'
 rate: '2'
 number: '104'
 introduction-text: ''

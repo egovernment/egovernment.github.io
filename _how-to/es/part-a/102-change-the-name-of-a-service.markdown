@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-name-of-a-service/
-title: 'Change name of a service on My Account homepage'
+permalink: /como/cambiar-el-nombre-de-un-servicio/
+title: 'Cambiar el nombre de un servicio en MiCuenta'
 category: '1. Part A'
-sub-category: 'Service'
+sub-category: 'Servicio'
 rate: '1'
 number: '102'
 introduction-text: 'This recipe is about changing the name of the service in the "Available services" section of My Account.<br>The "Available services" section of MyAccount is managed by the `servicesBoxList` block.'

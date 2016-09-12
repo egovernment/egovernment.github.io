@@ -1,7 +1,7 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-name-of-a-role/
-title: 'Change the name of a role'
+permalink: /como/cambiar-el-nombre-de-un-rol/
+title: 'Cambiar el nombre de un rol'
 category: '2. Part B'
 sub-category: 'Roles'
 rate: '1'

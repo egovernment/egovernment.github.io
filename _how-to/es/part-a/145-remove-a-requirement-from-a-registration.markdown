@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/remove-a-requirement-from-a-registration/
-title: 'Remove a need for a requirement in chosen registration'
+permalink: /como/sacar-un-requisito-de-un-registro/
+title: 'Sacar un requisito de un registro'
 category: '1. Part A'
-sub-category: 'Requirements'
+sub-category: 'Requisitos'
 rate: '2'
 number: '145'
 introduction-text: 'A requirement is a document that needs to be uploaded with the registrations file. Here we will see how to remove a document that is not required anymore for a certain registration.'

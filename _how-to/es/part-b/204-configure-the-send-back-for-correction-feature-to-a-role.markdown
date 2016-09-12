@@ -1,7 +1,7 @@
 ---
 layout: recipe
-permalink: /how-to/configure-the-send-back-for-correction-feature-to-a-role/
-title: 'Configure the "Sent back for correction" feature to a role'
+permalink: /como/configurar-el-mandar-para-correciones/
+title: 'Configurar la funcionalidad de "Mandar para correcciones" de un rol'
 category: '2. Part B'
 sub-category: 'Roles'
 rate: '3'

@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-legend-to-the-requirement-in-the-doc-page/
-title: 'Add a legend to the requirement upload in the documents page'
+permalink: /como/anadir-una-leyenda-a-un-requisito-en-la-pagina-documentos/
+title: 'Añadir una leyenda a un requisito en la página "Documentos"'
 category: '1. Part A'
-sub-category: 'Requirements'
+sub-category: 'Requisitos'
 rate: '2'
 number: '144'
 introduction-text: ''

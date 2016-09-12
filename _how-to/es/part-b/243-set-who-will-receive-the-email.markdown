@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/set-who-will-receive-the-email/
-title: "Update email notification so it's also send to other email address"
+permalink: /como/anadir-varios-recipientes-para-un-email/
+title: "Añadir varios recipientes para un email"
 category: '2. Part B'
-sub-category: 'Notifications'
+sub-category: 'Notificaciones'
 rate: '2'
 number: '243'
 introduction-text: ''

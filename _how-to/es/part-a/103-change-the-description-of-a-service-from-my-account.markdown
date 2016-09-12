@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-description-of-a-service-from-my-account/
-title: 'Change the description of a service at My Account homepage'
+permalink: /como/cambiar-la-descripcion-de-un-servicio/
+title: 'Cambiar la descripción de un servicio'
 category: '1. Part A'
-sub-category: 'Service'
+sub-category: 'Servicio'
 rate: '1'
 number: '103'
 introduction-text: 'This recipe is about changing the description of the service in the "Available services" section of My Account.<br>The "Available services" section of MyAccount is managed by the `servicesBoxList` block.'

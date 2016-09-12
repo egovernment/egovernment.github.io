@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
-permalink: /codigo-base/client-side-services/
-title: 'eRegistrations - Client-side services'
+permalink: /codigo-base/servicios-cliente/
+title: 'eRegistrations - Servicios lado cliente'
 category: codebase
 weight: 2
 lang: es

@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-the-legend-text-of-a-section-of-the-form/
-title: 'Add the legend text to the section of the form'
+permalink: /como/anadir-una-leyenda-en-una-seccion-del-formulario/
+title: 'Añadir una leyenda en una sección del formulario'
 category: '1. Part A'
-sub-category: 'Data'
+sub-category: 'Datos'
 rate: '1'
 number: '174'
 introduction-text: 'Section legends are used for Part A forms to provide additional explanation for the user.'

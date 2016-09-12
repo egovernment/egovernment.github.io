@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/set-the-emails-sent-for-a-certain-status-of-the-file/
-title: 'Set the emails sent for a certain status of the file'
+permalink: /como/configurar-los-emails-mandados-segun-el-estado-del-expediente/
+title: 'Configurar los emails mandados según el estado del expediente'
 category: '2. Part B'
-sub-category: 'Notifications'
+sub-category: 'Notificaciones'
 rate: '3'
 number: '241'
 introduction-text: ''

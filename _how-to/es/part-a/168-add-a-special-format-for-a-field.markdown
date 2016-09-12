@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-special-format-for-a-field/
-title: 'Add a special format for a field'
+permalink: /como/anadir-a-formato-especial-para-un-campo/
+title: 'Añadir a formato especial para un campo'
 category: '1. Part A'
-sub-category: 'Data'
+sub-category: 'Datos'
 rate: '3'
 number: '168'
 introduction-text: ''

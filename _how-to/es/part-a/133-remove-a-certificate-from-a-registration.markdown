@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/remove-a-certificate-from-a-registration/
-title: 'Mark certificate as electronic only'
+permalink: /como/configurar-un-certificado-como-electronico/
+title: 'Configurar un certificado como electrónico'
 category: '1. Part A'
-sub-category: 'Certificates'
+sub-category: 'Certificados'
 rate: '2'
 number: '133'
 introduction-text: 'A certificate is the result of the registration that the user applies to. Usually it is the document that the user picks at the moment of the withdrawal. It may happen that the certificate is only digital and thus, the user will not pick it at the Front Desk.'

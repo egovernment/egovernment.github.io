@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-clickdesk-plugin-to-the-public-pages/
-title: 'Add a Clickdesk plugin to the public pages'
+permalink: /como/anadir-un-plugin-clickdesk-a-las-paginas-publicas/
+title: 'Añadir un plugin Clickdesk a las páginas públicas'
 category: '3. Public pages'
-sub-category: 'Content'
+sub-category: 'Contenido'
 rate: '4'
 number: '304'
 introduction-text: ''

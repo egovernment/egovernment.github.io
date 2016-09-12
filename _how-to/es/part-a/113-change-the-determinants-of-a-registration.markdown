@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-determinants-of-a-registration/
-title: 'Make registration applicable and/or mandatory depending on a condition'
+permalink: /como/poner-un-registro-obligatorio-o-opcional/
+title: 'Poner un registro obligatorio o opcional'
 category: '1. Part A'
-sub-category: 'Registration'
+sub-category: 'Registro'
 rate: '2'
 number: '113'
 introduction-text: 'A registration can be mandatory, optional or un-applicable for certain situations. Example : the registration at the Business registry in El Salvador is optional for assets inferior to 12 000$. The determinant(s) of a registration are set through the initial questions of the guide.'
