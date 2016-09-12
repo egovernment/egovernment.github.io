@@ -2,14 +2,14 @@
 layout: training
 number: 4
 permalink: /capacitaciones/4/
-title: 'Developer eRegistration'
-objective: 'level 2'
+title: 'Desarrollador eRegistration'
+objective: 'nivel 2'
 objectives: >
-  - Acquire autonomy in developing new procedures in the system
-
-  - Build a new procedure from the scratch (with one registration)
-duration: '4 days'
-diploma: 'eRegistrations developer (level 2)'
+  - Fortalecer autonomía en el desarrollo de procedimientos nuevos y complejos
+  
+  - Construir un nuevo procedimiento en el sistema eRegistrations, compuesto de multiples registros en distintas instituciones
+duration: '4 días'
+diploma: 'eRegistrations desarrollador (nivel 2)'
 category: 'training'
 level: 2
 lang: es
@@ -18,17 +18,20 @@ ref: training-4
 
 ----------
 
-### Trainee profile
+### Perfíl de los participantes
 
-- At least 5 years of professional experience with any programming language (e.g. Java, PHP, JavaScript, Python, C# etc.)
-- Basic knowledge of JavaScript an interest to use this language
-- Knowledge of the concept of version control and it application with git
+- Al menos 5 años de experiencia profesional con algún lenguaje de programación (por ejemplo Java, PHP, JavaScript, Python, C#, etc.)
+- Conocimiento básico de JavaScript e interés en utilizar este lenguaje
+- Conocimiento del concepto de versión-control y su aplicación con git
 
 ----------
 
-### Requirements
+### Requisitos
 
-- Trainings 1 & 2 & 3 must have been completed (and same requirements need to be met)
+- Haber completado la capacitación 3
+- Una cuenta Github registrada
+- Una computadora con el sistema eregistrations-demo instalado (un tutorial será mandado a los participantes para instalar el sistema antés de la capacitación) - la computadora puede ser bajo Windows 10, Linux Ubuntu o Mac OsX.
+- Un editor de código con validación de lint
 
 ----------
 
