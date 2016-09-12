@@ -38,16 +38,16 @@
           </li>
           <li>
               {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-              {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="lang-select {{ page.lang }}"><img src="{{ site.baseurl }}img/{{ page.lang }}.png"></a> {% endfor %}
+              {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="lang-select {{ page.lang }}"><img src="{{ site.baseurl }}/img/{{ page.lang }}.png"></a> {% endfor %}
 
               {% assign docs=site.documentation | where:"ref", page.ref | sort: 'lang' %}
-              {% for doc in docs %} <a href="{{ doc.url | prepend: site.baseurl }}" class="lang-select {{ doc.lang }}"><img src="{{ site.baseurl }}img/{{ doc.lang }}.png"></a> {% endfor %}
+              {% for doc in docs %} <a href="{{ doc.url | prepend: site.baseurl }}" class="lang-select {{ doc.lang }}"><img src="{{ site.baseurl }}/img/{{ doc.lang }}.png"></a> {% endfor %}
 
               {% assign hows=site.how-to | where:"ref", page.ref | sort: 'lang' %}
-              {% for how in hows %} <a href="{{ how.url | prepend: site.baseurl }}" class="lang-select {{ how.lang }}"><img src="{{ site.baseurl }}img/{{ how.lang }}.png"></a> {% endfor %}
+              {% for how in hows %} <a href="{{ how.url | prepend: site.baseurl }}" class="lang-select {{ how.lang }}"><img src="{{ site.baseurl }}/img/{{ how.lang }}.png"></a> {% endfor %}
 
               {% assign trainings=site.trainings | where:"ref", page.ref | sort: 'lang' %}
-              {% for training in trainings %} <a href="{{ training.url | prepend: site.baseurl }}" class="lang-select {{ training.lang }}"><img src="{{ site.baseurl }}img/{{ training.lang }}.png"></a> {% endfor %}
+              {% for training in trainings %} <a href="{{ training.url | prepend: site.baseurl }}" class="lang-select {{ training.lang }}"><img src="{{ site.baseurl }}/img/{{ training.lang }}.png"></a> {% endfor %}
           </li>
         </ul>
       </div>
