@@ -31,7 +31,7 @@
                         <div class="row">
                             <div class="col-md-12">
                             {% if page.category == 'training' %}
-                            <p>{{ site.training-pages.sections.diploma[page.lang] }} "{{ page.diploma }}"</p>
+                            <p>{{ site.training-pages.sections.diploma[page.lang] }} "{{ page.diploma }}".</p>
                             <h3>{{ site.training-pages.sections.objectives[page.lang]}}</h3>
                             {% capture objectives %}{{ page.objectives }}{% endcapture %}
                             <p>{{ objectives | markdownify}}</p>
