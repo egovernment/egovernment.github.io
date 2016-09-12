@@ -19,7 +19,13 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="mt0">{{ site.training-pages.title.single[page.lang]}} {{ page.number }}: {{ page.title }}{% if page.level %}<small> - {{ site.training-pages.sections.level[page.lang]}} {{ page.level }}</small>{% endif %}</h1>
+                                <h1 class="mt0">
+                                    {% if page.category == 'training' %}
+                                        {{ site.training-pages.title.single[page.lang]}} {{ page.number }}: {{ page.title }}{% if page.level %}<small> - {{ site.training-pages.sections.level[page.lang]}} {{ page.level }}</small>{% endif %}
+                                    {% else %}
+                                    {{ page.title }}
+                                    {% endif %}
+                                </h1>
                             </div>
                         </div>
                         <div class="row">
