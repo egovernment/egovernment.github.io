@@ -1,8 +1,8 @@
 ---
 layout: training
+number: 4
 permalink: /capacitaciones/4/
 title: 'Developer eRegistration'
-number: 4
 objective: 'level 2'
 objectives: >
   - Acquire autonomy in developing new procedures in the system

@@ -1,8 +1,8 @@
 ---
 layout: training
+number: 2
 permalink: /capacitaciones/2/
 title: 'Administrator eRegistration'
-number: 2
 objective: 'level 2'
 objectives: >
   - Strength knowledge about the eRegistrations architecture

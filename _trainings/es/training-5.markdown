@@ -1,8 +1,8 @@
 ---
 layout: training
+number: 5
 permalink: /capacitaciones/5/
 title: 'Integrator eRegistration'
-number: 5
 objective: ''
 objectives: >
   - Acquire global knowledge about the public pages organisation in the eRegistrations system

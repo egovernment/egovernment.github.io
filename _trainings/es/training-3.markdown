@@ -1,8 +1,8 @@
 ---
 layout: training
+number: 3
 permalink: /capacitaciones/3/
 title: 'Developer eRegistration'
-number: 3
 objective: 'level 1'
 objectives: >
   - Acquire autonomy in developing new procedures in the system
