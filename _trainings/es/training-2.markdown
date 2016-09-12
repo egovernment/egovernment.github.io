@@ -1,26 +1,20 @@
 ---
 layout: training
 permalink: /capacitaciones/2/
-title: 'Capacitación 2: Administrator eRegistration'
+title: 'Administrator eRegistration'
 number: 2
 objective: 'level 2'
+objectives: >
+  - Strength knowledge about the eRegistrations architecture
+
+  - Edit an existing service with advanced modifications
+duration: '4 days'
+diploma: 'eRegistrations administrator (level 2)'
 category: 'training'
 level: 2
 lang: es
 ref: training-2
 ---
-
-The result of this training is a diploma of "eRegistrations administrator (level 2)".
-
-### Objectives
-- Strength knowledge about the eRegistrations architecture
-- Edit an existing service with advanced modifications
-
-----------
-
-### Duration
-
-4 days
 
 ----------
 

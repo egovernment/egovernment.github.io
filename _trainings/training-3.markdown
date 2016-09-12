@@ -1,27 +1,20 @@
 ---
 layout: training
 permalink: /trainings/3/
-title: 'Training 3: Developer eRegistration'
+title: 'Developer eRegistration'
 number: 3
 objective: 'level 1'
+objectives: >
+  - Acquire autonomy in developing new procedures in the system
+
+  - Build a new procedure from the scratch (with one registration)
+duration: '4 days'
+diploma: 'eRegistrations developer (level 1)'
 category: 'training'
 level: 1
 lang: en
 ref: training-3
 ---
-
-The result of this training is a UNCTAD diploma of "eRegistrations developer (level 1)".
-
-### Objectives
-
-- Acquire autonomy in developing new procedures in the system
-- Build a new procedure from the scratch (with one registration)
-
-----------
-
-### Duration
-
-4 days
 
 ----------
 

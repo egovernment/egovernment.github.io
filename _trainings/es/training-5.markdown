@@ -1,27 +1,20 @@
 ---
 layout: training
 permalink: /capacitaciones/5/
-title: 'Capacitación 5: Integrator eRegistration'
+title: 'Integrator eRegistration'
 number: 5
 objective: ''
+objectives: >
+  - Acquire global knowledge about the public pages organisation in the eRegistrations system
+
+  - Completely modify the existing public pages and add new pages
+duration: '2 days'
+diploma: 'eRegistrations integrator'
 category: 'training'
 level: 1
 lang: es
 ref: training-5
 ---
-
-The result of this training is a UNCTAD diploma of "eRegistrations integrator".   
-
-### Objectives
-
-- Acquire global knowledge about the public pages organisation in the eRegistrations system
-- Completely modify the existing public pages and add new pages
-
-----------
-
-### Duration
-
-2 days
 
 ----------
 
