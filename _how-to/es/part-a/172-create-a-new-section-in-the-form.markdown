@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/create-a-new-section-in-the-form/
-title: 'Create a new section in the form'
+permalink: /como/crear-una-nueva-seccion-en-el-formulario/
+title: 'Crear una nueva sección en el formulario'
 category: '1. Part A'
-sub-category: 'Data'
+sub-category: 'Datos'
 rate: '3'
 number: '171'
 introduction-text: ''

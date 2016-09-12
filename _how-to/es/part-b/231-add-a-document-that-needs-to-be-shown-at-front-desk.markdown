@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-document-that-needs-to-be-shown-at-front-desk/
-title: 'Mark uploaded document as needed to be shown at Front Desk'
+permalink: /como/configurar-un-requisito-como-necesario-al-momento-del-retiro/
+title: 'Configurar un requisito como necesario al momento del retiro'
 category: '2. Part B'
-sub-category: 'Withdrawal'
+sub-category: 'Retiro'
 rate: '1'
 number: '231'
 introduction-text: ''

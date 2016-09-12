@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-new-field-to-form-section/
-title: 'Add new field to form section'
+permalink: /como/anadir-un-nuevo-campo-a-la-seccion-del-formulario/
+title: 'Añadir un nuevo campo en el formulario'
 category: '1. Part A'
-sub-category: 'Data'
+sub-category: 'Datos'
 rate: '2'
 number: '161'
 introduction-text: 'Section names are used for Part A forms, Part B file data view, and print views. Changing it will affect all of those places.'

@@ -24,7 +24,7 @@ documentation-pages:
   overview:
     title:
       en: 'Overview'
-      es: 'Visión de conjunto'
+      es: 'Presentación'
   installation:
     title:
       en: 'Installation'
@@ -32,14 +32,14 @@ documentation-pages:
   codebase:
     title:
       en: 'Codebase'
-      es: 'Base de código'
+      es: 'Código base'
   architecture:
     title:
       en: 'Architecture overview'
-      es: 'Introducción a la arquitectura'
+      es: 'Arquitectura del sistema'
     urls:
       en: /architecture-overview/
-      es: /introduccion-a-la-arquitectura/
+      es: /arquitectura/
   fundamentals:
     title: 
       en: 'Fundamentals of JavaScript'

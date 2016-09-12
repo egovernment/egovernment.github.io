@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/remove-a-cost-in-a-registration/
-title: 'Remove a cost in a registration'
+permalink: /como/sacar-un-costo-a-un-registro/
+title: 'Sacar un costo a un registro'
 category: '1. Part A'
-sub-category: 'Costs'
+sub-category: 'Costos'
 rate: '2'
 number: '156'
 introduction-text: 'This recipe explains how to remove, from a registration, a cost that does not apply anymore.'

@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
-permalink: /codigo-base/front-end/
-title: 'eRegistrations - Front-end (CSS & HTML)'
+permalink: /codigo-base/diseno/
+title: 'eRegistrations - Diseño (CSS & HTML)'
 category: codebase
 weight: 4
 lang: es

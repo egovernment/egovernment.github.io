@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/remove-a-field-in-a-processing-role/
-title: 'Remove a field in a processing role'
+permalink: /como/sacar-un-campo-en-un-rol-de-procesamiento/
+title: 'Sacar un campo en un rol de procesamiento'
 category: '2. Part B'
-sub-category: 'Processing'
+sub-category: 'Procesamiento'
 rate: '1'
 number: '222'
 introduction-text: ''

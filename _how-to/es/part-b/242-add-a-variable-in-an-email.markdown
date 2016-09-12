@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-variable-in-an-email/
-title: 'Add a variable in an email'
+permalink: /como/anadir-una-variable-a-un-email/
+title: 'Añadir una variable en un email'
 category: '2. Part B'
-sub-category: 'Notifications'
+sub-category: 'Notificaciones'
 rate: '2'
 number: '242'
 introduction-text: ''

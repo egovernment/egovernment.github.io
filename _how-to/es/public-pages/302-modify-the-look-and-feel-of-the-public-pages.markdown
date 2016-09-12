@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/modify-the-look-and-feel-of-the-public-pages/
-title: 'Modify the look and feel of the public pages'
+permalink: /como/modificar-el-diseno-de-las-paginas-publicas/
+title: 'Modificar el diseño de las páginas públicas'
 category: '3. Public pages'
-sub-category: 'Content'
+sub-category: 'Contenido'
 rate: '2'
 number: '302'
 introduction-text: ''

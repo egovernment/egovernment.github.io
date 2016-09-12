@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-trigger-for-an-initial-question-of-the-guide/
-title: 'Add a trigger for an initial question of the guide'
+permalink: /como/anadir-una-condicion-a-una-pregunta-inicial-de-la-guia/
+title: 'Añadir una condición a una pregunta inicial de la guía'
 category: '1. Part A'
-sub-category: 'Determinants'
+sub-category: 'Determinantes'
 rate: '3'
 number: '123'
 introduction-text: ''

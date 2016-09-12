@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-new-public-page-and-route-it/
-title: 'Add a new public page and route it'
+permalink: /como/anadir-una-nueva-pagina-publica/
+title: 'Añadir una nueva página pública'
 category: '3. Public pages'
-sub-category: 'Content'
+sub-category: 'Contenido'
 rate: '1'
 number: '301'
 introduction-text: ''

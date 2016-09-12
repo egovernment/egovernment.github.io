@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-label-of-an-initial-question-of-the-guide/
-title: 'Change the label of an initial question of the guide'
+permalink: /como/cambiar-el-label-de-un-campo-de-la-guia/
+title: 'Cambiar el label de un campo de la guía'
 category: '1. Part A'
-sub-category: 'Determinants'
+sub-category: 'Determinantes'
 rate: '1'
 number: '122'
 introduction-text: ''

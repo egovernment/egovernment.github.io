@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/modify-the-legends-of-the-5-pages-of-the-part-a/
-title: 'Modify the legends of the 5 pages of the Part A'
+permalink: /como/modificar-las-leyendas-de-las-5-paginas-de-la-parte-a/
+title: 'Modificar las leyendas de las 5 páginas de la Parte A'
 category: '1. Part A'
-sub-category: 'Other'
+sub-category: 'Otro'
 rate: '3'
 number: '181'
 introduction-text: ''

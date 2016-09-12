@@ -1,7 +1,7 @@
 ---
 layout: recipe
-permalink: /how-to/configure-the-reject-file-feature-to-a-role/
-title: 'Configure the "Reject file" feature of a role'
+permalink: /como/configurar-la-funcionalidad-rechazar-expediente-de-un-rol/
+title: 'Configurar la funcionalidad de "Rechazar expediente" para un rol'
 category: '2. Part B'
 sub-category: 'Roles'
 rate: '3'

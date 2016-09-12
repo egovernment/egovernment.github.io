@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/change-a-field-in-a-processing-role/
-title: 'Change a field in a processing role'
+permalink: /como/cambiar-un-campo-en-un-rol-de-procesamiento/
+title: 'Cambiar un campo en un rol de procesamiento'
 category: '2. Part B'
-sub-category: 'Processing'
+sub-category: 'Procesamiento'
 rate: '1'
 number: '221'
 introduction-text: ''

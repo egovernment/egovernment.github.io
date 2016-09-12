@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-legend-for-the-field-of-the-form/
-title: 'Add a legend for a field of the form'
+permalink: /como/anadir-una-leyenda-a-un-campo-del-formulario/
+title: 'Añadir una leyenda a un campo del formulario'
 category: '1. Part A'
-sub-category: 'Data'
+sub-category: 'Datos'
 rate: '1'
 number: '163'
 introduction-text: 'This recipe explains how to add and edit the legend text that can be set below each field to give more information to the user filling the form.'

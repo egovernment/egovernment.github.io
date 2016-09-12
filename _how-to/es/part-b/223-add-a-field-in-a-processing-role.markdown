@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/add-a-field-in-a-processing-role/
-title: 'Add a field in a processing role'
+permalink: /how-to/anadir-un-campo-en-un-rol-de-procesamiento/
+title: 'Añadir un campo en un rol de procesamiento'
 category: '2. Part B'
-sub-category: 'Processing'
+sub-category: 'Procesamiento'
 rate: '1'
 number: '223'
 introduction-text: ''

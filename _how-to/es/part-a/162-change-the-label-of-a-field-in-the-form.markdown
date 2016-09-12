@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-label-of-a-field-in-the-form/
-title: 'Change the label of a field of the form'
+permalink: /como/cambiar-el-label-de-un-campo-en-el-formulario/
+title: 'Cambiar el label de un campo en el formulario'
 category: '1. Part A'
-sub-category: 'Data'
+sub-category: 'Datos'
 rate: '1'
 number: '162'
 introduction-text: 'This recipe explains how to modify the labels of the fields of the form. This only applies to the fields in english language, as the translations are modified directly from the Translation interface of the system.'

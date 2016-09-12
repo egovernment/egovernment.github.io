@@ -1,9 +1,9 @@
 ---
 layout: recipe
-permalink: /how-to/configure-a-determinant-for-a-field/
-title: 'Configure a determinant for a field'
+permalink: /como/configurar-el-determinante-de-un-campo/
+title: 'Configurar el determinante de un campo'
 category: '1. Part A'
-sub-category: 'Data'
+sub-category: 'Datos'
 rate: '2'
 number: '167'
 introduction-text: 'Some fields appear only if certain determinant(s) are fulfilled. Those determinant can be a registration  that is selected or the value(s) of a field of the form. This receipt explains how to set such determinant(s) to a field, or to remove it.'
