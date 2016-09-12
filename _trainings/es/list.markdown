@@ -6,94 +6,23 @@ lang: es
 ref: training
 ---
 
+{% assign trainings = site.trainings | where: "lang", page.lang | where: "category", "training" | sort: "number" %}
 
+{% for training in trainings %}
 <table class="table table-bordered table-striped table-info">
   <tbody>
     <tr>
-      <td style="width: 25%"><a href="/trainings/1">Training 1</a></td>
-      <td>Administrator eRegistrations - level 1</td>
+      <td style="width: 25%"><a href="{{ training.url }}">{{ site.training-pages.title.single[page.lang]}} {{ training.number }}</a></td>
+      <td>{{ training.title }}{% if training.level %} - {{ site.training-pages.sections.level[page.lang]}} {{ training.level }}{% endif %}</td>
     </tr>
     <tr>
-      <td>Objectives</td>
-      <td>- Acquire global knowledge about the eRegistrations architecture<br>
-	      - Edit an existing service with simple modifications</td>
+      <td>{{ site.training-pages.sections.objectives[page.lang]}}</td>
+      <td>{{ training.objectives | markdownify }}</td>
     </tr>
     <tr>
-      <td>Duration</td>
-      <td>5 days</td>
+      <td>{{ site.training-pages.sections.duration[page.lang]}}</td>
+      <td>{{ training.duration }}</td>
     </tr>
   </tbody>
 </table>
-
-<table class="table table-bordered table-striped table-info">
-  <tbody>
-    <tr>
-      <td style="width: 25%"><a href="/trainings/2">Training 2</a></td>
-      <td>Administrator eRegistrations - level 2</td>
-    </tr>
-    <tr>
-      <td>Objectives</td>
-      <td>- Strength knowledge about the eRegistrations architecture<br>
-	      - Edit an existing service with advanced modifications</td>
-    </tr>
-    <tr>
-      <td>Duration</td>
-      <td>4 days</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="table table-bordered table-striped table-info">
-  <tbody>
-    <tr>
-      <td style="width: 25%"><a href="/trainings/3">Training 3</a></td>
-      <td>Developer eRegistrations - level 1</td>
-    </tr>
-    <tr>
-      <td>Objectives</td>
-      <td>- Acquire autonomy in developing new procedures in the system<br>
-	      - Build a new procedure from the scratch (with one registration)</td>
-    </tr>
-    <tr>
-      <td>Duration</td>
-      <td>4 days</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="table table-bordered table-striped table-info">
-  <tbody>
-    <tr>
-      <td style="width: 25%"><a href="/trainings/4">Training 4</a></td>
-      <td>Administrator eRegistrations - level 4</td>
-    </tr>
-    <tr>
-      <td>Objectives</td>
-      <td>- Strength autonomy in developing new procedures in the system<br>
-	      - Build a new procedure from the scratch (with multiple registrations and complex determinants)</td>
-    </tr>
-    <tr>
-      <td>Duration</td>
-      <td>4 days</td>
-    </tr>
-  </tbody>
-</table>
-
-<table class="table table-bordered table-striped table-info">
-  <tbody>
-    <tr>
-      <td style="width: 25%"><a href="/trainings/5">Training 5</a></td>
-      <td>Integrator eRegistrations</td>
-    </tr>
-    <tr>
-      <td>Objectives</td>
-      <td>- Acquire global knowledge about the public pages organisation in the eRegistrations system<br>
-	      - Completely modify the existing public pages and add new pages
-      </td>
-    </tr>
-    <tr>
-      <td>Duration</td>
-      <td>2 days</td>
-    </tr>
-  </tbody>
-</table>
+{% endfor %}

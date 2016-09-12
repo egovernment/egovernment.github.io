@@ -1,41 +1,37 @@
 ---
 layout: training
-permalink: /capacitaciones/4/
-title: 'Capacitación 4: Developer eRegistration'
 number: 4
-objective: 'level 2'
+permalink: /capacitaciones/4/
+title: 'Desarrollador eRegistration'
+objective: 'nivel 2'
+objectives: >
+  - Fortalecer autonomía en el desarrollo de procedimientos nuevos y complejos
+  
+  - Construir un nuevo procedimiento en el sistema eRegistrations, compuesto de multiples registros en distintas instituciones
+duration: '4 días'
+diploma: 'eRegistrations desarrollador (nivel 2)'
 category: 'training'
 level: 2
 lang: es
 ref: training-4
 ---
 
-The result of this training is a UNCTAD diploma of "eRegistrations developer (level 2)".
+----------
 
-### Objectives
+### Perfíl de los participantes
 
-- Acquire autonomy in developing new procedures in the system
-- Build a new procedure from the scratch (with one registration)
+- Al menos 5 años de experiencia profesional con algún lenguaje de programación (por ejemplo Java, PHP, JavaScript, Python, C#, etc.)
+- Conocimiento básico de JavaScript e interés en utilizar este lenguaje
+- Conocimiento del concepto de versión-control y su aplicación con git
 
 ----------
 
-### Duration
+### Requisitos
 
-4 days
-
-----------
-
-### Trainee profile
-
-- At least 5 years of professional experience with any programming language (e.g. Java, PHP, JavaScript, Python, C# etc.)
-- Basic knowledge of JavaScript an interest to use this language
-- Knowledge of the concept of version control and it application with git
-
-----------
-
-### Requirements
-
-- Trainings 1 & 2 & 3 must have been completed (and same requirements need to be met)
+- Haber completado la capacitación 3
+- Una cuenta Github registrada
+- Una computadora con el sistema eregistrations-demo instalado (un tutorial será mandado a los participantes para instalar el sistema antés de la capacitación) - la computadora puede ser bajo Windows 10, Linux Ubuntu o Mac OsX.
+- Un editor de código con validación de lint
 
 ----------
 

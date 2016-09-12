@@ -1,43 +1,39 @@
 ---
 layout: training
-permalink: /capacitaciones/1/
-title: 'Capacitación 1: Administrator eRegistration'
 number: 1
-objective: 'level 1'
+permalink: /capacitaciones/1/
+title: 'Administrador eRegistration'
+objective: 'nivel 1'
+objectives: >
+  - Adquirir conocimiento global sobre la arquitectura del sistema eRegistrations  
+  
+  - Saber publicar un cambio en el sistema mediante Github  
+  
+  - Procesar modificaciones simples en procedimientos existentes en el sistema 
+duration: '5 días'
+diploma: 'eRegistrations administrador (level 1)'
 category: 'training'
 level: 1
 lang: es
 ref: training-1
 ---
 
-The result of this training is a diploma of "eRegistrations administrator (level 1)".
-
-### Objectives
-- Acquire global knowledge about the eRegistrations architecture
-- Edit an existing service with simple modifications
-
 ----------
 
-### Duration
+### Perfíl de los participantes
 
-5 days
+- Al menos 5 años de experiencia profesional con algún lenguaje de programación (por ejemplo Java, PHP, JavaScript, Python, C#, etc.)
+- Conocimiento básico de JavaScript e interés en utilizar este lenguaje
+- Conocimiento del concepto de versión-control y su aplicación con git
 
-----------
-
-### Trainee profile
-
-- At least 5 years of professional experience with any programming language (e.g. Java, PHP, JavaScript, Python, C# etc.)
-- Basic knowledge of JavaScript an interest to use this language
-- Knowledge of the concept of version control and it application with git
 
 --------------------
 
-### Requirements
+### Requisitos
 
-- Registered Github account
-- Forked eregistrations-demo project into personal account
-- A computer with installed and running eregistrations-demo (pointing to forked repository). See the installation chapter in the [documentation](index.html).
-- Configured code editor together with lint validation
+- Una cuenta Github registrada
+- Una computadora con el sistema eregistrations-demo instalado (un tutorial será mandado a los participantes para instalar el sistema antés de la capacitación) - la computadora puede ser bajo Windows 10, Linux Ubuntu o Mac OsX.
+- Un editor de código con validación de lint
 
 ### Training plan
 

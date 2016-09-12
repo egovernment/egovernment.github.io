@@ -1,43 +1,39 @@
 ---
 layout: training
-permalink: /capacitaciones/5/
-title: 'Capacitación 5: Integrator eRegistration'
 number: 5
+permalink: /capacitaciones/5/
+title: 'Integrador eRegistration'
 objective: ''
+objectives: >
+  - Adquirir conocimiento global sobre la organización de las páginas públicas del sistema eRegistrations
+  
+  - Saber publicar un cambio en las páginas públicas mediante Github
+  
+  - Poder modificar completamente las páginas públicas existentes y añadir nuevas páginas
+duration: '2 días'
+diploma: 'integrador eRegistrations'
 category: 'training'
 level: 1
 lang: es
 ref: training-5
 ---
 
-The result of this training is a UNCTAD diploma of "eRegistrations integrator".   
-
-### Objectives
-
-- Acquire global knowledge about the public pages organisation in the eRegistrations system
-- Completely modify the existing public pages and add new pages
-
 ----------
 
-### Duration
+### Perfíl de los participantes
 
-2 days
-
-----------
-
-### Trainee profile
-
-- Advanced knowledge in a HTML and CSS
-- At least 3 years working in developing websites
-- Basic knowledge of Bootstrap 3
-- Knowledge of the concept of version control and it application with git
+- Conocimiento avanzado de HTML, CSS
+- Al menos 3 años de trabajo en el desarrollo de sitios web
+- Conocimiento básico de Bootstrap e interés en utilizar este framework
+- Conocimiento de un sistema de versión-control como Github o Bitbucket es un plús
 
 
 ----------
 
-### Requirements
+### Requisitos
 
-- A computer with eregistrations-demo installed - see installation steps for [Mac OsX](/installation/mac-os-x"), [Linux](/installation/ubuntu) or [Windows 10](/installation/windows10).
+- Una computadora con el sistema eregistrations-salvador instalado  (un tutorial será mandado a los participantes para instalar el sistema antés de la capacitación). La computadora puede ser bajo Windows 10, Linux Ubuntu o Mac OsX.
+
 
 ----------
 

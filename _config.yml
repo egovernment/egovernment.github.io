@@ -63,6 +63,19 @@ training-pages:
     plural:
       en: 'Trainings'
       es: 'Capacitaciones'
+  sections:
+    objectives:
+      en: 'Objectives'
+      es: 'Objectivos'
+    duration:
+      en: 'Duration'
+      es: 'Duración'
+    level:
+      en: 'level'
+      es: 'nivel'
+    diploma:
+      en: 'The result of this training is a UNCTAD diploma of'
+      es: 'El resultado de esta capacitación es un diploma de la UNCTAD'
 
 # Build settings
 markdown: kramdown

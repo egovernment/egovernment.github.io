@@ -1,40 +1,38 @@
 ---
 layout: training
-permalink: /capacitaciones/2/
-title: 'Capacitación 2: Administrator eRegistration'
 number: 2
-objective: 'level 2'
+permalink: /capacitaciones/2/
+title: 'Administrador eRegistration'
+objective: 'nivel 2'
+objectives: >
+  - Fortalecer conocimiento de la arquitectura del sistema eRegistrations
+  
+  - Procesar modificaciones avanzadas en procedimientos existentes en el sistema
+duration: '4 días'
+diploma: 'eRegistrations administrador (nivel 2)'
 category: 'training'
 level: 2
 lang: es
 ref: training-2
 ---
 
-The result of this training is a diploma of "eRegistrations administrator (level 2)".
-
-### Objectives
-- Strength knowledge about the eRegistrations architecture
-- Edit an existing service with advanced modifications
-
 ----------
 
-### Duration
+### Perfíl de los participantes
 
-4 days
+- Al menos 5 años de experiencia profesional con algún lenguaje de programación (por ejemplo Java, PHP, JavaScript, Python, C#, etc.)
+- Conocimiento básico de JavaScript e interés en utilizar este lenguaje
+- Conocimiento del concepto de versión-control y su aplicación con git
 
-----------
-
-### Trainee profile
-
-- At least 5 years of professional experience with any programming language (e.g. Java, PHP, JavaScript, Python, C# etc.)
-- Basic knowledge of JavaScript an interest to use this language
-- Knowledge of the concept of version control and it application with git
 
 --------------------
 
-### Requirements
+### Requisitos
 
-- Training 1 must have been completed (and same requirements need to be met)
+- Haber completado la capacitación 1
+- Una cuenta Github registrada
+- Una computadora con el sistema eregistrations-demo instalado (un tutorial será mandado a los participantes para instalar el sistema antés de la capacitación) - la computadora puede ser bajo Windows 10, Linux Ubuntu o Mac OsX.
+- Un editor de código con validación de lint
 
 ### Training plan
 

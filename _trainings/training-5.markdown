@@ -1,27 +1,20 @@
 ---
 layout: training
-permalink: /trainings/5/
-title: 'Training 5: Integrator eRegistration'
 number: 5
+permalink: /trainings/5/
+title: 'Integrator eRegistration'
 objective: ''
+objectives: >
+  - Acquire global knowledge about the public pages organisation in the eRegistrations system
+
+  - Completely modify the existing public pages and add new pages
+duration: '2 days'
+diploma: 'eRegistrations integrator'
 category: 'training'
 level:
 lang: en
 ref: training-5
 ---
-
-The result of this training is a UNCTAD diploma of "eRegistrations integrator".   
-
-### Objectives
-
-- Acquire global knowledge about the public pages organisation in the eRegistrations system
-- Completely modify the existing public pages and add new pages
-
-----------
-
-### Duration
-
-2 days
 
 ----------
 
