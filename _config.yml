@@ -78,7 +78,7 @@ collections:
         es: 'Buscar'
     baseurl:
         en: '/how-to'
-        es: '/como-hacer'
+        es: '/como'
   trainings:
     output: true
     title:

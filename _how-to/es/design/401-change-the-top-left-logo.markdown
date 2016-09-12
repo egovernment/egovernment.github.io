@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /como-hacer/cambiar-el-logotipo-de-la-parte-superior-izquierda/
+permalink: /como/cambiar-el-logotipo-de-la-parte-superior-izquierda/
 title: 'Cambia el logotipo de la parte superior izquierda'
 category: '4. Design'
 sub-category: ''

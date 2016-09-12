@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /como-hacer/cambiar-el-color-del-menu-superior/
+permalink: /como/cambiar-el-color-del-menu-superior/
 title: 'Cambiar el color del menú superior'
 category: '4. Design'
 sub-category: ''

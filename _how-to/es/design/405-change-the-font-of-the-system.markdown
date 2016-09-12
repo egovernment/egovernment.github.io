@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /como-hacer/cambiar-la-fuente-del-sistema/
+permalink: /como/cambiar-la-fuente-del-sistema/
 title: 'Cambiar la fuente del sistema'
 category: '4. Design'
 sub-category: ''
