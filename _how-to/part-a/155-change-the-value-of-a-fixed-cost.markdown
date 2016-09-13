@@ -26,6 +26,8 @@ In the branch "[change-the-value-of-a-fixed-cost](https://github.com/egovernment
 
 Change the value of the `certificateOfIncentives` cost for `BusinessProcessDemo` service to `500`.
 
+### Solution
+
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-value-of-a-fixed-cost...change-the-value-of-a-fixed-cost-solution#files')">
 
 <a name="diff-defee2292c8e5e4e2ad20914d8cc1b87"></a>
