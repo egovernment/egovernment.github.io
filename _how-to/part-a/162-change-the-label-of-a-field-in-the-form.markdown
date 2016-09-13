@@ -29,7 +29,7 @@ Every field of a file is associated with a service, so to change it's label, we 
 
 ## Example
 
-**Starting Branch: [change-the-label-of-a-field-in-the-form](https://github.com/egovernment/eregistrations-demo/tree/change-the-label-of-a-field-in-the-form)**
+In the branch "[change-the-label-of-a-field-in-the-form](https://github.com/egovernment/eregistrations-demo/tree/change-the-label-of-a-field-in-the-form)" of eregistrations-demo :
 
 Change assets label to *"Local assets"*.
 
