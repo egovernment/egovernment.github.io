@@ -10,7 +10,7 @@ introduction-text: 'This recipe explains how to modify the labels of the fields 
 introduction-img: '163.png'
 prevUrl: 161
 nextUrl: 163
-done: ''
+done: 'yes'
 lang: en
 ref: 162
 ---
