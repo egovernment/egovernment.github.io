@@ -20,7 +20,7 @@ ref: 122
 
 ## Example
 
-**Starting Branch: [change-the-label-of-an-determinant](https://github.com/egovernment/eregistrations-demo/tree/change-the-label-of-an-determinant)**
+In the branch "[change-the-label-of-an-determinant](https://github.com/egovernment/eregistrations-demo/tree/change-the-label-of-an-determinant)" of eregistrations-demo :
 
 Change assets label to *"Local assets"*.
 

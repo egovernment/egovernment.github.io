@@ -24,7 +24,7 @@ Please bare in mind that, by default, registration name is also inherited from t
 
 ## Example
 
-**Starting Branch: [change-the-name-of-a-certificate](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-certificate)**
+In the branch "[change-the-name-of-a-certificate](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-certificate)" of eregistrations-demo :
 
 Change label of company registration certificate to *"Company registration in Ministry of Company Registrations"*.
 
