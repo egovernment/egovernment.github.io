@@ -10,7 +10,7 @@ introduction-text: 'In this recipe we will see how to modify the value of a cost
 introduction-img: '154.png'
 prevUrl: 154
 nextUrl: 156
-done: ''
+done: 'yes'
 lang: en
 ref: 155
 ---
