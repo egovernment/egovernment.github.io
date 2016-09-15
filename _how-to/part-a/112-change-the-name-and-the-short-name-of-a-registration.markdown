@@ -31,7 +31,7 @@ If you want to change the short name of the service, then to the above steps but
 
 ## Example
 
-**Starting Branch: [change-the-name-of-the-registration](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-the-registration)**
+In the branch "[change-the-name-of-the-registration](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-the-registration)" of eregistrations-demo :
 
 Change the name of the `certificateOfIncentives` registration to *"Certificate of incentives (business facilitation program)"*.
 
