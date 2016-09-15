@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Costs'
 rate: '2'
 number: '151'
-introduction-text: 'Cost name is used for both Part A and Part B as well as print views. Changing it will affect all of those places.'
+introduction-text: ''
 introduction-img: '151.png'
 prevUrl: 148
 nextUrl: 152
@@ -15,15 +15,4 @@ lang: en
 ref: 151
 ---
 
-Every cost is associated with a service, so to change it's name, we have to know the service to which it applies.
-
-1. Open file `model/<business-process-your-service>/costs/<your-cost>.js`.
-2. Set the value of the label property of the cost to the desired name.
-
-## Example
-
-In the branch "[change-the-name-of-a-cost](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-cost)" of eregistrations-demo :
-
-Let's change the name of the `companyRegistration` cost for `BusinessProcessDemo` service to `Company registration in the Neverland`.
-
-### Solution
+Introduction lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
