@@ -11,6 +11,7 @@ introduction-img: '102.png'
 prevUrl: 102
 nextUrl: 104
 done: 'yes'
+lang: en
 ref: 103
 ---
 
@@ -29,13 +30,13 @@ Change the description of the service from *"Short description of demo registrat
 ### Solution
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-description-of-the-service...change-the-description-of-the-service-solution#files')">
-      
+
 <a name="diff-ff399868a2b79a6fc5aa0b527b07d602"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="view/user.js">
@@ -57,13 +58,13 @@ Change the description of the service from *"Short description of demo registrat
       <span class="user-select-contain" title="view/user.js">
         view/user.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-ff399868a2b79a6fc5aa0b527b07d602" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/81af36948f7bc15fb344292b7416e6f5fed960f6?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=37&amp;next_line_num_right=37&amp;path=view%2Fuser.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7" data-left-range="1-36" data-right-range="1-36">
