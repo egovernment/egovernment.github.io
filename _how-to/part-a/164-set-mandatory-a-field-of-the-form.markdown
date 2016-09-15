@@ -15,7 +15,7 @@ lang: en
 ref: 164
 ---
 
-Every field of a file is associated with a service, so to change make it mandatory, we have to know the service to which it applies. Additionally, fields can be defined in one of two places, as part of a business process or as part of a nested entity (for example branch, legal representative, etc.) of a business process.
+Every field of a file is associated with a service, so to make it mandatory, we have to know the service to which it applies. Additionally, fields can be defined in one of two places, as part of a business process or as part of a nested entity (for example branch, legal representative, etc.) of a business process.
 
 **For fields that are part of a business process:**
 
