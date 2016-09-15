@@ -10,7 +10,7 @@ introduction-text: 'This recipe explains how to set the tooltip in front of a co
 introduction-img: '152.png'
 prevUrl: 152
 nextUrl: 154
-done: ''
+done: 'yes'
 lang: en
 ref: 153
 ---
