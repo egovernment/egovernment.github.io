@@ -17,7 +17,7 @@ ref: 132
 
 The name of a certificate is defined on a document that it's extended from. Changing document name will also change the certificate name.
 
-Please bare in mind that, by default, registration name is also inherited from the certificate corresponding to it. If the name of the registration should remain unchanged, check ['How to 111 - Change the name and the short name of a registration'](/how-to/change-the-name-and-the-short-name-of-a-registration/).
+Please bare in mind that, by default, registration name is also inherited from the certificate corresponding to it. If the name of the registration should remain unchanged, check ['How to 112 - Change the label of a registration'](/how-to/change-the-name-and-the-short-name-of-a-registration/).
 
 1. Open file `model/documents/<document>.js` (the file name should be hyphened version of the document’s name).
 2. Set the value of a label property to the desired name.
