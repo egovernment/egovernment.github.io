@@ -10,7 +10,7 @@ introduction-text: 'Cost name is used for both Part A and Part B as well as prin
 introduction-img: '151.png'
 prevUrl: 151
 nextUrl: 153
-done: ''
+done: 'yes'
 lang: en
 ref: 152
 ---
