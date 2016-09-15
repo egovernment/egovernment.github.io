@@ -6,14 +6,16 @@ category: '2. Part B'
 sub-category: 'Roles'
 rate: '1'
 number: '202'
-introduction-text: 'By name of a role we mean a label associated with role enum value'
+introduction-text: 'This recipe explains how to change the label that the role appears under.'
 introduction-img: '202.png'
 prevUrl: 201
 nextUrl: 203
-done: ''
+done: 'yes'
 lang: en
 ref: 202
 ---
+
+The system uses `enum` type to represent a role. Its displayed name (label) can be set on enum's `meta` property.
 
 1. Open file `model/user/roles.js`.
 2. Identify the line where role label is set e.g. `db.Role.meta.get('officialProcessing').label = _("Processing");`.
@@ -31,13 +33,13 @@ Change the label of the `officialFrontDesk` from *"Front Desk"* to *"Withdrawal"
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-name-of-a-role...change-the-name-of-a-role-solution#files')">
 
-        
+
 <a name="diff-9abd234fe54a68a4bbc4bfc9a5048605"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/user/roles.js">
@@ -59,13 +61,13 @@ Change the label of the `officialFrontDesk` from *"Front Desk"* to *"Withdrawal"
       <span class="user-select-contain" title="model/user/roles.js">
         model/user/roles.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-9abd234fe54a68a4bbc4bfc9a5048605" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/68fde56385220fbaaaa0ecd6c8d64224e55147ef?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=4&amp;mode=100644&amp;next_line_num_left=19&amp;next_line_num_right=19&amp;path=model%2Fuser%2Froles.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=4" data-left-range="1-18" data-right-range="1-18">
