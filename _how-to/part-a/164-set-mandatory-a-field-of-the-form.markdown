@@ -37,13 +37,13 @@ Make the `workers` field of `BusinessProcessDemo` service mandatory.
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/make-a-field-of-the-form-mandatory...make-a-field-of-the-form-mandatory-solution#files')">
 
-        
+
 <a name="diff-ff865e3a54b66a1c0895c04cc66fa0d4"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/fields.js">
@@ -65,13 +65,13 @@ Make the `workers` field of `BusinessProcessDemo` service mandatory.
       <span class="user-select-contain" title="model/business-process-demo/fields.js">
         model/business-process-demo/fields.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-ff865e3a54b66a1c0895c04cc66fa0d4" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/4f8cfe67310430369c262d6a8045562cb04dc9a0?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=22&amp;next_line_num_right=22&amp;path=model%2Fbusiness-process-demo%2Ffields.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7" data-left-range="1-21" data-right-range="1-21">
