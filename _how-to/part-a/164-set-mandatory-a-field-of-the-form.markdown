@@ -10,7 +10,7 @@ introduction-text: 'This recipe explains how to set a field as mandatory : the u
 introduction-img: '165.png'
 prevUrl: 163
 nextUrl: 165
-done: ''
+done: 'yes'
 lang: en
 ref: 164
 ---
