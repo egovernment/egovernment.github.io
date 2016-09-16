@@ -15,16 +15,13 @@ lang: en
 ref: 222
 ---
 
-A processing step can be associated with many services. It may be that you want to remove a field
-
-in context of one service but not the other. It can also be that you want to remove the field in context of more than one service.
+A processing step can be associated with many services. It may be that you want to remove a field in context of one service but not the other. It can also be that you want to remove the field in context of more than one service.
 
 In any case you need to adjust model files as well as section files associated with a service(s) in context of which you want the change to be applied.
 
 1. Open file `model/<your-service>/processing-steps/<your-step>.js`.
 2. Remove the field from the model definition.
 3. Remove the field name from the `propertyNames` property of steps section.
-
 
 ## Example
 
@@ -36,13 +33,13 @@ Remove a `sealDate` field from `socialSecurity` processing step of the `Business
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/remove-a-field-in-a-processing-role...remove-a-field-in-a-processing-role-solution#files')">
 
-        
+
 <a name="diff-745ee05dfb21a9334686e777f1b83960"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/processing-steps/social-security.js">
@@ -64,13 +61,13 @@ Remove a `sealDate` field from `socialSecurity` processing step of the `Business
       <span class="user-select-contain" title="model/business-process-demo/processing-steps/social-security.js">
         model/business-process-demo/processing-steps/social-security.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-745ee05dfb21a9334686e777f1b83960" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/6f2a94cb04692b9935eb38f562d476e8a7d0d454?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=5&amp;next_line_num_right=5&amp;path=model%2Fbusiness-process-demo%2Fprocessing-steps%2Fsocial-security.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=6" data-left-range="1-4" data-right-range="1-4">

@@ -21,8 +21,7 @@ Processing steps models are defined for a given service. There is a good referen
 
 I will reference it in the steps below:
 
-1. At the root of your project type: `node_modules/eregistrations/bin/generate-app official-<your-step-name>` (be sure not to make a typo, especially in *"official"*).
-This will create most of the files needed by your step. You can check here to see what files should be created at this point: [(A) Official Processing app & role](https://github.com/egovernment/eregistrations-demo/commit/b1d460489c70093bf0cc58af54b011434d989594).
+1. At the root of your project type: `node_modules/eregistrations/bin/generate-app official-<your-step-name>` (be sure not to make a typo, especially in *"official"*). This will create most of the files needed by your step. You can check here to see what files should be created at this point: [(A) Official Processing app & role](https://github.com/egovernment/eregistrations-demo/commit/b1d460489c70093bf0cc58af54b011434d989594).
 2. Open file `model/user/roles.js`.
 3. Add new role; one entry in `db.Role.members`, setup `db.Role.meta.get('<yourStepName>').label`. You can see how it's done [here](https://github.com/egovernment/eregistrations-demo/commit/3256210ab5f2284418ffee5e8f1468b3c2cad009).
 4. Create a file `model/<your-service>/processing-steps/<your-step-name>.js`.
@@ -39,31 +38,21 @@ So we need to configure it (provide controller, view, and form section definitio
 
 In the branch "[add-a-role-processing-step](https://github.com/egovernment/eregistrations-demo/tree/add-a-role-processing-step)" of eregistrations-demo :
 
-Add a new processing step. The step will be called "Social Security".
+Add a new processing step.
 
-The step should be included in the part b flow after `processing` and before `frontDesk`.
-
-The step has a form with two fields which needs to be filled before approval of the step is possible.
-
-The fields of the form are:
-
-1. `isSealConfirmed` (Boolean, required, label: *"Are the seals of the certificates confirmed?"*).
-2. `sealDate` (DateType, required, label: *"What is the date of sealing the last certificate?"*).
-
-The form will be created via section (`FormSection` labeled *"Seals confirmation"*).
-
-The sections form will be submitted under this route: `[0-9][a-z0-9]+/social-security-form`.
-
-After the form is completed (sections `status` equals 1), the *"Approve"* button appears.
-
-When the button is clicked the step becomes approved.
-
-After the step is approved a status log entry should be added and the flow will proceed to `frontDesk`.
-
-The status log entry will be triggered only once (after the step is approved).
-
-The status log entry will have the label *"Social Security"* and the following text: *"Approved by social security"*.
-
+* The step will be called "Social Security".
+* The step should be included in the part b flow after `processing` and before `frontDesk`.
+* The step has a form with two fields which needs to be filled before approval of the step is possible.
+    * The fields of the form are:
+        1. `isSealConfirmed` (Boolean, required, label: *"Are the seals of the certificates confirmed?"*).
+        2. `sealDate` (DateType, required, label: *"What is the date of sealing the last certificate?"*).
+    * The form will be created via section (`FormSection` labeled *"Seals confirmation"*).
+    * The sections form will be submitted under this route: `[0-9][a-z0-9]+/social-security-form`.
+* After the form is completed (sections `status` equals 1), the *"Approve"* button appears.
+    * When the button is clicked the step becomes approved.
+* After the step is approved a status log entry should be added and the flow will proceed to `frontDesk`.
+    * The status log entry will be triggered only once (after the step is approved).
+    * The status log entry will have the label *"Social Security"* and the following text: *"Approved by social security"*.
 
 ### Solution
 

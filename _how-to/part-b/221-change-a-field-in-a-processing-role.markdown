@@ -15,35 +15,30 @@ lang: en
 ref: 221
 ---
 
-A processing step can be associated with many services. It may be that you want to change something about a field
-
-in context of one service but not the other. It can also be that you want to change the field in context of more than one service.
+A processing step can be associated with many services. It may be that you want to change something about a field in context of one service but not the other. It can also be that you want to change the field in context of more than one service.
 
 In any case you need to adjust model files associated with a service(s) in context of which you want the change to be applied.
 
 1. Open file `model/<your-service>/processing-steps/<your-step>.js`.
 2. Change the field you're after.
 
-
 ## Example
 
 In the branch "[change-a-field-in-a-processing-role](https://github.com/egovernment/eregistrations-demo/tree/change-a-field-in-a-processing-role)" of eregistrations-demo :
 
-Change the label of the field `sealDate` of the `socialSecurity` processing step of the `BusinessProcessDemo` from 
-
-*"What is the date of sealing the last certificate?"* to *"What is the date of sealing the first certificate?"*
+Change the label of the field `sealDate` of the `socialSecurity` processing step of the `BusinessProcessDemo` from *"What is the date of sealing the last certificate?"* to *"What is the date of sealing the first certificate?"*
 
 ### Solution
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-a-field-in-a-processing-role...change-a-field-in-a-processing-role-solution?#files')">
 
-        
+
 <a name="diff-745ee05dfb21a9334686e777f1b83960"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/processing-steps/social-security.js">
@@ -65,13 +60,13 @@ Change the label of the field `sealDate` of the `socialSecurity` processing step
       <span class="user-select-contain" title="model/business-process-demo/processing-steps/social-security.js">
         model/business-process-demo/processing-steps/social-security.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-745ee05dfb21a9334686e777f1b83960" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/edb79b50f41b001243fefa7fc1501c10afbc35be?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=22&amp;next_line_num_right=22&amp;path=model%2Fbusiness-process-demo%2Fprocessing-steps%2Fsocial-security.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7" data-left-range="1-21" data-right-range="1-21">
