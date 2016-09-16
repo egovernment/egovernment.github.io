@@ -29,6 +29,9 @@ documentation-pages:
     title:
       en: 'Concept'
       es: 'Concepto'
+    urls:
+      en: '/concept'
+      es: '/concepto'
   installation:
     title:
       en: 'Installation'
