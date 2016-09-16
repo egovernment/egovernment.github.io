@@ -25,6 +25,10 @@ documentation-pages:
     title:
       en: 'Overview'
       es: 'Presentación'
+  concept:
+    title:
+      en: 'Concept'
+      es: 'Concepto'
   installation:
     title:
       en: 'Installation'
