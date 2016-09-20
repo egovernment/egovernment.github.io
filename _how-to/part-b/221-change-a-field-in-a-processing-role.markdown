@@ -17,9 +17,18 @@ ref: 221
 
 A processing step can be associated with many services. It may be that you want to change something about a field in context of one service but not the other. It can also be that you want to change the field in context of more than one service.
 
-In any case you need to adjust model files associated with a service(s) in context of which you want the change to be applied.
+In any case you need to adjust model files associated with a service(s) in context of which you want the change to be applied. In processing steps we either edit fields used in `dataForm` section of the given step
+
+or we edit `dataForm` section of a certificate which is associated with the processing step. Below we cover both scenarios:
+
+When we edit fields belonging to the step (exposed by `dataForm` of the step):
 
 1. Open file `model/<your-service>/processing-steps/<your-step>.js`.
+2. Change the field you're after.
+
+When we edit a field on the certificate associated with the processing step:
+
+1. Open file `model/<your-service>/certificate/<your-certificate>.js`.
 2. Change the field you're after.
 
 ## Example
