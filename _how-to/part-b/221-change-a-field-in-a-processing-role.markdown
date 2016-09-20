@@ -28,7 +28,7 @@ When we edit fields belonging to the step (exposed by `dataForm` of the step):
 
 When we edit a field on the certificate associated with the processing step:
 
-1. Open file `model/<your-service>/certificate/<your-certificate>.js`.
+1. Open file `model/<your-service>/certificates/<your-certificate>.js`.
 2. Change the field you're after.
 
 ## Example
