@@ -10,7 +10,7 @@ introduction-text: 'This recipe explains how to add a new field to the form sect
 introduction-img: '161.png'
 prevUrl: 159
 nextUrl: 162
-done: ''
+done: 'yes'
 lang: en
 ref: 161
 ---
