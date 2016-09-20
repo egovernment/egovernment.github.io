@@ -10,7 +10,7 @@ introduction-text: 'This recipe explains how to add and edit the legend text tha
 introduction-img: '164.png'
 prevUrl: 162
 nextUrl: 164
-done: 'done'
+done: 'yes'
 lang: en
 ref: 163
 ---
