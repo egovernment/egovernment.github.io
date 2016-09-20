@@ -19,7 +19,7 @@ A processing step can be associated with many services. It may be that you want 
 
 Additionally, this recipe only details adding a already defined (on a model) field to form section. For more information about adding a field definition to the model, check ['How to 121 - Define a new field'](/how-to/configure-the-determinant-of-a-service/).
 
-In any case you need to adjust processing steps form section definition in files associated with a service(s) in context of which you want the change to be applied.
+In any case, you'll need to adjust processing steps form section definition in files associated with a service(s) in context of which you want the change to be applied.
 
 1. Open file `model/<business-process-your-service>/processing-steps/<your-processing-step>.js`.
 2. Locate the `propertyNames` property of processing step form section and append new field name to it.
