@@ -10,14 +10,14 @@ introduction-text: 'This recipe is about adding a field to the form of a process
 introduction-img: '222.png'
 prevUrl: 222
 nextUrl: 231
-done: ''
+done: 'yes'
 lang: en
 ref: 223
 ---
 
 A processing step can be associated with many services. It may be that you want to add a field in context of one service but not the other. It can also be that you want to add the field in context of more than one service.
 
-Additionally, this recipe only details adding a already defined (on a model) field to form section. For more information about adding a field definition to the model, check ['How to 121 - Define a new field'](/how-to/configure-the-determinant-of-a-service/).
+Additionally, this recipe only details adding an already defined (on a model) field to form section. For more information about adding a field definition to the model, check ['How to 121 - Define a new field'](/how-to/configure-the-determinant-of-a-service/).
 
 In any case, you'll need to adjust processing steps form section definition in files associated with a service(s) in context of which you want the change to be applied.
 
