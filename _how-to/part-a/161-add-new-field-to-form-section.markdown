@@ -22,14 +22,14 @@ Additionally, the field we are going to include in form section has to be define
 **For form sections that are part of a business process:**
 
 1. Open file `model/<business-process-your-service>/data-forms/<your-form-section>.js`.
-2. Locate the `propertyNames` property and change append new field name to it.
+2. Locate the `propertyNames` property and append new field name to it.
 
 **For form sections of a nested entity:**
 
 1. Nested entities can have either one, or many form sections. Depending on that, open either:
     - `model/<business-process-your-service>/nested-entities/<your-nested-entity>/data-forms.js`
     - `model/<business-process-your-service>/nested-entities/<your-nested-entity>/data-forms/<your-form-section>.js`
-2. Locate the `propertyNames` property and change append new field name to it.
+2. Locate the `propertyNames` property and append new field name to it.
 
 ## Example
 
