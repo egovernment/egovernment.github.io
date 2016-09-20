@@ -10,7 +10,7 @@ introduction-text: 'This recipe is about removing a field from the form of a pro
 introduction-img: '222.png'
 prevUrl: 221
 nextUrl: 223
-done: ''
+done: 'yes'
 lang: en
 ref: 222
 ---
@@ -21,7 +21,7 @@ In any case you need to adjust model files as well as section files associated w
 
 1. Open file `model/<your-service>/processing-steps/<your-step>.js`.
 2. Remove the field from the model definition.
-3. Remove the field name from the `propertyNames` property of steps section.
+3. Remove the field name from the `propertyNames` property of steps section (defined as `dataForm` on a step model).
 
 ## Example
 
