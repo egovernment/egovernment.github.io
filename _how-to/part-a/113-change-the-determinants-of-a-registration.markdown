@@ -10,24 +10,24 @@ introduction-text: 'A registration can be mandatory, optional or inapplicable fo
 introduction-img: '112.gif'
 prevUrl: 112
 nextUrl: 121
-done: ''
+done: 'yes'
 lang: en
 ref: 113
 ---
 
 Every registration is associated with a service, so to modify it, we need to know the service to which it applies.
 
-A registration applicability for given file is defined using `isApplicable` property (defaults to true). Additionally, it can be either mandatory or optional. This is controlled with `isMandatory` property (defaults to true). Both of these properties can have hard-coded values (true or false) or can be defined as getters that resolve it's value from fields of the guide.
+A registration applicability for given file is defined using `isApplicable` property (defaults to true). Additionally, it can be either mandatory or optional. This is controlled with `isMandatory` property (defaults to true). Both of these properties can have hard-coded values (`true` or `false`) or can be defined as getters that resolve it's value from fields of the guide.
 
 **To change applicability of a registration:**
 
 1. Open file `model/<business-process-your-service>/registrations/<your-registration>.js`.
-2. Set the value of a `isApplicable` property to a function that will resolve registration applicability.
+2. Set the value of an `isApplicable` property to a function that will resolve registration applicability.
 
 **To change whether a registration is mandatory or optional:**
 
 1. Open file `model/<business-process-your-service>/registrations/<your-registration>.js`.
-2. Set the value of a `isMandatory` property to a function that will resolve registration applicability.
+2. Set the value of an `isMandatory` property to a function that will return `true` for cases when registration is mandatory and `false` or `undefined` when it is optional.
 
 ## Example
 
