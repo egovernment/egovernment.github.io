@@ -143,7 +143,191 @@ Other common properties of fields which you will encounter are:
 
 ## Example
 
-In the branch "[](https://github.com/egovernment/eregistrations-demo/tree/)" of eregistrations-demo :
+In the branch "[define-a-new-field](https://github.com/egovernment/eregistrations-demo/tree/define-a-new-field)" of eregistrations-demo :
 
+Add a new field `isLocalCapital` (type: `Boolean`, label:  *"Is the capital local or foreign?"*, inputHint: *"Choose 'yes' for local"*) to Business Process Demo service.
 
 ### Solution
+
+<div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/define-a-new-field...define-a-new-field-solution#files')">
+
+        
+<a name="diff-ff865e3a54b66a1c0895c04cc66fa0d4"></a>
+<div id="diff-0" class="file js-details-container
+             
+             
+             
+             
+             show-inline-notes
+           ">
+  <div class="file-header" data-path="model/business-process-demo/fields.js">
+    <div class="file-actions">
+        <span class="show-file-notes">
+          <label>
+            <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+            Show notes
+          </label>
+        </span>
+
+          <a href="/egovernment/eregistrations-demo/blob/ea85fb535beb1cbd8662b6f05c5381d07eb47ad2/model/business-process-demo/fields.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version ea85fb5 ">View</a>
+
+
+    </div>
+    <div class="file-info">
+        <span class="diffstat tooltipped tooltipped-e" aria-label="5 additions &amp; 0 deletions">5 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span></span>
+
+      <span class="user-select-contain" title="model/business-process-demo/fields.js">
+        model/business-process-demo/fields.js
+      </span>
+      
+    </div>
+  </div>
+
+      <div class="data highlight blob-wrapper">
+        <table class="diff-table tab-size  " data-tab-size="8">
+          
+      <tbody><tr class="js-expandable-line" data-position="0">
+    <td class="blob-num blob-num-expandable" colspan="2">
+      <a href="#diff-ff865e3a54b66a1c0895c04cc66fa0d4" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/315b4df969b251e28cae10fa81bcb97818b19488?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=5&amp;mode=100644&amp;next_line_num_left=31&amp;next_line_num_right=31&amp;path=model%2Fbusiness-process-demo%2Ffields.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=10" data-left-range="1-30" data-right-range="1-30">
+        <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"></path></svg>
+      </a>
+    </td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -31,5 +31,10 @@ BusinessProcessDemo.prototype.defineProperties({</td>
+  </tr>
+
+    <tr>
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4L31" data-line-number="31" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4R31" data-line-number="31" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 	attorney<span class="pl-k">:</span> {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4L32" data-line-number="32" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4R32" data-line-number="32" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 		type<span class="pl-k">:</span> <span class="pl-smi">db</span>.<span class="pl-smi">Person</span>,</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4L33" data-line-number="33" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4R33" data-line-number="33" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 		nested<span class="pl-k">:</span> <span class="pl-c1">true</span></span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4R34" data-line-number="34" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+	},</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4R35" data-line-number="35" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+	isLocalCapital<span class="pl-k">:</span> {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4R36" data-line-number="36" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+		type<span class="pl-k">:</span> <span class="pl-smi">db</span>.<span class="pl-smi">Boolean</span>,</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4R37" data-line-number="37" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+		label<span class="pl-k">:</span> <span class="pl-en">_</span>(<span class="pl-s"><span class="pl-pds">"</span>Is the capital local or foreign?<span class="pl-pds">"</span></span>),</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4R38" data-line-number="38" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+		inputHint<span class="pl-k">:</span> <span class="pl-en">_</span>(<span class="pl-s"><span class="pl-pds">"</span>Choose 'yes' for local<span class="pl-pds">"</span></span>)</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4L34" data-line-number="34" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4R39" data-line-number="39" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> 	}</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4L35" data-line-number="35" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-ff865e3a54b66a1c0895c04cc66fa0d4R40" data-line-number="40" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> });</span>
+
+  </td>
+</tr>
+
+
+
+        </tbody></table>
+      </div>
+</div>
+
+</div>
