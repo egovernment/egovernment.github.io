@@ -17,9 +17,7 @@ ref: 231
 
 A Withdrawal processing step also called "Front Desk" (`frontDesk`) is usually the last processing step.
 
-After this step has been processed the whole file is considered closed. Often we want the `frontDesk` official
-
-to confirm that he saw original version of a document uploaded by user in part a (this is default behaviour).
+After this step has been processed the whole file is considered closed. Often we want the `frontDesk` official to confirm that he saw original version of a document uploaded by user in part a (this is default behaviour).
 
 Sometimes we may want to change this, and do not require officer to confirm that he saw the original document.
 
@@ -28,7 +26,7 @@ There is a dedicated view for that action, we just need to adjust the model.
 To mark a document as to be not needing confirmation:
 
 1. Open file `model/<your-service>/requirement-uploads.js`.
-2. Setup `isFrontDeskApplicable` property of `requirementUpload` to `false` 
+2. Setup `isFrontDeskApplicable` property of `requirementUpload` to `false`
 (`<YourBusinessProcess>.prototype.requirementUploads.map.<your-requirement-upload>.isFrontDeskApplicable`).
 
 ## Example
@@ -42,13 +40,13 @@ Set `inventory` `requirementUpload` of Business Process Demo service not to be c
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/mark-uploaded-document-as-needed-to-be-shown-at-front-desk...mark-uploaded-document-as-needed-to-be-shown-at-front-desk-solution#files')">
 
-        
+
 <a name="diff-da564581570d16ba4a104665991c7b46"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/requirement-uploads.js">
@@ -70,13 +68,13 @@ Set `inventory` `requirementUpload` of Business Process Demo service not to be c
       <span class="user-select-contain" title="model/business-process-demo/requirement-uploads.js">
         model/business-process-demo/requirement-uploads.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-da564581570d16ba4a104665991c7b46" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/007302f59e758f859758cc02467f161ccbb7ed61?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=3&amp;mode=100644&amp;next_line_num_left=10&amp;next_line_num_right=10&amp;path=model%2Fbusiness-process-demo%2Frequirement-uploads.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7" data-left-range="1-9" data-right-range="1-9">
