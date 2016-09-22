@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Servicio'
 rate: '1'
 number: '103'
-introduction-text: 'This recipe is about changing the description of the service in the "Available services" section of My Account.<br>The "Available services" section of MyAccount is managed by the `servicesBoxList` block.'
+introduction-text: 'Esta receta es sobre como cambiar la descripción de un servicio en la sección "Servicios disponibles" de Mi Cuenta<br>La sección "Servicios disponibles" de Mi Cuenta es administrada por el bloque `servicesBoxList`.'
 introduction-img: '102.png'
 prevUrl: 102
 nextUrl: 104
@@ -15,19 +15,19 @@ lang: es
 ref: 103
 ---
 
-1. Open file `view/user.js`.
-2. Identify `exports._servicesBoxList` block (it's responsible for "Available Services" list).
-3. Find description of service which should be changed and update it.
+1. Abrir el archivo `view/user.js`.
+2. Identificar el bloque `exports._servicesBoxList` (es el responsable por la lista de "Servicios Disponibles").
+3. Buscar la descripción del servicio a modificar y actualizarla.
 
 ---
 
-## Example
+## Ejemplo
 
-In the branch "[change-the-description-of-the-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-description-of-the-service)" of eregistrations-demo :
+En la rama "[change-the-description-of-the-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-description-of-the-service)" de eregistrations-demo :
 
-Change the description of the service from *"Short description of demo registration process"* to *"Demo service was created for demo purposes only."*.
+Cambiar la descripción del servicio de *"Short description of demo registration process"* a *"Demo service was created for demo purposes only."*.
 
-### Solution
+### Solución
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-description-of-the-service...change-the-description-of-the-service-solution#files')">
       
