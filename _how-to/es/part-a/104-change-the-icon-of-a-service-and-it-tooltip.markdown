@@ -15,40 +15,39 @@ lang: es
 ref: 104
 ---
 
-The service icon is a [Font Awesome](http://fontawesome.io/cheatsheet/) character.
+El icono del servicio es un carácter de [Font Awesome](http://fontawesome.io/cheatsheet/).
 
-First check if the character you want to use for the icon exists (You can use the characters for which css classes have been defined here: [https://github.com/egovernment/eregistrations/blob/master/css/components/fa.css#L33-L378](https://github.com/egovernment/eregistrations/blob/master/css/components/fa.css#L33-L378) ).
+Primero se debe revisar que el carácter que se desea usar como icono existe (Puede usar los caracteres para los que se han definido clases css acá: [https://github.com/egovernment/eregistrations/blob/master/css/components/fa.css#L33-L378](https://github.com/egovernment/eregistrations/blob/master/css/components/fa.css#L33-L378) ).
 
-If the character you want to use does not have it's css class defined, then create a pull-request in [eregistrations](https://github.com/egovernment/eregistrations) system.
-In the comment write what Font Awesome character you would like to use.
+Si el carácter que quiere usar no tiene definida su clase css, cree un pull-request en el sistema [eregistrations](https://github.com/egovernment/eregistrations).
+En el comentario especificar que carácter de Font Awesome desea utilizar.
 
-From now on we assume that the icon (proper font character) already exists (the css class for it is defined i.e. 'fa fa-file').
+A partir de acá se asumirá que el icono (el carácter adecuado de la fuente) existe (su clase css está definida, es decir 'fa fa-file').
 
-First we need to adjust "My acount" page:
+Primero se debe ajustar la página "Mi cuenta":
 
-1. Open file `view/user.js`.
-2. Find `exports._servicesBoxList` block.
-3. Identify the `<i>` element inside `buttonContent` block.
-4. Set `<i>` element's css class to the desired class e.g. ('fa fa-file').
+1. Abrir el archivo `view/user.js`.
+2. Identificar el bloque `exports._servicesBoxList`.
+3. Buscar el elemento `<i>` dentro del bloque `buttonContent`.
+4. Modificar la clase css del elemento `<i>` a la clase deseada, por ejemplo 'fa fi-file'
 
-After "My account" is updated we need to overwrite `getServiceIcon` method in view.
-This method may or may not by already available in you system.
+Despues de que "Mi cuenta" sea actualizada, se necesita sobreescribir el método `getServiceIcon` en la vista.
+Este método puede o puede no estar disponible en su sistema.
 
-1. Open `view/components/business-process-table-columns.js` file (if there is no such file,
-then your system is not up to date with current version, so you should create a pull request in your system to include new setup).
-2. Look for the `getServiceIcon` method (It overrides the method from [eregistrations/view/components/business-process-table-columns](https://github.com/egovernment/eregistrations/blob/master/view/components/business-process-table-columns.js)).
-If there is no such method, you will have to create it.
-3. Create/Modify the `columns.getServiceIcon` method (`getServiceIcon` method takes `businessProcess` instance as an argument, and is expected to return an icon (`<i>` with chosen Font Awesome class name) that corresponds to provided `businesProcess`. The method needs to return correct icon (`<i>` element) for provided businessProcess).
+1. Abrir el archivo `view/components/business-process-table-columns.js` (si no existe, su sistema no se encuentra actualizado a la versión actual, por lo que debería crear un pull-request en su sistema para incluir los cambios).
+2. Buscar el método `getServiceIcon` (sobreescribe el método de [eregistrations/view/components/business-process-table-columns](https://github.com/egovernment/eregistrations/blob/master/view/components/business-process-table-columns.js)).
+Si no existe el método, tendrá que crearlo.
+3. Crear/modificar el método `columns.getServiceIcon` (el método `columns.getServiceIcon` toma como argumento una instancia de `businessProcess` y se espera que retorne un icono (`<i>` con el nombre de la clase de Font Awesome elegida) que corresponda al `businessProcess` provisto. El método necesita retornar el ícono correcto (elemento `<i>`) para el businessProcess provisto).
 
 ---
 
-## Example
+## Ejemplo
 
-In the branch "[change-the-icon-of-a-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-icon-of-a-service)" of eregistrations-demo :
+En la rama "[change-the-icon-of-a-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-icon-of-a-service)" of eregistrations-demo :
 
-Change the icon of the "Demo" service. Use 'fa fa-file' as new icon classes.
+Cambiar el icono del servicio "Demo". Usar 'fa fa-file' como las nuevas clases del icono.
 
-### Solution
+### Solución
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-icon-of-a-service...change-the-icon-of-a-service-solution#files')">
 
