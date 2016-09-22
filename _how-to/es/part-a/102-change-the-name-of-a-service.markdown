@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Servicio'
 rate: '1'
 number: '102'
-introduction-text: 'This recipe is about changing the name of the service in the "Available services" section of My Account.<br>The "Available services" section of MyAccount is managed by the `servicesBoxList` block.'
+introduction-text: 'Esta receta trata sobre como cambiar el nombre de un servicio en la sección "Servicios disponibles" de Mi Cuenta<br>La sección "Servicios disponibles" de Mi Cuenta es administrada por el bloque `servicesBoxList`.'
 introduction-img: '101.png'
 prevUrl: 101
 nextUrl: 103
@@ -15,19 +15,19 @@ lang: es
 ref: 102
 ---
 
-1. Open file `view/user.js`.
-2. Identify `exports._servicesBoxList` block (it's responsible for "Available Services" list).
-3. Find name of service which should be changed and update it.
+1. Abrir el archivo `view/user.js`.
+2. Identificar el bloque `exports._servicesBoxList` (es el responsable por la lista de "Servicios Disponibles").
+3. Buscar el nombre del servicio a modificar y actualizarlo.
 
 ---
 
-## Example
+## Ejemplo
 
-In the branch "[change-the-name-of-the-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-the-service)" of eregistrations-demo :
+En la rama "[change-the-name-of-the-service](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-the-service)" de eregistrations-demo :
 
-Change the name of the service from *"Register Demo"* to *"Register company"*
+Cambiar el nombre del servicio de *"Register Demo"* a *"Register company"*
 
-### Solution
+### Solución
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-name-of-the-service...change-the-name-of-the-service-solution#files')">
       
