@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Registro'
 rate: '1'
 number: '112'
-introduction-text: 'The name of a registration appears in the guide, in the email sent to the users, in the history of the file... The name change will take place in all those places.<br>It is recommended to name the registration as "Name-of-certificate at Institution-in-charge".'
+introduction-text: 'El nombre de un registro aparece en la guía, en el correo electrónico que se envía a los usuarios, en el historial del archivo... El cambio de nombre ocurrirá en todos esos lugares.<br>Se recomienda nombrar el registro de la forma "Nombre-del-certificado en Institución-a-cargo".'
 introduction-img: '111.png'
 prevUrl: 111
 nextUrl: 113
@@ -15,19 +15,19 @@ lang: es
 ref: 112
 ---
 
-The name of a registeration is by default inherited from the document corresponding to it. We must first determine if we want to change the name of a document or just the name of the registration.
+El nombre de un registro es por defecto heredado del documento que le corresponde. Se debe determinar si se quiere cambiar el nombre del documento o solo el nombre del registro.
 
-Here we will focus on the scenario where we want to change only the name of the registration, not of the document.
+En esta ocasión el enfoque será en el escenario donde queremos cambiar solo el nombre del registro, no del documento.
 
-Every registration is associated with a service. So, first we have to determine the service in which registration occurs. Let's assume that the service's model class name is `BusinessProcessMyService` and your registrations name is `myRegistration`.
+Cada registro está asociado a un servicio. Por lo que, primero hay que determinar el servicio en el que el registro ocurre. Asuma que el nombre de la clase del modelo del servicio es `BusinessProcessMyService` y el nombre de registro `myRegistration`.
 
-Registrations can be found either together under `model/business-process-my-service/registrations.js`, or in separate files in the following directory `model/business-process-my-service/registrations` (the file name should be hyphened version of the registration's name (in our example `my-registration.js`)).
+Los registros pueden encontrarse juntos en el archivo `model/business-process-my-service/registrations.js`, o en archivos separados en el directorio `model/business-process-my-service/registrations` (el nombre del archivo debe ser la versión con guiones del nombre del registro (en el ejemplo `my-registration.js`)).
 
-1. Depending on your case, go to: `model/business-process-my-service/registrations.js`, or to `model/business-process-my-service/registrations/my-registration.js`.
+1. Dependiendo del caso, ir a: `model/business-process-my-service/registrations.js`, o a `model/business-process-my-service/registrations/my-registration.js`.
 
-2. Set the value of the label property of `myRegistration` to the name you want your registration to have.
+2. Colocar el valor de la propiedad `label` de `myRegistration` al nombre que se desea tenga el registro.
 
-If you want to change the short name of the service, then to the above steps but instead of `label` edit `shortLabel` property.
+Si se desea cambiar el nombre corto del servicio, entonces se deben seguir los pasos anteriores, pero en lugar de `label`, editar la propiedad `shortLabel`.
 
 # Exercise
 
