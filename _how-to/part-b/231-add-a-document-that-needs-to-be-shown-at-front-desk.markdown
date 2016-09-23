@@ -10,7 +10,7 @@ introduction-text: "A common functionality for `frontDesk` step is marking a doc
 introduction-img: '231.png'
 prevUrl: 223
 nextUrl: 241
-done: ''
+done: 'yes'
 lang: en
 ref: 231
 ---
