@@ -10,7 +10,7 @@ introduction-text: ''
 introduction-img: '181.png'
 prevUrl: 175
 nextUrl: 201
-done: ''
+done: 'yes'
 lang: en
 ref: 181
 ---
@@ -23,13 +23,13 @@ Part A pages are common for all systems based on eRegistrations framework and so
 * [`eregistrations/view/business-process-payment.js`](https://github.com/egovernment/eregistrations/blob/master/view/business-process-payment.js) - *"Pay the fees"* page.
 * [`eregistrations/view/business-process-submission-forms.js`](https://github.com/egovernment/eregistrations/blob/master/view/business-process-submission-forms.js) - *"Send file"* page.
 
-Each of those views export numerous customization endpoints to allow fine-tuning the end system. Page legend, displayed under the page title and before the main content, can be set by overriding `_optionalInfo`. This can be done on per service basis as well as for the whole system. In order to do so, one must first create a view override file, and then, require it in app route configuration file.
+Each of those views exports numerous customization endpoints to allow fine-tuning the end system. Page legend, displayed under the page title and before the main content, can be set by overriding `_optionalInfo`. This can be done on per service basis as well as for the whole system. In order to do so, one must first create a view override file, and then, require it in app route configuration file.
 
 View override files are commonly created in `view/<app-name>/` directory, and named using the same name they have in the `eregistrations` package. So, for example, to override *"Fill the form"* view for `Company` service, you need to create a file `view/business-process-company/business-process-data-forms.js`.
 
 1. Create a view override file `view/<business-process-your-service>/business-process-<view-name>.js`.
 2. Set `module.exports` to base view: `require('eregistrations/view/business-process-<view-name>')`.
-3. Override `module.exports._optionalInfo` function to return the content desired.
+3. Override `module.exports._optionalInfo` function to return the desired content.
 4. Require newly created file in app routes configuration file: `apps/<business-process-your-service>/routes.js`.
 
 ## Example
