@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Servicio'
 rate: '1'
 number: '103'
-introduction-text: 'Esta receta es sobre como cambiar la descripción de un servicio en la sección "Servicios disponibles" de Mi Cuenta<br>La sección "Servicios disponibles" de Mi Cuenta es administrada por el bloque `servicesBoxList`.'
+introduction-text: 'Esta ficha es sobre como cambiar la descripción de un servicio en la sección "Servicios disponibles" de Mi Cuenta<br>La sección "Servicios disponibles" de Mi Cuenta es administrada por el bloque `servicesBoxList`.'
 introduction-img: '102.png'
 prevUrl: 102
 nextUrl: 104

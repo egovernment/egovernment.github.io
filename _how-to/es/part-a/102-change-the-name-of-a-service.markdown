@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Servicio'
 rate: '1'
 number: '102'
-introduction-text: 'Esta receta trata sobre como cambiar el nombre de un servicio en la sección "Servicios disponibles" de Mi Cuenta<br>La sección "Servicios disponibles" de Mi Cuenta es administrada por el bloque `servicesBoxList`.'
+introduction-text: 'Esta ficha trata sobre como cambiar el nombre de un servicio en la sección "Servicios disponibles" de Mi Cuenta<br>La sección "Servicios disponibles" de Mi Cuenta es administrada por el bloque `servicesBoxList`.'
 introduction-img: '101.png'
 prevUrl: 101
 nextUrl: 103
