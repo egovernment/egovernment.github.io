@@ -131,7 +131,7 @@ module.exports = require('mano').env = {
 	// URL at which application would be served
 	// Information used e.g. for email notifications, but also for cookies resolution
 	// It must be accurate, for application to work properly
-	url: 'http://localhost/',
+	url: 'http://localhost:3177/',
 
 	// Legacy pool functionality
 	// It's about server-side HTML rendering for legacy browsers. Leave it to 'true'
