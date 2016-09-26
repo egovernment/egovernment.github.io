@@ -43,10 +43,23 @@ After you have created a document you can proceed to creation of requirement (po
 1. Open file `model/<business-process-your-service>/requirements.js`.
 2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirements` helper function.
 3. Add entry to the array. In most basic scenario it's just a `require` to the source document (e.g. `require('../documents/passport')`).
-4. Open file `model/<business-process-your-service>/requirement-uploads.js`.
-5. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirement-uploads` helper function.
-6. If there is an entry which requires the same document as is required in `model/<business-process-your-service>/requirements.js`, then this is the end <br>(the requirement upload will be automatically added to your requirement).
-7. If there is no entry, you have to add one. In most basic scenario it's just a `require` to the source document (e.g. `require('../documents/passport')`).
+4. Open the file `model/<business-process-your-service>/registrations/<registration-to-which-requirement-belongs>.js>`
+5. modify the `requirements` property so that it returns an array with your requirement as an element e.g.:
+
+```javascript
+requirements: function () {
+    var requirementsMap = this.master.requirements.map;
+    return [requirementsMap.inventory, requirementsMap.passport];
+    return [requirementsMap.inventory, requirementsMap.passport, requirementsMap.drivingLicense];
+}
+```
+
+Now we may need to include a requirement upload as well:
+
+1. Open file `model/<business-process-your-service>/requirement-uploads.js`.
+2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirement-uploads` helper function.
+3. If there is an entry which requires the same document as is required in `model/<business-process-your-service>/requirements.js`, then this is the end <br>(the requirement upload will be automatically added to your requirement).
+4. If there is no entry, you have to add one. In most basic scenario it's just a `require` to the source document (e.g. `require('../documents/passport')`).
 
 ---
 
