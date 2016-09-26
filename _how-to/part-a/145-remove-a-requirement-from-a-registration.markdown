@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Requirements'
 rate: '2'
 number: '145'
-introduction-text: 'A requirement is associated with a document or group of documents that needs to be uploaded with the registrations file. Here we will see how to remove a requirement which is not no longer valid for a certain registration.'
+introduction-text: 'A requirement is associated with a document or group of documents that needs to be uploaded with the registrations file. Here we will see how to remove a requirement which is not no longer valid for a given registration.'
 introduction-img: '144.png'
 prevUrl: 144
 nextUrl: 146
@@ -17,7 +17,7 @@ ref: 145
 
 Every requirement should belong to registration, every registration belongs to a service.
 
-So in order to remove a requirement you need to now from which registration of what service it should be removed.
+So in order to remove a requirement you need to know from which registration of what service it should be removed.
 
 To remove a requirement from registration:
 
