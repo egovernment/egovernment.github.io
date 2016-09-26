@@ -17,11 +17,19 @@ ref: 141
 
 A requirement is a rule about providing certain document to the officials.
 
-Every requirement belongs to a registration. Requirement is not a document, it resolves to a document. It is an important distinction.
+Every requirement belongs to a registration. Requirement is not a document.
 
-The requirement can resolve to a document from a group of documents (Such situation happens when a requirement is something like: user needs to bring his passport (when a foreigner) or his id-document otherwise).
+A requirement has one or more requirement uploads (which contain a document which has to be uploaded).
 
-Most of the times there is exactly one document which must be uploaded due to a requirement.
+So in order to make fully functional requirement we must also make sure that there is at least one requirement upload associated with it.
+
+So why the relation between requirement and document is not one-to-one?
+
+Such situation happens when a requirement is something like: user needs to bring his passport (when a foreigner) or his id-document otherwise).
+
+So we have a requirement which will boil down to upload of a document but is given as an alternative in the beginning.
+
+Most of the times, however, there is exactly one document which must be uploaded due to a requirement.
 
 There are two scenarios here:
 
@@ -35,6 +43,10 @@ After you have created a document you can proceed to creation of requirement (po
 1. Open file `model/<business-process-your-service>/requirements.js`.
 2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirements` helper function.
 3. Add entry to the array. In most basic scenario it's just a `require` to the source document (e.g. `require('../documents/passport')`).
+4. Open file `model/<business-process-your-service>/requirement-uploads.js`.
+5. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirement-uploads` helper function.
+6. If there is an entry which requires the same document as is required in `model/<business-process-your-service>/requirements.js`, then this is the end <br>(the requirement upload will be automatically added to your requirement).
+7. If there is no entry, you have to add one. In most basic scenario it's just a `require` to the source document (e.g. `require('../documents/passport')`).
 
 ---
 
