@@ -10,7 +10,7 @@ introduction-text: 'This recipe is about adding a new document class.'
 introduction-img: '111-1.png'
 prevUrl: 105
 nextUrl: 112
-done: ''
+done: 'yes'
 lang: en
 ref: 114
 ---
@@ -31,8 +31,6 @@ var _  = require('../../i18n')
 module.exports = require('eregistrations/model/document')(db).extend('BusinessPlan', {}, {
 	label: { value: _("Business plan") }
 });
-
-
 ```
 
 ---
@@ -47,13 +45,13 @@ Add a new document *"Driving license"* with abbreviated name "DL".
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/add-a-new-document...add-a-new-document-solution#files')">
 
-        
+
 <a name="diff-59c3120e856841ee155fa43135949802"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/documents/driving-license.js">
@@ -75,13 +73,13 @@ Add a new document *"Driving license"* with abbreviated name "DL".
       <span class="user-select-contain" title="model/documents/driving-license.js">
         model/documents/driving-license.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr data-position="0">
     <td id="diff-59c3120e856841ee155fa43135949802L-1" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
     <td id="diff-59c3120e856841ee155fa43135949802R0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
