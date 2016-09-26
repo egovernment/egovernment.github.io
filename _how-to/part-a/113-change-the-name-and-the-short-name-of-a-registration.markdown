@@ -12,7 +12,7 @@ prevUrl: 111
 nextUrl: 113
 done: 'yes'
 lang: en
-ref: 113
+ref: 112
 ---
 
 The name of a registeration is by default inherited from the document corresponding to it. We must first determine if we want to change the name of a document or just the name of the registration.
