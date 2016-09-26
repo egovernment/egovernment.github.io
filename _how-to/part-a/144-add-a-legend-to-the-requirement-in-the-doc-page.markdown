@@ -10,7 +10,7 @@ introduction-text: 'In this recipe we will add an additional explanation to a fo
 introduction-img: '144-1.png'
 prevUrl: 143
 nextUrl: 145
-done: ''
+done: 'yes'
 lang: en
 ref: 143
 ---
@@ -26,9 +26,7 @@ To change this default:
 1. Open file `model/<business-process-your-service>/requirement-uploads.js`.
 2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirement-uploads` helper function.
 3. In the array locate the entry where the document associated with your requirement upload is required (e.g. `require('../documents/passport')`).
-4. Modify the entry so that in the end you have a hash with `legend` and `class` properties. The value of the hash's `legend`
-should be your desired name, and the `class` property's value should be the document class
-(e.g. `{ class: require('../documents/passport'), legend: "My legend" }`).
+4. Modify the entry so that in the end you have a hash with `legend` and `class` properties. The value of the hash's `legend` should be your desired name, and the `class` property's value should be the document class (e.g. `{ class: require('../documents/passport'), legend: "My legend" }`).
 
 ---
 
@@ -42,13 +40,13 @@ Add a legend *"Must be up to date with the national registry."* to the *"Company
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/add-a-legend-to-requirement-upload...add-a-legend-to-requirement-upload-solution#files')">
 
-        
+
 <a name="diff-da564581570d16ba4a104665991c7b46"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/requirement-uploads.js">
@@ -70,13 +68,13 @@ Add a legend *"Must be up to date with the national registry."* to the *"Company
       <span class="user-select-contain" title="model/business-process-demo/requirement-uploads.js">
         model/business-process-demo/requirement-uploads.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-da564581570d16ba4a104665991c7b46" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/83d3d519415236e5a4b56e9e92231cd66faee12a?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=11&amp;mode=100644&amp;next_line_num_left=2&amp;next_line_num_right=2&amp;path=model%2Fbusiness-process-demo%2Frequirement-uploads.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=15" data-left-range="1-1" data-right-range="1-1">
