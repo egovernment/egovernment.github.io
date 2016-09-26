@@ -5,14 +5,14 @@ title: 'Change the label of a registration'
 category: '1. Part A'
 sub-category: 'Registration'
 rate: '1'
-number: '112'
+number: '113'
 introduction-text: 'The name of a registration appears in the guide, in the email sent to the users, in the history of the file... The name change will take place in all those places.<br>It is recommended to name the registration as "Name-of-certificate at Institution-in-charge".'
 introduction-img: '111.png'
 prevUrl: 111
 nextUrl: 113
 done: 'yes'
 lang: en
-ref: 112
+ref: 113
 ---
 
 The name of a registeration is by default inherited from the document corresponding to it. We must first determine if we want to change the name of a document or just the name of the registration.

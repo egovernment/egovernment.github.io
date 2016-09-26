@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Requirements'
 rate: '2'
 number: '141'
-introduction-text: 'A requirement is associated with a document or group of documents that needs to be uploaded with the registrations file. Very often this document needs to be shown at the Front Desk to withdraw the certificate(s). The requirement is triggered belongs to a registration.<br>Here we will see how to add a requirement to a registration so the user must upload it in the "Documents" page, bring the original copy of the required document to the Front Desk for withdrawal.'
+introduction-text: 'A requirement is associated with a document or group of documents that needs to be uploaded with the registrations file. Very often this document needs to be shown at the Front Desk to withdraw the certificate(s). The requirement belongs to a registration.<br>Here we will see how to add a requirement to a registration so the user must upload it in the "Documents" page, bring the original copy of the required document to the Front Desk for withdrawal.'
 introduction-img: '145.png'
 prevUrl: 133
 nextUrl: 142
@@ -17,11 +17,11 @@ ref: 141
 
 A requirement is a rule about providing certain document to the officials.
 
-Every requirement belongs to a registration. Requirement is not a document, it resolves to a document. It's an important distinction.
+Every requirement belongs to a registration. Requirement is not a document, it resolves to a document. It is an important distinction.
 
-The requirement can resolve to a document from a group of documents (Such situation happens when a requirement is of the something like: user needs to bring his passport (when a foreigner) or his id-document).
+The requirement can resolve to a document from a group of documents (Such situation happens when a requirement is something like: user needs to bring his passport (when a foreigner) or his id-document otherwise).
 
-However most of the times there is exactly one document which must be uploaded due to a requirement.
+Most of the times there is exactly one document which must be uploaded due to a requirement.
 
 There are two scenarios here:
 
