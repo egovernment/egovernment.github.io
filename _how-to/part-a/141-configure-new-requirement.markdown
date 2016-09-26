@@ -32,7 +32,7 @@ There are two scenarios here:
 
 After you have created a document you can proceed to creation of requirement (point 2)
 
-1. Open file `model<business-process-your-service>/requirements.js`.
+1. Open file `model/<business-process-your-service>/requirements.js`.
 2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirements` helper function.
 3. Add entry to the array. In most basic scenario it's just a `require` to the source document (e.g. `require('../documents/passport')`).
 
