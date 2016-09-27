@@ -21,7 +21,7 @@ Cada requerimiento es asociado a un servicio, para cambiar su nombre, se debe sa
 1. Abrir el archivo `model/<business-process-your-service>/requirements.js`.
 2. Ubicar el array enviado a la función de ayuda `eregistrations/model/business-process-new/utils/define-requirements`.
 3. En el array, identificar la entrada en la cuál el documento asociado con el requerimiento es requerido (por ejemplo: `require('../documents/passport')`).
-4. Modificar le entrada para que se tenga un hash con las propiedades `legend` y `class`. El valor de la propiedad `legend` del hash debe ser el texto de la leyenda, y el valor de la propiedad `class` debe ser la clase del documento (por ejemplo: `{ class: require('../documents/passport'), legend: "My new legend" }` )).
+4. Modificar la entrada para que se tenga un hash con las propiedades `legend` y `class`. El valor de la propiedad `legend` del hash debe ser el texto de la leyenda, y el valor de la propiedad `class` debe ser la clase del documento (por ejemplo: `{ class: require('../documents/passport'), legend: "My new legend" }` )).
 
 ---
 

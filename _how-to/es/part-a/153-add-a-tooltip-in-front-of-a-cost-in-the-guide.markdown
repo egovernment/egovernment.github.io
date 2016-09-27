@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Costos'
 rate: '1'
 number: '153'
-introduction-text: 'Esta ficha explica como colocar un tooltipo frente a un costo en la guía. Los tooltips son usados para proveer más información sobre un costo sin colocar demasiado texto en la página. Se recomienda añadir un tooltip significativo por costo para brindar más información al usuario.'
+introduction-text: 'Esta ficha explica como colocar un tooltip frente a un costo en la guía. Los tooltips son usados para proveer más información sobre un costo sin colocar demasiado texto en la página. Se recomienda añadir un tooltip significativo por costo para brindar más información al usuario.'
 introduction-img: '152.png'
 prevUrl: 152
 nextUrl: 154
@@ -18,7 +18,7 @@ ref: 153
 Cada costo está asociado a un servicio, para cambiar su tooltip, debemos saber el servicio al cuál aplica.
 
 1. Abrir el archivo `model/<business-process-your-service>/costs/<your-cost>.js`.
-2. Colocar el texto deseado para el tooltipo en la propiedad `optionalInfo` del costo.
+2. Colocar el texto deseado para el tooltip en la propiedad `optionalInfo` del costo.
 
 ## Ejemplo
 
