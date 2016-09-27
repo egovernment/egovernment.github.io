@@ -34,7 +34,7 @@ ref: how-to
 										<div class="row recipe-row">
 											<div class="col-xs-6 col-sm-9"><a href="{{ h.url }}">{{ h.title }}</a></div>
 											<div class="col-xs-2 col-sm-1 recipe-extra">
-												<span class="label {% if howto.name contains '1.' %}label-warning{% endif %}{% if howto.name contains '2.' %}label-info{% endif %}{% if howto.name contains '3.' %}label-purple{% endif %}{% if howto.name contains '4.' %}label-danger{% endif %}{% if howto.name contains '5.' %}label-dark{% endif %} label-cat">{{ h.number }}</span>
+												<span class="label label-default label-cat">{{ h.number }}</span>
 												</div>
 											<div class="col-xs-2 col-sm-1 recipe-extra"><span class="badge rate-{{ h.rate }}">{{ h.rate }}</span></div>
 											<div class="col-xs-2 col-sm-1 recipe-extra">{% if h.done == 'yes' %}<i class="fa fa-check"></i>{% endif %}</div>

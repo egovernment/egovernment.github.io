@@ -29,7 +29,7 @@
                                 </a>
                                 {% endif %}
                                 
-                                <span class="label recipe-label {% if page.category contains '1.' %}label-warning{% endif %}{% if page.category contains '2.' %}label-info{% endif %}{% if page.category contains '3.' %}label-purple{% endif %}{% if page.category contains '4.' %}label-danger{% endif %}{% if page.category contains '5.' %}label-dark{% endif %} label-cat pull-right">{{ page.number }}</span>
+                                <span class="label recipe-label label-default label-cat pull-right">{{ page.number }}</span>
                                 
                                 {% assign prevp = site.how-to | where: 'number', page.prevUrl | where: 'lang', page.lang | first %}
                                 {% if page.prevUrl %}
