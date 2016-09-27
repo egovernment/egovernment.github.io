@@ -21,9 +21,9 @@ Every notification is sent in response to some state change in business process 
 2. Add `cc` function to exported object that will have the following signature:
 
 ```javascript
-    cc: function (businessProcess) {
-        return businessProcess.someEmailProperty;
-    }
+cc: function (businessProcess) {
+    return businessProcess.someEmailProperty;
+}
 ```
 
 ## Example
