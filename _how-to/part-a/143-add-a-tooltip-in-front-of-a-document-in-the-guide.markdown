@@ -18,7 +18,7 @@ ref: 143
 The legend of requirement is, by default, taken from the document upon which the requirement is built.
 Every requirement is associated with a service, so to change it's name, we have to know the service to which it applies.
 
-1. Open file `model<business-process-your-service>/requirements.js`.
+1. Open file `model/<business-process-your-service>/requirements.js`.
 2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirements` helper function.
 3. In the array locate the entry where the document associated with your requirement is required (e.g. `require('../documents/passport')`).
 4. Modify the entry so that in the end you have a hash with `legend` and `class` properties. The value of the hash's `legend`

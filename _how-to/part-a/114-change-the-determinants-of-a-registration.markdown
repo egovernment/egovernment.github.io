@@ -5,7 +5,7 @@ title: 'Make registration applicable and/or mandatory depending on a condition'
 category: '1. Part A'
 sub-category: 'Registration'
 rate: '2'
-number: '113'
+number: '114'
 introduction-text: 'A registration can be mandatory, optional or inapplicable for certain situations. Example: the registration at the Business Registry is optional for assets inferior to 12 000$. The determinant(s) of a registration are set through the initial questions of the guide.'
 introduction-img: '112.gif'
 prevUrl: 112
