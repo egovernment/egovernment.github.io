@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Costos'
 rate: '1'
 number: '153'
-introduction-text: 'This recipe explains how to set the tooltip in front of a cost, in the guide. Tooltips are used to give more information about a cost without putting to much text on the page. It is recommended to add one meaningful tooltip per cost to give more information to the user.'
+introduction-text: 'Esta ficha explica como colocar un tooltipo frente a un costo en la guía. Los tooltips son usados para proveer más información sobre un costo sin colocar demasiado texto en la página. Se recomienda añadir un tooltip significativo por costo para brindar más información al usuario.'
 introduction-img: '152.png'
 prevUrl: 152
 nextUrl: 154
@@ -15,18 +15,18 @@ lang: es
 ref: 153
 ---
 
-Every cost is associated with a service, so to change it's tooltip, we have to know the service to which it applies.
+Cada costo está asociado a un servicio, para cambiar su tooltip, debemos saber el servicio al cuál aplica.
 
-1. Open file `model/<business-process-your-service>/costs/<your-cost>.js`.
-2. Set the value of the `optionalInfo` property of the cost to the desired tooltip text.
+1. Abrir el archivo `model/<business-process-your-service>/costs/<your-cost>.js`.
+2. Colocar el texto deseado para el tooltipo en la propiedad `optionalInfo` del costo.
 
-## Example
+## Ejemplo
 
-In the branch "[add-a-tooltip-in-front-of-a-cost-in-the-guide](https://github.com/egovernment/eregistrations-demo/tree/add-a-tooltip-in-front-of-a-cost-in-the-guide)" of eregistrations-demo :
+En la rama "[add-a-tooltip-in-front-of-a-cost-in-the-guide](https://github.com/egovernment/eregistrations-demo/tree/add-a-tooltip-in-front-of-a-cost-in-the-guide)" de eregistrations-demo :
 
-Change the tooltip of the `companyRegistration` cost for `BusinessProcessDemo` service to *"The registration fee will be charged in your next invoice of municipal taxes."*.
+Cambiar el tooltip del costo `companyRegistration` del servicio `BusinessProcessDemo` por *"The registration fee will be charged in your next invoice of municipal taxes."*.
 
-### Solution
+### Solución
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/add-a-tooltip-in-front-of-a-cost-in-the-guide...add-a-tooltip-in-front-of-a-cost-in-the-guide-solution#files')">
 
