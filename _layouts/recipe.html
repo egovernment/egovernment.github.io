@@ -15,12 +15,12 @@
     		</aside>
 
     		<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
-                <div class="row {% unless page.ref == 'how-to' %}recipe-content{% endunless %}">
+                <div class="row {% unless page.ref == 'how-to' %}recipe-content{% endunless %} {% if page.ref == 'how-to' %}recipe-content-2{% endif %}">
                     <div class="col-md-12">
                         {% unless page.ref == 'how-to' %}
                         <div class="row">
                             <div class="col-md-12">
-                                <span class="category-label pull-left">{{ page.category }} <small>{% if page.sub-category != '' %}- {{ page.sub-category }}{% endif %} <span class="badge recipe-badge rate-{{ page.rate }}">{{ page.rate }}</span></small></span>
+                                <span class="category-label pull-left">{{ page.category }} {% if page.sub-category != '' %}- {{ page.sub-category }}{% endif %} <small><span class="badge recipe-badge rate-{{ page.rate }}">{{ page.rate }}</span></small></span>
                                 
                                 {% assign nextp = site.how-to | where: 'number', page.nextUrl | where: 'lang', page.lang | first %}
                                 {% if page.nextUrl %}
