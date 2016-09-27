@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Requisitos'
 rate: '1'
 number: '143'
-introduction-text: 'The legends for requirements provide additional information about a requirement.'
+introduction-text: 'Las leyendas de los requerimientos proveen información adicional sobre ellos.'
 introduction-img: '143.png'
 prevUrl: 142
 nextUrl: 144
@@ -15,24 +15,23 @@ lang: es
 ref: 143
 ---
 
-The legend of requirement is, by default, taken from the document upon which the requirement is built.
-Every requirement is associated with a service, so to change it's name, we have to know the service to which it applies.
+Por defecto, la leyenda de un requerimiento se toma del documento sobre el cuál el requerimiento se construye.
+Cada requerimiento es asociado a un servicio, para cambiar su nombre, se debe saber el servicio al que aplica.
 
-1. Open file `model<business-process-your-service>/requirements.js`.
-2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirements` helper function.
-3. In the array locate the entry where the document associated with your requirement is required (e.g. `require('../documents/passport')`).
-4. Modify the entry so that in the end you have a hash with `legend` and `class` properties. The value of the hash's `legend`
-should be your legend text, and the `class` property's value should be the document class
-(e.g. `{ class: require('../documents/passport'), label: "My new Label" }` )).
+1. Abrir el archivo `model/<business-process-your-service>/requirements.js`.
+2. Ubicar el array enviado a la función de ayuda `eregistrations/model/business-process-new/utils/define-requirements`.
+3. En el array, identificar la entrada en la cuál el documento asociado con el requerimiento es requerido (por ejemplo: `require('../documents/passport')`).
+4. Modificar le entrada para que se tenga un hash con las propiedades `legend` y `class`. El valor de la propiedad `legend` del hash debe ser el texto de la leyenda, y el valor de la propiedad `class` debe ser la clase del documento (por ejemplo: `{ class: require('../documents/passport'), legend: "My new legend" }` )).
 
 ---
 
-## Example
+## Ejemplo
 
-In the branch "[add-a-legend-to-a-requirement-in-the-guide](https://github.com/egovernment/eregistrations-demo/tree/add-a-legend-to-a-requirement-in-the-guide)" of eregistrations-demo :
+En la rama "[add-a-legend-to-a-requirement-in-the-guide](https://github.com/egovernment/eregistrations-demo/tree/add-a-legend-to-a-requirement-in-the-guide)" de eregistrations-demo :
 
-Add the legend *"Both obverse and reverse"* to the *"Passport"* requirement of `BusinessProcessDemo` service.
+Agregar la leyenda *"Both obverse and reverse"* al requerimiento *"Passport"* del servicio `BusinessProcessDemo`.
 
+### Solución
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/add-a-legend-to-a-requirement-in-the-guide...add-a-legend-to-a-requirement-in-the-guide-solution#files')">
       
