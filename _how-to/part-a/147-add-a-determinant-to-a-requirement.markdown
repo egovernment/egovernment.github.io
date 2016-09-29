@@ -10,7 +10,7 @@ introduction-text: 'A requirement is associated with a document or group of docu
 introduction-img: '147.png'
 prevUrl: 146
 nextUrl: 148
-done: ''
+done: 'yes'
 lang: en
 ref: 147
 ---
@@ -34,13 +34,13 @@ Require *"Business plan"* in case of *"Certificate of incentives"* only when the
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/make-a-conditional-requirement...make-a-conditional-requirement-solution#files')">
 
-        
+
 <a name="diff-3e5b55e60dcc97add7accbbf3f80937b"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/registrations/certificate-of-incentives.js">
@@ -62,13 +62,13 @@ Require *"Business plan"* in case of *"Certificate of incentives"* only when the
       <span class="user-select-contain" title="model/business-process-demo/registrations/certificate-of-incentives.js">
         model/business-process-demo/registrations/certificate-of-incentives.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-3e5b55e60dcc97add7accbbf3f80937b" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/e030feabf1049b8274eb58d0b09395dc94eed213?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=8&amp;mode=100644&amp;next_line_num_left=19&amp;next_line_num_right=19&amp;path=model%2Fbusiness-process-demo%2Fregistrations%2Fcertificate-of-incentives.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=13" data-left-range="1-18" data-right-range="1-18">
