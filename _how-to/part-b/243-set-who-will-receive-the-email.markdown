@@ -6,7 +6,7 @@ category: '2. Part B'
 sub-category: 'Notifications'
 rate: '2'
 number: '243'
-introduction-text: ''
+introduction-text: 'This recipe explains how to add a new notification recipient in a cc field of an email.'
 introduction-img: '243.png'
 prevUrl: 242
 nextUrl: 251
