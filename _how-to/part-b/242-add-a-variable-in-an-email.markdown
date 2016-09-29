@@ -10,7 +10,7 @@ introduction-text: 'This recipe explains how to add a new variable to be used in
 introduction-img: '242.png'
 prevUrl: 241
 nextUrl: 243
-done: ''
+done: 'yes'
 lang: en
 ref: 242
 ---
