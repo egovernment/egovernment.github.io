@@ -10,7 +10,7 @@ introduction-text: 'This recipe explains how to add a new notification recipient
 introduction-img: '243.png'
 prevUrl: 242
 nextUrl: 251
-done: ''
+done: 'yes'
 lang: en
 ref: 243
 ---
