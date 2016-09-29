@@ -10,7 +10,7 @@ introduction-text: 'This recipe explains what are the steps needed to change the
 introduction-img: '203.png'
 prevUrl: 202
 nextUrl: 204
-done: ''
+done: 'yes'
 lang: en
 ref: 203
 ---
@@ -24,9 +24,9 @@ While changing the order of processing steps, one must be very careful not to br
 Given two processing steps, `someStep` and `someOtherStep`, where `someStep` is before `someOtherStep`:
 
 1. Open file `model/<your-service>/processing-steps/<some-step>.js`.
-2. Change `previousSteps` property to `someOtherStep`.
+2. Change `previousSteps` property to include `someOtherStep` in returned collection.
 3. Open file `model/<your-service>/processing-steps/<some-other-step>.js`.
-4. Remove `someStep` from `previousSteps` property.
+4. Remove `someStep` from collection returned from `previousSteps` property.
 
 **Note**: Remember to check and adjust other steps that may depend either on `someStep` and/or `someOtherStep`.
 
