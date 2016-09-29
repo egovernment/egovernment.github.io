@@ -7,7 +7,7 @@ sub-category: 'Notifications'
 rate: '2'
 number: '242'
 introduction-text: ''
-introduction-img: '121-1.png'
+introduction-img: '242.png'
 prevUrl: 241
 nextUrl: 243
 done: ''
