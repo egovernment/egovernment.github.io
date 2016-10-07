@@ -5,14 +5,14 @@ title: 'Cambiar el nombre de un certificado'
 category: '1. Part A'
 sub-category: 'Certificados'
 rate: '1'
-number: '132'
+number: '133'
 introduction-text: 'Changing the name of a certificate impacts on all the certificates already processed in the system.'
 introduction-img: '131.png'
-prevUrl: 131
-nextUrl: 133
+prevUrl: 132
+nextUrl: 134
 done: 'yes'
 lang: es
-ref: 132
+ref: 133
 ---
 
 The name of a certificate is defined on a document that it's extended from. Changing document name will also change the certificate name.
