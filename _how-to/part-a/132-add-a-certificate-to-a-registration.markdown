@@ -5,14 +5,14 @@ title: 'Add another certificate to a registration'
 category: '1. Part A'
 sub-category: 'Certificates'
 rate: '3'
-number: '131'
+number: '132'
 introduction-text: 'Usually registration results with one certificate (of same name). Still there can be the case where result of registration is more than one certificate'
 introduction-img: '133.png'
-prevUrl: 123
-nextUrl: 132
+prevUrl: 131
+nextUrl: 133
 done: ''
 lang: en
-ref: 131
+ref: 132
 ---
 
 Every registration is associated with a service, so to modify it, we need to know the service to which it applies.
