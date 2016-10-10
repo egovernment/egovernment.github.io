@@ -10,13 +10,13 @@ introduction-text: 'A certificate is the result of the registration that the use
 introduction-img: '134.png'
 prevUrl: 133
 nextUrl: 141
-done: ''
+done: 'yes'
 lang: en
 ref: 134
 ---
 
 Certificate always belongs to a service. So in order to make a certificate electronic only (not being handed at `frontDesk`),
- 
+
 you need to know the service to which the certificate belongs.
 
 To make a certificate electronic only:
@@ -36,13 +36,13 @@ Make the *"Certificate of incentives"* electronic only.
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/mark-certificate-as-electronic-only...mark-certificate-as-electronic-only-solution#files')">
 
-    
+
 <a name="diff-b5717cedf06e47051e583b221ae34a01"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/certificates/certificate-of-incentives.js">
@@ -64,13 +64,13 @@ Make the *"Certificate of incentives"* electronic only.
       <span class="user-select-contain" title="model/business-process-demo/certificates/certificate-of-incentives.js">
         model/business-process-demo/certificates/certificate-of-incentives.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-b5717cedf06e47051e583b221ae34a01" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/f9e5a8693caf2a1bdce5436216ddfcf0f554363a?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=13&amp;mode=100644&amp;next_line_num_left=9&amp;next_line_num_right=9&amp;path=model%2Fbusiness-process-demo%2Fcertificates%2Fcertificate-of-incentives.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=13" data-left-range="1-8" data-right-range="1-8">
