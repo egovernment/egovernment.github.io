@@ -40,6 +40,7 @@ Add new certificate based on *"Driving License"* document.
 
 ### Solution
 
+
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/add-new-certificate...add-new-certificate-solution#files')">
 
     
@@ -60,12 +61,12 @@ Add new certificate based on *"Driving License"* document.
           </label>
         </span>
 
-          <a href="/egovernment/eregistrations-demo/blob/c0ed7815b7cf5596db31f5b98e4f6b6b7555c44e/model/business-process-demo/certificates/driving-license.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version c0ed781 ">View</a>
+          <a href="/egovernment/eregistrations-demo/blob/c2f5d25cf8f72dd994ec7b663aeb3c8443491427/model/business-process-demo/certificates/driving-license.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version c2f5d25 ">View</a>
 
 
     </div>
     <div class="file-info">
-        <span class="diffstat tooltipped tooltipped-e" aria-label="21 additions &amp; 0 deletions">21 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span></span>
+        <span class="diffstat tooltipped tooltipped-e" aria-label="9 additions &amp; 0 deletions">9 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span></span>
 
       <span class="user-select-contain" title="model/business-process-demo/certificates/driving-license.js">
         model/business-process-demo/certificates/driving-license.js
@@ -80,7 +81,7 @@ Add new certificate based on *"Driving License"* document.
       <tbody><tr data-position="0">
     <td id="diff-cd8984734d90b28a73be0eca25690e6cL-1" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
     <td id="diff-cd8984734d90b28a73be0eca25690e6cR0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
-    <td class="blob-code blob-code-inner blob-code-hunk">@@ -0,0 +1,21 @@</td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -0,0 +1,9 @@</td>
   </tr>
 
     <tr>
@@ -116,7 +117,7 @@ Add new certificate based on *"Driving License"* document.
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+<span class="pl-k">var</span> db             <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>../../../db<span class="pl-pds">'</span></span>)</span>
+    <span class="blob-code-inner">+<span class="pl-k">var</span> DrivingLicense <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>../../documents/driving-license<span class="pl-pds">'</span></span>);</span>
 
   </td>
 </tr>
@@ -129,7 +130,7 @@ Add new certificate based on *"Driving License"* document.
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+  , FormSection    <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>eregistrations/model/form-section<span class="pl-pds">'</span></span>)(db)</span>
+    <span class="blob-code-inner">+</span>
 
   </td>
 </tr>
@@ -142,7 +143,7 @@ Add new certificate based on *"Driving License"* document.
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+  , DrivingLicense <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>../../documents/driving-license<span class="pl-pds">'</span></span>);</span>
+    <span class="blob-code-inner">+<span class="pl-c1">module</span>.<span class="pl-smi">exports</span> <span class="pl-k">=</span> DrivingLicense;</span>
 
   </td>
 </tr>
@@ -168,7 +169,7 @@ Add new certificate based on *"Driving License"* document.
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+<span class="pl-c1">module</span>.<span class="pl-smi">exports</span> <span class="pl-k">=</span> DrivingLicense;</span>
+    <span class="blob-code-inner">+<span class="pl-smi">DrivingLicense</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">defineProperties</span>({</span>
 
   </td>
 </tr>
@@ -181,58 +182,6 @@ Add new certificate based on *"Driving License"* document.
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td class="blob-num blob-num-addition empty-cell"></td>
-
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR9" data-line-number="9" class="blob-num blob-num-addition js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-addition">
-
-    <span class="blob-code-inner">+<span class="pl-smi">DrivingLicense</span>.<span class="pl-c1">prototype</span>.<span class="pl-en">defineProperties</span>({</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td class="blob-num blob-num-addition empty-cell"></td>
-
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR10" data-line-number="10" class="blob-num blob-num-addition js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-addition">
-
-    <span class="blob-code-inner">+	dataForm<span class="pl-k">:</span> { type<span class="pl-k">:</span> FormSection },</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td class="blob-num blob-num-addition empty-cell"></td>
-
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR11" data-line-number="11" class="blob-num blob-num-addition js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-addition">
-
-    <span class="blob-code-inner">+	processingStep<span class="pl-k">:</span> { <span class="pl-en">value</span><span class="pl-k">:</span> <span class="pl-k">function</span> () { <span class="pl-k">return</span> <span class="pl-v">this</span>.<span class="pl-smi">master</span>.<span class="pl-smi">processingSteps</span>.<span class="pl-smi">map</span>.<span class="pl-smi">processing</span>; } },</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td class="blob-num blob-num-addition empty-cell"></td>
-
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR12" data-line-number="12" class="blob-num blob-num-addition js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-addition">
-
     <span class="blob-code-inner">+	isToBeHanded<span class="pl-k">:</span> { value<span class="pl-k">:</span> <span class="pl-c1">true</span> }</span>
 
   </td>
@@ -242,111 +191,7 @@ Add new certificate based on *"Driving License"* document.
     <tr>
     <td class="blob-num blob-num-addition empty-cell"></td>
 
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR13" data-line-number="13" class="blob-num blob-num-addition js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-addition">
-
-    <span class="blob-code-inner">+});</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td class="blob-num blob-num-addition empty-cell"></td>
-
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR14" data-line-number="14" class="blob-num blob-num-addition js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-addition">
-
-    <span class="blob-code-inner">+</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td class="blob-num blob-num-addition empty-cell"></td>
-
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR15" data-line-number="15" class="blob-num blob-num-addition js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-addition">
-
-    <span class="blob-code-inner">+<span class="pl-smi">DrivingLicense</span>.<span class="pl-c1">prototype</span>.<span class="pl-smi">dataForm</span>.<span class="pl-en">setProperties</span>({</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td class="blob-num blob-num-addition empty-cell"></td>
-
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR16" data-line-number="16" class="blob-num blob-num-addition js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-addition">
-
-    <span class="blob-code-inner">+	<span class="pl-en">label</span><span class="pl-k">:</span> <span class="pl-k">function</span> () { <span class="pl-k">return</span> <span class="pl-v">this</span>.<span class="pl-smi">propertyMaster</span>.<span class="pl-c1">label</span>; },</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td class="blob-num blob-num-addition empty-cell"></td>
-
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR17" data-line-number="17" class="blob-num blob-num-addition js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-addition">
-
-    <span class="blob-code-inner">+	disablePartialSubmit<span class="pl-k">:</span> <span class="pl-c1">true</span>,</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td class="blob-num blob-num-addition empty-cell"></td>
-
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR18" data-line-number="18" class="blob-num blob-num-addition js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-addition">
-
-    <span class="blob-code-inner">+	<span class="pl-en">actionUrl</span><span class="pl-k">:</span> <span class="pl-k">function</span> () { <span class="pl-k">return</span> <span class="pl-v">this</span>.<span class="pl-smi">master</span>.<span class="pl-smi">__id__</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>/certificate/driving-license<span class="pl-pds">'</span></span>; },</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td class="blob-num blob-num-addition empty-cell"></td>
-
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR19" data-line-number="19" class="blob-num blob-num-addition js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-addition">
-
-    <span class="blob-code-inner">+	propertyMasterType<span class="pl-k">:</span> DrivingLicense,</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td class="blob-num blob-num-addition empty-cell"></td>
-
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR20" data-line-number="20" class="blob-num blob-num-addition js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-addition">
-
-    <span class="blob-code-inner">+	propertyNames<span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>number<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>files/map<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>issueDate<span class="pl-pds">'</span></span>]</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td class="blob-num blob-num-addition empty-cell"></td>
-
-    <td id="diff-cd8984734d90b28a73be0eca25690e6cR21" data-line-number="21" class="blob-num blob-num-addition js-linkable-line-number"></td>
+    <td id="diff-cd8984734d90b28a73be0eca25690e6cR9" data-line-number="9" class="blob-num blob-num-addition js-linkable-line-number"></td>
 
   <td class="blob-code blob-code-addition">
 
@@ -379,7 +224,7 @@ Add new certificate based on *"Driving License"* document.
           </label>
         </span>
 
-          <a href="/egovernment/eregistrations-demo/blob/c0ed7815b7cf5596db31f5b98e4f6b6b7555c44e/model/business-process-demo/certificates/index.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version c0ed781 ">View</a>
+          <a href="/egovernment/eregistrations-demo/blob/c2f5d25cf8f72dd994ec7b663aeb3c8443491427/model/business-process-demo/certificates/index.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version c2f5d25 ">View</a>
 
 
     </div>
