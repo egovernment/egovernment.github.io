@@ -4,13 +4,13 @@ permalink: /how-to/add-a-certificate-to-a-registration/
 title: 'Add another certificate to a registration'
 category: '1. Part A'
 sub-category: 'Certificates'
-rate: '3'
+rate: '2'
 number: '132'
-introduction-text: 'Usually registration results with one certificate (of same name). Still there can be the case where result of registration is more than one certificate'
+introduction-text: 'Usually registration results with one certificate (of same name). Still there can be the case where result of registration is more than one certificate.'
 introduction-img: '133.png'
 prevUrl: 131
 nextUrl: 133
-done: ''
+done: 'yes'
 lang: en
 ref: 132
 ---
@@ -21,7 +21,7 @@ By default, each registration is configured to result in one certificate. This i
 
 **Note:** When changing registration certificates, remember to include both the default one and additional ones in the results array.
 
-1. Open file `model/<business-process-your-service>/registrations/<your-registration>.js`.
+1. Open file `model/business-process-<your-service>/registrations/<your-registration>.js`.
 2. Add a `certificates` getter definition, that will return an array of certificate results:
 
 ```javascript
