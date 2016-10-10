@@ -6,11 +6,11 @@ category: '1. Part A'
 sub-category: 'Requirements'
 rate: '3'
 number: '148'
-introduction-text: 'A requirement is a document that needs to be uploaded with the registrations file. Very often this document needs to be shown at the Front Desk to withdraw the certificate(s). The requirement is triggered by it determinant(s) and appear in the guide only when the registration to which it is linked is checked by the user.<br>Here we will see how to add a requirement to a registration that will require the user to upload either one of two kinds of documents depending on other questions.'
+introduction-text: 'A requirement is associated with a document or group of documents that needs to be uploaded with the registrations file. Very often this document needs to be shown at the Front Desk to withdraw the certificate(s). The requirement belongs to a registration.<br>Here we will see how to add a requirement to a registration that will require the user to upload either one of two kinds of documents depending on other questions.'
 introduction-img: '145.png'
 prevUrl: 147
 nextUrl: 151
-done: ''
+done: 'yes'
 lang: en
 ref: 148
 ---
@@ -54,7 +54,7 @@ BusinessProcessYoutService.prototype.requirements.map.requirementName.setPropert
 
 In the branch "[configure-conditional-upload-for-requirement](https://github.com/egovernment/eregistrations-demo/tree/configure-conditional-upload-for-requirement-solution)" of eregistrations-demo :
 
-Add a new requirement, *"Personal Id or passport of the attorney"* that will resolve into `attorneyPersonalId` requirement upload if the attorneys `nationality` property will Afghanistan (`AF`) or `attorneyPassport` in any other case. In case the nationality is not set, the getter should return an empty array.
+Add a new requirement, *"Personal Id or passport of the attorney"* that will resolve into `attorneyPersonalId` requirement upload if the attorneys `nationality` property will be Afghanistan (`AF`) or `attorneyPassport` in any other case. In case the nationality is not set, the getter should return an empty array.
 
 ### Solution
 
