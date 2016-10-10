@@ -7,11 +7,11 @@ sub-category: 'Registration'
 rate: '3'
 number: '112'
 introduction-text: 'This page explains how to add a registration that can be chosen by the user in the guide.<br>
-The registration will appear in the list of **mandatory** or **optional** registrations when it determinant is set in the preliminary questions. The user will then be able to select it or leave it unchecked if he/she has already process this registration.<br>A registration must be configured with it certificate(s), requirement(s), cost, etc.'
+The registration will appear in the list of **mandatory** or **optional** registrations when its determinant is set in the preliminary questions. The user will then be able to select it or leave it unchecked if he/she has already processed this registration.<br>A registration must be configured with its certificate(s), requirement(s), cost, etc.'
 introduction-img: '113.png'
 prevUrl: 105
 nextUrl: 112
-done: ''
+done: 'yes'
 lang: en
 ref: 111
 ---
@@ -21,7 +21,10 @@ Usually registration is about resolution of a single certificate document. In su
 In order to define a new certificate, see [Add a new certificate](/how-to/add-a-new-certificate) how-to.
 
 1. In `model/business-process-<your-service>/registrations` directory create a new file `<your-registration>.js`.
-2. Create a registration instance on a `BusinessProcessYourService.prototype.registrations.map` and set its `Document` property:
+2. Create a registration instance on a `BusinessProcessYourService.prototype.registrations.map` and set its `Document` property (See the listing below).
+3. Add a require for the new registration in `model/business-process-<your-service>/registrations/index.js`
+
+### Listings
 
 ```javascript
 BusinessProcessYourService.prototype.registrations.map.defineProperties({
@@ -32,8 +35,6 @@ BusinessProcessYourService.prototype.registrations.map.yourRegistration.setPrope
     Document: require('../../documents/your-certificate-document')
 });
 ```
-
-3. Add a require for the new registration in `model/business-process-<your-service>/registrations/index.js`
 
 ## Example
 
