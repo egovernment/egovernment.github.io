@@ -17,8 +17,9 @@ ref: 154
 
 Every payment receipt upload is associated with a service, so to change it's legend, we have to know the service to which it applies.
 
-1. Open file `model/<business-process-your-service>/payment-receipt-uploads.js`.
-2. Locate the payments receipt upload and change its `legend`.
+1. Open file `model/business-process-<your-service>/payment-receipt-uploads.js`.
+2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-payment-receipt-uploads` helper function.
+3. Locate the payments receipt upload definition hash and add a legend property to it.
 
 ## Example
 
