@@ -10,7 +10,7 @@ introduction-text: 'Costs can accompany registration. In this receipt we will ex
 introduction-img: '151.png'
 prevUrl: 148
 nextUrl: 152
-done: ''
+done: 'yes'
 lang: en
 ref: 151
 ---
@@ -22,7 +22,7 @@ In order to add a cost:
 1. Create file `model/<your-service>/costs/<your-cost>.js`.
 2. Define cost on the costs map of your `BusinessProcess.prototype` (checkout the example for how to code it).
 3. Require newly created module in `model/<your-service>/costs/index.js`
-4. Open file `model/<your-service>/registrations.js`
+4. Open file `model/<your-service>/registrations/<your-registration>.js`
 5. Locate the `costs` property (or create it if there is none) and your cost to the result collection.
 
 
@@ -36,13 +36,13 @@ Add new cost *"Books verification fee"* to the *"Certificate of incentives"* reg
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/configure-new-cost...configure-new-cost-solution#files')">
 
-        
+
 <a name="diff-c1494b396eb3f628d046337ecb722f18"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/costs/books-verification-fee.js">
@@ -64,13 +64,13 @@ Add new cost *"Books verification fee"* to the *"Certificate of incentives"* reg
       <span class="user-select-contain" title="model/business-process-demo/costs/books-verification-fee.js">
         model/business-process-demo/costs/books-verification-fee.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr data-position="0">
     <td id="diff-c1494b396eb3f628d046337ecb722f18L-1" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
     <td id="diff-c1494b396eb3f628d046337ecb722f18R0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
@@ -277,13 +277,13 @@ Add new cost *"Books verification fee"* to the *"Certificate of incentives"* reg
       </div>
 </div>
 
-        
+
 <a name="diff-927242520b0b5e56c6e39941dab5ce06"></a>
 <div id="diff-1" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/costs/index.js">
@@ -305,13 +305,13 @@ Add new cost *"Books verification fee"* to the *"Certificate of incentives"* reg
       <span class="user-select-contain" title="model/business-process-demo/costs/index.js">
         model/business-process-demo/costs/index.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-927242520b0b5e56c6e39941dab5ce06" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/86dac3c1f06e7eac51d98016d137b56625e050f2?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=4&amp;mode=100644&amp;next_line_num_left=3&amp;next_line_num_right=3&amp;path=model%2Fbusiness-process-demo%2Fcosts%2Findex.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=5" data-left-range="1-2" data-right-range="1-2">
@@ -391,13 +391,13 @@ Add new cost *"Books verification fee"* to the *"Certificate of incentives"* reg
       </div>
 </div>
 
-        
+
 <a name="diff-3e5b55e60dcc97add7accbbf3f80937b"></a>
 <div id="diff-2" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/registrations/certificate-of-incentives.js">
@@ -419,13 +419,13 @@ Add new cost *"Books verification fee"* to the *"Certificate of incentives"* reg
       <span class="user-select-contain" title="model/business-process-demo/registrations/certificate-of-incentives.js">
         model/business-process-demo/registrations/certificate-of-incentives.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-3e5b55e60dcc97add7accbbf3f80937b" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/90627631b80a8d09e62c62dd45e3dbc0a9e2f529?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=16&amp;next_line_num_right=16&amp;path=model%2Fbusiness-process-demo%2Fregistrations%2Fcertificate-of-incentives.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=8" data-left-range="1-15" data-right-range="1-15">
