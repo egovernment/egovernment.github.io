@@ -25,7 +25,6 @@ In order to add a cost:
 4. Open file `model/<your-service>/registrations/<your-registration>.js`
 5. Locate the `costs` property (or create it if there is none) and your cost to the result collection.
 
-
 ## Example
 
 In the branch "[configure-new-cost](https://github.com/egovernment/eregistrations-demo/tree/configure-new-cost)" of eregistrations-demo :
