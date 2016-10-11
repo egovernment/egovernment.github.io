@@ -10,7 +10,7 @@ introduction-text: 'This recipe explains how to remove, from a registration, a c
 introduction-img: '156.png'
 prevUrl: 155
 nextUrl: 157
-done: ''
+done: 'yes'
 lang: en
 ref: 156
 ---
