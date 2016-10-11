@@ -7,7 +7,7 @@ sub-category: 'Costos'
 rate: '1'
 number: '153'
 introduction-text: 'This recipe explains how to set the tooltip in front of a cost, in the guide. Tooltips are used to give more information about a cost without putting to much text on the page. It is recommended to add one meaningful tooltip per cost to give more information to the user.'
-introduction-img: '152.png'
+introduction-img: '153.png'
 prevUrl: 152
 nextUrl: 154
 done: ''

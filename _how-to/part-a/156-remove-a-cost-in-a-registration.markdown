@@ -7,7 +7,7 @@ sub-category: 'Costs'
 rate: '2'
 number: '156'
 introduction-text: 'This recipe explains how to remove, from a registration, a cost that does not apply anymore.'
-introduction-img: '155.png'
+introduction-img: '156.png'
 prevUrl: 155
 nextUrl: 157
 done: ''

@@ -7,7 +7,7 @@ sub-category: 'Costs'
 rate: '2'
 number: '154'
 introduction-text: ''
-introduction-img: '101.png'
+introduction-img: '154.png'
 prevUrl: 153
 nextUrl: 155
 done: ''
