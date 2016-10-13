@@ -123,31 +123,3 @@ ref: training-1
 	  </tr>
 	</tbody>
 </table>
-
-
-----------
-
-### Exercices
-
-#### Exercice 1 : Modify Service-1 name and description
-
-Change the name of "Service-1" to "XXX" and add the following description "Lorem ipsum blabla".
-
-Requirements :
- 
-1. the change must be done in a branch "nnnnn"
-
-2. the Github commit must be under the "..." format
-
-3. etc
-
-
-#### Exercice 2 : modify "Registration 1" 
-
-Change the name of "Registration-1" to "XXX" and ....
-
-
-#### Exercice 3 : modify "Registration 1" 
-
-Change the name of "Registration-1" to "XXX" and ....
-
