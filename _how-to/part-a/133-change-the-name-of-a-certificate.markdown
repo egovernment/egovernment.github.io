@@ -1,30 +1,30 @@
 ---
 layout: recipe
-permalink: /como/cambiar-el-nombre-de-un-certificado/
-title: 'Cambiar el nombre de un certificado'
+permalink: /how-to/change-the-name-of-a-certificate/
+title: 'Change the name of a certificate'
 category: '1. Part A'
-sub-category: 'Certificados'
+sub-category: 'Certificates'
 rate: '1'
-number: '132'
+number: '133'
 introduction-text: 'Changing the name of a certificate impacts on all the certificates already processed in the system.'
 introduction-img: '131.png'
-prevUrl: 131
-nextUrl: 133
+prevUrl: 132
+nextUrl: 134
 done: 'yes'
-lang: es
-ref: 132
+lang: en
+ref: 133
 ---
 
 The name of a certificate is defined on a document that it's extended from. Changing document name will also change the certificate name.
 
-Please bare in mind that, by default, registration name is also inherited from the certificate corresponding to it. If the name of the registration should remain unchanged, check ['How to 111 - Change the name and the short name of a registration'](/how-to/change-the-name-and-the-short-name-of-a-registration/).
+Please bare in mind that, by default, registration name is also inherited from the certificate corresponding to it. If the name of the registration should remain unchanged, check ['How to 112 - Change the label of a registration'](/how-to/change-the-name-and-the-short-name-of-a-registration/).
 
 1. Open file `model/documents/<document>.js` (the file name should be hyphened version of the document’s name).
 2. Set the value of a label property to the desired name.
 
 ## Example
 
-**Starting Branch: [change-the-name-of-a-certificate](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-certificate)**
+In the branch "[change-the-name-of-a-certificate](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-certificate)" of eregistrations-demo :
 
 Change label of company registration certificate to *"Company registration in Ministry of Company Registrations"*.
 

@@ -6,16 +6,18 @@ category: '2. Part B'
 sub-category: 'Notifications'
 rate: '2'
 number: '242'
-introduction-text: ''
-introduction-img: '121-1.png'
+introduction-text: 'This recipe explains how to add a new variable to be used in notifications subject and text.'
+introduction-img: '242.png'
 prevUrl: 241
 nextUrl: 243
-done: ''
+done: 'yes'
 lang: en
 ref: 242
 ---
 
 Every notification is sent in response to some state change in business process flow. They are defined as part of apps responsible for given processing step (be it Part A or Part B) and can be found in `apps/<app-name>/server/notifications/` directory, one notification per file.
+
+The system uses [es6-template-strings](https://github.com/medikoo/es6-template-strings) to resolve translations with variables. The notation used is `${ variableName }`, eg. *"Welcome, ${ fullName }"*.
 
 1. Locate the notification to change in `apps/<app-name>/server/notifications/<notification>.js`.
 2. Make sure that `resolveGetters` property on exported object is set to `true`.

@@ -10,7 +10,7 @@ introduction-text: 'A requirement is associated with a document or group of docu
 introduction-img: '145.png'
 prevUrl: 145
 nextUrl: 147
-done: ''
+done: 'yes'
 lang: en
 ref: 146
 ---

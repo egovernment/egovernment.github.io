@@ -7,7 +7,7 @@ sub-category: 'Costs'
 rate: '1'
 number: '155'
 introduction-text: 'In this recipe we will see how to modify the value of a cost.'
-introduction-img: '154.png'
+introduction-img: '155.png'
 prevUrl: 154
 nextUrl: 156
 done: 'yes'
