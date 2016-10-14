@@ -10,12 +10,12 @@ introduction-text: ''
 introduction-img: '154.png'
 prevUrl: 153
 nextUrl: 155
-done: ''
+done: 'yes'
 lang: en
 ref: 154
 ---
 
-Every payment receipt upload is associated with a service, so to change it's legend, we have to know the service to which it applies.
+Every payment receipt upload is associated with a service, so to change its legend, we have to know the service to which it applies.
 
 1. Open file `model/business-process-<your-service>/payment-receipt-uploads.js`.
 2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-payment-receipt-uploads` helper function.
