@@ -10,7 +10,7 @@ introduction-text: ''
 introduction-img: '157.png'
 prevUrl: 156
 nextUrl: 161
-done: ''
+done: 'yes'
 lang: en
 ref: 157
 ---
