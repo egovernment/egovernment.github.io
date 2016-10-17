@@ -28,7 +28,7 @@ Please see the example below for better overview.
 
 ## Example
 
-In the branch "[](https://github.com/egovernment/eregistrations-demo/tree/)" of eregistrations-demo :
+In the branch "[configure-a-determinant-for-a-field](https://github.com/egovernment/eregistrations-demo/tree/configure-a-determinant-for-a-field)" of eregistrations-demo :
 
 Ensure that the `city` and `street` of `address` are shown only when `BusinessProcessDemo.prototype.address.country` is *"PL"* (*"Poland"*).
 
