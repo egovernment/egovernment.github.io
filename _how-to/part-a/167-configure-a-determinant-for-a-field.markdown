@@ -18,8 +18,8 @@ ref: 167
 In order to hide one field depending on the value of some other field:
 
 1. Open the file `model/business-process-<your-service>/data-forms/<the-section-to-which-your-field-belongs-to>.js`.
-2. Define a new property on the same object (usually `<YourBusinessProcess>.prototype`) that the field you want your field to be dependent from. </br>
-The new field should be named (`is<TheDependentFieldName>Applicable`) and should be a getter returning `true` or `false`.</br>
+2. Define a new property on the same object (usually `<YourBusinessProcess>.prototype`) that the field you want your field to be dependent from. <br>
+The new field should be named (`is<TheDependentFieldName>Applicable`) and should be a getter returning `true` or `false`.<br>
 Whenever `is<TheDependentFieldName>Applicable`* getter returns `true`, the field `<theDependentFieldName>` will be shown, otherwise it will be hidden.
 Please see the example below for better overview.
 
