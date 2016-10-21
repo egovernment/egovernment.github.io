@@ -37,13 +37,13 @@ HTTP server port under which application will be deployed by Node.js server.
 It doesn't necessary mean that at this port exactly application should be accessible to end user.	
 As if some proxy HTTP server is used (as e.g. [nGinx](/installation/nginx), then access port may be different).	
 
-### url `string` (default: `http://localhost:3177/`)												
+### url `string` (default: `'http://localhost:3177/'`)												
 
 URL at which application will be served to end user.												
 It's used within email notifications to provide link to system, and more importantly in cookies	
 resolution. For that reason referenced port is very important. If application would be server at url with different port than listed here, then it can't work properly	
 
-### secret `string` (default: 'something random')		
+### secret `string` (default: `'something random'`)		
 
 Secret string used for authentication purposed. if that setting is not provided,	
 then no session will be maintained between server restarts.			
@@ -57,9 +57,10 @@ If not provided system defaults to use efficient plain text database which store
 ### smtp `object`			 
 
 SMTP settings. For Email delivery we rely on [nodemailer](https://www.npmjs.com/package/nodemailer) package, and provided options are directly send to this module.	
-Unless `logOnly: true` option is provided, in such case no email delivery occurs, just logs on sent emails are output in server console.			 
+Unless `logOnly: true` option is provided, in such case no email delivery occurs, just logs on "sent emails" are output in server console.			 
 
-Defaults to:		 
+Defaults to:
+
 ```javascript		 
 {								 
   host: 'localhost',	
