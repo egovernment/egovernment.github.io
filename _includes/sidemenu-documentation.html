@@ -1,41 +1,41 @@
 <ul class="sidenav dropable sticky">
-    <li class="{% if page.ref == 'index' %}active{% endif %}">
-        <a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ site.documentation-pages.overview.title[page.lang]}}</a>
-    </li>
-    <li>
-        <a href="#" class="has-child {% if page.category contains 'installation' %}active open{% endif %}">{{ site.documentation-pages.installation.title[page.lang]}}</a>
-        <ul>
-            {% assign installs = site.documentation | where: 'lang', page.lang | where: 'category', 'installation' | sort: 'weight' %}
-            {% for install in installs %}
-            <li class="{% if page.url == install.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ install.url }}">{{ install.title | remove: 'eRegistrations - ' }}</a></li>
-            {% endfor %}
-        </ul>
-    </li>
-    <li class="{% if page.ref == 'fundamentals' %}active{% endif %}">
-        <a href="{{ site.baseurl }}{{ site.documentation-pages.fundamentals.urls[page.lang] }}">{{ site.documentation-pages.fundamentals.title[page.lang] }}</a>
-    </li>
-    <li class="{% if page.ref == 'architecture' %}active{% endif %}">
-        <a href="{{ site.baseurl }}{{ site.documentation-pages.architecture.urls[page.lang] }}">{{ site.documentation-pages.architecture.title[page.lang] }}</a>
-    </li>
-    <li>
-        <a href="#" class="has-child {% if page.category contains 'codebase' %}active open{% endif %}">{{ site.documentation-pages.codebase.title[page.lang]}}</a>
-        <ul>
-            {% assign codes = site.documentation | where: 'lang', page.lang | where: 'category', 'codebase' | sort: 'weight' %}
-            {% for code in codes %}
-            <li class="{% if page.url == code.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ code.url }}">{{ code.title | remove: 'eRegistrations - ' }}</a></li>
-            {% endfor %}
-        </ul>
-    </li>
-    <li class="{% if page.ref == 'tutorial' %}active{% endif %}">
-        <a href="{{ site.baseurl }}{{ site.documentation-pages.tutorial.urls[page.lang] }}">{{ site.documentation-pages.tutorial.title[page.lang] }}</a>
-    </li>
+		<li class="{% if page.ref == 'index' %}active{% endif %}">
+				<a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ site.documentation-pages.overview.title[page.lang]}}</a>
+		</li>
+		<li>
+				<a href="#" class="has-child {% if page.category contains 'installation' %}active open{% endif %}">{{ site.documentation-pages.installation.title[page.lang]}}</a>
+				<ul>
+						{% assign installs = site.documentation | where: 'lang', page.lang | where: 'category', 'installation' | sort: 'weight' %}
+						{% for install in installs %}
+						<li class="{% if page.url == install.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ install.url }}">{{ install.title | remove: 'eRegistrations - ' }}</a></li>
+						{% endfor %}
+				</ul>
+		</li>
+		<li class="{% if page.ref == 'fundamentals' %}active{% endif %}">
+				<a href="{{ site.baseurl }}{{ site.documentation-pages.fundamentals.urls[page.lang] }}">{{ site.documentation-pages.fundamentals.title[page.lang] }}</a>
+		</li>
+		<li class="{% if page.ref == 'architecture' %}active{% endif %}">
+				<a href="{{ site.baseurl }}{{ site.documentation-pages.architecture.urls[page.lang] }}">{{ site.documentation-pages.architecture.title[page.lang] }}</a>
+		</li>
+		<li>
+				<a href="#" class="has-child {% if page.category contains 'codebase' %}active open{% endif %}">{{ site.documentation-pages.codebase.title[page.lang]}}</a>
+				<ul>
+						{% assign codes = site.documentation | where: 'lang', page.lang | where: 'category', 'codebase' | sort: 'weight' %}
+						{% for code in codes %}
+						<li class="{% if page.url == code.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ code.url }}">{{ code.title | remove: 'eRegistrations - ' }}</a></li>
+						{% endfor %}
+				</ul>
+		</li>
+		<li class="{% if page.ref == 'tutorial' %}active{% endif %}">
+				<a href="{{ site.baseurl }}{{ site.documentation-pages.tutorial.urls[page.lang] }}">{{ site.documentation-pages.tutorial.title[page.lang] }}</a>
+		</li>
 
-    {% assign how = site.collections | where: 'label', 'how-to' | first %}
-    {% assign training = site.collections | where: 'label', 'trainings' | first %}
-    <li class="{% if page.url contains how.baseurl[page.lang] %}active{% endif %}">
-        <a href="{{ site.baseurl }}{{ how.baseurl[page.lang] }}">{{ how.title[page.lang] }}</a>
-    </li>
-    <li class="{% if page.url contains training.baseurl[page.lang] %}active{% endif %}">
-        <a href="{{ site.baseurl }}{{ training.baseurl[page.lang] }}">{{ training.title[page.lang] }}</a>
-    </li>
+		{% assign how = site.collections | where: 'label', 'how-to' | first %}
+		{% assign training = site.collections | where: 'label', 'trainings' | first %}
+		<li class="{% if page.url contains how.baseurl[page.lang] %}active{% endif %}">
+				<a href="{{ site.baseurl }}{{ how.baseurl[page.lang] }}">{{ how.title[page.lang] }}</a>
+		</li>
+		<li class="{% if page.url contains training.baseurl[page.lang] %}active{% endif %}">
+				<a href="{{ site.baseurl }}{{ training.baseurl[page.lang] }}">{{ training.title[page.lang] }}</a>
+		</li>
 </ul>
