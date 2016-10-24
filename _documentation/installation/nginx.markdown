@@ -1,9 +1,9 @@
 ---
 layout: doc-pages
-permalink: /installation/optional-software/nginx
-title: 'eRegistrations - NGINX Installation'
+permalink: /installation/nginx
+title: 'nGinx Configuration'
 category: 'installation'
-weight: 5
+weight: 7
 lang: en
 ref: nginx
 ---
