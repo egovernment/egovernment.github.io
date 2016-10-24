@@ -6,16 +6,16 @@ category: '1. Part A'
 sub-category: 'Service'
 rate: '3'
 number: '105'
-introduction-text: 'Sometimes an already made service needs to be "turned off" for a moment.<br>This recipe describes how introduce such a change with minimum effort (as opposed to completely delete the service from the source).'
+introduction-text: 'Sometimes an already made service needs to be "turned off" for a moment.<br>This recipe describes how to introduce such a change with minimum effort (as opposed to completely delete the service from the source).'
 introduction-img: '104.png'
 prevUrl: 104
 nextUrl: 111
-done: ''
+done: 'yes'
 lang: en
 ref: 105
 ---
 
-We will focus here on how to disable service. It will not be possible to create new services of the disabled type and we will remove the link from the interface.
+We will focus on how to disable a service. It will not be possible, after this, to create new services of the disabled type, and we will remove the link from the interface.
 
 We want to make as few changes as possible and ensure that the service can be brought back easily.
 
@@ -37,13 +37,13 @@ Disable the `BusinessProcessDemo` service.
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/make-a-service-temporarily-unavailable...make-a-service-temporarily-unavailable-solution#files')">
 
-    
+
 <a name="diff-f17d2347e14c6db3e4759e797bf9cb35"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="apps/user/controller/index.js">
@@ -65,13 +65,13 @@ Disable the `BusinessProcessDemo` service.
       <span class="user-select-contain" title="apps/user/controller/index.js">
         apps/user/controller/index.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr data-position="0">
     <td id="diff-f17d2347e14c6db3e4759e797bf9cb35L0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
     <td id="diff-f17d2347e14c6db3e4759e797bf9cb35R0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
@@ -396,13 +396,13 @@ Disable the `BusinessProcessDemo` service.
 
 </div>
 
-    
+
 <a name="diff-ff399868a2b79a6fc5aa0b527b07d602"></a>
 <div id="diff-1" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="view/user.js">
@@ -424,13 +424,13 @@ Disable the `BusinessProcessDemo` service.
       <span class="user-select-contain" title="view/user.js">
         view/user.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-ff399868a2b79a6fc5aa0b527b07d602" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/139e1ca5c6c6334fde61204aae97d76954e9d427?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=15&amp;mode=100644&amp;next_line_num_left=2&amp;next_line_num_right=2&amp;path=view%2Fuser.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=15" data-left-range="1-1" data-right-range="1-1">
@@ -700,7 +700,7 @@ Disable the `BusinessProcessDemo` service.
 </tr>
 
 
-      
+
     <tr class="blob-expanded">
       <td id="diff-ff399868a2b79a6fc5aa0b527b07d602L17" class="blob-num js-linkable-line-number" data-line-number="17"></td>
       <td id="diff-ff399868a2b79a6fc5aa0b527b07d602R17" class="blob-num js-linkable-line-number" data-line-number="17"></td>
