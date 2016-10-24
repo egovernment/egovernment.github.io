@@ -10,7 +10,7 @@ introduction-text: 'In this recipe we will cover adding custom validation patter
 introduction-img: '168-1.png'
 prevUrl: 167
 nextUrl: 171
-done: ''
+done: 'yes'
 lang: en
 ref: 168
 ---
@@ -18,7 +18,8 @@ ref: 168
 Sometimes we want additional, custom validation and mask for given field. The most common situation is with `StringLine` type fields.
 Such customisation may be needed for cases like special formatting of an id document or postal code.
 
-A simple validation can be achieved through `pattern` property on descriptor. For the mask of input we use `inputMask` property on descriptor.
+A simple validation can be achieved through `pattern` property on fields descriptor. For the mask of input we use `inputMask` property on fields descriptor.
+
 To setup `pattern` and `inputMask` for a field:
 
 1. Open the file `model/business-process-<your-service>/<file-containing-your-field-definition>.js`.
@@ -35,13 +36,13 @@ Make `postalCode` accept only the values which consist of two digits followed by
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/add-a-special-format-for-a-field...add-a-special-format-for-a-field-solution#files')">
 
-    
+
 <a name="diff-eb4cd0deb89b5bb25c5fc0fbf11b7c07"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/lib/address.js">
@@ -63,13 +64,13 @@ Make `postalCode` accept only the values which consist of two digits followed by
       <span class="user-select-contain" title="model/lib/address.js">
         model/lib/address.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-eb4cd0deb89b5bb25c5fc0fbf11b7c07" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/b3507b22e0c6cefef46e9b5f147faa517a1fb618?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=5&amp;mode=100644&amp;next_line_num_left=9&amp;next_line_num_right=9&amp;path=model%2Flib%2Faddress.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=8" data-left-range="1-8" data-right-range="1-8">
