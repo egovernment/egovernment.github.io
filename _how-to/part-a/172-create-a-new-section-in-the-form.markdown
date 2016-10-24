@@ -6,11 +6,11 @@ category: '1. Part A'
 sub-category: 'Data'
 rate: '3'
 number: '171'
-introduction-text: "This recipe is about adding a new section to a service's forms." 
+introduction-text: "This recipe is about adding a new section to a service's forms."
 introduction-img: '171.png'
 prevUrl: 171
 nextUrl: 173
-done: ''
+done: 'yes'
 lang: en
 ref: 172
 ---
@@ -25,6 +25,8 @@ In order to add a new section to a service's forms:
 2. Require the section type you want to use, usually it's `FormSection` (`eregitrations/model/form-section`).
 3. Define a new section using your sections class on the `<YourBusinessProcess>.prototype.dataForms.map` property (See example below for details).
 
+Consult other guides for modifying the behavior and appearance of the form.
+
 ## Example
 
 In the branch "[create-a-new-section-in-the-form](https://github.com/egovernment/eregistrations-demo/tree/create-a-new-section-in-the-form)" of eregistrations-demo :
@@ -35,13 +37,13 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/create-a-new-section-in-the-form...create-a-new-section-in-the-form-solution#files')">
 
-    
+
 <a name="diff-460a570d8b7f45987bb96d6ab0146a1e"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="apps/business-process-demo/controller/index.js">
@@ -63,13 +65,13 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
       <span class="user-select-contain" title="apps/business-process-demo/controller/index.js">
         apps/business-process-demo/controller/index.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-460a570d8b7f45987bb96d6ab0146a1e" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/a274e0460f7e983371ae47aeb18d825aa2f21724?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=5&amp;mode=100644&amp;next_line_num_left=6&amp;next_line_num_right=6&amp;path=apps%2Fbusiness-process-demo%2Fcontroller%2Findex.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=6" data-left-range="1-5" data-right-range="1-5">
@@ -163,13 +165,13 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
 </div>
 
-    
+
 <a name="diff-960d5db1ab734414c600cd4f2c248dd5"></a>
 <div id="diff-1" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/data-forms/index.js">
@@ -191,13 +193,13 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
       <span class="user-select-contain" title="model/business-process-demo/data-forms/index.js">
         model/business-process-demo/data-forms/index.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-960d5db1ab734414c600cd4f2c248dd5" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/c67484fb451d4c9ae931f14076067c2735e06fda?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=5&amp;mode=100644&amp;next_line_num_left=2&amp;next_line_num_right=2&amp;path=model%2Fbusiness-process-demo%2Fdata-forms%2Findex.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=6" data-left-range="1-1" data-right-range="1-1">
@@ -291,13 +293,13 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
 </div>
 
-    
+
 <a name="diff-fb616cc6400aead124d5998dc3c4af25"></a>
 <div id="diff-2" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/data-forms/representative.js">
@@ -319,13 +321,13 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
       <span class="user-select-contain" title="model/business-process-demo/data-forms/representative.js">
         model/business-process-demo/data-forms/representative.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr data-position="0">
     <td id="diff-fb616cc6400aead124d5998dc3c4af25L-1" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
     <td id="diff-fb616cc6400aead124d5998dc3c4af25R0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
