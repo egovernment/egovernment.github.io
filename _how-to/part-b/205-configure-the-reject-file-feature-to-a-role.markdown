@@ -10,7 +10,7 @@ introduction-text: 'The file rejection ends processing of a file permanently wit
 introduction-img: '205.png'
 prevUrl: 204
 nextUrl: 206
-done: ''
+done: 'yes'
 lang: en
 ref: 205
 ---
@@ -28,6 +28,7 @@ In order to setup rejection for a processing step:
 7. Create a form pointing to the route you defined in point 4.
 8. It is strongly encouraged to create the dialog which asks for `rejectionReason` before the form is submitted (see the example for implementation details).
 
+**Note:** It is mandatory to set `rejectionReason` property on the processing step while rejecting a file. If not using a dialog for the official user, set it in the rejection controller.
 
 ## Example
 
@@ -40,13 +41,13 @@ Enable rejection functionality for `socialSecurity` processing step.
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/configure-the-reject-file-feature-of-a-role...configure-the-reject-file-feature-of-a-role-solution#files')">
 
-    
+
 <a name="diff-dc19c2f065a19b399bf078e7a0f75ee1"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="apps/official-social-security/business-processes/meta.js">
@@ -68,13 +69,13 @@ Enable rejection functionality for `socialSecurity` processing step.
       <span class="user-select-contain" title="apps/official-social-security/business-processes/meta.js">
         apps/official-social-security/business-processes/meta.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-dc19c2f065a19b399bf078e7a0f75ee1" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/c793f5ff20f750e64f5121e4bad30153b3b6c81b?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=7&amp;mode=100644&amp;next_line_num_left=11&amp;next_line_num_right=11&amp;path=apps%2Fofficial-social-security%2Fbusiness-processes%2Fmeta.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7" data-left-range="1-10" data-right-range="1-10">
@@ -341,13 +342,13 @@ Enable rejection functionality for `socialSecurity` processing step.
 
 </div>
 
-    
+
 <a name="diff-8fead16f047698f406fd21b6d1dcbf1b"></a>
 <div id="diff-1" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="apps/official-social-security/controller/index.js">
@@ -369,13 +370,13 @@ Enable rejection functionality for `socialSecurity` processing step.
       <span class="user-select-contain" title="apps/official-social-security/controller/index.js">
         apps/official-social-security/controller/index.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-8fead16f047698f406fd21b6d1dcbf1b" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/9f931703a8a02908348437a382df16b2b1c5cdc5?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=4&amp;next_line_num_right=4&amp;path=apps%2Fofficial-social-security%2Fcontroller%2Findex.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7" data-left-range="1-3" data-right-range="1-3">
@@ -673,13 +674,13 @@ Enable rejection functionality for `socialSecurity` processing step.
 
 </div>
 
-    
+
 <a name="diff-84c5a7c7e92938e5ed3e82ee7eb102b5"></a>
 <div id="diff-2" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="view/official-social-security/business-process-official-form.js">
@@ -701,13 +702,13 @@ Enable rejection functionality for `socialSecurity` processing step.
       <span class="user-select-contain" title="view/official-social-security/business-process-official-form.js">
         view/official-social-security/business-process-official-form.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-84c5a7c7e92938e5ed3e82ee7eb102b5" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/5b21064e48fa53efa65ffde9d33859c7d41cd138?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=10&amp;mode=100644&amp;next_line_num_left=5&amp;next_line_num_right=5&amp;path=view%2Fofficial-social-security%2Fbusiness-process-official-form.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=30" data-left-range="1-4" data-right-range="1-4">
