@@ -10,7 +10,7 @@ introduction-text: "This recipe is about adding a new tab (in a tabbed view) to 
 introduction-img: '170.png'
 prevUrl: 168
 nextUrl: 171
-done: ''
+done: 'yes'
 lang: en
 ref: 171
 ---
