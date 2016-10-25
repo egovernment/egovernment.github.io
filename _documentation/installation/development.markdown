@@ -17,7 +17,7 @@ _eRegistrations_ can be installed with few simple steps on any popular operating
 Go to [https://nodejs.org/en/](https://nodejs.org/en/) and install __v4__ version of Node.js software.
 
 __Note for Linux users:__  
-If you're on linux and prefer to rely on system dedicated packages distrubution channel. Ensure that version of Node.js that you have installed is __v4__ and that npm version that comes with it, is one that is originally comes with this specific version __v4__ of Node.js.  
+If you're on linux and prefer to rely on system dedicated packages distrubution channel: __Ensure that you end with v4 version of  Node.js, and that npm version that comes with it, is one that originally comes with this specific version of Node.js__.  
 Which version of npm maps to which Node.js version, can be found in [Node.js Releases](https://nodejs.org/en/download/releases/) reference. Some Linux systems tend to install Node.js and npm individually as independent projects, with not adequate version mappings, and that may introduce to issues (e.g. application may not install properly if you decide to rely on npm v3).
 
 ## 2. Clone eRegistrations system repository
