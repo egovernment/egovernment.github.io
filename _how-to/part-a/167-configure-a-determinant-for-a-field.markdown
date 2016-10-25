@@ -15,15 +15,32 @@ lang: en
 ref: 167
 ---
 
-In order to hide one field depending on the value of some other field:
+We want to make a form field (let's call it slave) depend on some other field (let's call it master). First we have to know whether slave and master are in the same form.
 
-1. Open the file `model/business-process-<your-service>/data-forms/<the-section-to-which-your-field-belongs-to>.js`.
-2. Define a new property on the same object (usually `<YourBusinessProcess>.prototype`) that the field you want your field to be dependent from. <br>
-The new field should be named (`is<TheDependentFieldName>Applicable`) and should be a getter returning `true` or `false`.<br>
-Whenever `is<TheDependentFieldName>Applicable`* getter returns `true`, the field `<theDependentFieldName>` will be shown, otherwise it will be hidden.
+If slave and master are in the same form:
+
+1. Open the file `model/business-process-<your-service>/data-forms/<the-section-to-which-your-slave-and-master-belong-to>.js`.
+2. Define a new property on the same object (usually `<YourBusinessProcess>.prototype`) as your slave field. <br>
+The new field should be named (`is<slave>Applicable`) and should be a getter returning `true` or `false`.<br>
+Whenever `is<slave>Applicable`* getter returns `true`, the field `<slave>` will be shown, otherwise it will be hidden.
 Please see the example below for better overview.
 
-*- You should use `db.Object.getApplicablePropName` method to create the new field (see the example on how to use it).
+* - You should use `db.Object.getApplicablePropName` method to create the new field (see the example on how to use it).
+
+If the slave is not in the same form as it's master:
+
+1. Open the file `model/business-process-<your-service>/data-forms/<the-section-to-which-your-slave-belongs-to>.js`.
+2. Define a new property on the same object (usually `<YourBusinessProcess>.prototype`) as your slave field. <br>
+The new field should be named (`is<slave>FormApplicable`) and should be a getter returning `true` or `false`.<br>
+Whenever `is<slave>FormApplicable`** getter returns `true`, the field `<slave>` will be shown, otherwise it will be hidden.
+
+** - You should use `db.Object.getFormApplicablePropName` method to create the new field (see the example on how to use it).
+
+Also, please note that there is a a slight difference in the behavior between the two situations described above.
+
+In the case of slave and master being in the same form, the state changes of master will immediately affect the slave.
+
+For the other case (salve is in a different form than master) however, the changes will not take place until the form is saved (so only after master's state is saved to database, the slave will react).
 
 
 ## Example
