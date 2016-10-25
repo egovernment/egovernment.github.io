@@ -43,7 +43,7 @@ npm rebuild phantomjs
 
 It will ensure that [PhantomJS](http://phantomjs.org/) software for your eRegistrations system is installed and linked as expected. This software is mandatory for PDF generation to work correctly
 
-### 4. (Optional) Configure specific HTTP port
+## 4. (Optional) Configure specific HTTP port
 
 If you intend to run more than one eRegistrations system instance at once on your computer, you need to specify distinct HTTP ports for each, so they do not collide. Otherwise you may skip this step (as automatically your application will be deployed at 3177 port).
 
@@ -64,20 +64,20 @@ module.exports = require('mano').env = {
 
 For other eventual `env.js` settings you may check [Environemnt Configuration](/installation/enviroment) documentation.
 
-### 5. (Optional) Install image processing software
+## 5. (Optional) Install image processing software
 
 You can skip this step if you're fine with thumbnails not being generated for eventual PDF files that you may upload as documents.
 System will work totally fine with it, the only downside will be that you'll see blank squares instead of thumbs when seing those files in a list.
 
 If you'd rather have image processing correctly in place, please refer to [Image processing software](/installation/enviroment) on how to ensure such
 
-### 6. (Optional) Specific database engine configuration
+## 6. (Optional) Specific database engine configuration
 
 By default database data will be saved in plain text files in `data-local` folder. Format of those files is very convient for development as you can quickly investigate or manipulate state of a data manually if needed for testing needs.
 
 Still if for some reason you prefer data to be saved into some specific popular database engine (e.g. MongoDB, MSSQL etc). Please refer to [Database enging configuration](/installation/database-engine) document for more details
 
-### 7. Create "Users Administrator" account
+## 7. Create "Users Administrator" account
 
 It's about administration account, through which you'll be able to create any kind of user. From application scope such account can only be created from scope of other _User Administrator_ account, so first one needs to be created using shell script as follows:
 
@@ -90,7 +90,7 @@ npm run create-users-admin
 Then when asked input an __email__ and __pasword__ of the account (those will be credentials with which you'll be able to login as user adminstrator).  
 _**Note**: Program tends to not close after account is generated, it's totally safe to force stop of it, after few seconds_
 
-### 8. Run system
+## 8. Run system
 
 Run following command in terminal in root folder of your project:
 
