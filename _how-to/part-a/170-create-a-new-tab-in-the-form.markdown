@@ -15,10 +15,14 @@ lang: en
 ref: 171
 ---
 
+The sections are a mechanism which provides abstraction layer between model an the view, and allows for quick creation of the forms. The tabs in a tabbed view are sections with a custom drawing method applied.
+
+For exhaustive overview of sections please see [https://github.com/egovernment/eregistrations/blob/master/documentation/sections.md](https://github.com/egovernment/eregistrations/blob/master/documentation/sections.md).
+
 1. Create file `model/business-process-<your-service>/data-forms/<your-section>.js`.
 2. Require the section type you want to use, usually it's `FormSectionGroup` (`eregistrations/model/form-section-group`).
 3. Define a new section using your sections class on the `<YourBusinessProcess>.prototype.dataForms.map` property (See example below for details).
-4. Make sure to set `pageUrl` property.
+4. Make sure to set `pageUrl` property on the new section.
 5. Open file `apps/business-process-<your-service>/routes.js`.
 6. Using `eregistrations/routes/utils/define-tabbed-form` util, define route for the new section (See example below for details).
 
