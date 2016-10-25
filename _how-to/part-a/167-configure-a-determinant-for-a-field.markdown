@@ -25,16 +25,16 @@ The new field should be named (`is<slave>Applicable`) and should be a getter ret
 Whenever `is<slave>Applicable`* getter returns `true`, the field `<slave>` will be shown, otherwise it will be hidden.
 Please see the example below for better overview.
 
-* - You should use `db.Object.getApplicablePropName` method to create the new field (see the example on how to use it).
+*- You should use `db.Object.getApplicablePropName` method to create the new field (see the example on how to use it).
 
 If the slave is not in the same form as it's master:
 
 1. Open the file `model/business-process-<your-service>/data-forms/<the-section-to-which-your-slave-belongs-to>.js`.
 2. Define a new property on the same object (usually `<YourBusinessProcess>.prototype`) as your slave field. <br>
 The new field should be named (`is<slave>FormApplicable`) and should be a getter returning `true` or `false`.<br>
-Whenever `is<slave>FormApplicable`** getter returns `true`, the field `<slave>` will be shown, otherwise it will be hidden.
+Whenever `is<slave>FormApplicable`\** getter returns `true`, the field `<slave>` will be shown, otherwise it will be hidden.
 
-** - You should use `db.Object.getFormApplicablePropName` method to create the new field (see the example on how to use it).
+\**- You should use `db.Object.getFormApplicablePropName` method to create the new field (see the example on how to use it).
 
 Also, please note that there is a a slight difference in the behavior between the two situations described above.
 
