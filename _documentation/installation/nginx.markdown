@@ -8,93 +8,31 @@ lang: en
 ref: nginx
 ---
 
-# NGINX Installation
+# nGinx "site" Configuration
 
-It's possible to use [NGINX](https://nginx.org/en/) HTTP and reverse proxy server to act as intermediate gate between Node.js server and client connections.
+Especially in production environment, it's recommened to use some form of HTTP proxy on top Node.js server. It allows to configure more secure HTTP server setup, and provides a mean to run many systems on one server.
 
-**Linux (Ubuntu):**
+[nGinx](https://nginx.org/en/) is perfect choice, below is our recommendation for nGinx reverse proxy site setup
 
-It's recommended to use `apt` tool to install on Ubuntu:
+Assuming that Node.js server will be run at `3177` port and system is meant to be accessible at `eregistrations.org`, the configuration of _site_ should be as follows:
 
-```console
-$ sudo apt-get install nginx
 ```
-
-## Setup NGINX site
-
-NGINX needs to be configured to properly serve a website.
-
-### Default configuration
-
-Remove default nginx example configuration site that can interfere with eRegistrations system:
-
-**On Linux:**
-
-```console
-$ sudo rm /etc/nginx/sites-{available,enabled}/default
-```
-
-### eRegistrations system site configuration
-
-Create a file inside `/etc/nginx/sites-available/` directory named `eregistrations` and insert the following configuration (based on whether or not SSL is going to be used):
-
-**Without SSL:**
-
-```javascript
-upstream eregistrations.localhost {
+upstream eregistrations.org {
    server 127.0.0.1:3177;
 }
 
 server {
    listen 0.0.0.0:80;
-   server_name eregistrations.localhost;
-
-   access_log  /var/log/nginx/eregistrations.localhost.access.log;
-   error_log  /var/log/nginx/eregistrations.localhost.error.log;
-
-   client_max_body_size 0;
-   send_timeout 600s;
-   location / {
-       proxy_set_header X-Real-IP $remote_addr;
-       proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-       proxy_set_header Host $http_host;
-       proxy_set_header X-NginX-Proxy true;
-
-       proxy_pass http://eregistrations.localhost/;
-       proxy_redirect off;
-
-       proxy_set_header Connection '';
-       proxy_http_version 1.1;
-       proxy_buffering off;
-       proxy_read_timeout 24h;
-       chunked_transfer_encoding off;
-
-       if ($request_filename ~* ^.*?\.(eot)|(ttf)|(woff)$){
-           add_header Access-Control-Allow-Origin *;
-       }
-   }
-}
-```
-
-**With SSL:**
-
-```javascript
-upstream eregistrations.localhost {
-   server 127.0.0.1:3177;
-}
-
-server {
-   listen 0.0.0.0:80;
-   server_name eregistrations.localhost;
-   return 301 https://eregistrations.localhost$request_uri;
+   server_name eregistrations.org;
+   return 301 https://eregistrations.org$request_uri;
 }
 
 server {
    listen 0.0.0.0:443;
-   server_name eregistrations.localhost;
+   server_name eregistrations.org;
 
-   access_log  /var/log/nginx/eregistrations.localhost.access.log;
-   error_log  /var/log/nginx/eregistrations.localhost.error.log;
+   access_log  /var/log/nginx/eregistrations.org.access.log;
+   error_log  /var/log/nginx/eregistrations.org.error.log;
 
    ssl on;
    ssl_certificate /etc/nginx/ssl/server.pem;
@@ -108,7 +46,7 @@ server {
        proxy_set_header Host $http_host;
        proxy_set_header X-NginX-Proxy true;
 
-       proxy_pass http://eregistrations.localhost/;
+       proxy_pass http://eregistrations.org/;
        proxy_redirect off;
 
        proxy_set_header Connection '';
@@ -122,13 +60,4 @@ server {
        }
    }
 }
-```
-
-### Enable the site and restart NGINX
-
-**On Linux:**
-
-```console
-$ sudo ln -s /etc/nginx/sites-available/eregistrations /etc/nginx/sites-enabled/
-$ sudo systemctl restart nginx.service
 ```
