@@ -11,8 +11,14 @@
 						{% endfor %}
 				</ul>
 		</li>
-		<li class="{% if page.ref == 'fundamentals' %}active{% endif %}">
-				<a href="{{ site.baseurl }}{{ site.documentation-pages.fundamentals.urls[page.lang] }}">{{ site.documentation-pages.fundamentals.title[page.lang] }}</a>
+		<li>
+				<a href="#" class="has-child {% if page.category contains 'fundamentals' %}active open{% endif %}">{{ site.documentation-pages.fundamentals.title[page.lang]}}</a>
+				<ul>
+						{% assign fundamentals = site.documentation | where: 'lang', page.lang | where: 'category', 'fundamentals' | sort: 'weight' %}
+						{% for fundamental in fundamentals %}
+						<li class="{% if page.url == fundamental.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ fundamental.url }}">{{ fundamental.title | remove: 'eRegistrations - ' }}</a></li>
+						{% endfor %}
+				</ul>
 		</li>
 		<li class="{% if page.ref == 'architecture' %}active{% endif %}">
 				<a href="{{ site.baseurl }}{{ site.documentation-pages.architecture.urls[page.lang] }}">{{ site.documentation-pages.architecture.title[page.lang] }}</a>
