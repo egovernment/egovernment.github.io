@@ -10,7 +10,7 @@ ref: nginx
 
 # nGinx "site" Configuration
 
-Especially in production environment, it's recommened to use some form of HTTP proxy on top Node.js server. It allows to configure more secure HTTP server setup, and provides a mean to run many systems on one server.
+Especially in production environment, it's recommened to use some form of HTTP proxy on top Node.js server. It allows to configure more secure HTTP server setup, and provides a way to run many systems on one server.
 
 [nGinx](https://nginx.org/en/) is perfect choice, below is our recommendation for nGinx reverse proxy site setup
 
