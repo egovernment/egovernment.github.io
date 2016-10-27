@@ -10,7 +10,7 @@ introduction-text: ''
 introduction-img: '206.png'
 prevUrl: 205
 nextUrl: 221
-done: ''
+done: 'yes'
 lang: en
 ref: 206
 ---
@@ -24,7 +24,7 @@ In order to remove a officialRole and a processingStep:
 3. Remove file `model/business-<your-service>/processing-steps/<your-step>.js`.
 <br>Mind that the step can appear and more than one service. If that is the case you have to remove it from each service directory.
 4. Remove `require` of `model/business-<your-service>/processing-steps/<your-step>.js` from `model/business-<your-service>/processing-steps/index.js`.
-5. You need to find the place where where your step was used in the flow and adjust it.
+5. You need to find the place where your step was used in the flow and adjust it.
 <br>So, you need to remove your step from the proper `previousSteps` collection (the collection you're looking for is defined on the step, which was directly after the removed step in the flow).
 <br>Most likely you will have to replace the step you are removing with some other step, on which the flow will now rely.
 6. Remove role definition associated with your step from `model/user/roles.js`.
@@ -36,7 +36,7 @@ In order to remove a officialRole and a processingStep:
 
 In the branch "[remove-a-role](https://github.com/egovernment/eregistrations-demo/tree/remove-a-role)" of eregistrations-demo :
 
-Remove the `socialSecurity` processing step and the `officialSocialSecurity` role associated with it. 
+Remove the `socialSecurity` processing step and the `officialSocialSecurity` role associated with it.
 
 ### Solution
 
