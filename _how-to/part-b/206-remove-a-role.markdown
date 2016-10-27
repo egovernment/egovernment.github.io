@@ -24,8 +24,11 @@ In order to remove a officialRole and a processingStep:
 3. Remove file `model/business-<your-service>/processing-steps/<your-step>.js`.
 <br>Mind that the step can appear and more than one service. If that is the case you have to remove it from each service directory.
 4. Remove `require` of `model/business-<your-service>/processing-steps/<your-step>.js` from `model/business-<your-service>/processing-steps/index.js`.
-5. Remove role definition associated with your step from `model/user/roles.js`.
-6. Search the project for occurrences of `yourStep` and `your-step` and adjust them as needed.
+5. You need to find the place where where your step was used in the flow and adjust it.
+<br>So, you need to remove your step from the proper `previousSteps` collection (the collection you're looking for is defined on the step, which was directly after the removed step in the flow).
+<br>Most likely you will have to replace the step you are removing with some other step, on which the flow will now rely.
+6. Remove role definition associated with your step from `model/user/roles.js`.
+7. Search the project for occurrences of `yourStep` and `your-step` and adjust them as needed.
 <br>You will mostly encounter several requires to the modules that you have just removed, so you need to remove the requires as well.
 
 
