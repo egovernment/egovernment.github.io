@@ -1,44 +1,43 @@
 ---
 layout: recipe
-permalink: /how-to/create-a-new-section-in-the-form/
-title: 'Create a new section in the form'
+permalink: /how-to/create-a-new-tab-in-the-form/
+title: 'Create a new tab in tabbed view of forms page'
 category: '1. Part A'
 sub-category: 'Data'
-rate: '3'
-number: '171'
-introduction-text: "This recipe is about adding a new section to a service's forms."
-introduction-img: '171.png'
-prevUrl: 171
-nextUrl: 173
+rate: '4'
+number: '170'
+introduction-text: "This recipe is about adding a new tab (in a tabbed view) to a service's forms."
+introduction-img: '170.png'
+prevUrl: 168
+nextUrl: 171
 done: 'yes'
 lang: en
-ref: 172
+ref: 171
 ---
 
-The sections are a mechanism which provides abstraction layer between model an the view, and allows for quick creation of the forms.
+The sections are a mechanism which provides abstraction layer between model an the view, and allows for quick creation of the forms. The tabs in a tabbed view are sections with a custom drawing method applied.
 
 For exhaustive overview of sections please see [https://github.com/egovernment/eregistrations/blob/master/documentation/sections.md](https://github.com/egovernment/eregistrations/blob/master/documentation/sections.md).
 
-In order to add a new section to a service's forms:
-
 1. Create file `model/business-process-<your-service>/data-forms/<your-section>.js`.
-2. Require the section type you want to use, usually it's `FormSection` (`eregitrations/model/form-section`).
+2. Require the section type you want to use, usually it's `FormSectionGroup` (`eregistrations/model/form-section-group`).
 3. Define a new section using your sections class on the `<YourBusinessProcess>.prototype.dataForms.map` property (See example below for details).
-
-Consult other guides for modifying the behavior and appearance of the form.
+4. Make sure to set `pageUrl` property on the new section.
+5. Open file `apps/business-process-<your-service>/routes.js`.
+6. Using `eregistrations/routes/utils/define-tabbed-form` util, define route for the new section (See example below for details).
 
 ## Example
 
-In the branch "[create-a-new-section-in-the-form](https://github.com/egovernment/eregistrations-demo/tree/create-a-new-section-in-the-form)" of eregistrations-demo :
+In the branch "[create-a-new-tab-in-the-form](https://github.com/egovernment/eregistrations-demo/tree/create-a-new-tab-in-the-form)" of eregistrations-demo :
 
-Add new section *"Company's representative"* to the *"Business Process Demo"* service. Section should include the following fields of `representative` object: *"firstName"*, *"lastName"*, *"email"*
+Add new tab with section *"Company's representative"* to the *"Business Process Demo"* service. Section should include the following fields of `representative` object: *"firstName"*, *"lastName"*, *"email"*
 
 ### Solution
 
-<div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/create-a-new-section-in-the-form...create-a-new-section-in-the-form-solution#files')">
+<div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/create-a-new-tab-in-the-form...create-a-new-tab-in-the-form-solution#files')">
 
 
-<a name="diff-460a570d8b7f45987bb96d6ab0146a1e"></a>
+<a name="diff-9f7fb156fbef3919167ccc39157b524c"></a>
 <div id="diff-0" class="file js-details-container
 
 
@@ -46,24 +45,24 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
              show-inline-notes
            ">
-  <div class="file-header" data-path="apps/business-process-demo/controller/index.js">
+  <div class="file-header" data-path="apps/business-process-demo/routes.js">
     <div class="file-actions">
         <span class="show-file-notes">
           <label>
-            <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+            <input checked="checked" class="js-toggle-file-notes" type="checkbox">
             Show comments
           </label>
         </span>
 
-          <a href="/egovernment/eregistrations-demo/blob/e90431a57f5afc51e854a111ee2dc771d167b5ff/apps/business-process-demo/controller/index.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version e90431a ">View</a>
+          <a href="/egovernment/eregistrations-demo/blob/7f8e4f1c9c07a30522a75e8ba0e0255a9b552475/apps/business-process-demo/routes.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 7f8e4f1 ">View</a>
 
 
     </div>
     <div class="file-info">
         <span class="diffstat tooltipped tooltipped-e" aria-label="1 addition &amp; 0 deletions">1 <span class="block-diff-added"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span><span class="block-diff-neutral"></span></span>
 
-      <span class="user-select-contain" title="apps/business-process-demo/controller/index.js">
-        apps/business-process-demo/controller/index.js
+      <span class="user-select-contain" title="apps/business-process-demo/routes.js">
+        apps/business-process-demo/routes.js
       </span>
 
     </div>
@@ -74,17 +73,30 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
-      <a href="#diff-460a570d8b7f45987bb96d6ab0146a1e" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/a274e0460f7e983371ae47aeb18d825aa2f21724?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=5&amp;mode=100644&amp;next_line_num_left=6&amp;next_line_num_right=6&amp;path=apps%2Fbusiness-process-demo%2Fcontroller%2Findex.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=6" data-left-range="1-5" data-right-range="1-5">
+      <a href="#diff-9f7fb156fbef3919167ccc39157b524c" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/aa1c0f45fcae2b44789eeb7e7737228590b5d99e?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=3&amp;mode=100644&amp;next_line_num_left=11&amp;next_line_num_right=11&amp;path=apps%2Fbusiness-process-demo%2Froutes.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=4" data-left-range="1-10" data-right-range="1-10">
         <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"></path></svg>
       </a>
     </td>
-    <td class="blob-code blob-code-inner blob-code-hunk">@@ -6,5 +6,6 @@ var assign = require('es5-ext/object/assign');</td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -11,3 +11,4 @@ require('../../view/user-base');</td>
   </tr>
 
     <tr>
-    <td id="diff-460a570d8b7f45987bb96d6ab0146a1eL6" data-line-number="6" class="blob-num blob-num-context js-linkable-line-number"></td>
+    <td id="diff-9f7fb156fbef3919167ccc39157b524cL11" data-line-number="11" class="blob-num blob-num-context js-linkable-line-number"></td>
 
-    <td id="diff-460a570d8b7f45987bb96d6ab0146a1eR6" data-line-number="6" class="blob-num blob-num-context js-linkable-line-number"></td>
+    <td id="diff-9f7fb156fbef3919167ccc39157b524cR11" data-line-number="11" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-en">assign</span>(<span class="pl-c1">exports</span>, <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>eregistrations/routes/business-process<span class="pl-pds">'</span></span>));</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td id="diff-9f7fb156fbef3919167ccc39157b524cL12" data-line-number="12" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-9f7fb156fbef3919167ccc39157b524cR12" data-line-number="12" class="blob-num blob-num-context js-linkable-line-number"></td>
 
   <td class="blob-code blob-code-context">
 
@@ -95,26 +107,13 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
 
     <tr>
-    <td id="diff-460a570d8b7f45987bb96d6ab0146a1eL7" data-line-number="7" class="blob-num blob-num-context js-linkable-line-number"></td>
+    <td id="diff-9f7fb156fbef3919167ccc39157b524cL13" data-line-number="13" class="blob-num blob-num-context js-linkable-line-number"></td>
 
-    <td id="diff-460a570d8b7f45987bb96d6ab0146a1eR7" data-line-number="7" class="blob-num blob-num-context js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-context">
-
-    <span class="blob-code-inner"> <span class="pl-en">assign</span>(<span class="pl-c1">exports</span>, <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>eregistrations/controller/registration<span class="pl-pds">'</span></span>));</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td id="diff-460a570d8b7f45987bb96d6ab0146a1eL8" data-line-number="8" class="blob-num blob-num-context js-linkable-line-number"></td>
-
-    <td id="diff-460a570d8b7f45987bb96d6ab0146a1eR8" data-line-number="8" class="blob-num blob-num-context js-linkable-line-number"></td>
+    <td id="diff-9f7fb156fbef3919167ccc39157b524cR13" data-line-number="13" class="blob-num blob-num-context js-linkable-line-number"></td>
 
   <td class="blob-code blob-code-context">
 
-    <span class="blob-code-inner"> </span>
+    <span class="blob-code-inner"> <span class="pl-en">defineTabbedForm</span>(<span class="pl-s"><span class="pl-pds">'</span>company<span class="pl-pds">'</span></span>, { isDefault<span class="pl-k">:</span> <span class="pl-c1">true</span>, context<span class="pl-k">:</span> <span class="pl-c1">exports</span> });</span>
 
   </td>
 </tr>
@@ -123,37 +122,11 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
     <tr>
     <td class="blob-num blob-num-addition empty-cell"></td>
 
-    <td id="diff-460a570d8b7f45987bb96d6ab0146a1eR9" data-line-number="9" class="blob-num blob-num-addition js-linkable-line-number"></td>
+    <td id="diff-9f7fb156fbef3919167ccc39157b524cR14" data-line-number="14" class="blob-num blob-num-addition js-linkable-line-number"></td>
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+<span class="pl-c1">exports</span>.<span class="pl-smi">representative</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>;</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td id="diff-460a570d8b7f45987bb96d6ab0146a1eL9" data-line-number="9" class="blob-num blob-num-context js-linkable-line-number"></td>
-
-    <td id="diff-460a570d8b7f45987bb96d6ab0146a1eR10" data-line-number="10" class="blob-num blob-num-context js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-context">
-
-    <span class="blob-code-inner"> <span class="pl-c1">exports</span>[<span class="pl-s"><span class="pl-pds">'</span>company-information<span class="pl-pds">'</span></span>] <span class="pl-k">=</span> <span class="pl-c1">true</span>;</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td id="diff-460a570d8b7f45987bb96d6ab0146a1eL10" data-line-number="10" class="blob-num blob-num-context js-linkable-line-number"></td>
-
-    <td id="diff-460a570d8b7f45987bb96d6ab0146a1eR11" data-line-number="11" class="blob-num blob-num-context js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-context">
-
-    <span class="blob-code-inner"> <span class="pl-c1">exports</span>.<span class="pl-smi">attorney</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>;</span>
+    <span class="blob-code-inner">+<span class="pl-en">defineTabbedForm</span>(<span class="pl-s"><span class="pl-pds">'</span>representative<span class="pl-pds">'</span></span>, { context<span class="pl-k">:</span> <span class="pl-c1">exports</span> });</span>
 
   </td>
 </tr>
@@ -178,12 +151,12 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
     <div class="file-actions">
         <span class="show-file-notes">
           <label>
-            <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+            <input checked="checked" class="js-toggle-file-notes" type="checkbox">
             Show comments
           </label>
         </span>
 
-          <a href="/egovernment/eregistrations-demo/blob/e90431a57f5afc51e854a111ee2dc771d167b5ff/model/business-process-demo/data-forms/index.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version e90431a ">View</a>
+          <a href="/egovernment/eregistrations-demo/blob/7f8e4f1c9c07a30522a75e8ba0e0255a9b552475/model/business-process-demo/data-forms/index.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 7f8e4f1 ">View</a>
 
 
     </div>
@@ -202,25 +175,12 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
-      <a href="#diff-960d5db1ab734414c600cd4f2c248dd5" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/c67484fb451d4c9ae931f14076067c2735e06fda?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=5&amp;mode=100644&amp;next_line_num_left=2&amp;next_line_num_right=2&amp;path=model%2Fbusiness-process-demo%2Fdata-forms%2Findex.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=6" data-left-range="1-1" data-right-range="1-1">
+      <a href="#diff-960d5db1ab734414c600cd4f2c248dd5" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/4cc5d513ea2015f6e4c88186577b20e648ab4c31?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=3&amp;mode=100644&amp;next_line_num_left=3&amp;next_line_num_right=3&amp;path=model%2Fbusiness-process-demo%2Fdata-forms%2Findex.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=4" data-left-range="1-2" data-right-range="1-2">
         <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"></path></svg>
       </a>
     </td>
-    <td class="blob-code blob-code-inner blob-code-hunk">@@ -2,5 +2,6 @@</td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -3,3 +3,4 @@</td>
   </tr>
-
-    <tr>
-    <td id="diff-960d5db1ab734414c600cd4f2c248dd5L2" data-line-number="2" class="blob-num blob-num-context js-linkable-line-number"></td>
-
-    <td id="diff-960d5db1ab734414c600cd4f2c248dd5R2" data-line-number="2" class="blob-num blob-num-context js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-context">
-
-    <span class="blob-code-inner"> </span>
-
-  </td>
-</tr>
-
 
     <tr>
     <td id="diff-960d5db1ab734414c600cd4f2c248dd5L3" data-line-number="3" class="blob-num blob-num-context js-linkable-line-number"></td>
@@ -249,39 +209,26 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
 
     <tr>
+    <td id="diff-960d5db1ab734414c600cd4f2c248dd5L5" data-line-number="5" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+    <td id="diff-960d5db1ab734414c600cd4f2c248dd5R5" data-line-number="5" class="blob-num blob-num-context js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-context">
+
+    <span class="blob-code-inner"> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>./company<span class="pl-pds">'</span></span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
     <td class="blob-num blob-num-addition empty-cell"></td>
 
-    <td id="diff-960d5db1ab734414c600cd4f2c248dd5R5" data-line-number="5" class="blob-num blob-num-addition js-linkable-line-number"></td>
+    <td id="diff-960d5db1ab734414c600cd4f2c248dd5R6" data-line-number="6" class="blob-num blob-num-addition js-linkable-line-number"></td>
 
   <td class="blob-code blob-code-addition">
 
     <span class="blob-code-inner">+<span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>./representative<span class="pl-pds">'</span></span>);</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td id="diff-960d5db1ab734414c600cd4f2c248dd5L5" data-line-number="5" class="blob-num blob-num-context js-linkable-line-number"></td>
-
-    <td id="diff-960d5db1ab734414c600cd4f2c248dd5R6" data-line-number="6" class="blob-num blob-num-context js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-context">
-
-    <span class="blob-code-inner"> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>./company-information<span class="pl-pds">'</span></span>);</span>
-
-  </td>
-</tr>
-
-
-    <tr>
-    <td id="diff-960d5db1ab734414c600cd4f2c248dd5L6" data-line-number="6" class="blob-num blob-num-context js-linkable-line-number"></td>
-
-    <td id="diff-960d5db1ab734414c600cd4f2c248dd5R7" data-line-number="7" class="blob-num blob-num-context js-linkable-line-number"></td>
-
-  <td class="blob-code blob-code-context">
-
-    <span class="blob-code-inner"> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>./attorney<span class="pl-pds">'</span></span>);</span>
 
   </td>
 </tr>
@@ -306,17 +253,17 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
     <div class="file-actions">
         <span class="show-file-notes">
           <label>
-            <input type="checkbox" checked="checked" class="js-toggle-file-notes">
+            <input checked="checked" class="js-toggle-file-notes" type="checkbox">
             Show comments
           </label>
         </span>
 
-          <a href="/egovernment/eregistrations-demo/blob/e90431a57f5afc51e854a111ee2dc771d167b5ff/model/business-process-demo/data-forms/representative.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version e90431a ">View</a>
+          <a href="/egovernment/eregistrations-demo/blob/7f8e4f1c9c07a30522a75e8ba0e0255a9b552475/model/business-process-demo/data-forms/representative.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 7f8e4f1 ">View</a>
 
 
     </div>
     <div class="file-info">
-        <span class="diffstat tooltipped tooltipped-e" aria-label="20 additions &amp; 0 deletions">20 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span></span>
+        <span class="diffstat tooltipped tooltipped-e" aria-label="22 additions &amp; 0 deletions">22 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span></span>
 
       <span class="user-select-contain" title="model/business-process-demo/data-forms/representative.js">
         model/business-process-demo/data-forms/representative.js
@@ -331,7 +278,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
       <tbody><tr data-position="0">
     <td id="diff-fb616cc6400aead124d5998dc3c4af25L-1" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
     <td id="diff-fb616cc6400aead124d5998dc3c4af25R0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
-    <td class="blob-code blob-code-inner blob-code-hunk">@@ -0,0 +1,20 @@</td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -0,0 +1,22 @@</td>
   </tr>
 
     <tr>
@@ -380,7 +327,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+  , _                   <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>../../../i18n<span class="pl-pds">'</span></span>)</span>
+    <span class="blob-code-inner">+  , _                   <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>../../../i18n<span class="pl-pds">'</span></span>).<span class="pl-en">bind</span>(<span class="pl-s"><span class="pl-pds">'</span>Model: Sections<span class="pl-pds">'</span></span>)</span>
 
   </td>
 </tr>
@@ -406,7 +353,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+  , BusinessProcessDemo <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>../fields<span class="pl-pds">'</span></span>);</span>
+    <span class="blob-code-inner">+  , BusinessProcessDemo <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>../base<span class="pl-pds">'</span></span>)</span>
 
   </td>
 </tr>
@@ -432,7 +379,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+<span class="pl-smi">BusinessProcessDemo</span>.<span class="pl-c1">prototype</span>.<span class="pl-smi">dataForms</span>.<span class="pl-smi">map</span>.<span class="pl-en">define</span>(<span class="pl-s"><span class="pl-pds">'</span>representative<span class="pl-pds">'</span></span>, {</span>
+    <span class="blob-code-inner">+  , representative;</span>
 
   </td>
 </tr>
@@ -445,7 +392,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+	nested<span class="pl-k">:</span> <span class="pl-c1">true</span>,</span>
+    <span class="blob-code-inner">+</span>
 
   </td>
 </tr>
@@ -458,7 +405,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+	type<span class="pl-k">:</span> FormSection</span>
+    <span class="blob-code-inner">+<span class="pl-smi">BusinessProcessDemo</span>.<span class="pl-c1">prototype</span>.<span class="pl-smi">dataForms</span>.<span class="pl-smi">map</span>.<span class="pl-en">define</span>(<span class="pl-s"><span class="pl-pds">'</span>representative<span class="pl-pds">'</span></span>, {</span>
 
   </td>
 </tr>
@@ -471,7 +418,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+});</span>
+    <span class="blob-code-inner">+ nested<span class="pl-k">:</span> <span class="pl-c1">true</span>,</span>
 
   </td>
 </tr>
@@ -484,7 +431,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+</span>
+    <span class="blob-code-inner">+ type<span class="pl-k">:</span> FormSection</span>
 
   </td>
 </tr>
@@ -497,7 +444,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+<span class="pl-smi">BusinessProcessDemo</span>.<span class="pl-c1">prototype</span>.<span class="pl-smi">dataForms</span>.<span class="pl-smi">map</span>.<span class="pl-smi">representative</span>.<span class="pl-en">setProperties</span>({</span>
+    <span class="blob-code-inner">+});</span>
 
   </td>
 </tr>
@@ -510,7 +457,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+	label<span class="pl-k">:</span> <span class="pl-en">_</span>(<span class="pl-s"><span class="pl-pds">"</span>Company's representative<span class="pl-pds">"</span></span>),</span>
+    <span class="blob-code-inner">+</span>
 
   </td>
 </tr>
@@ -523,7 +470,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+	actionUrl<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>representative<span class="pl-pds">'</span></span>,</span>
+    <span class="blob-code-inner">+representative <span class="pl-k">=</span> <span class="pl-smi">BusinessProcessDemo</span>.<span class="pl-c1">prototype</span>.<span class="pl-smi">dataForms</span>.<span class="pl-smi">map</span>.<span class="pl-smi">representative</span>;</span>
 
   </td>
 </tr>
@@ -536,7 +483,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+	propertyNames<span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>representative/firstName<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>representative/lastName<span class="pl-pds">'</span></span>,</span>
+    <span class="blob-code-inner">+</span>
 
   </td>
 </tr>
@@ -549,7 +496,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+		<span class="pl-s"><span class="pl-pds">'</span>representative/email<span class="pl-pds">'</span></span>]</span>
+    <span class="blob-code-inner">+<span class="pl-smi">representative</span>.<span class="pl-en">setProperties</span>({</span>
 
   </td>
 </tr>
@@ -562,7 +509,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+});</span>
+    <span class="blob-code-inner">+ label<span class="pl-k">:</span> <span class="pl-en">_</span>(<span class="pl-s"><span class="pl-pds">"</span>Company's representative<span class="pl-pds">"</span></span>),</span>
 
   </td>
 </tr>
@@ -575,7 +522,7 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+</span>
+    <span class="blob-code-inner">+ pageUrl<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>representative<span class="pl-pds">'</span></span>,</span>
 
   </td>
 </tr>
@@ -588,7 +535,33 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+<span class="pl-c1">module</span>.<span class="pl-smi">exports</span> <span class="pl-k">=</span> BusinessProcessDemo;</span>
+    <span class="blob-code-inner">+ actionUrl<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>representative-information<span class="pl-pds">'</span></span>,</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-fb616cc6400aead124d5998dc3c4af25R21" data-line-number="21" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+ propertyNames<span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>representative/firstName<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>representative/lastName<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>representative/email<span class="pl-pds">'</span></span>]</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-fb616cc6400aead124d5998dc3c4af25R22" data-line-number="22" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+});</span>
 
   </td>
 </tr>
@@ -602,4 +575,3 @@ Add new section *"Company's representative"* to the *"Business Process Demo"* se
 
 
 </div>
-

@@ -49,11 +49,8 @@ documentation-pages:
       es: /arquitectura/
   fundamentals:
     title: 
-      en: 'Fundamentals of JavaScript'
+      en: 'JavaScript basics'
       es: 'Fundamentos de JavaScript'
-    urls:
-      en: '/fundamentals'
-      es: '/fundamentos'
   tutorial:
     title:
       en: 'Configuration tutorial'
