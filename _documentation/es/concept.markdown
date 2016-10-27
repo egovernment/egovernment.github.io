@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
-permalink: /concept/
+permalink: /concepto/
 title: 'eRegistrations concept'
-lang: en
+lang: es
 ref: concept
 ---
