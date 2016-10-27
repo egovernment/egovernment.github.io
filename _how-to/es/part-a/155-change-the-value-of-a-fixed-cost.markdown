@@ -7,7 +7,7 @@ sub-category: 'Costos'
 rate: '1'
 number: '155'
 introduction-text: 'In this recipe we will see how to edit the name of a cost, modify it value or modify it determinant.'
-introduction-img: '154.png'
+introduction-img: '155.png'
 prevUrl: 154
 nextUrl: 156
 done: ''

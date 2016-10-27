@@ -7,7 +7,7 @@ sub-category: 'Costos'
 rate: '1'
 number: '152'
 introduction-text: 'Cost name is used for both Part A and Part B as well as print views. Changing it will affect all of those places.'
-introduction-img: '151.png'
+introduction-img: '152.png'
 prevUrl: 151
 nextUrl: 153
 done: ''
