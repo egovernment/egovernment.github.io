@@ -1,11 +1,11 @@
 ---
 layout: doc-pages
-permalink: /codebase/front-end/
-title: 'eRegistrations - Front-end (CSS & HMTL)'
+permalink: /framework/styles/
+title: 'Styles & View Componenets'
 category: codebase
-weight: 4
+weight: 7
 lang: en
-ref: front-end
+ref: styles
 ---
 
 # CSS organization and conventions style guide

@@ -29,21 +29,18 @@ documentation-pages:
     title:
       en: 'Installation'
       es: 'Instalación'
-  codebase:
-    title:
-      en: 'Codebase'
-      es: 'Código base'
-  architecture:
-    title:
-      en: 'Architecture overview'
-      es: 'Arquitectura del sistema'
-    urls:
-      en: /architecture-overview/
-      es: /arquitectura/
   fundamentals:
     title: 
       en: 'JavaScript basics'
       es: 'Fundamentos de JavaScript'
+  codebase:
+    title:
+      en: 'Framework'
+      es: 'Código base'
+  development:
+    title:
+      en: 'Development'
+      es: 'Development'
   tutorial:
     title:
       en: 'Configuration tutorial'
@@ -68,7 +65,7 @@ training-pages:
       en: 'Duration'
       es: 'Duración'
     level:
-      en: 'level'
+      +en: 'level'
       es: 'nivel'
     diploma:
       en: 'The result of this training is a UNCTAD diploma of'

@@ -20,9 +20,6 @@
 						{% endfor %}
 				</ul>
 		</li>
-		<li class="{% if page.ref == 'architecture' %}active{% endif %}">
-				<a href="{{ site.baseurl }}{{ site.documentation-pages.architecture.urls[page.lang] }}">{{ site.documentation-pages.architecture.title[page.lang] }}</a>
-		</li>
 		<li>
 				<a href="#" class="has-child {% if page.category contains 'codebase' %}active open{% endif %}">{{ site.documentation-pages.codebase.title[page.lang]}}</a>
 				<ul>
@@ -32,8 +29,14 @@
 						{% endfor %}
 				</ul>
 		</li>
-		<li class="{% if page.ref == 'tutorial' %}active{% endif %}">
-				<a href="{{ site.baseurl }}{{ site.documentation-pages.tutorial.urls[page.lang] }}">{{ site.documentation-pages.tutorial.title[page.lang] }}</a>
+		<li>
+				<a href="#" class="has-child {% if page.category contains 'development' %}active open{% endif %}">{{ site.documentation-pages.development.title[page.lang]}}</a>
+				<ul>
+						{% assign devs = site.documentation | where: 'lang', page.lang | where: 'category', 'development' | sort: 'weight' %}
+						{% for dev in devs %}
+						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title | remove: 'eRegistrations - ' }}</a></li>
+						{% endfor %}
+				</ul>
 		</li>
 
 		{% assign how = site.collections | where: 'label', 'how-to' | first %}
