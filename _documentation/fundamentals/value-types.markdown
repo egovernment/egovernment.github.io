@@ -144,6 +144,6 @@ var ensureObject = require('es5-ext/object/valid-object')
 
 module.exports = function (someObject) {
   ensureObject(someObject);
-	...
+  ...
 };
 ```
