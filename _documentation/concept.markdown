@@ -19,7 +19,7 @@ The eRegistrations system is a software allowing swift development of eGovernmen
 <div class="row" style="margin-bottom:40px;">
 	<div class="col-md-6">Administrative procedures are always, in essence, an exchange of information (data and documents) between a user and one or various administrations, irrespective of the content of the data and of the documents. Simplifying an administrative process consists in reducing to the minimum the quantity of data, of documents and of payments requested from users and of interactions between the users and the participating agencies. Ideally, the user fills one (short) form, gives one (limited) set of documents and makes only one payment.</div>	
 	<div class="col-md-4">
-		<a class="btn btn-default" href="https://view.officeapps.live.com/op/embed.aspx?src=http%3A%2F%2Fbusinessfacilitation%2Eorg%3A80%2Fppt%2Fgood_OSS%2Eppt&wdAr=1.3333333333333333" target="_blank"><img class="img-responsive img-thumbnail" src="/img/concept-1.png"></a>
+		<a class="btn btn-default" href="https://view.officeapps.live.com/op/embed.aspx?src=http%3A%2F%2Fbusinessfacilitation%2Eorg%3A80%2Fppt%2Fgood_OSS%2Eppt&wdAr=1.3333333333333333" target="_blank"><img class="img-responsive img-thumbnail" src="/img/concept-1.png" style="max-height:200px;"><p class="text-gray">Click to see the slideshow</p></a>
 	</div>
 </div>
 
@@ -35,7 +35,7 @@ The eRegistrations system is a software allowing swift development of eGovernmen
 		See also this document "<a href="https://unctad.atlassian.net/wiki/display/BPA/Structure+of+eRegistrations-based+applications" target="_blank">Structure of eRegistrations-based applications</a>".
 	</div>
 	<div class="col-md-4">
-		<a class="btn btn-default" href="https://view.officeapps.live.com/op/view.aspx?src=http%3A%2F%2Fbusinessfacilitation.org%2Fppt%2FeRegistrations-Standard%2520structure.pptx" target="_blank"><img class="img-responsive img-thumbnail" src="/img/concept-2.png"></a>
+		<a class="btn btn-default" href="https://view.officeapps.live.com/op/view.aspx?src=http%3A%2F%2Fbusinessfacilitation.org%2Fppt%2FeRegistrations-Standard%2520structure.pptx" target="_blank"><img class="img-responsive img-thumbnail" src="/img/concept-2.png" style="max-height:200px;"><p class="text-gray">Click to see the slideshow</p></a>
 	</div>
 </div>
 
@@ -44,13 +44,13 @@ The eRegistrations system is a software allowing swift development of eGovernmen
 		The user database is a central part of all eRegistrations applications and constitutes one of the main differences between those applications and traditional eGovernment applications, that strive to create interoperability between the systems/databases of the participating agencies. On the contrary, the eRegistrations philosophy is to create a user database where users from which the user information will be shared with the government agencies and where the information issued by the government agencies will also be stored. Interoperability among government agencies is obtained via the user database.  
 	</div>
 	<div class="col-md-4">
-		<a class="btn btn-default" href="https://view.officeapps.live.com/op/embed.aspx?src=http%3A%2F%2Fbusinessfacilitation%2Eorg%3A80%2Fvienna%2Fimages%2Fbasic-principles%2Epps&wdAr=1.3333333333333333" target="_blank"><img class="img-responsive img-thumbnail" src="/img/concept-3.png"></a>
+		<a class="btn btn-default" href="https://view.officeapps.live.com/op/embed.aspx?src=http%3A%2F%2Fbusinessfacilitation%2Eorg%3A80%2Fvienna%2Fimages%2Fbasic-principles%2Epps&wdAr=1.3333333333333333" target="_blank"><img class="img-responsive img-thumbnail" src="/img/concept-3.png" style="max-height:200px;"><p class="text-gray">Click to see the slideshow</p></a>
 	</div>
 </div>
 
 eRegistrations applications are developed along the above described standard structure, independently from the number of participating agencies and from the type of registration or certificates they deliver. It doesn’t matter if the online joint service is about company creation, construction permits, business licenses, sanitary registries, import or export operations. 
 
-The purpose of part A of eRegistrations applications is:
+The purpose of **part A** of eRegistrations applications is:
 <ul>
 	<li>to determine, for each user, what registrations are mandatory and/or optional (A1); for the selected registrations (A2), what are the data, documents and payments that must be provided (A3)</li>
 
@@ -60,9 +60,9 @@ The purpose of part A of eRegistrations applications is:
 </ul>
 
 
-Part B (back office) of eRegistrations applications organizes the flow of information between the users database and the participating agencies. It brings the required information to each agency (data, documents and indication of amounts paid) and gets back the data and documents issued by the agencies.  
+**Part B** (back office) of eRegistrations applications organizes the flow of information between the users database and the participating agencies. It brings the required information to each agency (data, documents and indication of amounts paid) and gets back the data and documents issued by the agencies.  
 
-Another function of Part B (we should maybe call it Part C) is to produces statistics: 
+Another function of Part B (we should maybe call it **Part C**) is to produces statistics: 
 <ul>
 	<li>Analysis of the requests: type and numbers of requests, age, gender, nationality, region, activities, etc. any constructive users’ data</li>
 
