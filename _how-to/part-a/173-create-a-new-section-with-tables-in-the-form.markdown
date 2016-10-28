@@ -17,7 +17,7 @@ ref: 172
 
 The sections are a mechanism which provides abstraction layer between model an the view, and allows for quick creation of the forms.
 
-For exhaustive overview of sections please see [c](https://github.com/egovernment/eregistrations/blob/master/documentation/sections.md).
+For exhaustive overview of sections please see [https://github.com/egovernment/eregistrations/blob/master/documentation/sections.md](https://github.com/egovernment/eregistrations/blob/master/documentation/sections.md).
 
 In order to add a new nested entity section to a service's forms:
 
