@@ -25,6 +25,13 @@ documentation-pages:
     title:
       en: 'Overview'
       es: 'Presentación'
+  concept:
+    title:
+      en: 'Concept'
+      es: 'Concepto'
+    urls:
+      en: '/concept'
+      es: '/concepto'
   installation:
     title:
       en: 'Installation'
