@@ -10,7 +10,7 @@ introduction-text: ''
 introduction-img: '251.png'
 prevUrl: 243
 nextUrl: 252
-done: ''
+done: 'yes'
 lang: en
 ref: 251
 ---
@@ -20,10 +20,9 @@ Every processing step will come with default columns setup for the files table.
 In order to add a column to a files table:
 
 1. Open file `view/<your-official-role>/business-processes-table.js`.
-2. Make sure that you have a local copy of `eregistrations/view/components/business-process-table-columns`.columns.
+2. Make sure that you have a local copy of `columns` exported property from `eregistrations/view/components/business-process-table-columns`.
 <br>(If it's not there already, just copy its value to local variable (you can use `es5-ext/array/from` for copying)).
 3. Once you have a local copy of `columns` property add your new column definition* at a desired place in the array.
-
 
 *- The column definition is an object which looks like this:
 
@@ -47,13 +46,13 @@ Add column displaying `sealDate` for the business processes table of *"Social Se
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/add-a-column-to-the-list-of-files-for-one-role...add-a-column-to-the-list-of-files-for-one-role-solution#files')">
 
-    
+
 <a name="diff-855d5a90e18da14963222196bc59a4e9"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="apps-common/business-process-list-properties.js">
@@ -75,13 +74,13 @@ Add column displaying `sealDate` for the business processes table of *"Social Se
       <span class="user-select-contain" title="apps-common/business-process-list-properties.js">
         apps-common/business-process-list-properties.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-855d5a90e18da14963222196bc59a4e9" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/d313b06735fc9453de182cc59dd9a57290cf6cb7?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=4&amp;mode=100644&amp;next_line_num_left=6&amp;next_line_num_right=6&amp;path=apps-common%2Fbusiness-process-list-properties.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=4" data-left-range="1-5" data-right-range="1-5">
@@ -162,13 +161,13 @@ Add column displaying `sealDate` for the business processes table of *"Social Se
 
 </div>
 
-    
+
 <a name="diff-8cf097ee0a9820ce4bd82250eab720f4"></a>
 <div id="diff-1" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="view/official-social-security/business-processes-table.js">
@@ -190,13 +189,13 @@ Add column displaying `sealDate` for the business processes table of *"Social Se
       <span class="user-select-contain" title="view/official-social-security/business-processes-table.js">
         view/official-social-security/business-processes-table.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr data-position="0">
     <td id="diff-8cf097ee0a9820ce4bd82250eab720f4L0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
     <td id="diff-8cf097ee0a9820ce4bd82250eab720f4R0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
