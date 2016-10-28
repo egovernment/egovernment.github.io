@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
 permalink: /framework/architecture
-title: 'Architecture overview'
+title: 'Architecture Overview'
 category: 'codebase'
 lang: en
 ref: architecture

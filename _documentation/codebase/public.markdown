@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
 permalink: /framework/public-pages/
-title: 'Public pages'
+title: 'Public Pages'
 category: codebase
 weight: 8
 lang: en

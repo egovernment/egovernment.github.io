@@ -38,7 +38,7 @@ documentation-pages:
       es: 'Instalación'
   fundamentals:
     title: 
-      en: 'JavaScript basics'
+      en: 'JavaScript Basics'
       es: 'Fundamentos de JavaScript'
   codebase:
     title:
@@ -50,7 +50,7 @@ documentation-pages:
       es: 'Development'
   tutorial:
     title:
-      en: 'Configuration tutorial'
+      en: 'Configuration Tutorial'
       es: 'Tutorial de configuración'
     urls:
       en: '/configuration-tutorial'
