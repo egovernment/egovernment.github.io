@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="container-fluid">
+    	<div class="row">
+
+    		<article class="col-xs-12 main-content" role="main" id="content">
+    			<div class="row post-content">
+    				{{ content }}
+    			</div>
+    		</article>
+
+    	</div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
