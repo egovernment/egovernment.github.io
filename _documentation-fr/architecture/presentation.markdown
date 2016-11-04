@@ -1,6 +1,6 @@
 ---
 layout: doc-pages-fr
-permalink: /fr/architecture/overview
+permalink: /fr/architecture/structure
 title: "Structure"
 category: 'architecture-fr'
 lang: fr
@@ -12,6 +12,7 @@ weight: 1
 
 
 <img src="../../img/architecture-applicative.png" />
+{: .img-responsive }
 
 Le système eRegistrations est conçu sur la base de l’architecture MVC (Modèle-Vue-Contrôleur).
 Cette architecture a pour but de séparer la logique métier des considérations d’interface utilisateur, de sorte que les développeurs peuvent plus facilement changer chaque partie sans affecter l’autre.
