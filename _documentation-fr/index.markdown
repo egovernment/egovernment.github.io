@@ -1,8 +1,9 @@
 ---
 layout: doc-pages-fr
 permalink: /documentation-fr/
-title: 'Documentation FR'
+title: 'Accueil'
 lang: fr
+category: accueil-fr
 ref: doc-fr
 ---
 
