@@ -11,7 +11,7 @@ h2 { font-size: 32px; margin-top: 42px; }
 h3 { font-size: 26px; }
 h4 { font-size: 22px; }
 
-.img-repsonsive img {
+.img-responsive img {
 	max-width: 100%;
 }
 
