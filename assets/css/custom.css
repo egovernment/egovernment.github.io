@@ -11,6 +11,10 @@ h2 { font-size: 32px; margin-top: 42px; }
 h3 { font-size: 26px; }
 h4 { font-size: 22px; }
 
+.img-repsonsive img {
+	max-width: 100%;
+}
+
 .navbar-default .navbar-nav>li>a.lang-select {
     font-weight: 100;
     display: inline-block;
