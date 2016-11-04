@@ -25,31 +25,32 @@ documentation-pages:
     title:
       en: 'Overview'
       es: 'Presentación'
+  concept:
+    title:
+      en: 'Concept'
+      es: 'Concepto'
+    urls:
+      en: '/concept'
+      es: '/concepto'
   installation:
     title:
       en: 'Installation'
       es: 'Instalación'
+  fundamentals:
+    title:
+      en: 'JavaScript Basics'
+      es: 'Fundamentos de JavaScript'
   codebase:
     title:
-      en: 'Codebase'
+      en: 'Framework'
       es: 'Código base'
-  architecture:
+  development:
     title:
-      en: 'Architecture overview'
-      es: 'Arquitectura del sistema'
-    urls:
-      en: /architecture-overview/
-      es: /arquitectura/
-  fundamentals:
-    title: 
-      en: 'Fundamentals of JavaScript'
-      es: 'Fundamentos de JavaScript'
-    urls:
-      en: '/fundamentals'
-      es: '/fundamentos'
+      en: 'Development'
+      es: 'Development'
   tutorial:
     title:
-      en: 'Configuration tutorial'
+      en: 'Configuration Tutorial'
       es: 'Tutorial de configuración'
     urls:
       en: '/configuration-tutorial'
@@ -71,7 +72,7 @@ training-pages:
       en: 'Duration'
       es: 'Duración'
     level:
-      en: 'level'
+      +en: 'level'
       es: 'nivel'
     diploma:
       en: 'The result of this training is a UNCTAD diploma of'
@@ -82,34 +83,41 @@ markdown: kramdown
 
 # Collections
 collections:
+  documentation-fr:
+    output: true
   documentation:
     output: true
     title:
         en: 'Documentation'
         es: 'Documentación'
+        fr: 'Documentation'
     baseurl:
         en: '/documentation'
         es: '/documentacion'
+        fr: '/documentation'
   how-to:
     output: true
     title:
         en: 'How-to'
         es: 'Cómo hacer'
+        fr: 'Tutoriels'
     link-title:
         en: 'Search'
         es: 'Buscar'
     baseurl:
         en: '/how-to'
         es: '/como'
+        fr: '/how-to'
   trainings:
     output: true
     title:
         en: 'Trainings'
         es: 'Capacitaciones'
+        fr: 'Exercices'
     link-title:
         en: 'List'
         es: 'Lista'
     baseurl:
         en: '/trainings'
         es: '/capacitaciones'
-
+        fr: '/trainings'

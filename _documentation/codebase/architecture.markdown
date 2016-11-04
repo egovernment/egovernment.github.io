@@ -1,9 +1,11 @@
 ---
 layout: doc-pages
-permalink: /architecture-overview/
-title: 'eRegistrations - Architecture overview'
+permalink: /framework/architecture
+title: 'Architecture Overview'
+category: 'codebase'
 lang: en
 ref: architecture
+weight: 1
 ---
 
 <span class="label label-warning">To be updated</span>
