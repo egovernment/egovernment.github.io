@@ -56,8 +56,8 @@
               {% assign trainings=site.trainings | where:"ref", page.ref | sort: 'lang' %}
               {% for training in trainings %} {% unless page.lang contains training.lang %}<li><a href="{{ training.url | prepend: site.baseurl }}" class="lang-select {{ training.lang }}"><img src="{{ site.baseurl }}/img/{{ training.lang }}.png"></a></li>{% endunless %} {% endfor %}
 
-							<li class="{% if page.url contains 'documentation-fr' %}hidden{% endif %}"><a href="{{ site.baseurl }}/documentation-fr" class="lang-select fr"><img src="{{ site.baseurl }}/img/fr.png"></a></li>
-							{% if page.url contains 'documentation-fr' %}
+							<li class="{% if page.lang contains 'fr' %}hidden{% endif %}"><a href="{{ site.baseurl }}/fr" class="lang-select fr"><img src="{{ site.baseurl }}/img/fr.png"></a></li>
+							{% if page.lang contains 'fr' %}
 								<li><a href="{{ site.baseurl }}/" class="lang-select en"><img src="{{ site.baseurl }}/img/en.png"></a></li>
 								<li><a href="{{ site.baseurl }}/inicio.html" class="lang-select es"><img src="{{ site.baseurl }}/img/es.png"></a></li>
 							{% endif %}

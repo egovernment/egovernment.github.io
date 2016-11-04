@@ -1,6 +1,6 @@
 ---
 layout: doc-pages-fr
-permalink: /documentation-fr/installation/automatique
+permalink: /fr/installation/automatique
 title: 'Installation automatique via Docker Compose'
 category: 'installation-fr'
 lang: fr
