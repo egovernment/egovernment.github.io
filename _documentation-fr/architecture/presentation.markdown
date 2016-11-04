@@ -1,6 +1,6 @@
 ---
 layout: doc-pages-fr
-permalink: /documentation-fr/architecture/overview
+permalink: /fr/architecture/overview
 title: "Overview"
 category: 'architecture-fr'
 lang: fr

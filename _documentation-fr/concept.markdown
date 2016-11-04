@@ -1,6 +1,6 @@
 ---
 layout: doc-pages-fr
-permalink: /documentation-fr/concept
+permalink: /fr/concept
 title: 'Concept'
 lang: fr
 category: concept-fr

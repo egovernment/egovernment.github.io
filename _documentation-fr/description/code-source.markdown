@@ -1,6 +1,6 @@
 ---
 layout: doc-pages-fr
-permalink: /documentation-fr/description/overview
+permalink: /fr/description/overview
 title: "Description du code source"
 category: 'description-fr'
 lang: fr
