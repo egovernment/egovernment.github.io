@@ -3,7 +3,7 @@ layout: doc-pages-fr
 permalink: /documentation-fr/installation/modes
 title: "1.1 Modes d'installation"
 category: 'installation-fr'
-lang: en
+lang: fr
 ref: installation-fr-1-1
 weight: 1
 ---

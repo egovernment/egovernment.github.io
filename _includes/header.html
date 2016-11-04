@@ -43,16 +43,22 @@
 						</a>
 						<ul class="dropdown-menu">
               {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-              {% for page in pages %} <li><a href="{{ page.url | prepend: site.baseurl }}" class="lang-select {{ page.lang }}"><img src="{{ site.baseurl }}/img/{{ page.lang }}.png"></a></li> {% endfor %}
+              {% for pagein in pages %} {% unless page.lang contains pagein.lang %}<li><a href="{{ pagein.url | prepend: site.baseurl }}" class="lang-select {{ pagein.lang }}"><img src="{{ site.baseurl }}/img/{{ pagein.lang }}.png"></a></li>{% endunless %} {% endfor %}
 
               {% assign docs=site.documentation | where:"ref", page.ref | sort: 'lang' %}
-              {% for doc in docs %} <li><a href="{{ doc.url | prepend: site.baseurl }}" class="lang-select {{ doc.lang }}"><img src="{{ site.baseurl }}/img/{{ doc.lang }}.png"></a></li> {% endfor %}
+              {% for doc in docs %} {% unless page.lang contains doc.lang %}<li><a href="{{ doc.url | prepend: site.baseurl }}" class="lang-select {{ doc.lang }}"><img src="{{ site.baseurl }}/img/{{ doc.lang }}.png"></a></li>{% endunless %} {% endfor %}
 
               {% assign hows=site.how-to | where:"ref", page.ref | sort: 'lang' %}
-              {% for how in hows %} <li><a href="{{ how.url | prepend: site.baseurl }}" class="lang-select {{ how.lang }}"><img src="{{ site.baseurl }}/img/{{ how.lang }}.png"></a></li> {% endfor %}
+              {% for how in hows %} {% unless page.lang contains how.lang %}<li><a href="{{ how.url | prepend: site.baseurl }}" class="lang-select {{ how.lang }}"><img src="{{ site.baseurl }}/img/{{ how.lang }}.png"></a></li>{% endunless %} {% endfor %}
 
               {% assign trainings=site.trainings | where:"ref", page.ref | sort: 'lang' %}
-              {% for training in trainings %} <li><a href="{{ training.url | prepend: site.baseurl }}" class="lang-select {{ training.lang }}"><img src="{{ site.baseurl }}/img/{{ training.lang }}.png"></a></li> {% endfor %}
+              {% for training in trainings %} {% unless page.lang contains training.lang %}<li><a href="{{ training.url | prepend: site.baseurl }}" class="lang-select {{ training.lang }}"><img src="{{ site.baseurl }}/img/{{ training.lang }}.png"></a></li>{% endunless %} {% endfor %}
+
+							<li class="{% if page.url contains 'documentation-fr' %}hidden{% endif %}"><a href="{{ site.baseurl }}/documentation-fr" class="lang-select fr"><img src="{{ site.baseurl }}/img/fr.png"></a></li>
+							{% if page.url contains 'documentation-fr' %}
+								<li><a href="{{ site.baseurl }}/" class="lang-select en"><img src="{{ site.baseurl }}/img/en.png"></a></li>
+								<li><a href="{{ site.baseurl }}/inicio.html" class="lang-select es"><img src="{{ site.baseurl }}/img/es.png"></a></li>
+							{% endif %}
 						</ul>
           </li>
         </ul>

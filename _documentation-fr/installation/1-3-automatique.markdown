@@ -3,7 +3,7 @@ layout: doc-pages-fr
 permalink: /documentation-fr/installation/automatique
 title: '1.3 Installation automatique via Docker Compose'
 category: 'installation-fr'
-lang: en
+lang: fr
 ref: installation-fr-1-3
 weight: 3
 ---

@@ -2,7 +2,7 @@
 layout: doc-pages-fr
 permalink: /documentation-fr/
 title: 'Documentation FR'
-lang: en
+lang: fr
 ref: doc-fr
 ---
 

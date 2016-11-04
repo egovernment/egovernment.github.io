@@ -90,28 +90,34 @@ collections:
     title:
         en: 'Documentation'
         es: 'Documentación'
+        fr: 'Documentation'
     baseurl:
         en: '/documentation'
         es: '/documentacion'
+        fr: '/documentation'
   how-to:
     output: true
     title:
         en: 'How-to'
         es: 'Cómo hacer'
+        fr: 'Tutoriels'
     link-title:
         en: 'Search'
         es: 'Buscar'
     baseurl:
         en: '/how-to'
         es: '/como'
+        fr: '/how-to'
   trainings:
     output: true
     title:
         en: 'Trainings'
         es: 'Capacitaciones'
+        fr: 'Exercices'
     link-title:
         en: 'List'
         es: 'Lista'
     baseurl:
         en: '/trainings'
         es: '/capacitaciones'
+        fr: '/trainings'

@@ -30,8 +30,17 @@ h4 { font-size: 22px; }
     display: none;
 }*/
 
-.navbar-default .navbar-nav>li>a>img {
+.navbar-default .navbar-nav li a img {
 	height: 20px;
+}
+
+.nav .dropdown-menu>li>a {
+    padding: 8px 14px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	min-width: inherit;
+	padding: 0;
 }
 
 .mt0 {
