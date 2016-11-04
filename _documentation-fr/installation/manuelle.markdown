@@ -18,22 +18,24 @@ Le système eRegistrations peut être installé sur différents systèmes d’ex
 
 Une mise en service standard du système nécessite l’installation des composants logiciels de base :
 
-| Composant | Logiciel | Version  | Documentation | 
-| --- | --- | --- | --- | 
+| Composant | Logiciel | Version  | Documentation |
+| --- | --- | --- | --- |
 | Serveur web | Apache | 2.2.31+| [lien](http://httpd.apache.org/docs/) |
-| Reverse proxy | nginx | 1.11+ | [lien](https://nginx.org/en/docs/) | 
-| Base de données | MySQL| 5.5+ | [lien](https://dev.mysql.com/downloads/mysql/) | 
-| Interpréteur | PHP | 5.4.25+ | [lien](http://php.net/) | 
-| Framework| Yii| 1.1.17| [lien](http://www.yiiframework.com/download/) | 
-| Impression PDF| WkHTMLtoPDF| 0.12.3+| [lien](http://wkhtmltopdf.org/downloads.html) | 
- 
+| Reverse proxy | nginx | 1.11+ | [lien](https://nginx.org/en/docs/) |
+| Base de données | MySQL| 5.5+ | [lien](https://dev.mysql.com/downloads/mysql/) |
+| Interpréteur | PHP | 5.4.25+ | [lien](http://php.net/) |
+| Framework| Yii| 1.1.17| [lien](http://www.yiiframework.com/download/) |
+| Impression PDF| WkHTMLtoPDF| 0.12.3+| [lien](http://wkhtmltopdf.org/downloads.html) |
+{: .table }
+
 ## Extensions PHP requises
 
-| curl | dom | fileinfo | gd | imagick | json | 
-| mysqli | opcache | pdo | pdo_mysql | soap | xmlreader | 
+| curl | dom | fileinfo | gd | imagick | json |
+| mysqli | opcache | pdo | pdo_mysql | soap | xmlreader |
 | mbstring | mcrypt | memcached | xmlrpc | xmlwriter | zip |
+{: .table .table-bordered }
 
- 
+
 ## Configuration Apache et Nginx
 
 Le système peut fonctionner correctement avec une installation par défaut d’Apache. Nginx peut être utilisé comme Reverse Proxy avec l’interface PHP-FPM (FastCGI Process Manager).
@@ -51,8 +53,8 @@ Créer la base de données :
 ```sql
 CREATE DATABASE ‘ eregis_db ‘ CHARACTER SET utf8 COLLATE utf8_general_ci; GRANT ALL ON ‘ eregis_db ‘.* TO ‘username‘@localhost IDENTIFIED BY ‘password’;
 ```
- 
-Importer la base de données : 
+
+Importer la base de données :
 ```sql
 mysql -u username -p password eregis_db < script.sql
 ```
