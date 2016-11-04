@@ -4,7 +4,7 @@ permalink: /fr/architecture/structure
 title: "Structure"
 category: 'architecture-fr'
 lang: fr
-ref: architecture-fr-overview
+ref: architecture-fr-structure
 weight: 1
 ---
 
