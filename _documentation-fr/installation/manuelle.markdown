@@ -54,7 +54,8 @@ Créer la base de données :
 CREATE DATABASE ‘ eregis_db ‘ CHARACTER SET utf8 COLLATE utf8_general_ci; GRANT ALL ON ‘ eregis_db ‘.* TO ‘username‘@localhost IDENTIFIED BY ‘password’;
 ```
 
-Importer la base de données :
+Importer la base de données : 
+
 ```sql
 mysql -u username -p password eregis_db < script.sql
 ```
