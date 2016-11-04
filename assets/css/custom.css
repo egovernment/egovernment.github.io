@@ -506,3 +506,10 @@ h1 a:before, h2 a:before, h3 a:before {
 .site-header .navbar-brand.logo-tanzania {
 	display: none;
 }
+
+/* responsive */
+@media screen and (max-width:767px) {
+	header {
+		padding-top: 30px !important;
+	}
+}
