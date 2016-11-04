@@ -1,0 +1,40 @@
+<ul class="sidenav dropable sticky">
+		<li class="{% if page.category contains 'accueil-fr' %}active open{% endif %}">
+			<a href="{{ site.baseurl }}/documentation-fr">Accueil</a>
+		</li>
+
+		<li class="{% if page.category contains 'concept-fr' %}active open{% endif %}">
+			<a href="{{ site.baseurl }}/documentation-fr/concept">Concept</a>
+		</li>
+
+		<li>
+				<a href="#" class="has-child {% if page.category contains 'installation-fr' %}active open{% endif %}">Installation</a>
+				<ul>
+						{% assign devs = site.documentation-fr | where: 'category', 'installation-fr' | sort: 'weight' %}
+						{% for dev in devs %}
+						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title }}</a></li>
+						{% endfor %}
+				</ul>
+		</li>
+
+		<li>
+				<a href="#" class="has-child {% if page.category contains 'description-fr' %}active open{% endif %}">Description</a>
+				<ul>
+						{% assign devs = site.documentation-fr | where: 'category', 'description-fr' | sort: 'weight' %}
+						{% for dev in devs %}
+						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title }}</a></li>
+						{% endfor %}
+				</ul>
+		</li>
+
+		<li>
+				<a href="#" class="has-child {% if page.category contains 'architecture-fr' %}active open{% endif %}">Architecture applicative</a>
+				<ul>
+						{% assign devs = site.documentation-fr | where: 'category', 'architecture-fr' | sort: 'weight' %}
+						{% for dev in devs %}
+						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title }}</a></li>
+						{% endfor %}
+				</ul>
+		</li>
+
+</ul>

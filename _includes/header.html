@@ -28,27 +28,40 @@
       <!-- Top navbar -->
       <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
         <ul class="nav navbar-nav navbar-right">
-          <li class="{% unless page.url contains 'how-to' or page.url contains 'como' or page.url contains 'trainings' or page.url contains 'capacitaciones' %}active{% endunless %}">
+          <li class="{% unless page.url contains 'how-to' or page.url contains 'como' or page.url contains 'trainings' or page.url contains 'capacitaciones' or page.url contains '-fr' %}active{% endunless %}">
             <a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ doc.title[page.lang] }}</a>
           </li>
+					{% unless page.lang contains 'fr' %}
           <li class="{% if page.url contains how.baseurl[page.lang] %}active{% endif %}">
             <a href="{{ site.baseurl }}{{ how.baseurl[page.lang] }}">{{ how.title[page.lang] }}</a>
           </li>
           <li class="{% if page.url contains training.baseurl[page.lang] %}active{% endif %}">
             <a href="{{ site.baseurl }}{{ training.baseurl[page.lang] }}">{{ training.title[page.lang] }}</a>
           </li>
-          <li>
+					{% endunless %}
+          <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<img src="{{ site.baseurl }}/img/{{ page.lang }}.png">
+						</a>
+						<ul class="dropdown-menu">
               {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-              {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="lang-select {{ page.lang }}"><img src="{{ site.baseurl }}/img/{{ page.lang }}.png"></a> {% endfor %}
+              {% for pagein in pages %} {% unless page.lang contains pagein.lang %}<li><a href="{{ pagein.url | prepend: site.baseurl }}" class="lang-select {{ pagein.lang }}"><img src="{{ site.baseurl }}/img/{{ pagein.lang }}.png"></a></li>{% endunless %} {% endfor %}
 
               {% assign docs=site.documentation | where:"ref", page.ref | sort: 'lang' %}
-              {% for doc in docs %} <a href="{{ doc.url | prepend: site.baseurl }}" class="lang-select {{ doc.lang }}"><img src="{{ site.baseurl }}/img/{{ doc.lang }}.png"></a> {% endfor %}
+              {% for doc in docs %} {% unless page.lang contains doc.lang %}<li><a href="{{ doc.url | prepend: site.baseurl }}" class="lang-select {{ doc.lang }}"><img src="{{ site.baseurl }}/img/{{ doc.lang }}.png"></a></li>{% endunless %} {% endfor %}
 
               {% assign hows=site.how-to | where:"ref", page.ref | sort: 'lang' %}
-              {% for how in hows %} <a href="{{ how.url | prepend: site.baseurl }}" class="lang-select {{ how.lang }}"><img src="{{ site.baseurl }}/img/{{ how.lang }}.png"></a> {% endfor %}
+              {% for how in hows %} {% unless page.lang contains how.lang %}<li><a href="{{ how.url | prepend: site.baseurl }}" class="lang-select {{ how.lang }}"><img src="{{ site.baseurl }}/img/{{ how.lang }}.png"></a></li>{% endunless %} {% endfor %}
 
               {% assign trainings=site.trainings | where:"ref", page.ref | sort: 'lang' %}
-              {% for training in trainings %} <a href="{{ training.url | prepend: site.baseurl }}" class="lang-select {{ training.lang }}"><img src="{{ site.baseurl }}/img/{{ training.lang }}.png"></a> {% endfor %}
+              {% for training in trainings %} {% unless page.lang contains training.lang %}<li><a href="{{ training.url | prepend: site.baseurl }}" class="lang-select {{ training.lang }}"><img src="{{ site.baseurl }}/img/{{ training.lang }}.png"></a></li>{% endunless %} {% endfor %}
+
+							<li class="{% if page.url contains 'documentation-fr' %}hidden{% endif %}"><a href="{{ site.baseurl }}/documentation-fr" class="lang-select fr"><img src="{{ site.baseurl }}/img/fr.png"></a></li>
+							{% if page.url contains 'documentation-fr' %}
+								<li><a href="{{ site.baseurl }}/" class="lang-select en"><img src="{{ site.baseurl }}/img/en.png"></a></li>
+								<li><a href="{{ site.baseurl }}/inicio.html" class="lang-select es"><img src="{{ site.baseurl }}/img/es.png"></a></li>
+							{% endif %}
+						</ul>
           </li>
         </ul>
       </div>

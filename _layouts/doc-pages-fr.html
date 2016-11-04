@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="container-fluid">
+    	<div class="row">
+
+				<aside class="col-lg-2 col-md-3 col-sm-3 sidebar">
+    			{% include sidemenu-documentation-fr.html %}
+    		</aside>
+
+    		<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
+    			<div class="row post-content">
+    				{{ content }}
+    			</div>
+    		</article>
+
+    	</div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
