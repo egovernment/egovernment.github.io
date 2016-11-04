@@ -8,7 +8,7 @@
 		</li>
 
 		<li>
-				<a href="#" class="has-child {% if page.category contains 'installation-fr' %}active open{% endif %}">1. Installation</a>
+				<a href="#" class="has-child {% if page.category contains 'installation-fr' %}active open{% endif %}">Installation</a>
 				<ul>
 						{% assign devs = site.documentation-fr | where: 'category', 'installation-fr' | sort: 'weight' %}
 						{% for dev in devs %}
@@ -18,7 +18,7 @@
 		</li>
 
 		<li>
-				<a href="#" class="has-child {% if page.category contains 'description-fr' %}active open{% endif %}">2. Description</a>
+				<a href="#" class="has-child {% if page.category contains 'description-fr' %}active open{% endif %}">Description</a>
 				<ul>
 						{% assign devs = site.documentation-fr | where: 'category', 'description-fr' | sort: 'weight' %}
 						{% for dev in devs %}
@@ -28,7 +28,7 @@
 		</li>
 
 		<li>
-				<a href="#" class="has-child {% if page.category contains 'architecture-fr' %}active open{% endif %}">3. Architecture applicative</a>
+				<a href="#" class="has-child {% if page.category contains 'architecture-fr' %}active open{% endif %}">Architecture applicative</a>
 				<ul>
 						{% assign devs = site.documentation-fr | where: 'category', 'architecture-fr' | sort: 'weight' %}
 						{% for dev in devs %}
