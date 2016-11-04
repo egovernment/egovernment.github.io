@@ -9,4 +9,24 @@
 				</ul>
 		</li>
 
+		<li>
+				<a href="#" class="has-child {% if page.category contains 'description-fr' %}active open{% endif %}">2. Description</a>
+				<ul>
+						{% assign devs = site.documentation-fr | where: 'category', 'description-fr' | sort: 'weight' %}
+						{% for dev in devs %}
+						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title }}</a></li>
+						{% endfor %}
+				</ul>
+		</li>
+
+		<li>
+				<a href="#" class="has-child {% if page.category contains 'architecture-fr' %}active open{% endif %}">3. Architecture applicative</a>
+				<ul>
+						{% assign devs = site.documentation-fr | where: 'category', 'architecture-fr' | sort: 'weight' %}
+						{% for dev in devs %}
+						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title }}</a></li>
+						{% endfor %}
+				</ul>
+		</li>
+
 </ul>
