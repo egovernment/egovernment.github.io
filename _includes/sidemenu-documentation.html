@@ -1,16 +1,16 @@
 <ul class="sidenav dropable sticky">
 	<li class="{% if page.ref == 'index' %}active{% endif %}">
-				<a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ site.documentation-pages.overview.title[page.lang]}}</a>
+				<a href="{{ site.index[page.lang] | prepend: site.baseurl }}">{{ site.documentation-pages.overview.title[page.lang]}}</a>
 		</li>
 		    <li class="{% if page.ref == 'concept' %}active{% endif %}">
-        <a href="{{ site.baseurl }}{{ site.documentation-pages.concept.urls[page.lang] }}">{{ site.documentation-pages.concept.title[page.lang] }}</a>
+        <a href="{{ site.documentation-pages.concept.urls[page.lang] | prepend: site.baseurl }}">{{ site.documentation-pages.concept.title[page.lang] }}</a>
     </li>
 		<li>
 				<a href="#" class="has-child {% if page.category contains 'installation' %}active open{% endif %}">{{ site.documentation-pages.installation.title[page.lang]}}</a>
 				<ul>
 						{% assign installs = site.documentation | where: 'lang', page.lang | where: 'category', 'installation' | sort: 'weight' %}
 						{% for install in installs %}
-						<li class="{% if page.url == install.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ install.url }}">{{ install.title | remove: 'eRegistrations - ' }}</a></li>
+						<li class="{% if page.url == install.url %}active{% endif %}"><a href="{{ install.url | prepend: site.baseurl }}">{{ install.title | remove: 'eRegistrations - ' }}</a></li>
 						{% endfor %}
 				</ul>
 		</li>
@@ -19,7 +19,7 @@
 				<ul>
 						{% assign fundamentals = site.documentation | where: 'lang', page.lang | where: 'category', 'fundamentals' | sort: 'weight' %}
 						{% for fundamental in fundamentals %}
-						<li class="{% if page.url == fundamental.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ fundamental.url }}">{{ fundamental.title | remove: 'eRegistrations - ' }}</a></li>
+						<li class="{% if page.url == fundamental.url %}active{% endif %}"><a href="{{ fundamental.url | prepend: site.baseurl }}">{{ fundamental.title | remove: 'eRegistrations - ' }}</a></li>
 						{% endfor %}
 				</ul>
 		</li>
@@ -28,7 +28,7 @@
 				<ul>
 						{% assign codes = site.documentation | where: 'lang', page.lang | where: 'category', 'codebase' | sort: 'weight' %}
 						{% for code in codes %}
-						<li class="{% if page.url == code.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ code.url }}">{{ code.title | remove: 'eRegistrations - ' }}</a></li>
+						<li class="{% if page.url == code.url %}active{% endif %}"><a href="{{ code.url | prepend: site.baseurl}}">{{ code.title | remove: 'eRegistrations - ' }}</a></li>
 						{% endfor %}
 				</ul>
 		</li>
@@ -37,7 +37,7 @@
 				<ul>
 						{% assign devs = site.documentation | where: 'lang', page.lang | where: 'category', 'development' | sort: 'weight' %}
 						{% for dev in devs %}
-						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title | remove: 'eRegistrations - ' }}</a></li>
+						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ dev.url | prepend: site.baseurl }}">{{ dev.title | remove: 'eRegistrations - ' }}</a></li>
 						{% endfor %}
 				</ul>
 		</li>
@@ -45,9 +45,9 @@
 		{% assign how = site.collections | where: 'label', 'how-to' | first %}
 		{% assign training = site.collections | where: 'label', 'trainings' | first %}
 		<li class="{% if page.url contains how.baseurl[page.lang] %}active{% endif %}">
-				<a href="{{ site.baseurl }}{{ how.baseurl[page.lang] }}">{{ how.title[page.lang] }}</a>
+				<a href="{{ how.baseurl[page.lang] | prepend: site.baseurl }}">{{ how.title[page.lang] }}</a>
 		</li>
 		<li class="{% if page.url contains training.baseurl[page.lang] %}active{% endif %}">
-				<a href="{{ site.baseurl }}{{ training.baseurl[page.lang] }}">{{ training.title[page.lang] }}</a>
+				<a href="{{ training.baseurl[page.lang] | prepend: site.baseurl }}">{{ training.title[page.lang] }}</a>
 		</li>
 </ul>
