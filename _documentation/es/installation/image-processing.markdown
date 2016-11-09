@@ -4,7 +4,7 @@ permalink: /instalación/proceso-de-imagenes/
 title: 'Proceso de imagenes'
 category: 'installation'
 weight: 5
-lang: en
+lang: es
 ref: image-processing
 ---
 

@@ -4,7 +4,7 @@ permalink: /instalacion/desarrollo/
 title: 'Para desarrollo'
 category: 'installation'
 weight: 1
-lang: en
+lang: es
 ref: development
 ---
 

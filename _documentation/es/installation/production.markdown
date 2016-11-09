@@ -4,7 +4,7 @@ permalink: /instalacion/produccion/
 title: 'Para producción'
 category: 'installation'
 weight: 3
-lang: en
+lang: es
 ref: production
 ---
 

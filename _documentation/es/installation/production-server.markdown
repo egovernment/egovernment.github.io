@@ -4,7 +4,7 @@ permalink: /instalacion/servidor/
 title: 'Requisitos para el servidor de producción'
 category: 'installation'
 weight: 2
-lang: en
+lang: es
 ref: server
 ---
 
