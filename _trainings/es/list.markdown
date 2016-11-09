@@ -38,3 +38,4 @@ MiNegocio.gt | Inscripción o registro de empresa y comerciante individual | [li
   </tbody>
 </table>
 {% endfor %}
+--->
