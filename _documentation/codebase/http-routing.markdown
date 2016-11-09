@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /framework/http-routing
+permalink: /framework/http-routing/
 title: 'HTTP Routing'
 category: 'codebase'
 lang: en

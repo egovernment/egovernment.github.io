@@ -1,9 +1,9 @@
 ---
 layout: doc-pages
-permalink: /fundamentals/duck-typing/
+permalink: /fundamentales/duck-typing/
 title: 'Duck Typing'
 category: 'fundamentals'
-lang: en
+lang: es
 ref: duck-typing
 weight: 3
 ---

@@ -1,6 +1,6 @@
 ---
 layout: doc-pages-fr
-permalink: /fr/architecture/flux
+permalink: /fr/architecture/flux/
 title: "Flux de travail typique"
 category: 'architecture-fr'
 lang: fr

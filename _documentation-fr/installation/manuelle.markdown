@@ -1,6 +1,6 @@
 ---
 layout: doc-pages-fr
-permalink: /fr/installation/manuelle
+permalink: /fr/installation/manuelle/
 title: 'Installation manuelle'
 category: 'installation-fr'
 lang: fr

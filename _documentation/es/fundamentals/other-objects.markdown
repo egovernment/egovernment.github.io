@@ -1,9 +1,9 @@
 ---
 layout: doc-pages
-permalink: /fundamentals/other-objects/
+permalink: /fundamentales/other-objects/
 title: 'Other Object Types'
 category: 'fundamentals'
-lang: en
+lang: es
 ref: other-objects
 weight: 4
 ---

@@ -1,9 +1,9 @@
 ---
 layout: doc-pages
-permalink: /development/lint/
-title: 'Linter Configuration'
+permalink: /desarrollo/lint/
+title: 'Configuración de Lint'
 category: 'development'
-lang: en
+lang: es
 ref: lint
 weight: 2
 ---

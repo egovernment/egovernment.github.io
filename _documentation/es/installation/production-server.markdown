@@ -1,10 +1,10 @@
 ---
 layout: doc-pages
-permalink: /installation/server/
-title: 'Production Server Requirements'
+permalink: /instalacion/servidor/
+title: 'Requisitos para el servidor de producción'
 category: 'installation'
 weight: 2
-lang: en
+lang: es
 ref: server
 ---
 

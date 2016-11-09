@@ -1,10 +1,10 @@
 ---	
 layout: doc-pages	
-permalink: /installation/enviroment-configuration/	
-title: 'Environment Configuration File'						
+permalink: /instalacion/entorno-configuracion/	
+title: 'Archivo de configuración del entorno'						
 category: 'installation'					
 weight: 4	
-lang: en	
+lang: es	
 ref: env	
 ---	 
 

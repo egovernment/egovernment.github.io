@@ -1,9 +1,9 @@
 ---
 layout: doc-pages
-permalink: /development/workflow/
-title: 'Workflow'
+permalink: /desarrollo/workflow/
+title: 'Flujo de trabajo'
 category: 'development'
-lang: en
+lang: es
 ref: workflow
 weight: 1
 ---
