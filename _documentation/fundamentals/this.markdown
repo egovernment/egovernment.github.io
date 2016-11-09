@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /fundamentals/this
+permalink: /fundamentals/this/
 title: 'Understanding "this"'
 category: 'fundamentals'
 lang: en

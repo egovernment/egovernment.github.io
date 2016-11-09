@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /framework/authentication
+permalink: /framework/authentication/
 title: 'Authentication'
 category: 'codebase'
 lang: en

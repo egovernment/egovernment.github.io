@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
-permalink: /installation/nginx/
-title: 'nGinx Configuration'
+permalink: /instalacion/nginx/
+title: 'Configuración de nGinx'
 category: 'installation'
 weight: 7
 lang: en

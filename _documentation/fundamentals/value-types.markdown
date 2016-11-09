@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /fundamentals/value-types
+permalink: /fundamentals/value-types/
 title: 'Value Types'
 category: 'fundamentals'
 lang: en

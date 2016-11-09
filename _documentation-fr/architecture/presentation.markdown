@@ -1,6 +1,6 @@
 ---
 layout: doc-pages-fr
-permalink: /fr/architecture/structure
+permalink: /fr/architecture/structure/
 title: "Structure"
 category: 'architecture-fr'
 lang: fr

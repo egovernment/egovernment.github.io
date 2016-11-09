@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /framework/architecture
+permalink: /framework/architecture/
 title: 'Architecture Overview'
 category: 'codebase'
 lang: en

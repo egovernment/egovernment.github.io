@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
-permalink: /installation/development/
-title: 'For Development'
+permalink: /instalacion/desarrollo/
+title: 'Para desarrollo'
 category: 'installation'
 weight: 1
 lang: en

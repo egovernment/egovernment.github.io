@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /framework/database
+permalink: /framework/database/
 title: 'Database Data Handling'
 category: 'codebase'
 lang: en

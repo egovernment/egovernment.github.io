@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /fundamentals/inheritance
+permalink: /fundamentals/inheritance/
 title: 'Prototypal Inheritance'
 category: 'fundamentals'
 lang: en

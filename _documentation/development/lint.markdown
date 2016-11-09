@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /development/lint
+permalink: /development/lint/
 title: 'Linter Configuration'
 category: 'development'
 lang: en

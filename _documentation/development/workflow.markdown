@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /development/workflow
+permalink: /development/workflow/
 title: 'Workflow'
 category: 'development'
 lang: en

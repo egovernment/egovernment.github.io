@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /fundamentals/coercion
+permalink: /fundamentals/coercion/
 title: 'Coercion & Operators'
 category: 'fundamentals'
 lang: en

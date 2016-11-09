@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /fundamentals/modules
+permalink: /fundamentals/modules/
 title: 'NCJS Modules'
 category: 'fundamentals'
 lang: en

@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /fundamentals/asynchrony
+permalink: /fundamentals/asynchrony/
 title: 'Asynchronous Interfaces'
 category: 'fundamentals'
 lang: en

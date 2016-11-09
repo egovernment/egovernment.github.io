@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
-permalink: /installation/database-engine/
-title: 'Database Engine Configuration'
+permalink: /instalacion/base-de-datos/
+title: 'Base de datos'
 category: 'installation'
 weight: 6
 lang: en

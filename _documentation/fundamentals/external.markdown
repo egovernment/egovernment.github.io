@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /fundamentals/external
+permalink: /fundamentals/external/
 title: 'External Learning Resources'
 category: 'fundamentals'
 lang: en

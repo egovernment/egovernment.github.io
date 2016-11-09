@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /framework/model
+permalink: /framework/model/
 title: 'Service Rules (Model) Configuration'
 category: 'codebase'
 lang: en

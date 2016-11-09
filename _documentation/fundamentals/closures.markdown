@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /fundamentals/closures
+permalink: /fundamentals/closures/
 title: 'Closures & Variables Visibility'
 category: 'fundamentals'
 lang: en

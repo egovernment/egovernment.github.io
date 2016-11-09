@@ -1,6 +1,6 @@
 ---
 layout: doc-pages
-permalink: /framework/code-organization
+permalink: /framework/code-organization/
 title: 'Code Organization'
 category: 'codebase'
 lang: en

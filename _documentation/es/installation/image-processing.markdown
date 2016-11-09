@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
-permalink: /installation/image-processing/
-title: 'Image Processing Software'
+permalink: /instalación/proceso-de-imagenes/
+title: 'Proceso de imagenes'
 category: 'installation'
 weight: 5
 lang: en
