@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
 permalink: /desarrollo/lint/
-title: 'Linter Configuration'
+title: 'Configuración de Lint'
 category: 'development'
 lang: es
 ref: workflow
