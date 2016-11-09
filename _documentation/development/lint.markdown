@@ -4,7 +4,7 @@ permalink: /development/lint/
 title: 'Linter Configuration'
 category: 'development'
 lang: en
-ref: workflow
+ref: lint
 weight: 2
 ---
 
