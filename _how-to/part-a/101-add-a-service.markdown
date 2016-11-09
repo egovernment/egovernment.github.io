@@ -10,7 +10,7 @@ introduction-text: 'This page explains the steps needed to add a new service to 
 introduction-img: '105.png'
 prevUrl:
 nextUrl: 102
-done: ''
+done: 'yes'
 lang: en
 ref: 101
 ---
