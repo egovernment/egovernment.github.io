@@ -48,7 +48,7 @@ Make the *"Processing"* processing step display only:
 
 
 
-             show-inline-notes
+              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/processing-steps/processing.js" data-short-path="ef45f31" data-anchor="diff-ef45f3178e50cb2cc23bc2e4168e3b7b">
     <div class="file-actions">
@@ -59,12 +59,15 @@ Make the *"Processing"* processing step display only:
           </label>
         </span>
 
-          <a href="/egovernment/eregistrations-demo/blob/7397176cbaf9938becd802d9188034b3f2e2f954/model/business-process-demo/processing-steps/processing.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 7397176 ">View</a>
+          <a href="/egovernment/eregistrations-demo/blob/2a89e3c349ddd89af9f6a0fa71a781cc60f93241/model/business-process-demo/processing-steps/processing.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 2a89e3c ">View</a>
 
+          <a class="btn-octicon tooltipped tooltipped-nw" href="https://mac.github.com" aria-label="Open this file in GitHub Desktop" data-ga-click="Repository, open with desktop, type:mac">
+              <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"></path></svg>
+          </a>
 
     </div>
     <div class="file-info">
-        <span class="diffstat tooltipped tooltipped-e" aria-label="23 additions &amp; 5 deletions">28 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span></span>
+        <span class="diffstat tooltipped tooltipped-e" aria-label="34 additions &amp; 5 deletions">39 <span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-added"></span><span class="block-diff-neutral"></span></span>
 
       <a href="#diff-ef45f3178e50cb2cc23bc2e4168e3b7b" class="link-gray-dark" title="model/business-process-demo/processing-steps/processing.js">
         model/business-process-demo/processing-steps/processing.js
@@ -73,9 +76,10 @@ Make the *"Processing"* processing step display only:
 
     </div>
   </div>
+  <div class="js-file-content">
 
-      <div class="data highlight blob-wrapper">
-        <table class="diff-table tab-size  " data-tab-size="8">
+        <div class="data highlight blob-wrapper">
+          <table class="diff-table tab-size  " data-tab-size="8">
 
       <tbody><tr data-position="0">
     <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bL0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
@@ -384,11 +388,11 @@ Make the *"Processing"* processing step display only:
 
       <tr class="js-expandable-line" data-position="24">
     <td class="blob-num blob-num-expandable" colspan="2">
-      <a href="#diff-ef45f3178e50cb2cc23bc2e4168e3b7b" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/bdd75501367fad63cc63b428a2289d5625e18da4?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=4&amp;mode=100644&amp;next_line_num_left=24&amp;next_line_num_right=27&amp;path=model%2Fbusiness-process-demo%2Fprocessing-steps%2Fprocessing.js&amp;prev_line_num_left=15&amp;prev_line_num_right=18&amp;right_hunk_size=19" data-left-range="16-23" data-right-range="19-26">
+      <a href="#diff-ef45f3178e50cb2cc23bc2e4168e3b7b" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/30832d94327ce10dcaa1f207554e40c7a6899879?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=4&amp;mode=100644&amp;next_line_num_left=24&amp;next_line_num_right=27&amp;path=model%2Fbusiness-process-demo%2Fprocessing-steps%2Fprocessing.js&amp;prev_line_num_left=15&amp;prev_line_num_right=18&amp;right_hunk_size=30" data-left-range="16-23" data-right-range="19-26">
         <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"></path></svg>
       </a>
     </td>
-    <td class="blob-code blob-code-inner blob-code-hunk">@@ -24,4 +27,19 @@ BusinessProcessDemo.prototype.processingSteps.map.processing.setProperties({</td>
+    <td class="blob-code blob-code-inner blob-code-hunk">@@ -24,4 +27,30 @@ BusinessProcessDemo.prototype.processingSteps.map.processing.setProperties({</td>
   </tr>
 
     <tr>
@@ -437,7 +441,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+<span class="pl-smi">processing</span>.<span class="pl-smi">requirementUploads</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">'</span>applicable<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">_observe</span>) {</span>
+    <span class="blob-code-inner">+<span class="pl-smi">processing</span>.<span class="pl-smi">certificates</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">'</span>released<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">_observe</span>) {</span>
 
   </td>
 </tr>
@@ -450,7 +454,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+ <span class="pl-k">var</span> requirementUploads <span class="pl-k">=</span> <span class="pl-v">this</span>.<span class="pl-smi">master</span>.<span class="pl-smi">requirementUploads</span></span>
+    <span class="blob-code-inner">+ <span class="pl-k">var</span> certificates <span class="pl-k">=</span> <span class="pl-v">this</span>.<span class="pl-smi">master</span>.<span class="pl-smi">certificates</span></span>
 
   </td>
 </tr>
@@ -463,7 +467,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+   , result             <span class="pl-k">=</span> [];</span>
+    <span class="blob-code-inner">+   , result       <span class="pl-k">=</span> [];</span>
 
   </td>
 </tr>
@@ -489,7 +493,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+ <span class="pl-k">if</span> (<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">applicable</span>.<span class="pl-c1">has</span>(<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">map</span>.<span class="pl-smi">businessPlan</span>)) {</span>
+    <span class="blob-code-inner">+ <span class="pl-k">if</span> (<span class="pl-smi">certificates</span>.<span class="pl-smi">released</span>.<span class="pl-c1">has</span>(<span class="pl-smi">certificates</span>.<span class="pl-smi">map</span>.<span class="pl-smi">certificateOfIncentives</span>)) {</span>
 
   </td>
 </tr>
@@ -502,7 +506,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+     <span class="pl-smi">result</span>.<span class="pl-c1">push</span>(<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">map</span>.<span class="pl-smi">businessPlan</span>);</span>
+    <span class="blob-code-inner">+     <span class="pl-smi">result</span>.<span class="pl-c1">push</span>(<span class="pl-smi">certificates</span>.<span class="pl-smi">map</span>.<span class="pl-smi">certificateOfIncentives</span>);</span>
 
   </td>
 </tr>
@@ -541,7 +545,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+ <span class="pl-k">if</span> (<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">applicable</span>.<span class="pl-c1">has</span>(<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">map</span>.<span class="pl-smi">companyRegistration</span>)) {</span>
+    <span class="blob-code-inner">+ <span class="pl-k">return</span> result;</span>
 
   </td>
 </tr>
@@ -554,7 +558,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+     <span class="pl-smi">result</span>.<span class="pl-c1">push</span>(<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">map</span>.<span class="pl-smi">companyRegistration</span>);</span>
+    <span class="blob-code-inner">+});</span>
 
   </td>
 </tr>
@@ -567,7 +571,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+ }</span>
+    <span class="blob-code-inner">+</span>
 
   </td>
 </tr>
@@ -580,7 +584,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+</span>
+    <span class="blob-code-inner">+<span class="pl-smi">processing</span>.<span class="pl-smi">requirementUploads</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">'</span>applicable<span class="pl-pds">'</span></span>, <span class="pl-k">function</span> (<span class="pl-smi">_observe</span>) {</span>
 
   </td>
 </tr>
@@ -593,7 +597,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+ <span class="pl-k">return</span> result;</span>
+    <span class="blob-code-inner">+ <span class="pl-k">var</span> requirementUploads <span class="pl-k">=</span> <span class="pl-v">this</span>.<span class="pl-smi">master</span>.<span class="pl-smi">requirementUploads</span></span>
 
   </td>
 </tr>
@@ -606,7 +610,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+});</span>
+    <span class="blob-code-inner">+   , result             <span class="pl-k">=</span> [];</span>
 
   </td>
 </tr>
@@ -626,9 +630,152 @@ Make the *"Processing"* processing step display only:
 
 
     <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR45" data-line-number="45" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+ <span class="pl-k">if</span> (<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">applicable</span>.<span class="pl-c1">has</span>(<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">map</span>.<span class="pl-smi">businessPlan</span>)) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR46" data-line-number="46" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+     <span class="pl-smi">result</span>.<span class="pl-c1">push</span>(<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">map</span>.<span class="pl-smi">businessPlan</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR47" data-line-number="47" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+ }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR48" data-line-number="48" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR49" data-line-number="49" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+ <span class="pl-k">if</span> (<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">applicable</span>.<span class="pl-c1">has</span>(<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">map</span>.<span class="pl-smi">companyRegistration</span>)) {</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR50" data-line-number="50" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+     <span class="pl-smi">result</span>.<span class="pl-c1">push</span>(<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">map</span>.<span class="pl-smi">companyRegistration</span>);</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR51" data-line-number="51" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+ }</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR52" data-line-number="52" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR53" data-line-number="53" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+ <span class="pl-k">return</span> result;</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR54" data-line-number="54" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+});</span>
+
+  </td>
+</tr>
+
+
+    <tr>
+    <td class="blob-num blob-num-addition empty-cell"></td>
+
+    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR55" data-line-number="55" class="blob-num blob-num-addition js-linkable-line-number"></td>
+
+  <td class="blob-code blob-code-addition">
+
+    <span class="blob-code-inner">+</span>
+
+  </td>
+</tr>
+
+
+    <tr>
     <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bL27" data-line-number="27" class="blob-num blob-num-context js-linkable-line-number"></td>
 
-    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR45" data-line-number="45" class="blob-num blob-num-context js-linkable-line-number"></td>
+    <td id="diff-ef45f3178e50cb2cc23bc2e4168e3b7bR56" data-line-number="56" class="blob-num blob-num-context js-linkable-line-number"></td>
 
   <td class="blob-code blob-code-context">
 
@@ -639,9 +786,10 @@ Make the *"Processing"* processing step display only:
 
 
 
-        </tbody></table>
-      </div>
+          </tbody></table>
+        </div>
 
+  </div>
 </div>
 
 
