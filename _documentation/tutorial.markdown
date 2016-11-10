@@ -372,18 +372,18 @@ The service's model should have following fields defined:
 2. `isTrainingAbroad` (Boolean, label: "Is this training performed abroad, or in your country?", inputHint: _("Choose yes for abroad"), is mandatory).
 3. `yearsOfExperience` (positive integer, label: "How many years of experience in IT do you have?", is manadatory).
 4. `programmingLanguage` (type: `ProgrammingLanguage` (to be defined later), label: "What is your favourite programming language?", is manadatory).
-5. hobby (StringLine, label: "Hobby").
-6. businessName (as defined in core, label: "Nickname", is mandatory).
-7. birthDate (Date, label: "Date of birth", is mandatory).
-8. quiz (Object, is nested).
+5. `hobby` (StringLine, label: "Hobby").
+6. `businessName` (as defined in core, label: "Nickname", is mandatory).
+7. `birthDate` (Date, label: "Date of birth", is mandatory).
+8. `quiz` (Object, is nested).
 
 `ProgrammingLanguage` enum (`'value' - 'label'`):
 
-1. 'c'          - "C"
-2. 'java'       - "Java"
-3. 'javaScript' - "JavaScript"
-4. 'php'        - "PHP"
-5. 'python'     - "Python"
+1. `c`          - "C"
+2. `java`       - "Java"
+3. `javaScript` - "JavaScript"
+4. `php`        - "PHP"
+5. `python`     - "Python"
 
 `quiz` properties:
 
@@ -396,7 +396,7 @@ The service's model should have following fields defined:
 Guide
 
 1. Is regular `FormSection`.
-2. properies: 'yearsOfExperience', 'programmingLanguage', 'hasDegreeInComputerScience', 'isTrainingAbroad'.
+2. properies: `yearsOfExperience`, `programmingLanguage`, `hasDegreeInComputerScience`, `isTrainingAbroad`.
 
 Forms
 
@@ -406,13 +406,13 @@ There are two form sections which constitute `dataForms`: `personalInformation`,
 
 1. label: "Personal Information".
 2. url to submit: `personal-information`.
-3. properties: 'businessName', 'hobby', 'birthDate'.
+3. properties: `businessName`, `hobby`, `birthDate`.
 
 `quiz`
 
 1. label: "JavaScript Quiz".
 2. url to submit: `quiz`.
-3. properties: 'quiz/howManyNonValues', 'quiz/nullToUndefinedComparison', 'quiz/concatOperator'.
+3. properties: `quiz/howManyNonValues`, `quiz/nullToUndefinedComparison`, `quiz/concatOperator`.
 
 #### Requirements
 
