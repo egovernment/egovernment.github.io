@@ -15,12 +15,12 @@ lang: en
 ref: 252
 ---
 
-Some processing steps in the systems deal with only a specific subset of user submitted data. In order to remove the clutter from their user interface, it's possible to filter the documents and payment receipts list displayed for each business process.
+In a system with multiple processing steps, often divided by official unit that handles a registration, it's sometimes necessary to filter out the released certificates list for a business process. Also, as some processing steps deal with only a specific subset of user submitted data, in order to remove the clutter from their user interface, it's also possible to filter the documents and payment receipts list displayed for each business process.
 
 In order to filter a given document list:
 
 1. Open `model/business-process-<service-name>/processing-steps/<step-name>.js` file.
-2. Depending on the required change, override either `requirementUploads.applicable` or `paymentReceiptUploads.applicable` collection like so:
+2. Depending on the required change, override either `certificates.released`, `requirementUploads.applicable` or `paymentReceiptUploads.applicable` collection like so:
 
 ```javascript
 BusinessProcessServiceName.prototype.processingSteps.map.stepName.requirementUploads.set('applicable', function (_observe) {
@@ -32,7 +32,10 @@ BusinessProcessServiceName.prototype.processingSteps.map.stepName.requirementUpl
 
 In the branch "[display-certificates-for-only-certain-roles](https://github.com/egovernment/eregistrations-demo/tree/display-certificates-for-only-certain-roles)" of eregistrations-demo :
 
-Make the *"Processing"* processing step display only *"Business plan"* and *"Company registration"* requirement uploads (if applicable for the given business process).
+Make the *"Processing"* processing step display only:
+
+* *"Certificate of incentives"*certificate (if released).
+* *"Business plan"* and *"Company registration"* requirement uploads (if applicable for the given business process).
 
 ### Solution
 
