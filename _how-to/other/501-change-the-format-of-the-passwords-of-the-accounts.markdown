@@ -4,11 +4,11 @@ permalink: /how-to/change-the-format-of-the-passwords-of-the-accounts/
 title: 'Change the format of the passwords of the accounts'
 category: '5. Other'
 sub-category: ''
-rate: '4'
+rate: '2'
 number: '501'
 prevUrl: 407
 nextUrl:
-done: ''
+done: 'yes'
 lang: en
 ref: 501
 ---
