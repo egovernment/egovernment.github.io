@@ -11,9 +11,9 @@ Los servicios siguientes van a ser desarrollado durante el seminario :
 
 Sistema | Nombre del servicio | Mockups | Analysis BPA | Diagram
 --- | --- | --- | --- |--- 
-MiEmpresa.gob.sv | Resolución de registro de capital para inscripción de sucursal extranjera | [link](http://dadd7a.axshare.com/#p=guide) | [link](https://docs.google.com/document/d/10H-GeCcE591dXQTuzyScWl44dwNZC6s07tyqGWbCRtg/edit?usp=sharing) | [link](https://docs.google.com/spreadsheets/d/10j7_xSinyGSeowS-co4ltNkXtrvPMhSK8Hp5mKM9Yr4/edit?usp=sharing) | 
-MiEmpresa.gob.sv | Obtención de registro MYPE | [link](http://w14glk.axshare.com/#p=guide) | [link](https://docs.google.com/document/d/1-B-huszzTx5kesEPx0w5pTLDbZuVeixHrbkhek7lefU/edit?usp=sharing) | [link](https://docs.google.com/spreadsheets/d/1A8PgGaP0bRXKUfkTYNFvAZbTp6q6P48UUlFLF4xBDTg/edit?usp=sharing) |
-MiNegocio.gt | Inscripción o registro de empresa y comerciante individual | [link](http://6rg64n.axshare.com/#p=guide) | [link](https://docs.google.com/document/d/17dhdSjxy6EHvbNy4rPAn8ne4C-e9HpN_QR0He9MupWM/edit?usp=sharing) | [link]() |
+MiEmpresa.gob.sv | Resolución de registro de capital para inscripción de sucursal extranjera | [link](http://dadd7a.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/10H-GeCcE591dXQTuzyScWl44dwNZC6s07tyqGWbCRtg/edit?usp=sharing){:target="_blank"} | [link](https://docs.google.com/spreadsheets/d/10j7_xSinyGSeowS-co4ltNkXtrvPMhSK8Hp5mKM9Yr4/edit?usp=sharing){:target="_blank"} | 
+MiEmpresa.gob.sv | Obtención de registro MYPE | [link](http://w14glk.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/1-B-huszzTx5kesEPx0w5pTLDbZuVeixHrbkhek7lefU/edit?usp=sharing){:target="_blank"} | [link](https://docs.google.com/spreadsheets/d/1A8PgGaP0bRXKUfkTYNFvAZbTp6q6P48UUlFLF4xBDTg/edit?usp=sharing){:target="_blank"} |
+MiNegocio.gt | Inscripción o registro de empresa y comerciante individual | [link](http://6rg64n.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/17dhdSjxy6EHvbNy4rPAn8ne4C-e9HpN_QR0He9MupWM/edit?usp=sharing){:target="_blank"} | [link](){:target="_blank"} |
 {: .table .table-bordered .table-striped }
 
 
