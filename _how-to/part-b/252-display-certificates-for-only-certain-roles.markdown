@@ -59,7 +59,7 @@ Make the *"Processing"* processing step display only:
           </label>
         </span>
 
-          <a href="/egovernment/eregistrations-demo/blob/2a89e3c349ddd89af9f6a0fa71a781cc60f93241/model/business-process-demo/processing-steps/processing.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 2a89e3c ">View</a>
+          <a href="/egovernment/eregistrations-demo/blob/90f2f80e88c6adfad63843db742b6512f2330abb/model/business-process-demo/processing-steps/processing.js" class="btn btn-sm tooltipped tooltipped-nw" rel="nofollow" aria-label="View the whole file at version 90f2f80 ">View</a>
 
           <a class="btn-octicon tooltipped tooltipped-nw" href="https://mac.github.com" aria-label="Open this file in GitHub Desktop" data-ga-click="Repository, open with desktop, type:mac">
               <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"></path></svg>
@@ -388,7 +388,7 @@ Make the *"Processing"* processing step display only:
 
       <tr class="js-expandable-line" data-position="24">
     <td class="blob-num blob-num-expandable" colspan="2">
-      <a href="#diff-ef45f3178e50cb2cc23bc2e4168e3b7b" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/30832d94327ce10dcaa1f207554e40c7a6899879?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=4&amp;mode=100644&amp;next_line_num_left=24&amp;next_line_num_right=27&amp;path=model%2Fbusiness-process-demo%2Fprocessing-steps%2Fprocessing.js&amp;prev_line_num_left=15&amp;prev_line_num_right=18&amp;right_hunk_size=30" data-left-range="16-23" data-right-range="19-26">
+      <a href="#diff-ef45f3178e50cb2cc23bc2e4168e3b7b" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/7e66d2a58417b74834a2d5df99c3a551818b0662?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=4&amp;mode=100644&amp;next_line_num_left=24&amp;next_line_num_right=27&amp;path=model%2Fbusiness-process-demo%2Fprocessing-steps%2Fprocessing.js&amp;prev_line_num_left=15&amp;prev_line_num_right=18&amp;right_hunk_size=30" data-left-range="16-23" data-right-range="19-26">
         <svg aria-hidden="true" class="octicon octicon-unfold" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M11.5 7.5L14 10c0 .55-.45 1-1 1H9v-1h3.5l-2-2h-7l-2 2H5v1H1c-.55 0-1-.45-1-1l2.5-2.5L0 5c0-.55.45-1 1-1h4v1H1.5l2 2h7l2-2H9V4h4c.55 0 1 .45 1 1l-2.5 2.5zM6 6h2V3h2L7 0 4 3h2v3zm2 3H6v3H4l3 3 3-3H8V9z"></path></svg>
       </a>
     </td>
@@ -493,7 +493,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+ <span class="pl-k">if</span> (<span class="pl-smi">certificates</span>.<span class="pl-smi">released</span>.<span class="pl-c1">has</span>(<span class="pl-smi">certificates</span>.<span class="pl-smi">map</span>.<span class="pl-smi">certificateOfIncentives</span>)) {</span>
+    <span class="blob-code-inner">+ <span class="pl-k">if</span> (<span class="pl-en">_observe</span>(<span class="pl-smi">certificates</span>.<span class="pl-smi">released</span>).<span class="pl-c1">has</span>(<span class="pl-smi">certificates</span>.<span class="pl-smi">map</span>.<span class="pl-smi">certificateOfIncentives</span>)) {</span>
 
   </td>
 </tr>
@@ -636,7 +636,7 @@ Make the *"Processing"* processing step display only:
 
   <td class="blob-code blob-code-addition">
 
-    <span class="blob-code-inner">+ <span class="pl-k">if</span> (<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">applicable</span>.<span class="pl-c1">has</span>(<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">map</span>.<span class="pl-smi">businessPlan</span>)) {</span>
+    <span class="blob-code-inner">+ <span class="pl-k">if</span> (<span class="pl-en">_observe</span>(<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">applicable</span>).<span class="pl-c1">has</span>(<span class="pl-smi">requirementUploads</span>.<span class="pl-smi">map</span>.<span class="pl-smi">businessPlan</span>)) {</span>
 
   </td>
 </tr>
