@@ -17,9 +17,8 @@ MiEmpresa.gob.sv | SME registration | [link](https://w14glk.axshare.com/#p=guide
 MiNegocio.gt | Individual trader registration| [link](https://6rg64n.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/17dhdSjxy6EHvbNy4rPAn8ne4C-e9HpN_QR0He9MupWM/edit?usp=sharing){:target="_blank"} | [link](){:target="_blank"} |
 MiNegocio.gt | Declaration of emission of shares | [link](){:target="_blank"} | [link](){:target="_blank"} | [link](){:target="_blank"} |
 MiNegocio.gt | Registration of assembly act | [link](){:target="_blank"} | [link](){:target="_blank"} | [link](){:target="_blank"} |
-{: .table .table-bordered .table-striped }
 MiNegocio.gt | Business auxiliaries registration, cancellation, copy of certificate | [link](){:target="_blank"} | [link](){:target="_blank"} | [link](){:target="_blank"} |
-
+{: .table .table-bordered .table-striped }
 
 
 <!---
