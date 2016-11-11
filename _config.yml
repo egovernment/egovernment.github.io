@@ -111,8 +111,8 @@ collections:
   trainings:
     output: true
     title:
-        en: 'Trainings'
-        es: 'Capacitaciones'
+        en: 'Training'
+        es: 'Capacitación'
         fr: 'Exercices'
     link-title:
         en: 'List'
