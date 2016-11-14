@@ -5,8 +5,8 @@ title: 'Cambiar el nombre de un certificado'
 category: '1. Part A'
 sub-category: 'Certificados'
 rate: '1'
-number: '133'
-introduction-text: 'Cambiar el nombre de un certificado impacta en todos los demás certificados que ya han sido procesados en el sistema.'
+number: '132'
+introduction-text: 'Cambiar el nombre de un certificado afecta todos los certificados previamente procesados en el sistema.'
 introduction-img: '131.png'
 prevUrl: 132
 nextUrl: 134
@@ -15,18 +15,19 @@ lang: es
 ref: 133
 ---
 
-El nombre del certificado está definido en un documento del cual está ampliado. Cambiar el nombre del documento también cambia el nombre del certificado.
+El nombre de un certificado está definido por el documento del cual se extiende. Cambiar el nombre de un documento también cambiara el nombre de un certificado.
 
-Favor tener en cuenta que por defecto, el nombre del registro está también dado por el certificado correspondiente al mismo. Si el nombre del registro se queda sin cambio, revisar ['How to 112 - Change the label of a registration'](/how-to/change-the-name-and-the-short-name-of-a-registration/).
+Por favor considerar que, por defecto, el nombre de un registro también se hereda del certificado que le corresponde. Si el nombre del registro debe permanecer sin alteraciones, ver ['Ficha 112 - Cambiar el nombre y label de un registro'](/como/cambiar-el-nombre-de-un-registro/).
 
-1. Abrir el archivo `model/documents/<document>.js` (el nombre del archivo debe ser la versión separada por guiones del nombre del documento).
-2. Fijar un valor para la etiqueta de propiedades a el nombre deseado.
+1. Abrir el archivo `model/documents/<document>.js` (el nombre del archivo debe ser la versión con guiones del nombre del documento).
+
+2. Colocar el nombre deseado a la propiedad label.
 
 ## Ejemplo
 
-En la branch "[change-the-name-of-a-certificate](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-certificate)" de eregistrations-demo :
+**Rama inicial: [change-the-name-of-a-certificate](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-certificate)**
 
-Cambiar la etiqueta del registro de la compañia a *"Company registration in Ministry of Company Registrations"*.
+Cambiar label del certificado `company registration` a *"Company registration in Ministry of Company Registrations"*.
 
 ### Solución
 

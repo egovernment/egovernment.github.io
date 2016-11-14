@@ -15,16 +15,16 @@ lang: es
 ref: 122
 ---
 
-1. Open file `model/<business-process-your-service>/fields.js`.
-2. Inside `<BusinessProcessYourService>.prototype` definitions, locate the property and change its label.
+1. Abrir el archivo `model/<business-process-your-service>/fields.js`.
+2. Dentro de las definiciones `<BusinessProcessYourService>.prototype`, ubicar la propiedad y cambiar su label.
 
-## Example
+## Ejemplo
 
-**Starting Branch: [change-the-label-of-an-determinant](https://github.com/egovernment/eregistrations-demo/tree/change-the-label-of-an-determinant)**
+**Rama inicial: [change-the-label-of-an-determinant](https://github.com/egovernment/eregistrations-demo/tree/change-the-label-of-an-determinant)**
 
-Change assets label to *"Local assets"*.
+Cambiar label de la propiedad assets de *"Assets"* a *"Local assets"*.
 
-### Solution
+### Solución
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-label-of-an-determinant...change-the-label-of-an-determinant-solution#files')">
 
 <a name="diff-ff865e3a54b66a1c0895c04cc66fa0d4"></a>
