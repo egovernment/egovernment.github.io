@@ -10,14 +10,12 @@ introduction-text: 'A requirement is associated with a document or group of docu
 introduction-img: '145.png'
 prevUrl: 145
 nextUrl: 147
-done: ''
+done: 'yes'
 lang: en
 ref: 146
 ---
 
-Every requirement should belong to registration, every registration belongs to a service.
-
-So in order to mark a requirement as needed by a registration, you have to know to which registration of what service you want to assign it.
+Every requirement should belong to registration, every registration belongs to a service. So in order to mark a requirement as needed by a registration, you have to know to which registration of what service you want to assign it.
 
 To mark a requirement as needed by a registration:
 
@@ -34,13 +32,13 @@ Mark *"Business plan"* requirement as needed by *"Company registration"* registr
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/mark-requirement-as-needed-registration...mark-requirement-as-needed-registration-solution#files')" >
 
-        
+
 <a name="diff-1f850bcf53b7031d6fe5fc7942d460b9"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/registrations/company-registration.js">
@@ -62,13 +60,13 @@ Mark *"Business plan"* requirement as needed by *"Company registration"* registr
       <span class="user-select-contain" title="model/business-process-demo/registrations/company-registration.js">
         model/business-process-demo/registrations/company-registration.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-1f850bcf53b7031d6fe5fc7942d460b9" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/be5df192e78df2bd00ac3cb9aa34b05099fb4b7c?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=16&amp;next_line_num_right=16&amp;path=model%2Fbusiness-process-demo%2Fregistrations%2Fcompany-registration.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=6" data-left-range="1-15" data-right-range="1-15">

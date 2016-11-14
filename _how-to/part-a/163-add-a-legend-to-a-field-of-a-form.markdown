@@ -29,7 +29,7 @@ Every field of a file is associated with a service, so to change it's legend, we
 
 ## Example
 
-In the branch "[add-legend-for-a-field-of-the-form-solution](https://github.com/egovernment/eregistrations-demo/tree/add-legend-for-a-field-of-the-form)" of eregistrations-demo :
+In the branch "[add-legend-for-a-field-of-the-form](https://github.com/egovernment/eregistrations-demo/tree/add-legend-for-a-field-of-the-form)" of eregistrations-demo :
 
 Add the legend (`inputHint`) to the `workers` field of `BusinessProcessDemo` service. The `inputHint` should be *"Employed full time only."*
 

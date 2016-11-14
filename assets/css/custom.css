@@ -1,3 +1,7 @@
+body {
+    background-color: #ebebeb;
+}
+
 * + h4 {
 	margin-top: 24px;
 }
@@ -6,6 +10,10 @@ h1 { font-size: 42px; margin-bottom: 36px; }
 h2 { font-size: 32px; margin-top: 42px; }
 h3 { font-size: 26px; }
 h4 { font-size: 22px; }
+
+.img-responsive img {
+	max-width: 100%;
+}
 
 .navbar-default .navbar-nav>li>a.lang-select {
     font-weight: 100;
@@ -18,16 +26,25 @@ h4 { font-size: 22px; }
 	padding-left: 15px;
 }
 
-.navbar-default .navbar-nav>li>a.en:lang(en),
+/*.navbar-default .navbar-nav>li>a.en:lang(en),
 .navbar-default .navbar-nav>li>a.fr:lang(fr),
 .navbar-default .navbar-nav>li>a.es:lang(es){
     font-weight: 500;
     color: rgba(255, 255, 255, 1);
     display: none;
+}*/
+
+.navbar-default .navbar-nav li a img {
+	height: 20px;
 }
 
-.navbar-default .navbar-nav>li>a>img {
-	height: 20px;
+.nav .dropdown-menu>li>a {
+    padding: 8px 14px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	min-width: inherit;
+	padding: 0;
 }
 
 .mt0 {
@@ -72,10 +89,40 @@ h4 { font-size: 22px; }
 	line-height: 1.4;
 }
 
+.post-content {
+    background-color: #ffffff;
+    border: none;
+    padding: 25px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+}
+
+.training-content {
+    background-color: #ffffff;
+    border: none;
+    padding: 25px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+}
+
 .recipe-content {
-	border-radius: 3px;
-	border: 1px solid #eee;
-	padding:15px 0;
+    background-color: #ffffff;
+    border: none;
+    padding: 0px 25px 25px 25px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+}
+.recipe-content-2 {
+    background-color: #ffffff;
+    border: none;
+    padding: 25px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+}
+
+h1 a:before, h2 a:before, h3 a:before {
+    margin-left: -10px;
+    content: "";
 }
 
 .recipe-category-row {
@@ -91,6 +138,7 @@ h4 { font-size: 22px; }
 	color: #d4d4d4;
 	line-height: 1;
 	text-transform: uppercase;
+	margin-top: 40px;
 }
 
 .label-cat {
@@ -456,4 +504,16 @@ h4 { font-size: 22px; }
 .diff-view .blob-code-addition .x {
 	color: #333;
 	background-color: #a6f3a6;
+}
+
+/* Logo switc */
+.site-header .navbar-brand.logo-tanzania {
+	display: none;
+}
+
+/* responsive */
+@media screen and (max-width:767px) {
+	header {
+		padding-top: 30px !important;
+	}
 }

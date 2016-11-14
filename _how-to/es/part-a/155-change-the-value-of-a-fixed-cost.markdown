@@ -7,7 +7,8 @@ sub-category: 'Costos'
 rate: '1'
 number: '155'
 introduction-text: 'En esta ficha se muestra como cambiar el nombre de un costo, modificar su valor o modificar su determinante.'
-introduction-img: '154.png'
+introduction-img: '155.png'
+==== BASE ====
 prevUrl: 154
 nextUrl: 156
 done: ''

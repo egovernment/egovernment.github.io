@@ -10,46 +10,41 @@ introduction-text: 'A requirement is associated with a document or group of docu
 introduction-img: '145.png'
 prevUrl: 133
 nextUrl: 142
-done: ''
+done: 'yes'
 lang: en
 ref: 141
 ---
 
-A requirement is a rule about providing certain document to the officials.
+A requirement is a rule about providing certain document to the officials. Every requirement belongs to a registration. Requirement is not a document.
 
-Every requirement belongs to a registration. Requirement is not a document.
+A requirement has one or more requirement uploads (which contain a document which has to be uploaded). So in order to make fully functional requirement we must also make sure that there is at least one requirement upload associated with it.
 
-A requirement has one or more requirement uploads (which contain a document which has to be uploaded).
+Why the relation between requirement and document is not one-to-one?
 
-So in order to make fully functional requirement we must also make sure that there is at least one requirement upload associated with it.
-
-So why the relation between requirement and document is not one-to-one?
-
-Such situation happens when a requirement is something like: user needs to bring his passport (when a foreigner) or his id-document otherwise).
-
-So we have a requirement which will boil down to upload of a document but is given as an alternative in the beginning.
-
-Most of the times, however, there is exactly one document which must be uploaded due to a requirement.
+Such situation happens when a requirement is something like: user needs to bring his passport (when a foreigner) or his id-document otherwise). So we have a requirement which will boil down to upload of a document but is given as an alternative in the beginning. Most of the times, however, there is exactly one document which must be uploaded due to a requirement.
 
 There are two scenarios here:
 
-1. The document for which you have to create a requirement is already defined in `model/<your-service>/documents/<your-document>.js`
-2. The document is not yet defined
+1. The document for which you have to create a requirement is already defined in `model/<your-service>/documents/<your-document>.js`.
+2. The document is not yet defined.
 
 [See how to add document here](/how-to/add-a-new-document/)
 
-After you have created a document you can proceed to creation of requirement (point 2)
+After you have created a document you can proceed to creation of requirement (point 2).
 
 1. Open file `model/<business-process-your-service>/requirements.js`.
 2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirements` helper function.
 3. Add entry to the array. In most basic scenario it's just a `require` to the source document (e.g. `require('../documents/passport')`).
-4. Open the file `model/<business-process-your-service>/registrations/<registration-to-which-requirement-belongs>.js>`
-5. modify the `requirements` property so that it returns an array with your requirement as an element e.g.:
+4. Open the file `model/<business-process-your-service>/registrations/<registration-to-which-requirement-belongs>.js>`.
+5. Modify the `requirements` property so that it returns an array with your requirement as an element e.g.:
 
 ```javascript
 requirements: function () {
     var requirementsMap = this.master.requirements.map;
-    return [requirementsMap.inventory, requirementsMap.passport];
+
+    // Previously, the return statement looked like:
+    // return [requirementsMap.inventory, requirementsMap.passport];
+    // We modify it to add drivingLicense requirement:
     return [requirementsMap.inventory, requirementsMap.passport, requirementsMap.drivingLicense];
 }
 ```
@@ -58,7 +53,7 @@ Now we may need to include a requirement upload as well:
 
 1. Open file `model/<business-process-your-service>/requirement-uploads.js`.
 2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirement-uploads` helper function.
-3. If there is an entry which requires the same document as is required in `model/<business-process-your-service>/requirements.js`, then this is the end <br>(the requirement upload will be automatically added to your requirement).
+3. If there is an entry which requires the same document as is required in `model/<business-process-your-service>/requirements.js`, then this is the end; The requirement upload will be automatically added to your requirement.
 4. If there is no entry, you have to add one. In most basic scenario it's just a `require` to the source document (e.g. `require('../documents/passport')`).
 
 ---
@@ -74,13 +69,13 @@ Add a new requirement to `BusinessProcessDemo` service. The requirement is about
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/configure-new-requirement...configure-new-requirement-solution#files')">
 
-        
+
 <a name="diff-1f850bcf53b7031d6fe5fc7942d460b9"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/registrations/company-registration.js">
@@ -102,13 +97,13 @@ Add a new requirement to `BusinessProcessDemo` service. The requirement is about
       <span class="user-select-contain" title="model/business-process-demo/registrations/company-registration.js">
         model/business-process-demo/registrations/company-registration.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-1f850bcf53b7031d6fe5fc7942d460b9" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/689fefbc09524b536c7b40b91923bcd64be800ce?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=16&amp;next_line_num_right=16&amp;path=model%2Fbusiness-process-demo%2Fregistrations%2Fcompany-registration.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=6" data-left-range="1-15" data-right-range="1-15">
@@ -214,13 +209,13 @@ Add a new requirement to `BusinessProcessDemo` service. The requirement is about
       </div>
 </div>
 
-        
+
 <a name="diff-da564581570d16ba4a104665991c7b46"></a>
 <div id="diff-1" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/requirement-uploads.js">
@@ -242,13 +237,13 @@ Add a new requirement to `BusinessProcessDemo` service. The requirement is about
       <span class="user-select-contain" title="model/business-process-demo/requirement-uploads.js">
         model/business-process-demo/requirement-uploads.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-da564581570d16ba4a104665991c7b46" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/454cd507b608ebd4cb96307c1a345bff86ed8924?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=5&amp;mode=100644&amp;next_line_num_left=8&amp;next_line_num_right=8&amp;path=model%2Fbusiness-process-demo%2Frequirement-uploads.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=6" data-left-range="1-7" data-right-range="1-7">
@@ -354,13 +349,13 @@ Add a new requirement to `BusinessProcessDemo` service. The requirement is about
       </div>
 </div>
 
-        
+
 <a name="diff-a941a7aba115931b72a56d41bfddd500"></a>
 <div id="diff-2" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/requirements.js">
@@ -382,13 +377,13 @@ Add a new requirement to `BusinessProcessDemo` service. The requirement is about
       <span class="user-select-contain" title="model/business-process-demo/requirements.js">
         model/business-process-demo/requirements.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-a941a7aba115931b72a56d41bfddd500" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/7aa1927afb408224ec731ca7bd768e226ecce930?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=5&amp;mode=100644&amp;next_line_num_left=8&amp;next_line_num_right=8&amp;path=model%2Fbusiness-process-demo%2Frequirements.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=6" data-left-range="1-7" data-right-range="1-7">

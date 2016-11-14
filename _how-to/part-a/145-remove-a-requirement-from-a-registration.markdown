@@ -10,14 +10,12 @@ introduction-text: 'A requirement is associated with a document or group of docu
 introduction-img: '144.png'
 prevUrl: 144
 nextUrl: 146
-done: ''
+done: 'yes'
 lang: en
 ref: 145
 ---
 
-Every requirement should belong to registration, every registration belongs to a service.
-
-So in order to remove a requirement you need to know from which registration of what service it should be removed.
+Every requirement should belong to registration, every registration belongs to a service. So in order to remove a requirement you need to know from which registration of what service it should be removed.
 
 To remove a requirement from registration:
 
@@ -30,12 +28,11 @@ If no other registration of your service uses the removed requirement, you shoul
 2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirements` helper function.
 3. Remove the entry in which the source document of your requirement is defined.
 
-If the requirement upload associated with your requirement not used by any other requirement in your service, you should also remove the requirement upload:
+If the requirement upload associated with your requirement is not used by any other requirement in your service, you should also remove the requirement upload:
 
 1. Open file `model/<your-service>/requirement-uploads.js`
 2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirement-uploads` helper function.
 3. Remove the entry in which the source document of your requirement is defined.
-
 
 ## Example
 
@@ -47,13 +44,13 @@ Remove a passport requirement from *"Company registration"* registration of `Bus
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/remove-a-requirement...remove-a-requirement-solution#files')">
 
-        
+
 <a name="diff-1f850bcf53b7031d6fe5fc7942d460b9"></a>
 <div id="diff-0" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/registrations/company-registration.js">
@@ -75,13 +72,13 @@ Remove a passport requirement from *"Company registration"* registration of `Bus
       <span class="user-select-contain" title="model/business-process-demo/registrations/company-registration.js">
         model/business-process-demo/registrations/company-registration.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-1f850bcf53b7031d6fe5fc7942d460b9" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/ff9038ab6f9fded79b74cff1564472fc2d535ca3?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=16&amp;next_line_num_right=16&amp;path=model%2Fbusiness-process-demo%2Fregistrations%2Fcompany-registration.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=6" data-left-range="1-15" data-right-range="1-15">
@@ -187,13 +184,13 @@ Remove a passport requirement from *"Company registration"* registration of `Bus
       </div>
 </div>
 
-        
+
 <a name="diff-da564581570d16ba4a104665991c7b46"></a>
 <div id="diff-1" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/requirement-uploads.js">
@@ -215,13 +212,13 @@ Remove a passport requirement from *"Company registration"* registration of `Bus
       <span class="user-select-contain" title="model/business-process-demo/requirement-uploads.js">
         model/business-process-demo/requirement-uploads.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-da564581570d16ba4a104665991c7b46" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/eb7c8f5ddbbd8801f69868f02440f235d2777dd4?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=7&amp;next_line_num_right=7&amp;path=model%2Fbusiness-process-demo%2Frequirement-uploads.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=5" data-left-range="1-6" data-right-range="1-6">
@@ -327,13 +324,13 @@ Remove a passport requirement from *"Company registration"* registration of `Bus
       </div>
 </div>
 
-        
+
 <a name="diff-a941a7aba115931b72a56d41bfddd500"></a>
 <div id="diff-2" class="file js-details-container
-             
-             
-             
-             
+
+
+
+
              show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/requirements.js">
@@ -355,13 +352,13 @@ Remove a passport requirement from *"Company registration"* registration of `Bus
       <span class="user-select-contain" title="model/business-process-demo/requirements.js">
         model/business-process-demo/requirements.js
       </span>
-      
+
     </div>
   </div>
 
       <div class="data highlight blob-wrapper">
         <table class="diff-table tab-size  " data-tab-size="8">
-          
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-a941a7aba115931b72a56d41bfddd500" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/b69fbd0f44b43855fdddb7c912018704e5667c77?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=7&amp;next_line_num_right=7&amp;path=model%2Fbusiness-process-demo%2Frequirements.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=5" data-left-range="1-6" data-right-range="1-6">
