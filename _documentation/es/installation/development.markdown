@@ -8,46 +8,46 @@ lang: es
 ref: development
 ---
 
-# Installation For Develpoment Purpose
+# Instalación del sistema para plataforma de desarrollo
 
-_eRegistrations_ can be installed with few simple steps on any popular operating system (MacOS/OSX, Windows, Linux):
+_eRegistrations_ puede ser instalado por unos pasos en cualquier sistema operativo (MacOS/OSX, Windows, Linux):
 
-## 1. Install Node.js
+## 1. Instalar Node.js
 
-Go to [https://nodejs.org/en/](https://nodejs.org/en/) and install __v4__ version of Node.js software.
+Ir a la dirección [https://nodejs.org/en/](https://nodejs.org/en/) e instalar la versión __v4__ de Node.js.
 
-__Note for Linux users:__  
-If you're on linux and prefer to rely on system dedicated packages distrubution channel: __Ensure that you end with v4 version of  Node.js, and that npm version that comes with it, is one that originally comes with this specific version of Node.js__.  
-Which version of npm maps to which Node.js version, can be found in [Node.js Releases](https://nodejs.org/en/download/releases/) reference. Some Linux systems tend to install Node.js and npm individually as independent projects, with not adequate version mappings, and that may introduce to issues (e.g. application may not install properly if you decide to rely on npm v3).
+__Nota para los usuarios de Linux:__  
+Si su sistema operativo es Linux y que prefiere trabajar con el canal de distribución de paquetes: __Ensegura que su versión de Node.js es la v4 y que la versión de npm que viene con este corresponde a la que es específica a esta versión de Node.js__.  
+La correspondencia entre las versiones de npm y de Node.js puede ser encontrada el las [referencias Node.js](https://nodejs.org/en/download/releases/).
 
-## 2. Clone eRegistrations system repository
+## 2. Clonear el archivo del sistema eRegistrations deseado
 
-Ensuring that you have [Git](https://git-scm.com/) or [Github Desktop](https://desktop.github.com/) software installed, clone eRegistrations system you wish to work on into folder of your choice.
+Para este paso se necesita tener [Git](https://git-scm.com/) o [Github Desktop](https://desktop.github.com/) instalado. Luego contacte un miembro del equipo eRegistrations para que linkea su identificante Github al archivo esperado, y podrá clonear el sistema eRegistrations esperado.
 
-## 3. Ensure PDF generation software
+## 3. Instalar el programa de generación de PDF
 
-Open shell terminal/command prompt
+Abrir el terminal:
 
-__Note for Windows users:__  
-On Windows for any application related commands ensure to use __Node.js command prompt__, as pictured below:
+__Nota para los usuarios de Windows:__  
+En Windows, para cualquier aplicación que siga, debe utilizar la linea de comando descrita a continuación:
 
 <img src="/img/windows-terminal.jpg" />
 
 ---
 
-Having terminal window open, navigate to __root folder__ of cloned in step 2 project, and run following command:
+Con esta ventana abierta, debe navegar hacia la carpeta __raíz__ del archivo cloneado y lanzar la línea de comando siguiente:
 
 ```
 npm rebuild phantomjs
 ```
 
-It will ensure that [PhantomJS](http://phantomjs.org/) software for your eRegistrations system is installed and linked as expected. This software is mandatory for PDF generation to work correctly
+Eso asegura que el programa [PhantomJS](http://phantomjs.org/) necesario para su sistema eRegistrations esta bien instalado y funciona como esperado. Este programa se requiere para que los archivos en formato PDF puedan ser generados correctamente.
 
-## 4. (Optional) Configure specific HTTP port
+## 4. (Paso opcional) Configurar un puerto HTTP específico
 
-If you intend to run more than one eRegistrations system instance at once on your computer, you need to specify distinct HTTP ports for each, so they do not collide. Otherwise you may skip this step (as automatically your application will be deployed at 3177 port).
+Si trate de lanzar mas que un sistema eRegistrations a la vez en su computadora, necesita especificar los distintos puertos HTTP que se utilizarán, para evitar conflictos. Si no quiere hacer eso, puede ignorar este paso - su aplicación será lanzada automáticamente en el puerto 3177.
 
-Create `env.js` file (system specific environment configuration) in root folder of a project. File content should be as:
+Crea un archivo `env.js` (configuración del entorno específico del sistema) en la carpeta raíz del proyecto. El contenido del archivo debe ser:
 
 ```javascript
 'use strict';
@@ -62,40 +62,37 @@ module.exports = require('mano').env = {
 };
 ```
 
-For other eventual `env.js` settings you may check [Environemnt Configuration](/installation/enviroment) documentation.
+Para cualquier otra configuración eventual del `env.js` puede consultar el tutorial [Configuración del entorno del sistema](/instalacion/entorno-configuracion/).
 
-## 5. (Optional) Install image processing software
+## 5. (Paso opcional) Instalar el programe de procesamiento de imagenes
 
-You can skip this step if you're fine with thumbnails not being generated for eventual PDF files that you may upload as documents.
-System will work totally fine with it, the only downside will be that you'll see blank squares instead of thumbs when seing those files in a list.
+Puede ignorar este paso si accepta de no ver las miniaturas de los archivos PDF que ha cargado como documentos en la Parte A.
 
-If you'd rather have image processing correctly in place, please refer to [Image processing software](/installation/enviroment) on how to ensure such
+Si quiere ver las miniaturas, puede consultar el tutorial sobre el [Proceso de imagenes](/instalación/proceso-de-imagenes/) para procesar la instalación necesaria.
 
-## 6. (Optional) Specific database engine configuration
+## 6. (Paso opcional) Configuración específica de la base de datos
 
-By default database data will be saved in plain text files in `data-local` folder. Format of those files is very convient for development as you can quickly investigate or manipulate state of a data manually if needed for testing needs.
+Por defecto la base de datos es salvada en archivos de texto en la carpeta `data-local`. El formato de estos archivos es muy práctico para el desarrollo: los datos pueden ser modificados manualmente y rapidamente para los tests.
 
-Still if for some reason you prefer data to be saved into some specific popular database engine (e.g. MongoDB, MSSQL etc). Please refer to [Database enging configuration](/installation/database-engine) document for more details
+Si por cualquier razón prefiere que los datos sean salvados en un sistema de base de datos (por ejemplo MongoDB, MSSQL etc), consulte el tutorial de [Configuración de la base de datos](/instalacion/base-de-datos/).
 
-## 7. Create "Users Administrator" account
+## 7. Crear la cuenta de "Administrador" del sistema
 
-It's about administration account, through which you'll be able to create any kind of user. From application scope such account can only be created from scope of other _User Administrator_ account, so first one needs to be created using shell script as follows:
-
-Run following command in terminal in root folder of your project:
+Este paso corresponde a la creación de la cuenta de administración, por la cual podrá crear cualquier tipo de usuario. Para hacer eso, debe lanzar la línea de comando siguiente desde la carpeta raíz de eRegistrations:
 
 ```
 npm run create-users-admin
 ```
 
-Then when asked input an __email__ and __pasword__ of the account (those will be credentials with which you'll be able to login as user adminstrator).  
-_**Note**: Program tends to not close after account is generated, it's totally safe to force stop of it, after few seconds_
+Luego se le pedirá un __correo electrónico__ y __contraseña__ para la cuenta (estos serán las credenciales con los cuales se conectarán a la cuenta de administrador).  
+_**Nota**: El programa no se cierra solo después de haber entrado la contraseña, hay que forzar su cierre después de algunos segundos._
 
-## 8. Run system
+## 8. Lanzar el sistema
 
-Run following command in terminal in root folder of your project:
+Utilize la línea de comando siguiente en la carpeta raíz del proyecto:
 
 ```
 npm start
 ```
 
-When in output log message of HTTP server being started appears (it looks as `start-service http server [3177]`), you can open working system in browser window. If no other url or port settings where provided at point __4__, then application will be accessible at [http://localhost:3177/](http://localhost:3177/) address.
+Cuando aparece el mensaje mencionando que el servidor HTTP ha arrancado (se ve como `start-service http server [3177]`), puede abrir su navegador y conectarse al sistema por la url [http://localhost:3177/](http://localhost:3177/) (salvo que haya configurado un otro puerto en el paso __4__).

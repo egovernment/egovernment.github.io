@@ -65,7 +65,6 @@ La **parte B** (back office) de las aplicaciones de eRegistrations organiza el f
 
 Una otra función de la Parte B (deberíamos llamarla Parte C) es producir estadísticas:
 
-Another function of Part B (we should maybe call it **Part C**) is to produces statistics: 
 <ul>
 	<li>Análisis de las solicitudes: tipo y número de solicitudes, edad, sexo, nacionalidad, región, actividades, etc., cualquier dato pertinente sobre los usuarios</li>
 

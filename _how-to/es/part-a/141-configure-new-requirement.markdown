@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Requisitos'
 rate: '2'
 number: '141'
-introduction-text: 'A requirement is a document that needs to be uploaded with the registrations file. Very often this document needs to be shown at the Front Desk to withdraw the certificate(s). The requirement is triggered by it determinant(s) and appear in the guide only when the registration to which it is linked is checked by the user.<br>Here we will see how to add a requirement to a registration so the user must upload it in the "Documents" page, bring the original copy of the requirement to the Front Desk for withdrawal and set it eventual determinants.'
+introduction-text: 'Un requisito es un documento que necesita ser cargado en el archivo de los registros. Muchas veces este documento necesita ser mostrado en la pantalla para poder retirar los certificado(s). El requisito es accionado por el determinante y aparece en la guía sólo cuando el registro al que está enlazado es verificado.<br>Aquí vamos a ver como agregar un requisito al registro para que el usuario pueda cargar en la página de los "Documentos", presentar copia de los documentos a la pantalla para el retiro y para asignarle su determinante eventual.'
 introduction-img: '145.png'
 prevUrl: 133
 nextUrl: 142

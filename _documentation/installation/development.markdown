@@ -24,6 +24,13 @@ Which version of npm maps to which Node.js version, can be found in [Node.js Rel
 
 Ensuring that you have [Git](https://git-scm.com/) or [Github Desktop](https://desktop.github.com/) software installed, clone eRegistrations system you wish to work on into folder of your choice.
 
+For example, the git repository is located at [eRegistrations Demo](https://github.com/egovernment/eregistrations-demo) url. In order to clone/download it, you must first make sure you have access to it. 
+
+Click the green button on top right "Clone/Download" and choose the replication method that suits you best.
+
+For cloning, copy the url given by the button then type "git clone url" in your terminal in the path you wish to replicate the system.
+
+
 ## 3. Ensure PDF generation software
 
 Open shell terminal/command prompt
@@ -62,7 +69,7 @@ module.exports = require('mano').env = {
 };
 ```
 
-For other eventual `env.js` settings you may check [Environemnt Configuration](/installation/enviroment) documentation.
+For other eventual `env.js` settings you may check [Environment Configuration](/installation/enviroment) documentation.
 
 ## 5. (Optional) Install image processing software
 
@@ -75,7 +82,7 @@ If you'd rather have image processing correctly in place, please refer to [Image
 
 By default database data will be saved in plain text files in `data-local` folder. Format of those files is very convient for development as you can quickly investigate or manipulate state of a data manually if needed for testing needs.
 
-Still if for some reason you prefer data to be saved into some specific popular database engine (e.g. MongoDB, MSSQL etc). Please refer to [Database enging configuration](/installation/database-engine) document for more details
+Still if for some reason you prefer data to be saved into some specific popular database engine (e.g. MongoDB, MSSQL etc), please refer to [Database enging configuration](/installation/database-engine) document for more details.
 
 ## 7. Create "Users Administrator" account
 
