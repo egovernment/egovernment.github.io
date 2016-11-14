@@ -1,7 +1,7 @@
 ---
 layout: training
 permalink: /capacitaciones/
-title: 'Capacitación para el sistema eRegistrations'
+title: 'Capacitación sobre el sistema eRegistrations'
 lang: es
 ref: training
 ---

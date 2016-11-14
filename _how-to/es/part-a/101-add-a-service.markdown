@@ -6,11 +6,11 @@ category: '1. Part A'
 sub-category: 'Servicio'
 rate: '4'
 number: '101'
-introduction-text: ''
+introduction-text: 'Esta página explica los pasos necesarios para añadir un nuevo servicio a la aplicación. Aquí se explica como utilizar el generador de aplicación y los pasos necesarios para configurar un servicio. El contenido del servicio (inscripciones, costos, parte B) no está explicado aquí.'
 introduction-img: '105.png'
 prevUrl: 
 nextUrl: 102
-done: ''
+done: 'yes'
 lang: es
 ref: 101
 ---
@@ -33,7 +33,7 @@ ref: 101
 
 En la branch "[add-a-service](https://github.com/egovernment/eregistrations-demo/tree/add-a-service)" de eregistrations-demo :
 
-Agregar un nuevo servicio llamado “Other”
+Agregar un nuevo servicio llamado “Other":
 
 ### Solución
 
