@@ -10,7 +10,7 @@ introduction-text: 'A veces se debe desactivar un servicio temporalmente. Esta f
 introduction-img: '104.png'
 prevUrl: 104
 nextUrl: 111
-done: ''
+done: 'yes'
 lang: es
 ref: 105
 ---
