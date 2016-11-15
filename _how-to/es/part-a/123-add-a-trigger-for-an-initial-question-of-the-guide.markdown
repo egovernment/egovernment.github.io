@@ -1,34 +1,34 @@
 ---
 layout: recipe
-permalink: /como/anadir-una-condicion-a-una-pregunta-inicial-de-la-guia/
-title: 'Añadir una condición a una pregunta inicial de la guía'
+permalink: /como/anadir-una-condicion-para-una-pregunta-inicial-de-la-guia/
+title: 'Añadir una condición para una pregunta inicial de la guía'
 category: '1. Part A'
 sub-category: 'Determinantes'
 rate: '3'
 number: '123'
-introduction-text: ''
+introduction-text: 'En este ficha mostraremos como hacer un campo dependiente de otro en el contexto del formulario de la guía.'
 introduction-img: '101.png'
 prevUrl: 122
 nextUrl: 124
-done: ''
+done: 'yes'
 lang: es
 ref: 123
 ---
 
-Para ocultar un campo dependiente del valor de algún otro campo en la guía:
+Para ocultar un campo dependiendo del valor de algún otro campo en la guía:
 
 1. Abrir el archivo `model/business-process-<your-service>/guide.js`.
-2. Definir una nuevo propiedad en el mismo objeto (Usualmente `<YourBusinessProcess>.prototype`) en el que deseas que el campo sea dependiente. <br>
-El nuevo campo debe ser llamado (`is<TheDependentFieldName>Applicable`) y debería ser un retorno `true` o `false`.<br>
-Cuando sea `is<TheDependentFieldName>Applicable`* retorno `true`, el campo `<theDependentFieldName>` debe aparecer, de otra manera será oculto.
-Favor ver el ejemplo siguiente para un mejor entendimiento.
+2. Definir una nueva propiedad en el mismo objeto (usualmente `<YourBusinessProcess>.prototype`) del cual deseas que tu campo sea dependiente. <br>
+El nuevo campo debe ser llamado (`is<TheDependentFieldName>Applicable`) y debería ser una función que retorne `true` o `false`.<br>
+Cuando `is<TheDependentFieldName>Applicable`* retorne `true`, se mostrará el campo `<theDependentFieldName>`, caso contrario no se mostrará.
+Favor ver el ejemplo siguiente para un mayor detalle.
 
-*- Se debería usar `db.Object.getApplicablePropName` método para crear el nuevo campo (ver el ejemplo de como usarlo).
+*- Se debería usar el método `db.Object.getApplicablePropName` para crear el nuevo campo (ver el ejemplo en como usarlo).
 
 
 ## Ejemplo
 
-En la branch "[add-a-trigger-for-an-initial-question-of-the-guide](https://github.com/egovernment/eregistrations-demo/tree/add-a-trigger-for-an-initial-question-of-the-guide)" de eregistrations-demo :
+En la rama "[add-a-trigger-for-an-initial-question-of-the-guide](https://github.com/egovernment/eregistrations-demo/tree/add-a-trigger-for-an-initial-question-of-the-guide)" de eregistrations-demo :
 
 Hacer que el campo `workers` del servicio *"Business Process demo"* aparezca sólo cuando el campo de `assets` tenga un valor mayor a 2000.
 
