@@ -10,7 +10,7 @@ introduction-text: 'En este ficha mostraremos como hacer un campo dependiente de
 introduction-img: '101.png'
 prevUrl: 122
 nextUrl: 124
-done: ''
+done: 'yes'
 lang: es
 ref: 123
 ---
