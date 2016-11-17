@@ -8,6 +8,11 @@ ref: training
 
 ## San Salvador, November 15th to 25th, 2016
 
+
+[Javascript basics presentation](https://javascript-basics.eregistrations.org/)  
+
+[Framework presentation](https://framework-presentation.eregistrations.org/)  
+
 [Exercices for training](/configuration-tutorial/)
 
 
