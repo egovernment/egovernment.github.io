@@ -28,7 +28,7 @@ In order to add a new service:
     5. Add new service to collection utils. You need to add them to both default util list and submitted one. Create `apps-common/business-processes/<service-name>.js` and `apps-common/business-processes/submitted/<service-name>.js`. Don't forget to include them in matching `index.js` files.
     6. Ensure that the `model/business-process-<service-name>/index.js` is required in `server/model.js`
     7. Ensure that the `model/business-process-<service-name>/index.js` is required in `apps/user/client/model.js`, `apps/business-process-submitted/client/model.js` and `model/statistics.js`; also, for each official app that will process the new service in `apps/official-*/client/model.js`.
-    8. After model for new BusinessProcess is complete, make sure to provide necessary DOM bindings (for sections and properties (e.g. enum)) in `client/dbjs-dom.js` for user and official applications.
+    8. After model for new BusinessProcess is complete, make sure to provide necessary DOM bindings (for sections and properties (e.g. enum)) in `apps/business-process-<service-name>/client/dbjs-dom.js` for user and official applications.
     9. Add new service legacy model mock generator to setup in `scripts/setup.js`
     10. Configure model for new service in `model/business-process-<service-name>/` directory.
 3. Add a new service button in `view/user.js` and configure controller to handle it's action in `apps/user/controller/index.js`.
