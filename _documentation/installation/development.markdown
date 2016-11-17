@@ -14,7 +14,7 @@ _eRegistrations_ can be installed with few simple steps on any popular operating
 
 ## 1. Install Node.js
 
-Go to [https://nodejs.org/en/](https://nodejs.org/en/) and install __v4__ version of Node.js software.
+Go to [https://nodejs.org/en/](https://nodejs.org/dist/latest-v4.x/) and install __v4__ version of Node.js software.
 
 __Note for Linux users:__  
 If you're on linux and prefer to rely on system dedicated packages distrubution channel: __Ensure that you end with v4 version of  Node.js, and that npm version that comes with it, is one that originally comes with this specific version of Node.js__.  
