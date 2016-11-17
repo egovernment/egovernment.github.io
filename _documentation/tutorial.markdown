@@ -33,7 +33,6 @@ To begin go to your project root directory and type:
 
 `git checkout add-new-field-to-section`
 
-[Solution](https://github.com/egovernment/eregistrations-demo/commit/e095edadbea1d6896c255c6b7008a56efa5a1c0a)
 
 ### 2. Add new form section
 
@@ -71,7 +70,6 @@ To begin go to your project root directory and type:
 
 <a href="/img/exercises/add-new-form-section-solution.png"><img width="1000" src="/img/exercises/add-new-form-section-solution.png" /></a>
 
-[Solution](https://github.com/egovernment/eregistrations-demo/compare/add-new-form-section...add-new-form-section-solution)
 
 
 ### 3. Split one section form into form section group with two sections
@@ -113,7 +111,6 @@ To begin go to your project root directory and type:
 <a href="/img/exercises/split-one-section-form-into-form-section-group-with-two-sections-solution.png"><img width="1000" src="/img/exercises/split-one-section-form-into-form-section-group-with-two-sections-solution.png" /></a>
 
 
-[Solution](https://github.com/egovernment/eregistrations-demo/commit/4105a4dce63c797b4c872dfea74f3f65bd2089d4)
 
 
 ### 4. Update cost value
@@ -126,7 +123,6 @@ To begin go to your project root directory and type:
 
 `git checkout update-cost-value`
 
-[Solution](https://github.com/egovernment/eregistrations-demo/commit/cf17c913e3d6281e1d37764773c7869f648cf299)
 
 
 ### 5. Configure extra determinant for registration
@@ -146,7 +142,6 @@ To begin go to your project root directory and type:
 
 `git checkout configure-extra-determinant-for-registration`
 
-[Solution](https://github.com/egovernment/eregistrations-demo/compare/configure-extra-determinant-for-registration...configure-extra-determinant-for-registration-solution)
 
 ### 6. Configure extra requirement that happens only for given registration and given determinant
 
@@ -163,7 +158,6 @@ To begin go to your project root directory and type:
 
 `git checkout configure-extra-requirement-that-happens-only-for-given-registration-and-determinant`
 
-[Solution](https://github.com/egovernment/eregistrations-demo/compare/configure-extra-requirement-that-happens-only-for-given-registration-and-determinant...configure-extra-requirement-that-happens-only-for-given-registration-and-determinant-solution)
 
 
 
@@ -233,7 +227,6 @@ Flow 2
 
 <a href="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-3b.png"><img width="1000" src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-3b.png" /></a>
 
-[Solution](https://github.com/egovernment/eregistrations-demo/compare/configure-requirement-that-may-resolve-to-two-different-uploads...configure-requirement-that-may-resolve-to-two-different-uploads-solution)
 
 
 ### 8. Configure some new email notification
@@ -261,7 +254,6 @@ To begin go to your project root directory and type:
 
 `git checkout configure-new-email-notification`
 
-[Solution](https://github.com/egovernment/eregistrations-demo/commit/756783c09d94c1110e6ec15e0744fd7c9f10e4fe)
 
 
 ### 9. Configure some new status log
@@ -278,7 +270,6 @@ To begin go to your project root directory and type:
 
 `git checkout configure-new-status-log`
 
-[Solution](https://github.com/egovernment/eregistrations-demo/commit/a269ee6b48eb3b0a9271b272e4cb157d3e8b3e12)
 
 
 ### 10. Add new processing role
@@ -348,7 +339,6 @@ After approval
 
 <a href="/img/exercises/add-new-processing-role-solution-3.png"><img width="1000" src="/img/exercises/add-new-processing-role-solution-3.png" /></a>
 
-[Solution](https://github.com/egovernment/eregistrations-demo/compare/add-new-processing-role...add-new-processing-role-solution)
 
 
 ### 11. Configure new service
@@ -451,4 +441,3 @@ To begin go to your project root directory and type:
 
 `git checkout configure-new-service`
 
-[Solution](https://github.com/egovernment/eregistrations-demo/compare/configure-new-service-solution?expand=1)
