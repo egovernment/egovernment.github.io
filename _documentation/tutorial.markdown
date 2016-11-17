@@ -16,7 +16,7 @@ ref: tutorial
 In the exercises we assume that we work in `eregistrations-demo` project [https://github.com/egovernment/eregistrations-demo](https://github.com/egovernment/eregistrations-demo).
 
 
-### Add new field to section
+### 1. Add new field to section
 
 Add a field `expectedIncome` to the `companyInformation` section in the `businessProcessDemo` service.
 
@@ -35,7 +35,7 @@ To begin go to your project root directory and type:
 
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/e095edadbea1d6896c255c6b7008a56efa5a1c0a)
 
-### Add new form section
+### 2. Add new form section
 
 Add new section (regular form section) `representativeDetails` to the `businessProcessDemo` service.
 
@@ -74,7 +74,7 @@ To begin go to your project root directory and type:
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/add-new-form-section...add-new-form-section-solution)
 
 
-### Split one section form into form section group with two sections
+### 3. Split one section form into form section group with two sections
 
 This task is about changing the `companyInformation` section.
 
@@ -116,7 +116,7 @@ To begin go to your project root directory and type:
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/4105a4dce63c797b4c872dfea74f3f65bd2089d4)
 
 
-### Update cost value
+### 4. Update cost value
 
 The cost of company registration has changed. We need to adjust it.
 
@@ -129,7 +129,7 @@ To begin go to your project root directory and type:
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/cf17c913e3d6281e1d37764773c7869f648cf299)
 
 
-### Configure extra determinant for registration
+### 5. Configure extra determinant for registration
 
 We want to add a new field in the guide form.
 
@@ -148,7 +148,7 @@ To begin go to your project root directory and type:
 
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/configure-extra-determinant-for-registration...configure-extra-determinant-for-registration-solution)
 
-### Configure extra requirement that happens only for given registration and given determinant
+### 6. Configure extra requirement that happens only for given registration and given determinant
 
 A new requirement has been added for `companyRegistration`.
 
@@ -167,7 +167,7 @@ To begin go to your project root directory and type:
 
 
 
-### Configure requirement that may resolve to two different uploads
+### 7. Configure requirement that may resolve to two different uploads
 
 We have a new `requirement` for `certificateOfIncentives`.
 
@@ -236,7 +236,7 @@ Flow 2
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/configure-requirement-that-may-resolve-to-two-different-uploads...configure-requirement-that-may-resolve-to-two-different-uploads-solution)
 
 
-### Configure some new email notification
+### 8. Configure some new email notification
 
 We want to add new email notfication.
 
@@ -264,7 +264,7 @@ To begin go to your project root directory and type:
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/756783c09d94c1110e6ec15e0744fd7c9f10e4fe)
 
 
-### Configure some new status log
+### 9. Configure some new status log
 
 We want to have a new `statusLog`.
 
@@ -281,7 +281,7 @@ To begin go to your project root directory and type:
 [Solution](https://github.com/egovernment/eregistrations-demo/commit/a269ee6b48eb3b0a9271b272e4cb157d3e8b3e12)
 
 
-### Add new processing role
+### 10. Add new processing role
 
 We want to add whole new `processingStep` (official role that is part of Part B flow).
 
@@ -351,7 +351,7 @@ After approval
 [Solution](https://github.com/egovernment/eregistrations-demo/compare/add-new-processing-role...add-new-processing-role-solution)
 
 
-### Configure new service
+### 11. Configure new service
 
 This task is a final test. It's about adding whole new service.
 

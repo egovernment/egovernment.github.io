@@ -7,6 +7,11 @@ ref: training
 ---
 ## San Salvador, del 15 al 25 de Noviembre 2016
 
+[Exercicios para la capacitación](/configuration-tutorial/)
+
+
+---------------------------------
+
 [Agenda](https://docs.google.com/document/d/1kweTP6UzxO57Xr08y-ET3fr68jIxZ2BOSAAko_P5UaU/edit?usp=sharing){:target="_blank"}
 
 Los servicios siguientes van a ser desarrollado durante el seminario : 
