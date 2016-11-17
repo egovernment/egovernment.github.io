@@ -6,30 +6,30 @@ category: '1. Part A'
 sub-category: 'Servicio'
 rate: '3'
 number: '105'
-introduction-text: 'A veces se debe desactivar un servicio durante un momento. Esta ficha describe como se desactiva un servicio con un esfuerzo mínimo (y no sacar totalmente el servicio desde el código fuente).'
+introduction-text: 'A veces se debe desactivar un servicio temporalmente. Esta ficha describe como se desactiva un servicio con un esfuerzo mínimo (y no sacar totalmente el servicio desde el código fuente).'
 introduction-img: '104.png'
 prevUrl: 104
 nextUrl: 111
-done: ''
+done: 'yes'
 lang: es
 ref: 105
 ---
 
-Nos enfocaremos en como inhabilitar un servicio. Si no es posible, después de esto, crear nuevos servicios de tipo inhabilitado, y lo removeremos del link de la interfaz. 
+Nos enfocaremos en como inhabilitar un servicio. Después de esto no será posible crear nuevos servicios del tipo inhabilitado, y removeremos el enlace de la interfaz.
 
-Queremos realizar pocos cambios y asegurar que el servicio puede ser restaurado fácilmente.
+Queremos realizar solo los cambios necesarios y asegurar que el servicio pueda ser restaurado fácilmente.
 
 Para inhabilitar un servicio:
 
 1. Abrir el archivo `view/user.js`.
-2. Encontrar la lista `_servicesBoxList` y comentar la entrada con el servicio que se desea inhabilitar. Tomar nota cual fue el campo `actionUrl` de la entrada.
+2. Encontrar el array `_servicesBoxList` y comentar la entrada con el servicio que se desea inhabilitar. Tomar nota del campo `actionUrl` de la entrada.
 3. Abrir el archivo `apps/user/controller/index.js`.
-4. Encontrar la configuración del controlador de servicio (Es el que contiene el valor del campo `actionUrl` del punto 2).
+4. Encontrar la configuración del controlador del servicio (Es el que contiene el valor del campo `actionUrl` del punto 2).
 5. Comentar la entrada del controlador para el servicio que se desea inhabilitar.
 
 ## Ejemplo
 
-En la branch "[make-a-service-temporarily-unavailable](https://github.com/egovernment/eregistrations-demo/tree/make-a-service-temporarily-unavailable)" of eregistrations-demo :
+En la rama "[make-a-service-temporarily-unavailable](https://github.com/egovernment/eregistrations-demo/tree/make-a-service-temporarily-unavailable)" de eregistrations-demo :
 
 Inhabilitar el servicio de `BusinessProcessDemo`.
 

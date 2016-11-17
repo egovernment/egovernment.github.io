@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Requisitos'
 rate: '1'
 number: '142'
-introduction-text: 'Changing the name of a requirement will impact all the screens and the email notifications where this requirement happens.'
+introduction-text: 'Cambiar el nombre de un requerimiento impactará todas las pantallas y notificaciones de correo electrónico donde este ocurra.'
 introduction-img: '141.png'
 prevUrl: 141
 nextUrl: 143
@@ -15,25 +15,23 @@ lang: es
 ref: 142
 ---
 
-The name of a requirement is, by default, taken from the document upon which the requirement is built.
-Every requirement is associated with a service, so to change it's name, we have to know the service to which it applies.
+El nombre de un requerimiento es, por defecto, basado en el documento del cual se construyó.
+Cada requerimiento es asociado con un servicio, por lo que, para cambiar su nombre, tenemos que conocer el servicio al cuál aplica.
 
-1. Open file `model<business-process-your-service>/requirements.js`.
-2. Locate the array passed to `eregistrations/model/business-process-new/utils/define-requirements` helper function.
-3. In the array locate the entry where the document associated with your requirement is required (e.g. `require('../documents/passport')`).
-4. Modify the entry so that in the end you have a hash with `label` and `class` properties. The value of the hash's `label`
-should be your desired name, and the `class` property's value should be the document class
-(e.g. `{ class: require('../documents/passport'), label: "My new Label" }` )).
+1. Abrir el archivo `model/<business-process-your-service>/requirements.js`.
+2. Ubicar el array enviado a la función de ayuda `eregistrations/model/business-process-new/utils/define-requirements`.
+3. En el array, identificar la entrada en la cuál el documento asociado con el requerimiento es requerido (por ejemplo: `require('../documents/passport')`).
+4. Modificar la entrada para que se tenga un hash con las propiedades `label` y `class`. El valor de la propiedad `label` del hash debe ser el nombre deseado, y el valor de la propiedad `class` debe ser la clase del documento (por ejemplo: `{ class: require('../documents/passport'), label: "My new Label" }` )).
 
 ---
 
-## Example
+## Ejemplo
 
-In the branch "[change-the-name-of-a-requirement](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-requirement)" of eregistrations-demo :
+En la rama "[change-the-name-of-a-requirement](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-requirement)" de eregistrations-demo :
 
-Change the name of *"Passport"* requirement of `BusinessProcessDemo` service to *"Passport (In case of foreign representatives)"*
+Cambiar el nombre del requerimiento *"Passport"* del servicio `BusinessProcessDemo` a *"Passport (In case of foreign representatives)"*
 
-### Solution
+### Solución
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-name-of-a-requirement...change-the-name-of-a-requirement-solution#files')">
 

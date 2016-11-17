@@ -6,8 +6,8 @@ category: '1. Part A'
 sub-category: 'Costos'
 rate: '1'
 number: '152'
-introduction-text: 'Cost name is used for both Part A and Part B as well as print views. Changing it will affect all of those places.'
-introduction-img: '152.png'
+introduction-text: 'El nombre de un costo es usado para: Parte A, Parte B y las vistas de impresión. Cambiarlo afectará esos lugares.'
+introduction-img: '151.png'
 prevUrl: 151
 nextUrl: 153
 done: ''
@@ -15,18 +15,18 @@ lang: es
 ref: 152
 ---
 
-Every cost is associated with a service, so to change it's name, we have to know the service to which it applies.
+Cada costo está asociado a un servicio, para cambiar su nombre debemos saber el servicio al cuál aplica.
 
-1. Open file `model/<business-process-your-service>/costs/<your-cost>.js`.
-2. Set the value of the label property of the cost to the desired name.
+1. Abrir el archivo `model/<business-process-your-service>/costs/<your-cost>.js`.
+2. Colocar el nombre deseado al valor de la propiedad `label` del costo.
 
-## Example
+## Ejemplo
 
-In the branch "[change-the-name-of-a-cost](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-cost)" of eregistrations-demo :
+En la rama "[change-the-name-of-a-cost](https://github.com/egovernment/eregistrations-demo/tree/change-the-name-of-a-cost)" de eregistrations-demo :
 
-Change the name of the `companyRegistration` cost for `BusinessProcessDemo` service to *"Company registration in the Neverland"*.
+Cambiar el nombre del costo `companyRegistration` para el servicio `BusinessProcessDemo` a *"Company registration in the Neverland"*.
 
-### Solution
+### Solución
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/change-the-name-of-a-cost...change-the-name-of-a-cost-solution#files')">
 
