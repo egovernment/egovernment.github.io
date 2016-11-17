@@ -8,6 +8,11 @@ ref: training
 
 ## San Salvador, November 15th to 25th, 2016
 
+[Exercices for training](/configuration-tutorial/)
+
+
+------------------
+
 [Agenda](https://docs.google.com/document/d/1kweTP6UzxO57Xr08y-ET3fr68jIxZ2BOSAAko_P5UaU/edit?usp=sharing){:target="_blank"}
 
 The following services will be developed : 
