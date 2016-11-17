@@ -9,11 +9,11 @@ ref: training
 ## San Salvador, November 15th to 25th, 2016
 
 
-[Javascript basics presentation](https://javascript-basics.eregistrations.org/)  
+[Javascript basics presentation](https://javascript-basics.eregistrations.org/){:target="_blank"}  
 
-[Framework presentation](https://framework-presentation.eregistrations.org/)  
+[Framework presentation](https://framework-presentation.eregistrations.org/){:target="_blank"}  
 
-[Exercices for training](/configuration-tutorial/)
+[Exercices for training](/configuration-tutorial/){:target="_blank"}
 
 
 ------------------

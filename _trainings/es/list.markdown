@@ -8,11 +8,11 @@ ref: training
 ## San Salvador, del 15 al 25 de Noviembre 2016
 
 
-[Presentación de los fundamentos JavaScript](https://javascript-basics.eregistrations.org/)  
+[Presentación de los fundamentos JavaScript](https://javascript-basics.eregistrations.org/){:target="_blank"}  
 
-[Presentación del sistema](https://framework-presentation.eregistrations.org/)  
+[Presentación del sistema](https://framework-presentation.eregistrations.org/){:target="_blank"}  
 
-[Exercicios para la capacitación](/configuration-tutorial/)
+[Exercicios para la capacitación](/configuration-tutorial/){:target="_blank"}
 
 
 ---------------------------------
