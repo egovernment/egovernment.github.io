@@ -8,6 +8,7 @@ ref: training
 
 ## San Salvador, November 15th to 25th, 2016
 
+[Satisfactory survey for the first week of training](https://goo.gl/forms/9xWU9sfNKh11Bci92)
 
 [Javascript basics presentation](https://javascript-basics.eregistrations.org/){:target="_blank"}  
 
