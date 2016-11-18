@@ -8,7 +8,7 @@ ref: training
 ## San Salvador, del 15 al 25 de Noviembre 2016
 
 
-[Cuestionario de evaluación de la primera semana](https://goo.gl/forms/9xWU9sfNKh11Bci92)
+[Cuestionario de evaluación de la primera semana](https://goo.gl/forms/9xWU9sfNKh11Bci92){:target="_blank"} 
 
 
 [Presentación de los fundamentos JavaScript](https://javascript-basics.eregistrations.org/){:target="_blank"}  
