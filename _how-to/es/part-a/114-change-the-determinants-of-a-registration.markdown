@@ -10,7 +10,7 @@ introduction-text: 'Un registro puede ser obligatorio, opcional o inaplicable en
 introduction-img: '112.gif'
 prevUrl: 112
 nextUrl: 121
-done: ''
+done: 'yes'
 lang: es
 ref: 113
 ---
