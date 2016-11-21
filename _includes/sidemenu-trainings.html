@@ -8,8 +8,8 @@
     {% assign trainings = site.trainings | where: "lang", page.lang | where: "category", "training" | sort: "number" %}
 
     {% for training in trainings %}
-    <li class="{% if page.permalink contains training.permalink %}active{% endif %}">
+    <!--<li class="{% if page.permalink contains training.permalink %}active{% endif %}">
         <a href="{{ training.url }}">{{ site.training-pages.title.single[page.lang]}} {{ training.number }}</a>
-    </li>
+    </li>-->
     {% endfor %}
 </ul>
