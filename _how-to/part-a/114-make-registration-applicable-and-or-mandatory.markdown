@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /how-to/change-the-determinants-of-a-registration/
+permalink: /how-to/make-registration-applicable-and-or-mandatory/
 title: 'Make registration applicable and/or mandatory depending on a condition'
 category: '1. Part A'
 sub-category: 'Registration'

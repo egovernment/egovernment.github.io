@@ -1,6 +1,6 @@
 ---
 layout: recipe
-permalink: /how-to/configure-the-determinant-of-a-service/
+permalink: /how-to/define-a-new-field/
 title: 'Define a new field'
 category: '1. Part A'
 sub-category: 'Determinants'
