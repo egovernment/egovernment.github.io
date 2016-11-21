@@ -255,7 +255,7 @@ module.exports.push({
 
 ### 10. Add new processing role
 
-#### `git checkout upstream/add-new-processing-role`
+#### `git checkout upstream/add-new-processing-role-new`
 
 We want to add whole new `processingStep` (official role that is part of Part B flow).
 
