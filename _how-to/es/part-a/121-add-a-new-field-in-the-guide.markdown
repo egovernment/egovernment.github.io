@@ -10,7 +10,7 @@ introduction-text: 'Esta ficha trata de añadir un nuevo campo en el modelo de d
 introduction-img: '106.png'
 prevUrl: 113
 nextUrl: 121
-done: ''
+done: 'yes'
 lang: es
 ref: 121
 ---
