@@ -213,7 +213,7 @@ Example of filled in email text as seen in console (notice the formatting of req
 
 "Congratulations test1 test1.\n\nYou have completed the form. You are one step closer to complete following requests: \n- Company registration\n- Certificate of incentives"
 
-#### Hint
+#### Hints
 
 Email notifications that relate to some status changes, are always configured by configuring triggers for two states. It's dictated by nature of in-memory engine, which doesn't recognize whether incoming update was invoked by _store_ or _restore_ action.  
 The final trigger is resolved only when there was some time (technically _event loop_) gap between first (`preTrigger`) and second (`trigger`) trigger (and that won't happen in case of _restore_ action, where in one batch all object records are restored, so there's no _event loop_ gap between triggered events).
@@ -225,13 +225,33 @@ The final trigger is resolved only when there was some time (technically _event 
 
 #### `git checkout upstream/configure-new-status-log`
 
-We want to have a new `statusLog`.
+We want to have a new preconfigured entry in  `statusLog`. Where by "statusLog" we call history log, which is displayed by a file in Part B:
 
-Requirements for the `statusLog`:
+<a href="/img/exercises/status-log.png"><img width="1000" src="/img/exercises/status-log.png" /></a>
+
+Requirements for the new `statusLog` entry:
 
 1. Trigger only once after a reviewer has started his work (when a first `requirementUpload` has been reviewed).
 2. `statusLog` has following label: "Review in progress"
 3. `statusLog` has the following body: "A review of your request has been started"
+
+#### Hints
+
+- It is about action that happens at _revision_ step, therefore configuration should take place in `apps/official-revision/server/status-log.js` file
+- Progress of _revision_ process is exposed at `processingSteps/map/revision/revisionProgress` property
+- Configuration of logs is provided as an array, and that's what's assigned to `module.exports`, therefore to add our configuration we may just do:
+
+```
+module.exports.push({
+  // our configuration
+});
+```
+
+- Configration is a hash object, made of following options:
+  - `preTrigger` - Same as in case of email notifications (in this case this can indicate revision progress being `0`)
+  - `trigger` - Same as in case of email notifications a final trigger that marks that log should happen
+  - `label` - Log label
+  - `text` - Log text
 
 ### 10. Add new processing role
 
