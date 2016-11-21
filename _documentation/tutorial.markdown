@@ -172,14 +172,6 @@ In other case (`isCitizen` is not `true` and the new requirement is visible) the
 
 `NationalId`, he should be instead asked to upload `Passport`.
 
-#### Hint
-
-You can (in this case you should) create a requirement
-
-as a stand alone class, let's call it `IdDocumentRequirement`. Let's also put this class in
-
-`model/business-process/requirements/id-document.js` so we can reuse it for other services.
-
 #### Overview
 
 <a href="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-1.png"><img width="1000" src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-1.png" /></a>
