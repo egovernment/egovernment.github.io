@@ -213,6 +213,14 @@ Example of filled in email text as seen in console (notice the formatting of req
 
 "Congratulations test1 test1.\n\nYou have completed the form. You are one step closer to complete following requests: \n- Company registration\n- Certificate of incentives"
 
+#### Hint
+
+Email notifications that relate to some status changes, are always configured by configuring triggers for two states. It's dictated by nature of in-memory engine, which doesn't recognize whether incoming update was invoked by _store_ or _restore_ action.  
+The final trigger is resolved only when there was some time (technically _event loop_) gap between first (`preTrigger`) and second (`trigger`) trigger (and that won't happen in case of _restore_ action, where in one batch all object records are restored, so there's no _event loop_ gap between triggered events).
+
+- In case of Part A events it's agreed convention to set `preTrigger` to `guideProgress` property equaling `1` (that states guide was filled)
+- `trigger` should be about _progress_ property of data forms, which path is `dataForms/progress`
+
 ### 9. Configure some new status log
 
 #### `git checkout upstream/configure-new-status-log`
