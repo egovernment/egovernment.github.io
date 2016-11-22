@@ -6,7 +6,7 @@ category: '1. Part A'
 sub-category: 'Registro'
 rate: '2'
 number: '114'
-introduction-text: 'Un registro puede ser obligatorio, opcional o inaplicable en cierta(s) situación(es). Ejemplo: el registro ante el Registro de Comercio es opcional para los activos inferiores a 12'000 '. Este determinante de nivel 1 se ve reflejado por una pregunta inicial en la guía.'
+introduction-text: 'Un registro puede ser obligatorio, opcional o inaplicable en cierta(s) situación(es). Ejemplo: el registro ante el Registro de Comercio es opcional para los activos inferiores a 12 000$. Este determinante de nivel 1 se ve reflejado por una pregunta inicial en la guía.'
 introduction-img: '112.gif'
 prevUrl: 112
 nextUrl: 121
