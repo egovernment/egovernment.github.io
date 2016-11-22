@@ -18,6 +18,8 @@ In the exercises we assume that we work in `eregistrations-demo` project [https:
 
 ### 1. Add new field to section
 
+#### `git checkout upstream/add-new-field-to-section`
+
 Add a field `expectedIncome` to the `companyInformation` section in the `businessProcessDemo` service.
 
 Requirements:
@@ -29,12 +31,9 @@ Requirements:
 5. The field should have defined step (the amount by which it changes) - the step should be set to `1`.
 6. The field should have an `inputHint`: "If your organization is non-profit, put '0'".
 
-To begin go to your project root directory and type:
-
-`git checkout add-new-field-to-section`
-
-
 ### 2. Add new form section
+
+#### `git checkout upstream/add-new-form-section`
 
 Add new section (regular form section) `representativeDetails` to the `businessProcessDemo` service.
 
@@ -62,17 +61,13 @@ Section's specification:
 5. Input hint should state: "The required format is: 0000-0000-AA".
 6. The field is mandatory.
 
-To begin go to your project root directory and type:
-
-`git checkout add-new-form-section`
-
 #### Overview:
 
 <a href="/img/exercises/add-new-form-section-solution.png"><img width="1000" src="/img/exercises/add-new-form-section-solution.png" /></a>
 
-
-
 ### 3. Split one section form into form section group with two sections
+
+#### `git checkout upstream/split-one-section-form-into-form-section-group-with-two-sections`
 
 This task is about changing the `companyInformation` section.
 
@@ -101,31 +96,22 @@ The label of the parent section (`companyInformation`) remains unchanged.
 For the proper setup you will need to include this line: `require('eregistrations/view/dbjs/form-section-group-to-dom');`
 in this [file](https://github.com/egovernment/eregistrations-demo/blob/master/apps/business-process-demo/client/dbjs-dom.js). It's a DOM binding for client (so that the browser knows how to render group sections).
 
-To begin go to your project root directory and type:
-
-`git checkout split-one-section-form-into-form-section-group-with-two-sections`
-
-
 #### Overview
 
 <a href="/img/exercises/split-one-section-form-into-form-section-group-with-two-sections-solution.png"><img width="1000" src="/img/exercises/split-one-section-form-into-form-section-group-with-two-sections-solution.png" /></a>
 
 
-
-
 ### 4. Update cost value
+
+#### `git checkout upstream/update-cost-value`
 
 The cost of company registration has changed. We need to adjust it.
 
 The new cost is 2% of `assets` but not less than 25 USD.
 
-To begin go to your project root directory and type:
-
-`git checkout update-cost-value`
-
-
-
 ### 5. Configure extra determinant for registration
+
+#### `git checkout upstream/configure-extra-determinant-for-registration`
 
 We want to add a new field in the guide form.
 
@@ -137,13 +123,9 @@ Requirements:
 4. The field should have an `inputHint`: "Answer 'Yes' for local".
 5. If the value of the field is `true`, then the cost of the `companyRegistration` is: 1% of `assets` but not less than 25 USD.
 
-
-To begin go to your project root directory and type:
-
-`git checkout configure-extra-determinant-for-registration`
-
-
 ### 6. Configure extra requirement that happens only for given registration and given determinant
+
+#### `git checkout upstream/configure-extra-requirement-that-happens-only-for-given-registration-and-determinant`
 
 A new requirement has been added for `companyRegistration`.
 
@@ -153,15 +135,9 @@ It is required to upload this document when a user wants to register
 
 a company and will employ at least 5 people (`workers` field).
 
-
-To begin go to your project root directory and type:
-
-`git checkout configure-extra-requirement-that-happens-only-for-given-registration-and-determinant`
-
-
-
-
 ### 7. Configure requirement that may resolve to two different uploads
+
+#### `git checkout upstream/configure-requirement-that-may-resolve-to-two-different-uploads`
 
 We have a new `requirement` for `certificateOfIncentives`.
 
@@ -196,20 +172,6 @@ In other case (`isCitizen` is not `true` and the new requirement is visible) the
 
 `NationalId`, he should be instead asked to upload `Passport`.
 
-#### Hint
-
-You can (in this case you should) create a requirement
-
-as a stand alone class, let's call it `IdDocumentRequirement`. Let's also put this class in
-
-`model/business-process/requirements/id-document.js` so we can reuse it for other services.
-
-
-To begin go to your project root directory and type:
-
-`git checkout configure-requirement-that-may-resolve-to-two-different-uploads`
-
-
 #### Overview
 
 <a href="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-1.png"><img width="1000" src="/img/exercises/configure-requirement-that-may-resolve-to-two-different-uploads-1.png" /></a>
@@ -231,6 +193,8 @@ Flow 2
 
 ### 8. Configure some new email notification
 
+#### `git checkout upstream/configure-new-email-notification`
+
 We want to add new email notfication.
 
 The email should be sent to a regular user (to his email address as given by registration).
@@ -249,30 +213,49 @@ Example of filled in email text as seen in console (notice the formatting of req
 
 "Congratulations test1 test1.\n\nYou have completed the form. You are one step closer to complete following requests: \n- Company registration\n- Certificate of incentives"
 
+#### Hints
 
-To begin go to your project root directory and type:
+Email notifications that relate to some status changes, are always configured by configuring triggers for two states. It's dictated by nature of in-memory engine, which doesn't recognize whether incoming update was invoked by _store_ or _restore_ action.  
+The final trigger is resolved only when there was some time (technically _event loop_) gap between first (`preTrigger`) and second (`trigger`) trigger (and that won't happen in case of _restore_ action, where in one batch all object records are restored, so there's no _event loop_ gap between triggered events).
 
-`git checkout configure-new-email-notification`
-
-
+- In case of Part A events it's agreed convention to set `preTrigger` to `guideProgress` property equaling `1` (that states guide was filled)
+- `trigger` should be about _progress_ property of data forms, which path is `dataForms/progress`
 
 ### 9. Configure some new status log
 
-We want to have a new `statusLog`.
+#### `git checkout upstream/configure-new-status-log`
 
-Requirements for the `statusLog`:
+We want to have a new preconfigured entry in  `statusLog`. Where by "statusLog" we call history log, which is displayed by a file in Part B:
+
+<a href="/img/exercises/status-log.png"><img width="1000" src="/img/exercises/status-log.png" /></a>
+
+Requirements for the new `statusLog` entry:
 
 1. Trigger only once after a reviewer has started his work (when a first `requirementUpload` has been reviewed).
 2. `statusLog` has following label: "Review in progress"
 3. `statusLog` has the following body: "A review of your request has been started"
 
-To begin go to your project root directory and type:
+#### Hints
 
-`git checkout configure-new-status-log`
+- It is about action that happens at _revision_ step, therefore configuration should take place in `apps/official-revision/server/status-log.js` file
+- Progress of _revision_ process is exposed at `processingSteps/map/revision/revisionProgress` property
+- Configuration of logs is provided as an array, and that's what's assigned to `module.exports`, therefore to add our configuration we may just do:
 
+```
+module.exports.push({
+  // our configuration
+});
+```
 
+- Configration is a hash object, made of following options:
+  - `preTrigger` - Same as in case of email notifications (in this case this can indicate revision progress being `0`)
+  - `trigger` - Same as in case of email notifications a final trigger that marks that log should happen
+  - `label` - Log label
+  - `text` - Log text
 
 ### 10. Add new processing role
+
+#### `git checkout upstream/add-new-processing-role-new`
 
 We want to add whole new `processingStep` (official role that is part of Part B flow).
 
@@ -300,10 +283,6 @@ Requirements for the `socialSecurity`:
 All natural mechanisms for `processingStep` should work (businessPorcess goes to next step after approval).
 
 After approval the user should not be able to edit step's form anymore etc.
-
-To begin go to your project root directory and type:
-
-`git checkout add-new-processing-role`
 
 #### Guidelines
 
@@ -342,6 +321,8 @@ After approval
 
 
 ### 11. Configure new service
+
+#### `git checkout upstream/configure-new-service`
 
 This task is a final test. It's about adding whole new service.
 
@@ -435,9 +416,3 @@ For the processing we need to configure a new step called `edcProcessing`.
 1. label: "EDC Processing".
 2. One field in the form - `socre` (positive integer, maximum value: 3, label: "Certificate score").
 3. The form should be exposed on a section with label: "EDC approval".
-
-
-To begin go to your project root directory and type:
-
-`git checkout configure-new-service`
-
