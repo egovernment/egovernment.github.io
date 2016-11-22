@@ -8,6 +8,8 @@ ref: training
 ## San Salvador, del 15 al 25 de Noviembre 2016
 
 
+[Lista de asistencia](https://docs.google.com/forms/d/e/1FAIpQLSdtTXQLVVTK0mUJhnKSAC9qWDt7hx0veDsGUhe-P2dCRKrSmw/viewform){:target="_blank"} 
+
 [Cuestionario de evaluación de la primera semana](https://goo.gl/forms/9xWU9sfNKh11Bci92){:target="_blank"} 
 
 
