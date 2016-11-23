@@ -21,7 +21,7 @@ For example imagine `add` function that's meant to for adding two numbers. What 
 In native JavaScript world both arguments would be _coerced_ to numbers, so it's `2` and `3` numbers that are resolved as final arguments, and function will return as expected number `5`.
 In languages with strict typing such operation will crash stating that received arguments where not of expected type.
 
-In JavaScript there are four predefined coercion mechamisms: _toBoolean_, _toString_, _toNumber_ and _toObject_. Most of language values are coercible to any of those types (when being coercible means that _coercion_ trial will not result with an exception but with some value of end type)
+In JavaScript there are four predefined coercion mechanisms: _toBoolean_, _toString_, _toNumber_ and _toObject_. Most of language values are coercible to any of those types (when being coercible means that _coercion_ trial will not result with an exception but with some value of end type)
 
 In next chapters, I'll briefly explain all coercion mechanism, and explain which values are coercible which are not.
 
@@ -40,7 +40,7 @@ Values that coerce to `false` (in other words: _falsy values_):
 
 Any other values coerces to `true`.
 
-Programatically we can describe `toBoolean` coercion with following function:
+Programmatically we can describe `toBoolean` coercion with following function:
 
 ```javascript
 function toBoolean(value) {
@@ -87,3 +87,13 @@ function toNumber(value) {
   return toNumber(value.valueOf());
 };
 ```
+
+Any number taking operator or function, will imply above `toNumber` coercion on input value.
+
+Some notes:
+
+- As we may observe `undefined` and `null` coerce differently, which is controversial (inspiration may go to languages which do not have non-values and express `null` with `0`). Still although that in native functions `null` will coerce to `0`, it's not great advice to follow it (assuming numeric value we take is not optional but required)
+- The undisclosed (for simplicity reasons) `strToNumber` logic could be described as: _if string looks as a number, then it resolves to given number, otherwise it resolves to `NaN`_.
+- Values of newly introduced primitive type `symbol` are no number coercible. It's controversial seeing that all other theoretically _non-coercible_ values coerce to `NaN`. This design inconsistency was intentional and reasoning can be found in [comment on es-discuss group](http://mozilla.6506.n7.nabble.com/Why-Number-symbol-crashes-td359554.html#a359643)
+- Excluding `symbol` exception, similarly as in case of _strings_ we may say that all values are _number_ coercible. The exception would be values with no primitive returning `valueOf` and not exposed `toString` method.
+

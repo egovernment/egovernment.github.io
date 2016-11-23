@@ -5,3 +5,4 @@ feed.xml
 npm-debug.log
 Gemfile.lock
 .idea
+.jekyll-metadata
