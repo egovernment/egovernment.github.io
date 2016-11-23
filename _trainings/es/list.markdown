@@ -25,8 +25,8 @@ ref: training
     <h5>Attendees lists</h5>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtTXQLVVTK0mUJhnKSAC9qWDt7hx0veDsGUhe-P2dCRKrSmw/closedform" target="_blank">Martes 22 de noviembre</a>
 	    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf8E8CW6jWbki0ulEnbiCYC5joOGzMM1M6l-Il1Q-xDCmXZPg/viewform" target="_blank">Miércoles 23 de noviembre</a>
-	    <a href="" target="_blank">Jueves 24 de noviembre</a>
-	    <a href="" target="_blank">Viernes 25 de noviembre</a>
+	    <a href="https://docs.google.com/forms/d/e/1FAIpQLScCQUPs-LMIZd4vr5_3lTZ2rYImgNyB_V4GW3cOQyNeN8XwgQ/closedform" target="_blank">Jueves 24 de noviembre</a>
+	    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJZEL7nmkT_NNsdj2CzKi2wzNSxu78uwsAZFsryUcJ161OOA/closedform" target="_blank">Viernes 25 de noviembre</a>
   </li>     
   <li style="height: 227px;">
     <h5>Surveys</h5>
