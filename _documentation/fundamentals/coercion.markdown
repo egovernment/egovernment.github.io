@@ -66,7 +66,7 @@ function toString(value) {
 };
 ```
 
-Any string taking operator or function, will imply above `toString` coercion on input value.
+Any string taking operator or function, will imply above `toString` coercion on input value, this logic is also exactly reproducible by `String(value)` constructor call.
 
 As all objects that inherit from `Object.prototype` share `toString` method, therefore we can say that (nearly) all values are string coercible. The only exception would be objects that do not share `Object.prototype` object as prototype, and do not expose `toString` method.
 There's no values like that provided natively by the language, but we can create ones via e.g. `Object.create(null)` (see [Prototypal Inheritance](/fundamentals/inheritance) chapter for more information), so we're not safe from such exceptions.
@@ -91,9 +91,32 @@ function toNumber(value) {
 Any number taking operator or function, will imply above `toNumber` coercion on input value.
 
 Some notes:
-
+- Above logic is exactly reproducible through `Number(value)` constructor call
 - As we may observe `undefined` and `null` coerce differently, which is controversial (inspiration may go to languages which do not have non-values and express `null` with `0`). Still although that in native functions `null` will coerce to `0`, it's not great advice to follow it (assuming numeric value we take is not optional but required)
 - The undisclosed (for simplicity reasons) `strToNumber` logic could be described as: _if string looks as a number, then it resolves to given number, otherwise it resolves to `NaN`_.
 - Values of newly introduced primitive type `symbol` are no number coercible. It's controversial seeing that all other theoretically _non-coercible_ values coerce to `NaN`. This design inconsistency was intentional and reasoning can be found in [comment on es-discuss group](http://mozilla.6506.n7.nabble.com/Why-Number-symbol-crashes-td359554.html#a359643)
 - Excluding `symbol` exception, similarly as in case of _strings_ we may say that all values are _number_ coercible. The exception would be values with no primitive returning `valueOf` and not exposed `toString` method.
+
+## Object Coercion
+
+Object coercion can be described with following function:
+
+```javascript
+function toObject(value) {
+  if (value === undefined) throw new TypeError();
+  if (value === null) throw new TypeError();
+  if (typeof value === 'boolean') return new Boolean(value);
+  if (typeof value === 'string') return new String(value);
+  if (typeof value === 'number') return new Number(value);
+  if (typeof value === 'symbol') return createSymbolObject(value);
+  return value; // obviously an object already
+}
+```
+
+All values aside of _non-value's_ (so `undefined` and `null`) are object coercible.
+
+Some notes:
+
+- In this case `Object(value)` constructor follows the coercion logic, with only exception of not throwing for `null` or `undefined` (for such case `Object(value)` returns a new plain object)
+- As we can see, `toObject` coercion (accessible through `Object(value)`) is the only way to create object representations of symbols (as `new Symbol()` notation was specificed to crash, to prevent eventual programmer mistakes). Still it doesn't mean there are use cases to do that :)
 
