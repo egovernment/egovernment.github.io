@@ -15,3 +15,15 @@
 
 <script type="text/javascript" src="{{ "/assets/js/theDocs.all.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/custom.js" | prepend: site.baseurl }}"></script>
+<script>
+$(document).ready(function(e) {
+    $('.language-selector').parent().on("mouseover", function(e) {
+      $(this).addClass('open');
+      $('.language-selector').attr('aria-expanded', true);
+    })
+    $('.language-selector').parent().on("mouseout", function(e) {
+      $(this).removeClass('open');
+      $('.language-selector').attr('aria-expanded', false);
+    })
+  })
+</script>
