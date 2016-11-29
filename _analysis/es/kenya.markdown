@@ -1,6 +1,6 @@
 ---
 layout: analysis-pages
-permalink: /analisis/kenya
+permalink: /analisis/kenya/
 title: 'Kenya'
 lang: es
 category: analysis

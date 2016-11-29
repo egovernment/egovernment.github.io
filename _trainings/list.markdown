@@ -39,34 +39,6 @@ ref: training
 
 ------------------
 
-
-The following services are being developed : 
-
-Team | System | Name of service | Mockups | Analysis BPA | Form
---- | --- | --- | --- | --- |--- 
-Gualberto / Mariusz | MiEmpresa.gob.sv | Capital registration of foreign branch | [link](https://dadd7a.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/10H-GeCcE591dXQTuzyScWl44dwNZC6s07tyqGWbCRtg/edit?usp=sharing){:target="_blank"} | [link](https://docs.google.com/spreadsheets/d/15IU0AD9JGx-qZKIO1_uhfvGuxl7_Aqdl_h8xUYNAt3Y/edit?usp=sharing){:target="_blank"}
-Ernesto / Roxana | MiEmpresa.gob.sv | SME registration | [link](https://w14glk.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/1-B-huszzTx5kesEPx0w5pTLDbZuVeixHrbkhek7lefU/edit?usp=sharing){:target="_blank"} | [link](https://docs.google.com/spreadsheets/d/1vlYF-g_iXo7kZcfZgcpjMtmTTbONaB-G3OH-rJrOrcE/edit?usp=sharing){:target="_blank"}
-Brian / Marek| MiNegocio.gt | Individual trader registration - SIMPLE CASE| [link](https://87qkeb.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/1nAhjy0omqEUIV1qaNOWOj7vqXR7mnLViFpn2MMH1-9I/edit?usp=sharing){:target="_blank"} | [link](https://docs.google.com/spreadsheets/d/1PXg6pgUUUvxYgGQaZpp3qzmvembv-XLncH6OYTdW1ZA/edit?usp=sharing){:target="_blank"}
-{: .table .table-bordered .table-striped }
-
-
-Other services in the "pipe-line":
-
-System | Name of service | Mockups | Analysis BPA | Form
---- | --- | --- | --- |---
-MiEmpresa.gob.sv | Company operations | [link](){:target="_blank"} | [link](https://docs.google.com/document/d/15XdsHUuMTINYNJ_TovomwmNewUJ38Sngvuxy-bVj7ZA/edit?usp=sharing){:target="_blank"} | [link](https://drive.google.com/open?id=1uJaP5c6dGjUXSnIWM3AWYVBMRg8LvtvWChYSL0cLm0A){:target="_blank"}
-MiEmpresa.gob.sv | Obtention of DUI | [link](){:target="_blank"} | [link](https://docs.google.com/document/d/18Qbmr7SSXNu-4cCntlrOS3VcdoqHbKs-r0PFttC6-1Y/edit?usp=sharing){:target="_blank"} | [link](https://docs.google.com/spreadsheets/d/14rhQOwr5yDVOEs3wvdnJPVsGGjG72jEqCV0s2FMYpDI/edit?usp=sharing){:target="_blank"}
-MiNegocio.gt | Individual trader registration - FULL CASE| [link](https://6rg64n.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/17dhdSjxy6EHvbNy4rPAn8ne4C-e9HpN_QR0He9MupWM/edit?usp=sharing){:target="_blank"} | [link](https://docs.google.com/spreadsheets/d/1sZP6VT7CvNfartWU8EAfheCRk_3fDChKNtn9xNJTyPs/edit?usp=sharing){:target="_blank"}
-MiNegocio.gt | Foreign company registration| [link](){:target="_blank"} | [link](https://drive.google.com/open?id=1BYfxb_5cnGd8QSRFYyIVctHzprRiUveQVZ6ggfezlQ8){:target="_blank"} | [link](https://drive.google.com/open?id=17e89-GkeTPMep2mI24AJbPoG3JA3Onvhk1nhuMVRxk0){:target="_blank"}
-MiNegocio.gt | Mandates (being done by Kamil) | [link](https://ipat3b.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/1m4G1POp3kH9KExj7QdfN18iQ1Vmuszitr2-Rq82IxYQ/edit?usp=sharing){:target="_blank"} | [link](https://docs.google.com/spreadsheets/d/1ETYWnlpX1Gkvfy3niq8X_yNKgLBuV6Fuaov-0RRET4Q/edit?usp=sharing){:target="_blank"}
-MiNegocio.gt | Business auxiliaries registration, cancellation, copy of certificate | [link](https://nhtcnz.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/1Zf9egN8XRIzvqoCt32tPYu_s8NehPgAn4QKKLG4pSd4/edit?usp=sharing){:target="_blank"} | [link](https://docs.google.com/spreadsheets/d/1vXlfTar6cZ_OVdQN0MIbCteZirrwyTqUc83YE4Q1j4M/edit?usp=sharing){:target="_blank"}
-MiNegocio.gt | Declaration of emission of shares | [link](https://3atwvi.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/1JfEksxou2MAw6i1Yh0Kq2vpubdmsCcTz_IlMIH3rkaw/edit?usp=sharing){:target="_blank"} | [link](https://docs.google.com/spreadsheets/d/1UmUc12btO11hpp2qs5uhvIuEeidyDjrFH1J_efVIbXU/edit?usp=sharing){:target="_blank"}
-MiNegocio.gt | Registration of assembly act | [link](https://hc2oh5.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/1wv6BiRnoNbLFFntYcrf0O8LSODp9GjdhQPlGrfu7aGo/edit?usp=sharing){:target="_blank"} | [link](https://docs.google.com/spreadsheets/d/1_BKRbOxPxiOBnz921bj5kOwnf3VQoo10ert9_HAJUDM/edit?usp=sharing){:target="_blank"}
-{: .table .table-bordered .table-striped }
-
-<!---
-----------------------
-
 ## Other trainings
 
 {% assign trainings = site.trainings | where: "lang", page.lang | where: "category", "training" | sort: "number" %}
@@ -89,5 +61,3 @@ MiNegocio.gt | Registration of assembly act | [link](https://hc2oh5.axshare.com/
   </tbody>
 </table>
 {% endfor %}
-
---->
