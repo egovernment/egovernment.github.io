@@ -1,0 +1,15 @@
+<ul class="sidenav dropable sticky">
+    <li class="{% if page.ref == 'analysis' %}active{% endif %}">
+        {% assign col = site.collections | where: "label", "analysis" | first %}
+        <a href="{{ col.baseurl[page.lang] }}">{{ col.title[page.lang] }}</a>
+    </li>
+
+
+    {% assign analysis = site.analysis | where: "lang", page.lang | where: "category", "analysis" | sort: "weight" %}
+
+    {% for analys in analysis %}
+    <li class="{% if page.permalink contains analys.permalink %}active{% endif %}">
+        <a href="{{ analys.url }}">{{ analys.title }}</a>
+    </li>
+    {% endfor %}
+</ul>

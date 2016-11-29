@@ -121,3 +121,13 @@ collections:
         en: '/trainings'
         es: '/capacitaciones'
         fr: '/trainings'
+  analysis:
+    output: true
+    title:
+        en: "Analysis"
+        es: "Analisis"
+        fr: "Analyse"
+    baseurl:
+        en: "/analysis"
+        es: "/analisis"
+        fr: "/analyse"
