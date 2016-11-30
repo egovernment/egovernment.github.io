@@ -29,7 +29,7 @@
       <!-- Top navbar -->
       <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
         <ul class="nav navbar-nav navbar-right">
-          <li class="{% unless page.url contains 'how-to' or page.url contains 'como' or page.url contains 'trainings' or page.url contains 'analysis' or page.url contains 'analisis' or page.url contains 'capacitaciones' or page.url contains '-fr' %}active{% endunless %}">
+          <li class="{% unless page.url contains 'how-to' or page.url contains 'como' or page.url contains 'trainings' or page.url contains 'analysis' or page.url contains 'analisis' or page.url contains 'analyse' or page.url contains 'capacitaciones' or page.url contains '-fr' %}active{% endunless %}">
             <a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ doc.title[page.lang] }}</a>
           </li>
 					{% unless page.lang contains 'fr' %}
@@ -39,10 +39,10 @@
           <li class="{% if page.url contains training.baseurl[page.lang] %}active{% endif %}">
             <a href="{{ site.baseurl }}{{ training.baseurl[page.lang] }}">{{ training.title[page.lang] }}</a>
           </li>
+					{% endunless %}
           <li class="{% if page.url contains analysis.baseurl[page.lang] %}active{% endif %}">
             <a href="{{ site.baseurl }}{{ analysis.baseurl[page.lang] }}">{{ analysis.title[page.lang] }}</a>
           </li>
-					{% endunless %}
           <li class="dropdown">
 						<a href="#" class="dropdown-toggle language-selector" data-toggle="dropdown">
 							<img src="{{ site.baseurl }}/img/{{ page.lang }}.png">
@@ -63,10 +63,14 @@
               {% assign analysis=site.analysis | where:"ref", page.ref | sort: 'lang' %}
               {% for analys in analysis %} {% unless page.lang contains analys.lang %}<li><a href="{{ analys.url | prepend: site.baseurl }}" class="lang-select {{ analys.lang }}"><img src="{{ site.baseurl }}/img/{{ analys.lang }}.png"></a></li>{% endunless %} {% endfor %}
 
+              {% unless page.category contains 'analysis' %}
 							<li class="{% if page.lang contains 'fr' %}hidden{% endif %}"><a href="{{ site.baseurl }}/fr" class="lang-select fr"><img src="{{ site.baseurl }}/img/fr.png"></a></li>
+              {% endunless %}
 							{% if page.lang contains 'fr' %}
+                {% unless page.category contains 'analysis' %}
 								<li><a href="{{ site.baseurl }}/" class="lang-select en"><img src="{{ site.baseurl }}/img/en.png"></a></li>
 								<li><a href="{{ site.baseurl }}/inicio.html" class="lang-select es"><img src="{{ site.baseurl }}/img/es.png"></a></li>
+                {% endunless %}
 							{% endif %}
 						</ul>
           </li>

@@ -19,6 +19,7 @@ port: 4001
 index:
   en:
   es: inicio.html
+  fr: 'fr'
 
 documentation-pages:
   overview:
