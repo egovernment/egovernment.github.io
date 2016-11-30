@@ -1,5 +1,6 @@
 {
   "scripts": {
-    "start": "bundle exec jekyll serve --incremental"
+    "start": "bundle exec jekyll serve --incremental",
+    "update": "bundle update"
   }
 }
