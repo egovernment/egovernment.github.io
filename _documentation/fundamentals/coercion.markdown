@@ -97,6 +97,14 @@ Some notes:
 - Values of newly introduced primitive type `symbol` are no number coercible. It's controversial seeing that all other theoretically _non-coercible_ values coerce to `NaN`. This design inconsistency was intentional and reasoning can be found in [comment on es-discuss group](http://mozilla.6506.n7.nabble.com/Why-Number-symbol-crashes-td359554.html#a359643)
 - Excluding `symbol` exception, similarly as in case of _strings_ we may say that all values are _number_ coercible. The exception would be values with no primitive returning `valueOf` and not exposed `toString` method.
 
+## Operators (Implicit Boolean, String and Number coercion).
+
+Contrary to some other languages, JavaScript doesn't provide any language operators for objects handling as e.g. arrays concatenation, or objects merging.
+All it's operators 
+
+
+No object dedicated operators and implicit coercion is usually confusing for devs coming from other environments. Nice demonstration of that can be seen in (otherwise excellent) Wat presentation by Gary Bernhardt
+
 ## Object Coercion
 
 Object coercion can be described with following function:
