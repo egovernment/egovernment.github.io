@@ -66,4 +66,4 @@ Boolean(plainObject.hasOwnProperty); // true, such property exists
 Boolean(prototypeLessObject.hasOwnProperty); // false, no such property exists
 ```
 
-Still usage of `null` based objects, is now in demise. In more recent code, it's more likely you'll see `Map` used for that, as it also appears as even faster dictionary handler than objects created through `Object.create`.
+Still usage of `null` based objects, is now in demise. In more recent code, it's more likely you'll see `Map` used for that, as it also appears as even faster dictionary handler than objects created through `Object.create(null)`.
