@@ -11,7 +11,7 @@ weight: 3
 ![kenya.eRegistrations.org](/img/kenya-logo.png)  
 
 
-Nombre del servicio | Mockups | Análisis BPA | Formulario | A cargo
+Service | Mockups | Analyse BPA | Formulaire | Personne en charge
 --- | --- | --- | --- |--- 
-Certificado de inversiones | [link](https://31txfv.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/188ja_y2bMWVrxciJkZrlY_jW1E46_X2UX5jP-zgAo6o/edit?usp=sharing){:target="_blank"} | | Mehdi
+Certificat d'investissement | [link](https://31txfv.axshare.com/#p=guide){:target="_blank"} | [link](https://docs.google.com/document/d/188ja_y2bMWVrxciJkZrlY_jW1E46_X2UX5jP-zgAo6o/edit?usp=sharing){:target="_blank"} | | Mehdi
 {: .table .table-bordered .table-striped }
