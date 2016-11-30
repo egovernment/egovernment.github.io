@@ -63,11 +63,11 @@
               {% assign analysis=site.analysis | where:"ref", page.ref | sort: 'lang' %}
               {% for analys in analysis %} {% unless page.lang contains analys.lang %}<li><a href="{{ analys.url | prepend: site.baseurl }}" class="lang-select {{ analys.lang }}"><img src="{{ site.baseurl }}/img/{{ analys.lang }}.png"></a></li>{% endunless %} {% endfor %}
 
-              {% unless page.category contains 'analysis' %}
+              {% unless page.ref contains 'analysis' %}
 							<li class="{% if page.lang contains 'fr' %}hidden{% endif %}"><a href="{{ site.baseurl }}/fr" class="lang-select fr"><img src="{{ site.baseurl }}/img/fr.png"></a></li>
               {% endunless %}
 							{% if page.lang contains 'fr' %}
-                {% unless page.category contains 'analysis' %}
+                {% unless page.ref contains 'analysis' %}
 								<li><a href="{{ site.baseurl }}/" class="lang-select en"><img src="{{ site.baseurl }}/img/en.png"></a></li>
 								<li><a href="{{ site.baseurl }}/inicio.html" class="lang-select es"><img src="{{ site.baseurl }}/img/es.png"></a></li>
                 {% endunless %}
