@@ -1,13 +1,13 @@
 ---
 layout: doc-pages
-permalink: /development/lint/
-title: 'Linter Configuration'
+permalink: /development/git/
+title: 'Git Basics'
 category: 'development'
 lang: en
-ref: lint
-weight: 3
+ref: git
+weight: 1
 ---
 
 <span class="label label-info">Coming soon</span>
 
-# Linter Configuration
+# Git Basics
