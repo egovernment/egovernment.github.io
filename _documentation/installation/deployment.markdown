@@ -16,11 +16,9 @@ All eRegistrations applications that are hosted on UNCTAD server are served from
 
 Access to that server is provided to chosen developers, by adding developer's public key to `.ssh/authorized_keys` for `eregistrations@eregistrations.org` account.
 
-It's the only way access is provided (`eregistrations` account has no password setup)
+It's the only way access is provided (`eregistrations` account has no password set)
 
-Application processes are maintained via [pm2](http://pm2.keymetrics.io/) process manager.
-
-[Monitoring panel](https://app.keymetrics.io/#/bucket/579218e1b913defd31e25c1d/dashboard) showcasing health of all application proceses is accessible for invited users.
+Application processes are maintained via [pm2](http://pm2.keymetrics.io/) process manager, [Monitoring panel](https://app.keymetrics.io/#/bucket/579218e1b913defd31e25c1d/dashboard) showcasing health of all application proceses is accessible for invited users.
 
 ## Deploy assignments
 
