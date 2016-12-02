@@ -23,4 +23,4 @@ If you're hard-core JavaScript programmer already:
 
 - [ECMAScript 2015](http://www.ecma-international.org/ecma-262/6.0/)
 - [ECMAScript 5.1](http://es5.github.io/)
-- [HTML - Living Standard](https://html.spec.whatwg.org/)
+- [HTML 5.1](https://www.w3.org/TR/2016/REC-html51-20161101/)
