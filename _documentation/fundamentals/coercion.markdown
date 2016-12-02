@@ -100,10 +100,10 @@ Some notes:
 ## Operators (Implicit Boolean, String and Number coercion).
 
 Contrary to some other languages, JavaScript doesn't provide any language operators for objects handling as e.g. arrays concatenation, or objects merging.
-All it's operators 
 
+__All language operators that imply some computation work strictly with primitives: booleans, strings or numbers. Whenever value of different type is provided then value is coerced to supported type.__
 
-No object dedicated operators and implicit coercion is usually confusing for devs coming from other environments. Nice demonstration of that can be seen in (otherwise excellent) Wat presentation by Gary Bernhardt
+No object dedicated operators and implicit coercion is usually confusing for developers coming from other environments. Nice demonstration of that can be seen in (otherwise excellent) [Wat presentation](https://www.destroyallsoftware.com/talks/wat) by Gary Bernhardt
 
 ## Object Coercion
 
@@ -126,5 +126,5 @@ All values aside of _non-value's_ (so `undefined` and `null`) are object coercib
 Some notes:
 
 - In this case `Object(value)` constructor follows the coercion logic, with only exception of not throwing for `null` or `undefined` (for such case `Object(value)` returns a new plain object)
-- As we can see, `toObject` coercion (accessible through `Object(value)`) is the only way to create object representations of symbols (as `new Symbol()` notation was specificed to crash, to prevent eventual programmer mistakes). Still it doesn't mean there are use cases to do that :)
+- As we can see, `toObject` coercion (reproducible nearly 1:1 through `Object(value)`) is the only way to create object representations of symbols (as `new Symbol()` notation was specified to crash, to prevent eventual programmer mistakes). Still it doesn't mean there are use cases to do that.
 
