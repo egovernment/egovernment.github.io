@@ -59,7 +59,7 @@ obj.emit('load', …args);
 
 It's exposed on most non-DOM event emitting interfaces you'll deal with in eRegistrations stack.
 
-## 2. Node.js callbacks
+## 2. Node.js style callback
 
 Dedicated for one time calls, introduced with Node.js callback style, is probably simplest representation of asynchronous request you can get, and it attributes to success of Node.js platform.
 
