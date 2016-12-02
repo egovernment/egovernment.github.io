@@ -105,4 +105,4 @@ promise.done(function (content) {
 In this chapter I'm not going to disclose details on promises. For more information check resources available on web, and:
 
 - [Asynchronous JavaScript Interfaces: Promises](https://medikoo.com/asynchronous-javascript-interfaces/promises/?notes) Presentation in which we can learn about promises API by writing simple implementation of that pattern
--  [Deferred library](https://github.com/medikoo/deferred#deferred). Documentation of library that we use extensively in eRegistrations stack
+-  [Deferred project](https://github.com/medikoo/deferred#deferred). Documentation of library that we use extensively in eRegistrations stack
