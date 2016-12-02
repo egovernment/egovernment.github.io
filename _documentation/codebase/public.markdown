@@ -3,7 +3,7 @@ layout: doc-pages
 permalink: /framework/public-pages/
 title: 'Public Pages'
 category: codebase
-weight: 8
+weight: 9
 lang: en
 ref: public-pages
 ---

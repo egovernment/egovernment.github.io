@@ -3,7 +3,7 @@ layout: doc-pages
 permalink: /framework/styles/
 title: 'Styles & View Componenets'
 category: codebase
-weight: 7
+weight: 8
 lang: en
 ref: styles
 ---
