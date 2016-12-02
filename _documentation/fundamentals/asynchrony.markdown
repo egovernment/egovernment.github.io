@@ -85,7 +85,7 @@ As a remedial for that, the Promise pattern that is way more composable was acce
 
 If you need to work with Node.js API, more specifically file system, then you should rely on [fs2](https://github.com/medikoo/fs2) package, it provides you all asynchronous functions of Node.js [fs](https://nodejs.org/dist/latest-v7.x/docs/api/fs.html) but in promise returning form.
 
-## 3. Promises
+## 3. Promise
 
 As mentioned in previous section, the promises are currently de facto standard in asynchrony handling, and this pattern is what we rely on heavily in eRegistrations stack.
 
