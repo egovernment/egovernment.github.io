@@ -11,7 +11,7 @@ weight: 10
 # External Learning Resources
 
 - [FreeCodeCamp](https://www.freecodecamp.com/) - Excellent learning resource (and technically a training camp) for beginners. Groups emerging developers from all parts of the world.
-- [MDN Documentation](https://developer.mozilla.org/docs/Web/JavaScript) - Extensive and comprehensible language documentation, in your native language
+- [MDN Documentation](https://developer.mozilla.org/docs/Web/JavaScript) - Extensive and comprehensible language documentation, in your mother language
 - [Node.js API documentation](https://nodejs.org/dist/latest-v7.x/docs/api/) - Node.js API extensive and comprehensible documentation
 - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS#you-dont-know-js-book-series) - Series of books diving deep into the core mechanisms of the JavaScript language, still using comprehensible language
 - [Speaking JavaScript](http://speakingjs.com/) - An In-Depth Guide for JavaScript Programmers
