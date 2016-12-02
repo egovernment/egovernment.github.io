@@ -8,6 +8,8 @@ ref: sections
 weight: 7
 ---
 
+<span class="label label-warning">To be updated</span>
+
 # Sections
 
 **Sections** are a set of components which organize most of the application's forms. Unless your form is custom there is a good chance you should use **Sections** to create it.
