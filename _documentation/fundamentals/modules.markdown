@@ -10,7 +10,7 @@ weight: 9
 
 # NCJS Modules
 
-Node.js was introduced together with its variant off CommonJS modules implementation.
+Node.js was introduced together with its variant of CommonJS modules implementation.
 Back then CommonJS was movement to standardize various aspects of JavaScript ecosystem, with goal of interoperability on server side, and author of Node.js decided to rely on one of the proposed standards.
 
 Version of CommonJS modules that comes with Node.js derives slightly from proposed standard, however in a good way. Still it's not perfectly precise to refer to it as )CommonJS modules implementation_, and Node.js contributors tend to refer to it as NCJS modules.
