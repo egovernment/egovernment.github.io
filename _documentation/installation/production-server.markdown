@@ -16,7 +16,7 @@ Here is the minimum requirement configuration that the server must have in order
 
 - **RAM** : At least 8 GB
 
-- **Hard drive** : at least 200 GB 
+- **Hard drive** : at least 200 GB of disk space on fast Solid State Drive (SSD or as efficient)
 
 - **Cores** : at least 4 CPU cores  (8 CPU cores are recommended)
 
