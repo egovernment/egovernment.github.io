@@ -120,14 +120,13 @@ User.prototype.define('isExplainWhyNotNiceApplicable', {
 To display a section in a view (note that you need to provide the client with the proper binding in order for that to work):
 
 ```javascript
-var generateFormSections = require('eregistrations/components/generate-form-sections');
 
 h1('User Data');
 div(User.prototype.section.toDOMForm(document));
 ```
 
-We import section's view generator and use it on the formSections field which we defined for user.
-This should lead to display of desired form. If the controllers are working (they still need to be configured manually) and we configured correct url in GeneralInfoFormSection.actionUrl, we should have fully working form by now.
+We use section's toDOMForm method to display it on the view. Note, that we need to make sure that the client recieved proper binding, otherwise toDOMForm will not be available in the view.
+Above code should lead to display of the form. If the controllers are working (they still need to be configured manually) and we configured correct url in GeneralInfoFormSection.actionUrl, we should have fully working form by now.
 
 What if we want to have the same form but grouped in two subsections: Personal Information, Address Details? We would use FormSectionGroup for that:
 

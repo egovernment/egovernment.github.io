@@ -35,12 +35,12 @@ Below is a table presenting current assignments:
 
 ### Production systems
 
-If there any updates pending, then __once a day__, at time when there's lowest traffic on system (so e.g. for central america, in the morning or midday CET time).
+If there are any updates pending, then __once a day__, at time when there's lowest traffic on system (so e.g. for central america, in the morning or midday CET time).
 Additional restarts may be requested in some urgent cases, e.g. critical bug fixing
 
 ### Development systems
 
-If there any updates pending, then ideally __twice a day__, before lunch and before an end of a day.
+If there are any updates pending, then ideally __twice a day__, before lunch and before an end of a day.
 
 ## How to restart applications
 
