@@ -215,7 +215,7 @@ Example of filled in email text as seen in console (notice the formatting of req
 
 #### Hints
 
-Email notifications that relate to some status changes, are always configured by configuring triggers for two states. It's dictated by nature of in-memory engine, which doesn't recognize whether incoming update was invoked by _store_ or _restore_ action.  
+Email notifications that relate to some status changes, are always configured by configuring triggers for two states. It's dictated by nature of in-memory engine, which doesn't recognize whether incoming update was invoked by _store_ or _restore_ action.
 The final trigger is resolved only when there was some time (technically _event loop_) gap between first (`preTrigger`) and second (`trigger`) trigger (and that won't happen in case of _restore_ action, where in one batch all object records are restored, so there's no _event loop_ gap between triggered events).
 
 - In case of Part A events it's agreed convention to set `preTrigger` to `guideProgress` property equaling `1` (that states guide was filled)
@@ -288,7 +288,7 @@ After approval the user should not be able to edit step's form anymore etc.
 
 Start by generating app, go to project's root directory and type:
 
-`node_modules/eregistrations/bin/generate-app official-social-security`
+`node node_modules/eregistrations/bin/generate-app official-social-security`
 
 In the console you will see a list of things that need to be done in order for the app to work.
 

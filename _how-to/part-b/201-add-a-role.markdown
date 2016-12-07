@@ -21,7 +21,7 @@ Processing steps models are defined for a given service. There is a good referen
 
 I will reference it in the steps below:
 
-1. At the root of your project type: `node_modules/eregistrations/bin/generate-app official-<your-step-name>` (be sure not to make a typo, especially in *"official"*). This will create most of the files needed by your step. You can check here to see what files should be created at this point: [(A) Official Processing app & role](https://github.com/egovernment/eregistrations-demo/commit/b1d460489c70093bf0cc58af54b011434d989594).
+1. At the root of your project type: `node node_modules/eregistrations/bin/generate-app official-<your-step-name>` (be sure not to make a typo, especially in *"official"*). This will create most of the files needed by your step. You can check here to see what files should be created at this point: [(A) Official Processing app & role](https://github.com/egovernment/eregistrations-demo/commit/b1d460489c70093bf0cc58af54b011434d989594).
 2. Open file `model/user/roles.js`.
 3. Add new role; one entry in `db.Role.members`, setup `db.Role.meta.get('<yourStepName>').label`. You can see how it's done [here](https://github.com/egovernment/eregistrations-demo/commit/3256210ab5f2284418ffee5e8f1468b3c2cad009).
 4. Create a file `model/<your-service>/processing-steps/<your-step-name>.js`.
