@@ -13,10 +13,11 @@ lang: en
 ref: 502
 ---
 
-Every institution is defined as a stand alone class. To add a new institution:
+Every institution is defined as a stand alone instance. To add a new institution:
 
 1. In `model/institutions` directory create a new file `<your-institution>.js`.
-2. Create a institution class as an extension of `eregistrations/model/institution.js` e.g for institution named *"Foo"*:
+2. Create a institution instance of a class `eregistrations/model/institution.js`. See the listing below.
+3. Add a require to `<your-institution>.js` in `model/institutions/index.js` file.
 
 ```javascript
 'use strict';
@@ -29,6 +30,8 @@ module.exports = require('eregistrations/model/institution')(db).newNamed('foo',
   abbr: "…"
 });
 ```
+
+*Note:* The `newNamed` method will create an instance of a class (in this case Institution class). This instance will have a given `id` (equal to the given string) and will be available on global `db` object.
 
 ## Example
 
