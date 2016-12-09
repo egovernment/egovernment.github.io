@@ -8,16 +8,16 @@ rate: '2'
 number: '503'
 prevUrl: 502
 nextUrl:
-done: ''
+done: 'yes'
 lang: en
 ref: 503
 ---
 
-This recipe shows how to split a regular section (`FormSection` instance) into two sections of a `FormSectionGroup` instance.
-For exhaustive overview of sections please see [Sections overview](/framework/sections/).
+This recipe shows how to split a regular section (`FormSection` instance) into two sub-sections of a `FormSectionGroup` instance. For exhaustive overview of sections please see [Sections overview](/framework/sections/).
+
 In order to transform a regular `FormSection` into `FormSectionGroup`:
 
-1. Open the file containing section's definition.
+1. Open the file containing section's definition, e.g. for a section that is part of a business process `model/<business-process-your-service>/data-forms/<your-form-section>.js`.
 2. Change the section type to [`eregistratons/model/form-section-group`](https://github.com/egovernment/eregistrations/blob/master/model/form-section-group.js).
 3. Define new sections on `<YourGroupSection>.prototype.sections` map (set their type to `FormSection` and make them nested).
 4. Set all fields required for your regular sections (which are now subsections) such as: `propertyNames`, `label` etc.
@@ -36,14 +36,14 @@ First section shall contain one field: `businessName` previously belonging to th
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/split-normal-section-into-group...split-normal-section-into-group-solution#files')">
   <div class="js-diff-progressive-container">
-    
+
 <a name="diff-def80378be4cf10b44ffd1567c98f60b"></a>
 <div id="diff-0" class="file js-file js-details-container
-             
-             
-             
-             
-             
+
+
+
+
+
               show-inline-notes
            ">
   <div class="file-header" data-path="apps/business-process-demo/client/dbjs-dom.js" data-short-path="def8037" data-anchor="diff-def80378be4cf10b44ffd1567c98f60b">
@@ -67,14 +67,14 @@ First section shall contain one field: `businessName` previously belonging to th
         apps/business-process-demo/client/dbjs-dom.js
       </a>
 
-      
+
     </div>
   </div>
   <div class="js-file-content">
 
         <div class="data highlight blob-wrapper">
           <table class="diff-table tab-size  " data-tab-size="8">
-            
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-def80378be4cf10b44ffd1567c98f60b" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/40c9536ef33cd6c99b70bc7dea5c0e8be16869bc?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=6&amp;mode=100644&amp;next_line_num_left=23&amp;next_line_num_right=23&amp;path=apps%2Fbusiness-process-demo%2Fclient%2Fdbjs-dom.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=7" data-left-range="1-22" data-right-range="1-22">
@@ -182,14 +182,14 @@ First section shall contain one field: `businessName` previously belonging to th
   </div>
 </div>
 
-    
+
 <a name="diff-53f79c542766de850c2eaad74abdae0b"></a>
 <div id="diff-1" class="file js-file js-details-container
-             
-             
-             
-             
-             
+
+
+
+
+
               show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/data-forms/company-information.js" data-short-path="53f79c5" data-anchor="diff-53f79c542766de850c2eaad74abdae0b">
@@ -213,14 +213,14 @@ First section shall contain one field: `businessName` previously belonging to th
         model/business-process-demo/data-forms/company-information.js
       </a>
 
-      
+
     </div>
   </div>
   <div class="js-file-content">
 
         <div class="data highlight blob-wrapper">
           <table class="diff-table tab-size  " data-tab-size="8">
-            
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-53f79c542766de850c2eaad74abdae0b" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/c6a086241c255035e6e0d62b763ba23fc88e7bd2?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=18&amp;mode=100644&amp;next_line_num_left=2&amp;next_line_num_right=2&amp;path=model%2Fbusiness-process-demo%2Fdata-forms%2Fcompany-information.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=35" data-left-range="1-1" data-right-range="1-1">

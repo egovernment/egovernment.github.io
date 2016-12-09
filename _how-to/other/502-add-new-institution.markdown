@@ -7,8 +7,8 @@ sub-category: ''
 rate: '2'
 number: '502'
 prevUrl: 501
-nextUrl:
-done: ''
+nextUrl: 503
+done: 'yes'
 lang: en
 ref: 502
 ---
