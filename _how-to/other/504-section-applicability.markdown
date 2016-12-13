@@ -6,7 +6,7 @@ category: '5. Other'
 sub-category: ''
 rate: '1'
 number: '504'
-introduction-text: "This recipe covers the applicability of sections. It's about conditions which rule the section's visibility (both in terms of views as well as the validation flow).""
+introduction-text: "This recipe covers the applicability of sections. It's about conditions which rule the section's visibility (both in terms of views as well as the validation flow)."
 prevUrl: 503
 nextUrl:
 done: 'yes'
