@@ -6,26 +6,25 @@ category: '5. Other'
 sub-category: ''
 rate: '1'
 number: '504'
+introduction-text: "This recipe covers the applicability of sections. It's about conditions which rule the section's visibility (both in terms of views as well as the validation flow).""
 prevUrl: 503
 nextUrl:
-done: 
+done: 'yes'
 lang: en
 ref: 503
 ---
 
-This recipe covers the applicability of sections. It's about conditions which rule the section's visibility (both in terms of views as well as the validation flow).
 For exhaustive overview of sections please see [Sections overview](/framework/sections/).
+
 By default every section is applicable. The applicability of section is expressed in the `isApplicable` property defined on sections prototype.
-There are some (rare) cases when you want to setup applicability of sections inside a group section (you want it when a sub section's applicability depends on some filed of the parent group section).
-Such applicability is expressed by `isInternallyApplicable` property (which works only for sections which are sub sections of a group section).
-To setup section's applicability condition you set getter under `isApplicable` or `isInternallyApplicable` property (depending on your use case) of the section.
-In case of `isInternallyApplicable` you have to take into account that it has to work in legacy layer, so it's prone to the same constraints as `is<PropName>Applicable` properties.
+There are some (rare) cases when you want to setup applicability of sections inside a group section (you want it when a sub section's applicability depends on some filed of the parent group section). Such applicability is expressed by `isInternallyApplicable` property (which works only for sections which are sub sections of a group section).
+
+To setup section's applicability condition you set getter under `isApplicable` or `isInternallyApplicable` property (depending on your use case) of the section. In case of `isInternallyApplicable` you have to take into account that it has to work in legacy layer, so it's prone to the same constraints as `is<PropName>Applicable` properties.
 
 In order to change the applicability of a section:
 
 1. Open the file containing section's definition, e.g. for a section that is part of a business process `model/<business-process-your-service>/data-forms/<your-form-section>.js`.
 2. Setup a getter under `isApplicable` property of `<YourFormSection>.prototype` (the sections is applicable if and only if the getter returns true).
-
 
 ## Example
 
@@ -38,14 +37,14 @@ Change the applicability of `attorney` section of `BusinessProcessDemo`. The sec
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/sections-applicability...sections-applicability-solution#files')" >
 
   <div class="js-diff-progressive-container">
-    
+
 <a name="diff-5be29dcc0c106c87753e059ceb0f5d1f"></a>
 <div id="diff-0" class="file js-file js-details-container
-             
-             
-             
-             
-             
+
+
+
+
+
               show-inline-notes
            ">
   <div class="file-header" data-path="model/business-process-demo/data-forms/attorney.js" data-short-path="5be29dc" data-anchor="diff-5be29dcc0c106c87753e059ceb0f5d1f">
@@ -69,14 +68,14 @@ Change the applicability of `attorney` section of `BusinessProcessDemo`. The sec
         model/business-process-demo/data-forms/attorney.js
       </a>
 
-      
+
     </div>
   </div>
   <div class="js-file-content">
 
         <div class="data highlight blob-wrapper">
           <table class="diff-table tab-size  " data-tab-size="8">
-            
+
       <tbody><tr class="js-expandable-line" data-position="0">
     <td class="blob-num blob-num-expandable" colspan="2">
       <a href="#diff-5be29dcc0c106c87753e059ceb0f5d1f" class="diff-expander js-expand" title="Expand" aria-label="Expand" data-url="/egovernment/eregistrations-demo/blob_excerpt/7bd3c0094ba1f101e906deb17cbd2529cc56868a?diff=unified&amp;in_wiki_context=&amp;left_hunk_size=8&amp;mode=100644&amp;next_line_num_left=16&amp;next_line_num_right=16&amp;path=model%2Fbusiness-process-demo%2Fdata-forms%2Fattorney.js&amp;prev_line_num_left=&amp;prev_line_num_right=&amp;right_hunk_size=10" data-left-range="1-15" data-right-range="1-15">
