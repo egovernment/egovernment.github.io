@@ -56,7 +56,7 @@ Section's specification:
 
 1. It should be string type (no new lines).
 2. Label: "Identification number".
-3. The valid pattern for the input is DDDD-DDD-LL (where D - digit (0-9), L - capital latin letter (A-Z)).
+3. The valid pattern for the input is DDDD-DDDD-LL (where D - digit (0-9), L - capital latin letter (A-Z)).
 4. The input mask should reflect the pattern.
 5. Input hint should state: "The required format is: 0000-0000-AA".
 6. The field is mandatory.
