@@ -1,7 +1,7 @@
 ---
 layout: recipe
 permalink: /how-to/add-existing-step-to-service/
-title: 'Add an existing step to new serive'
+title: 'Add an existing step to new service'
 category: '2. Part B'
 sub-category: 'Other'
 rate: '3'
@@ -10,7 +10,7 @@ introduction-text: 'This recipe describes how to add a existing processing step 
 introduction-img: '201.png'
 prevUrl: 252
 nextUrl: 301
-done:
+done: 'yes'
 lang: en
 ref: 253
 ---
@@ -21,7 +21,7 @@ In order to include existing processing step for a service:
 
 1. Ensure that the processing step is implemented as a generic class either in `eregistrations` project or in `model/business-process/processing-steps/` directory (see example on how to [move processing step to generic model](https://github.com/egovernment/eregistrations-demo/commit/db4236a32fe376baf702cc6ba0adfea01c0ea00c)).
 2. Create a file `model/<your-service>/processing-steps/<your-step-name>.js` using the example below.
-3. Require model of new serive in `apps/official-<your-step-name>/client/model.js`.
+3. Require model of new service in `apps/official-<your-step-name>/client/model.js`.
 4. Inlude a name of new service in `_services` property of exported `meta` object in `apps/official-<your-step-name>/business-processes/meta.js`.
 
 ```javascript
