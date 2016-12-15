@@ -48,6 +48,9 @@ documentation-pages:
     title:
       en: 'Framework'
       es: 'Código base'
+    urls:
+      en: '/codebase'
+      es: '/codigo-base'
   development:
     title:
       en: 'Development'
