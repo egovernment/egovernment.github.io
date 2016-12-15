@@ -8,8 +8,6 @@ ref: architecture
 weight: 1
 ---
 
-<span class="label label-warning">To be updated</span>
-
 # eRegistrations Application Architecture
 
 ## Programming language
