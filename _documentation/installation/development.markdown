@@ -45,7 +45,7 @@ On Windows for any application related commands ensure to use __Node.js command 
 Having terminal window open, navigate to __root folder__ of cloned in step 2 project, and run following command:
 
 ```
-npm rebuild phantomjs
+npm rebuild phantomjs-prebuilt
 ```
 
 It will ensure that [PhantomJS](http://phantomjs.org/) software for your eRegistrations system is installed and linked as expected. This software is mandatory for PDF generation to work correctly
