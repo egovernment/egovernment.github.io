@@ -8,14 +8,14 @@ rate: '4'
 number: '101'
 introduction-text: 'Esta página explica los pasos necesarios para añadir un nuevo servicio a la aplicación. Aquí se explica como utilizar el generador de aplicación y los pasos necesarios para configurar un servicio. El contenido del servicio (inscripciones, costos, parte B) no está explicado aquí.'
 introduction-img: '105.png'
-prevUrl: 
+prevUrl:
 nextUrl: 102
 done: 'yes'
 lang: es
 ref: 101
 ---
 
-1. Ejecutar el generador incluido, brindando un nombre completo al nuevo servicio.(Separado por guión) `node_modules/eregistrations/bin/generate-app business-process-<service-name>`.
+1. Ejecutar el generador incluido, brindando un nombre completo al nuevo servicio.(Separado por guión) `node node_modules/eregistrations/bin/generate-app business-process-<service-name>`.
 2. Seguir todos los pasos necesarios para instalar la aplicación mencionada por el generador:
     1. Asegurar que la configuración de la app este añadida en la configuración de los controladores en: `server/processes/master/apps-post-controllers.js` y `server/processes/memory-db/apps-post-controllers.js`.
     2. Registrar servidor las rutas GET para la nueva aplicación en `server/apps/routers.js`.

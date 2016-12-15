@@ -29,7 +29,7 @@ Requirements:
 5. The field should have defined step (the amount by which it changes) - the step should be set to `1`.
 6. The field should have an `inputHint`: "If your organization is non-profit, put '0'".
 
-To begin go to your project root directory and type: 
+To begin go to your project root directory and type:
 
 `git checkout add-new-field-to-section`
 
@@ -63,7 +63,7 @@ Section's specification:
 5. Input hint should state: "The required format is: 0000-0000-AA".
 6. The field is mandatory.
 
-To begin go to your project root directory and type: 
+To begin go to your project root directory and type:
 
 `git checkout add-new-form-section`
 
@@ -78,7 +78,7 @@ To begin go to your project root directory and type:
 
 This task is about changing the `companyInformation` section.
 
-We want to make `companyInformation` section a group section with two 
+We want to make `companyInformation` section a group section with two
 
 sub sections (each a regular FormSection).
 
@@ -103,7 +103,7 @@ The label of the parent section (`companyInformation`) remains unchanged.
 For the proper setup you will need to include this line: `require('eregistrations/view/dbjs/form-section-group-to-dom');`
 in this [file](https://github.com/egovernment/eregistrations-demo/blob/master/apps/business-process-demo/client/dbjs-dom.js). It's a DOM binding for client (so that the browser knows how to render group sections).
 
-To begin go to your project root directory and type: 
+To begin go to your project root directory and type:
 
 `git checkout split-one-section-form-into-form-section-group-with-two-sections`
 
@@ -122,7 +122,7 @@ The cost of company registration has changed. We need to adjust it.
 
 The new cost is 2% of `assets` but not less than 25 USD.
 
-To begin go to your project root directory and type: 
+To begin go to your project root directory and type:
 
 `git checkout update-cost-value`
 
@@ -142,7 +142,7 @@ Requirements:
 5. If the value of the field is `true`, then the cost of the `companyRegistration` is: 1% of `assets` but not less than 25 USD.
 
 
-To begin go to your project root directory and type: 
+To begin go to your project root directory and type:
 
 `git checkout configure-extra-determinant-for-registration`
 
@@ -159,7 +159,7 @@ It is required to upload this document when a user wants to register
 a company and will employ at least 5 people (`workers` field).
 
 
-To begin go to your project root directory and type: 
+To begin go to your project root directory and type:
 
 `git checkout configure-extra-requirement-that-happens-only-for-given-registration-and-determinant`
 
@@ -206,12 +206,12 @@ In other case (`isCitizen` is not `true` and the new requirement is visible) the
 
 You can (in this case you should) create a requirement
 
-as a stand alone class, let's call it `IdDocumentRequirement`. Let's also put this class in 
+as a stand alone class, let's call it `IdDocumentRequirement`. Let's also put this class in
 
 `model/business-process/requirements/id-document.js` so we can reuse it for other services.
- 
 
-To begin go to your project root directory and type: 
+
+To begin go to your project root directory and type:
 
 `git checkout configure-requirement-that-may-resolve-to-two-different-uploads`
 
@@ -257,7 +257,7 @@ Example of filled in email text as seen in console (notice the formatting of req
 "Congratulations test1 test1.\n\nYou have completed the form. You are one step closer to complete following requests: \n- Company registration\n- Certificate of incentives"
 
 
-To begin go to your project root directory and type: 
+To begin go to your project root directory and type:
 
 `git checkout configure-new-email-notification`
 
@@ -274,7 +274,7 @@ Requirements for the `statusLog`:
 2. `statusLog` has following label: "Review in progress"
 3. `statusLog` has the following body: "A review of your request has been started"
 
-To begin go to your project root directory and type: 
+To begin go to your project root directory and type:
 
 `git checkout configure-new-status-log`
 
@@ -310,7 +310,7 @@ All natural mechanisms for `processingStep` should work (businessPorcess goes to
 
 After approval the user should not be able to edit step's form anymore etc.
 
-To begin go to your project root directory and type: 
+To begin go to your project root directory and type:
 
 `git checkout add-new-processing-role`
 
@@ -318,7 +318,7 @@ To begin go to your project root directory and type:
 
 Start by generating app, go to project's root directory and type:
 
-`node_modules/eregistrations/bin/generate-app official-social-security`
+`node node_modules/eregistrations/bin/generate-app official-social-security`
 
 In the console you will see a list of things that need to be done in order for the app to work.
 
@@ -446,7 +446,7 @@ For the processing we need to configure a new step called `edcProcessing`.
 3. The form should be exposed on a section with label: "EDC approval".
 
 
-To begin go to your project root directory and type: 
+To begin go to your project root directory and type:
 
 `git checkout configure-new-service`
 

@@ -19,7 +19,7 @@ The framework comes with a handy app generator included that, given the applicat
 
 In order to add a new service:
 
-1. Run included generator providing a full name of the new service (hyphenated) `node_modules/eregistrations/bin/generate-app business-process-<service-name>`.
+1. Run included generator providing a full name of the new service (hyphenated) `node node_modules/eregistrations/bin/generate-app business-process-<service-name>`.
 2. Follow all the steps needed to setup the application mentioned by generator:
     1. Ensure app configuration added in POST controllers configuration at: `server/processes/master/apps-post-controllers.js` and `server/processes/memory-db/apps-post-controllers.js`.
     2. Register server GET routes for new app in `server/apps/routers.js`.
