@@ -12,75 +12,90 @@ weight: 1
 
 # eRegistrations Application Architecture
 
-**eRegistrations** is full-stack JavaScript project, that means both **client** and **server** side logic is programmed in **JavaScript**.  
+## Programming language
 
-Below you can find diagram presenting bird's eye view of multilayerd architecture and bindings between all main components
+**eRegistrations** is full-stack JavaScript project, that means both **client** and **server** side logic is programmed in **JavaScript**.
+
+Server-side processes are run on [Node.js](https://nodejs.org/en/) platform, client-side interfaces are configured with goods of HTML5+ API's.
+
+When JavaScript language standard (ECMAScript) is concerned, framework is written in ECMAScript 5, and [shimable]() ECMAScript2015+ compliant code.
+
+In modern engines supporting the ECMAScript5 and needed HTML5 interfaces application runs in "Single Page" mode, for older the server-side rendered HTML version is provided.
+
+There's also small subset of code written for ECMAScript3+ compliant engines, which ensures that some dynamic interface behaviors also work in legacy browsers as IE8 (e.g. modal show/hide, form field show/hide). To this layer of code we internally refer as _legacy layer_.
+
+While  code of _legacy layer_ is also run in "Single Page" mode, it's the only JavaScript code coming from our origin that is run on client when application is served through server-side rendering mechanism.
+
+## Codebase format
+
+Whole project codebase is organized through [NCJS modules](/fundamentals/modules)
+
+External dependencies are organized [npm](https://npmjs.org/) packages and placed in `node_modules` folder. Code of those dependencies is also committed to system main repository and version controlled with project codebase.
+
+## Processes architecture
+
+### 1. Environments
+
+System code is run on both _server_ and _numerous clients_ (modern browsers), both can be seen as __environments__.
+
+### 2. Processes
+
+Each _environment_ runs JavaScript __processes__.
+
+On server we have:
+
+- Main process (running various services, e.g. HTTP server)
+- In-memory database process, running on demand database rules (out of which state of files is computed) and services that depend on them
+- Server-side renderer process which renders on-demand HTML for legacy browsers
+- (optionally) system specific processes
+
+Server processes main programs are usually located in `/server/processes`
+
+On client each window/tab opened in given browser will constitute separate application __process__.
+There are no other individual processes (e.g. created through workers) that are configured for application to run.
+
+Client processes main programs are organized per application and are located in `apps/{ appName }/client/program.js`
+
+### 3. Services
+
+Each _process_ runs various __services__.
+
+On server the processes may run services as:
+
+- HTTP server
+- Persistent Database Driver
+- Authentication service
+- Reminders malier
+- Application Number generator
+- In-Memory Database
+- Images processor (thumbs and previews generator)
+- Notifications mailer
+- Server-side HTML renderer (modern SPA client emulator)
+
+While on client it would be:
+
+- Persistent Database Driver
+- (M) In-Memory Database
+- (V) View engine
+- (C) Requests controller
+
+This list is by no means complete, it's just short overview to provide the idea of services as implemented in eRegistrations framework.
+
+### 4. Other resources
+
+Our application processes handles data coming from other resources as:
+
+- File system
+- Persistent Database (on server it can be: MongoDB, any *SQL or LevelDb, on client: localStorage)
+- Cloudfront (external CDN that allows us to reduce latency for static files serving)
 
 ---
 
-<img src="/img/eregistrations.jpg" style="width:100%"/>
+Below there's a diagram exposing a very general overview of our architecture, where you can see:
 
----
+- _Environments_: in light green
+- _Processes_: in yellow
+- _Services_: in red
+- _Other resources_: in grey
 
-Application server-side process runs on [Node.js](http://nodejs.org/) platform. It can be multiplied and load balanced among many different machines.
-
----
-
-### Data tier
-
-#### Server
-
-##### Persistent DB
-
-Persistently we save data in very low-level state, exactly just _key: value_ pairs. Any database engine (SQL and NoSQL) could be adapted to be used as physical storage.
-
-For relational level handling of data like: joins, configuration of filters and other compositions, we use in-memory [DBJS](https://github.com/medikoo/dbjs#dbjs) engine. It allows us to compose and work with data in same language as we program application, it provides all means of access, that normally SQL databases provide, and it goes far beyond that.
-
-Above setup with well thought configuration assures us with great scalability, we can easily load-balance traffic and data handling to many different servers, and maintenance is much easier as we use one programming language across all application runtimes.
-
-##### Binary files storage
-
-Dedicated folder within filesystem, can be hosted on different disk or different server.
-
-#### Client (Modern Browser)
-	
-##### Persistent DB
-
-[localStorage](http://dev.w3.org/html5/webstorage/#the-localstorage-attribute), simple key-value storage.
-
----
-
-### Application tier
-
-#### Server
-
-Brain of application logic is [DBJS](https://github.com/medikoo/dbjs#dbjs) (in-memory, highly evented, database engine implemented in JavaScript). It imports what's needed from persistent layer and exposes natural for language data access interfaces.
-
-_Authentication_ logic (backed with [bcrypt](https://github.com/ncb000gt/node.bcrypt.js) algorithm) is implemented within _mano-auth_ package. Results of authentication are decisive for _Access Control_ module which propagates database data via [Server Sent-Events](http://www.w3.org/TR/eventsource/) channel to modern clients.
-
-All client submissions (data updates, authentication), both coming from modern and legacy browsers are validated and processed in _Controller_ layer.
-
-Based on events that happen in database layer, configured email notifications are propagated with help of [Nodemailer](http://www.nodemailer.com/) module. Same way needed _Images and documents processing_ is triggered.
-
-All internal events that are important to track source of eventual issues are saved in dedicated _log_ layer.
-
-#### Client (Modern Browser)
-
-Same as on server-side main component of application logic is [DBJS](https://github.com/medikoo/dbjs#dbjs) engine, it processes data applicable only for given client (which is securely chosen by _Access Control_ module on server-side). All updates made in client-side process are propagated back to server. Additional _Sync_ layer assures that updates eventually reach the server-side when they couldn't be delivered at time they happened.
-
-All user submissions are validated and processed within _Controller_ layer and result either in direct database updates or are propagated for further processing to server-side.
-
----
-
-### Presentation tier
-
-#### Server
-
-Generation of HTML documents via  _Presenter_ layer that is done on server, is configured only to provide fallback support to legacy engines and to generate PDF documents.
-It's run with same presenter engine that is used directly within modern clients to create single page application experience.
-
-Furthermore HTTP _Assets server_ serves all application static files. It can be additionally configured with _Amazon CloudFront_ (or similar) service to reduce latency and assure fast website access across the world.
-
-#### Client (Modern Browser)
-
-_Presenter_ layer assures routing for both GET and POST requests, builds requested views and assures fast single page application experience.
+<img src="/img/eregistrations-processes.png" style="width:100%"/>
