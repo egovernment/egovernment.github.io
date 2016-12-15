@@ -41,6 +41,9 @@ documentation-pages:
     title:
       en: 'JavaScript Basics'
       es: 'Fundamentos de JavaScript'
+    urls:
+      en: '/fundamentals'
+      es: '/fundamentos'
   codebase:
     title:
       en: 'Framework'
