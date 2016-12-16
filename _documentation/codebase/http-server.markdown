@@ -26,7 +26,8 @@ Usual flow of requests resolution is as follows:
   - Uploaded files, generated documents and archives (from /uploads)
   - Generate archive on demand (if not found at previous step)
   - Generate data form PDF on demand (if not found at previous steps)
-  - Application programs
+  - Application specific programs and stylesheets (from /apps/{appName}/public
+	- Public pages specific assets (from /apps/public/public)
 4. Authentication (passthru)
 5. Application resolution (passthru)
 6. Handle POST submissions
