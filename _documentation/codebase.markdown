@@ -6,6 +6,10 @@ lang: en
 ref: codebase
 ---
 
-<span class="label label-info">Coming soon</span>
-
 # eRegistrations Framework
+
+This category groups articles describing the technology stack of eRegistrations systems.
+
+## Presentation slides
+
+<p><a href="https://framework-presentation.eregistrations.org/">framework-presentation.eregistrations.org</a></p>
