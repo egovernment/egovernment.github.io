@@ -33,7 +33,7 @@ List of applications configured in eRegistrations system:
 - `business-process-submitted` - Submitted registrations overview panel (Part B view for investor)
 - `manager-registration` - Notary registration panel (for notary accounts that are registered but with no yet all data forms filled to pursue files registration)
 - `manager` - Notary panel
-- `official-{stepName}` - Officials processing panels, usually each processing step has dedicated application. However if some steps share same processing interfaces, then they use same common application.
+- `official-{stepName}` - Officials processing panels, usually each processing step has dedicated application. However if some steps share same processing interfaces, then they might be configured to use same common application.
 - `meta-admin` - Translations and other meta data administrator panel
 - `users-admin` - User accounts administrator panel
 - `inspector` - All submitted files (registrations) inspector panel
