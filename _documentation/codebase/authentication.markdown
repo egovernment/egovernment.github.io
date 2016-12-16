@@ -51,7 +51,7 @@ When switching from one application to another, the urls from other applications
 
 When request reaches the server, the page content is resolved via _authentication_ and _application resolution_.
 
-If there's no user logged-in, then automatically `public` application is resolved and it's content is provided to client.
+If there's no user logged-in, then automatically `public` application is resolved and it's content is provided to the client.
 
 If user is logged-in, then application is resolved on basis of currently chosen role (`user.currentRoleResolved` property) is resolved, and request is handled in context of that application.
 
