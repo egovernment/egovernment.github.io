@@ -1,7 +1,7 @@
 ---
 layout: doc-pages
 permalink: /framework/authentication/
-title: 'Authentication & Applications routing'
+title: 'Authentication, Applications & Context Routing'
 category: 'codebase'
 lang: en
 ref: authentication
