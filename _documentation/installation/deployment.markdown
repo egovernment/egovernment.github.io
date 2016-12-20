@@ -35,7 +35,7 @@ Application processes are maintained via [pm2](http://pm2.keymetrics.io/) proces
 - [elomas.gob.ar](http://elomas.gob.ar/) - Lomas (province of Buenos Aires, Argentina)
 - [tz.eregistrations.org](http://tiw.tic.co.tz/) - Tanzania (old version of a system accessible at [`2015`](https://github.com/egovernment/eregistrations-tanzania/tree/2015) tag)
 
-Restarts of above ports is handled by [designed developers](http://localhost:4001/installation/deployment/#deploy-assignments)
+Restarts of above ports is handled by [designated developers](http://localhost:4001/installation/deployment/#deploy-assignments)
 
 ### Development ports
 
