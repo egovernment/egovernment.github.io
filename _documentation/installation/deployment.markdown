@@ -132,7 +132,7 @@ Usual sub-domains are ones as e.g. `medikoo1-els.eregistrations.org`, but it can
 
 ### 3. Configure `env.js` file
 
-In this case as we're [designated with specific port](#decide-on-subdomain-and-port), we must provide [`env.js` configuration file](/environment-configuration/) to pass that information to the application server.
+In this case as we're [designated with specific port](#decide-on-subdomain-and-port), we must provide [`env.js` configuration file](/installation/environment-configuration/) to pass that information to the application server.
 
 Fields that must be provided in `env.js` are `port` and `url` (ones agreed on with system administrator).
 
