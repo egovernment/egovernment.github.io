@@ -12,17 +12,48 @@ ref: deployment
 
 All eRegistrations applications that are hosted on UNCTAD server are served from `eregistrations.org` server.
 
+## Root level Administrator
+
+Current server adminstration at _root_ level is handled by: Mariusz Nowak
+
+Any changes that require root access (new accounts, configuration of new domains for eRegistrations apps deployment) should be directed to above person.
+
 ## Server Access
 
-Access to that server is provided to chosen developers, by adding developer's public key to `.ssh/authorized_keys` for `eregistrations@eregistrations.org` account.
+Access to that server is provided to chosen developers, by adding developer's public key to `.ssh/authorized_keys` for `eregistrations@eregistrations.org` account, and it is granted by [root level administrator](#root-level-administrator).
 
 It's the only way access is provided (`eregistrations` account has no password set)
 
 Application processes are maintained via [pm2](http://pm2.keymetrics.io/) process manager, [Monitoring panel](https://app.keymetrics.io/#/bucket/579218e1b913defd31e25c1d/dashboard) showcasing health of all application proceses is accessible for invited users.
 
+## Hosted systems
+
+### Production ports
+
+- [minegocio](https://minegocio.gt/) - Guatemala
+- [miempresa.gob.sv](https://miempresa.gob.sv/) - Salvador
+- [elomas.gob.ar](http://elomas.gob.ar/) - Lomas (province of Buenos Aires, Argentina)
+- [tz.eregistrations.org](http://tiw.tic.co.tz/) - Tanzania (old version of a system accessible at [`2015`](https://github.com/egovernment/eregistrations-tanzania/tree/2015) tag)
+
+Restarts of above ports is handled by [designed developers](http://localhost:4001/installation/deployment/#deploy-assignments)
+
+### Development ports
+
+Each system has acompanied development port, which in most cases points same version as production, but exposes dummy data and is safe for any testing.
+
+Aside of ports mentioned below, each system user can in scope of his own account deploy any system he wants. As below ports are intended mostly to present `master` version of a systems (for safe testing), it is advised that specific branches for reviews are exposed from scope of user accounts.
+
+- [gt.eregistrations.org](https://gt.eregistrations.org/) - Guatemala
+- [els.eregistrations.org](https://els.eregistrations.org/) - Salvador
+- [ldz.eregistrations.org](https://ldz.eregistrations.org/) - Lomas (province of Buenos Aires, Argentina)
+- [tanzania.eregistrations.org](https://tanzania.eregistrations.org/) - Tanzania, latest version (never published at production port)
+
+Restarts of above ports is similarily as in case of [production](#production-ports) handled by [designed developers](http://localhost:4001/installation/deployment/#deploy-assignments)
+
+
 ## Deploy assignments
 
-The deployment role for each production instance is assigned to one developer (to avoid eventual conflits).
+The deployment role for each production (and matching development) instance is assigned to one developer (to avoid eventual conflits).
 
 Below is a table presenting current assignments:
 
@@ -33,12 +64,12 @@ Below is a table presenting current assignments:
 
 ## How often do restarts should be handled?
 
-### Production systems
+### Production ports
 
 If there are any updates pending, then __once a day__, at time when there's lowest traffic on system (so e.g. for central america, in the morning or midday CET time).
 Additional restarts may be requested in some urgent cases, e.g. critical bug fixing
 
-### Development systems
+### Development ports
 
 If there are any updates pending, then ideally __twice a day__, before lunch and before an end of a day.
 
