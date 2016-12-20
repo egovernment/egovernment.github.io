@@ -68,3 +68,32 @@ Defaults to:
   logOnly: true
 }
 ```
+
+### cloudfront `object`
+
+Configuring [Amazon CloudFront CDN](https://aws.amazon.com/cloudfront/) enables fast serve of assets to all parts of the world. It's especially important if production server is placed on different continent than country it serves.
+Such setup is highly recommended in most cases.
+
+
+```javascript		 
+{
+  // AWS Access Identifiers:
+	key: '..', // Access Key
+	secret: '..', // Secret Key
+
+	// Distribution details
+	distribution: '.. ' // Distribution ID
+},
+```
+
+__Important: Additionally configuration must be accompanied with [`static`](#static-object) url override, to one that points to Amazon servers__
+
+### static `object`
+
+If we're not meant to serve statics from same URL, but instead rely on some proxy (as e.g. [CloudFront](#cloudfront-object)) then via this configuration we provide target url
+
+```javascript
+{
+  host: 'https://example.org/' // Root domain for statics
+}
+```
