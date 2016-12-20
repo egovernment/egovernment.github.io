@@ -14,7 +14,7 @@ All eRegistrations applications that are hosted on UNCTAD server are served from
 
 ## Root level Administrator
 
-Current server adminstration at _root_ level is handled by: Mariusz Nowak
+Current server administration at _root_ level is handled by: Mariusz Nowak
 
 Any changes that require root access (new accounts, configuration of new domains for eRegistrations apps deployment) should be directed to above person.
 
@@ -24,13 +24,13 @@ Access to that server is provided to chosen developers, by adding developer's pu
 
 It's the only way access is provided (`eregistrations` account has no password set)
 
-Application processes are maintained via [pm2](http://pm2.keymetrics.io/) process manager, [Monitoring panel](https://app.keymetrics.io/#/bucket/579218e1b913defd31e25c1d/dashboard) showcasing health of all application proceses is accessible for invited users.
+Application processes are maintained via [pm2](http://pm2.keymetrics.io/) process manager, [Monitoring panel](https://app.keymetrics.io/#/bucket/579218e1b913defd31e25c1d/dashboard) showcasing health of all application processes is accessible for invited users.
 
 ## Hosted systems
 
 ### Production ports
 
-- [minegocio](https://minegocio.gt/) - Guatemala
+- [minegocio.gt](https://minegocio.gt/) - Guatemala
 - [miempresa.gob.sv](https://miempresa.gob.sv/) - Salvador
 - [elomas.gob.ar](http://elomas.gob.ar/) - Lomas (province of Buenos Aires, Argentina)
 - [tz.eregistrations.org](http://tiw.tic.co.tz/) - Tanzania (old version of a system accessible at [`2015`](https://github.com/egovernment/eregistrations-tanzania/tree/2015) tag)
@@ -39,7 +39,7 @@ Restarts of above ports is handled by [designed developers](http://localhost:400
 
 ### Development ports
 
-Each system has acompanied development port, which in most cases points same version as production, but exposes dummy data and is safe for any testing.
+Each system has accompanied development port, which in most cases points same version as production, but exposes dummy data and is safe for any testing.
 
 Aside of ports mentioned below, each system user can in scope of his own account deploy any system he wants. As below ports are intended mostly to present `master` version of a systems (for safe testing), it is advised that specific branches for reviews are exposed from scope of user accounts.
 
@@ -48,12 +48,12 @@ Aside of ports mentioned below, each system user can in scope of his own account
 - [ldz.eregistrations.org](https://ldz.eregistrations.org/) - Lomas (province of Buenos Aires, Argentina)
 - [tanzania.eregistrations.org](https://tanzania.eregistrations.org/) - Tanzania, latest version (never published at production port)
 
-Restarts of above ports is similarily as in case of [production](#production-ports) handled by [designed developers](http://localhost:4001/installation/deployment/#deploy-assignments)
+Restarts of above ports is similarly as in case of [production](#production-ports) handled by [designed developers](http://localhost:4001/installation/deployment/#deploy-assignments)
 
 
 ## Deploy assignments
 
-The deployment role for each production (and matching development) instance is assigned to one developer (to avoid eventual conflits).
+The deployment role for each production (and matching development) instance is assigned to one developer (to avoid eventual conflicts).
 
 Below is a table presenting current assignments:
 
@@ -66,7 +66,7 @@ Below is a table presenting current assignments:
 
 ### Production ports
 
-If there are any updates pending, then __once a day__, at time when there's lowest traffic on system (so e.g. for central america, in the morning or midday CET time).
+If there are any updates pending, then __once a day__, at time when there's lowest traffic on system (so e.g. for central America, in the morning or midday CET time).
 Additional restarts may be requested in some urgent cases, e.g. critical bug fixing
 
 ### Development ports
@@ -105,9 +105,9 @@ __Important: It should be ensured that application offline time is as short as p
 It can be confirmed using `git status` command. If there are no pending changes we can follow with point __2__, otherwise we need to submit pending changes to master, and that can be done as follows:
 
 - Stop server with `pm2 stop {app-name}` command
-- Then being at application root run `update-translations`. It'll commit changes to `server-translations` branch, push it to orign repository and automatically pull request for this change will be created
--  We need to briefly review created pull request on Github. There can be a rare scenario when: Messages that relate to model values of type `StringLine` (e.g. `legend`) was translated using new line characters. This issue is hard to spot by eye, but can be easily validated (in your dev envorment) by running `npm run quick-start` or simply requiring `server/model.js`. If there is such issue, server will crash at model initialization.
-- After changes are succesfully merged into master, we can follow with point __2__
+- Then being at application root run `update-translations`. It'll commit changes to `server-translations` branch, push it to origin repository and automatically pull request for this change will be created
+-  We need to briefly review created pull request on GitHub. There can be a rare scenario when: Messages that relate to model values of type `StringLine` (e.g. `legend`) was translated using new line characters. This issue is hard to spot by eye, but can be easily validated (in your dev environment) by running `npm run quick-start` or simply requiring `server/model.js`. If there is such issue, server will crash at model initialization.
+- After changes are successfully merged into master, we can follow with point __2__
 
 #### 2. Run `pm2-deploy {app-name}`
 
