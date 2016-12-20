@@ -14,9 +14,9 @@ All eRegistrations applications that are hosted on UNCTAD server are served from
 
 ## Root level Administrator
 
-Current server administration at _root_ level is handled by: Mariusz Nowak
+Currently server administration at _root_ level is handled by: Mariusz Nowak
 
-Any changes that require root access (new accounts, configuration of new domains for eRegistrations apps deployment) should be directed to above person.
+Any changes that require root access (new accounts, configuration of new domains for eRegistrations apps deployment) should be directed to this person.
 
 ## Server Access
 
