@@ -120,23 +120,23 @@ Each `eregistrations.org` system user can from scope of his account deploy any s
 
 ## How to deploy eRegistrations system
 
-### 1. Decide on subdomain and port
+### 1. Decide on sub-domain and port
 
-Subdomains should be registered by contacting the [Root Level Administrator](#root-level-administrator), it's the person that will confirm on given subdomain being ok, and will provide with port number on which intended eregistrations instance should be deployed.
+Sub-domains should be registered by contacting the [Root Level Administrator](#root-level-administrator), it's the person that will confirm on given sub-domain being OK, and will provide with port number on which intended eregistrations instance should be deployed.
 
-Usual subdomains are ones as e.g. `medikoo1-els.eregistrations.org`, but it can be anything that ends with `.eregistrations.org`. Domain can also be named after specific service, but such approach is not recommended as it's confusing for reuse after development for such service ended.
+Usual sub-domains are ones as e.g. `medikoo1-els.eregistrations.org`, but it can be anything that ends with `.eregistrations.org`. Domain can also be named after specific service, but such approach is not recommended as it's confusing for reuse after development for such service ended.
 
-### 2. Clone repostory to path of your choice
+### 2. Clone repository to path of your choice
 
-`git` software is preinstalled on a server. Access to github account should be handled by user on it's own, setup of it is same as when working in local dev enviroment
+`git` software is pre-installed on a server. Access to GitHub account should be handled by user on it's own, setup of it is same as when working in local dev environment
 
 ### 3. Configure `env.js` file
 
-In this case as we're [designated with specific port](#decide-on-subdomain-and-port), we must provide [`env.js` configuration file](/enviroment-configuration/) to pass that information to the application server.
+In this case as we're [designated with specific port](#decide-on-subdomain-and-port), we must provide [`env.js` configuration file](/environment-configuration/) to pass that information to the application server.
 
-Fields that must be provided in `env.js` are `port` and `url` (ones agreed on with system adminstrator).
+Fields that must be provided in `env.js` are `port` and `url` (ones agreed on with system administrator).
 
-`dev` setting if not provided, will resolve to `false`, which is recommended if port was setup to showcase the specific version of a system and not for ongoing development (`dev` being `false ensures that resoluiton of program files is faster and that those files are lighter, so it will have impact on end user experience)
+`dev` setting if not provided, will resolve to `false`, which is recommended if port was setup to showcase the specific version of a system and not for ongoing development (`dev` being `false ensures that resolution of program files is faster and that those files are lighter, so it will have impact on end user experience)
 
 Additionally for even better end user experience it might be recommended to setup [CloudFront CDN](http://localhost:4001/installation/enviroment-configuration/#cloudfront-object) for assets.
 Still mind it cannot work right with `dev` set to `true` (if such deployment option is also envisioned)
