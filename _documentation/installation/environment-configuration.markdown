@@ -17,7 +17,7 @@ It's structure in all cases should be as follows:
 ```javascript	 
 'use strict';	 
 
-module.export	s = require('mano').env = {	
+module.exports = require('mano').env = {	
 	// ... Custom configuration settings ...	
 };	 
 ```	 
