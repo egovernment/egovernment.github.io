@@ -140,3 +140,69 @@ Fields that must be provided in `env.js` are `port` and `url` (ones agreed on wi
 
 Additionally for even better end user experience it might be recommended to setup [CloudFront CDN](http://localhost:4001/installation/enviroment-configuration/#cloudfront-object) for assets.
 Still mind it cannot work right with `dev` set to `true` (if such deployment option is also envisioned)
+
+### 4. Compile eRegistrations dependencies
+
+In root of the cloned project do:
+
+```
+$ npm rebuild
+```
+
+This should only be done once, and repeated only if the compiled dependencies change or we upgrae system to another major version of Node.js
+
+### 5. Start server
+
+There are various ways you can maintain server process
+
+#### 5.1 (Not recommended) Plain way 
+
+As in local environemnts just run:
+
+```
+$ npm start
+```
+
+Downside of it is that you need to keep both your computer and terminal window open to have server constantly running.
+
+#### 5.2 Rely on `nohup`
+
+It's wide known linux command -> http://help.eregistrations.org/installation/deployment/#user-development-ports that allows to keep processes in background. Disadvantage is that it doesn't give you easy access to server logs.
+
+#### 5.3 (Recommended) Rely on GNU Screen
+
+[GNU Screen](https://www.gnu.org/software/screen/) is a persistent window manager, that allows you to handle terminal sessions without losing them when logging out from SSH session
+
+For full picture please refer to various documentation resoures, below I present list of basic commands that should allow you to have good start with screen:
+
+##### 5.3.1 Start new Screen session
+
+```
+screen -r
+```
+
+##### 5.3.2 Screen shortcuts:
+
+- `Ctrl+a c` - Open new window
+- `Ctrl+a "` - Open window list (allows to switch between windows)
+- `Ctrl+a d` - Get out of screen
+
+###### 5.3.3 Re-enter screen session
+
+```
+screen -r
+```
+
+#### 5.4 (Recommended) Rely on PM2
+
+The [PM2](http://pm2.keymetrics.io/) process manager is installed globally on server, and you can use it from scope of your account.
+
+For thorough information on usage follow the [project documentation](http://pm2.keymetrics.io/docs/usage/cluster-mode/)
+
+Mind that to PM2 you can pass only scripts that run Node.js processes direclty, so e.g. you cannot do `pm2 start npm start`, it will not work. Instead it should be run as:
+
+```
+$ npm run setup
+$ pm2 start bin/start
+```
+
