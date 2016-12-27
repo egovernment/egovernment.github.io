@@ -163,7 +163,9 @@ This should only be done once, and repeated only if the compiled dependencies ch
 
 ### 5. Start server
 
-There are various ways you can maintain server process
+There are various ways you can maintain server process.
+
+To test that system starts and work without issues it's best to follow [5.1 Plain way](http://help.eregistrations.org/installation/deployment/#not-recommended-plain-way) method, but it's not further recommened for undisturbed long going serve of a feature branch.
 
 #### 5.1 (Not recommended) Plain way 
 
@@ -173,7 +175,7 @@ As in local environemnts just run:
 $ npm start
 ```
 
-Downside of it is that you need to keep both your computer and terminal window open to have server constantly running.
+It's method you should use to test your setup initially, but it's not recommended for long-going port deployment, as downside is that you need to keep both your computer and terminal window open to have server constantly running.
 
 #### 5.2 Rely on `nohup`
 
