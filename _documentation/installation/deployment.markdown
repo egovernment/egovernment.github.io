@@ -141,6 +141,17 @@ Fields that must be provided in `env.js` are `port` and `url` (ones agreed on wi
 Additionally for even better end user experience it might be recommended to setup [CloudFront CDN](http://localhost:4001/installation/enviroment-configuration/#cloudfront-object) for assets.
 Still mind it cannot work right with `dev` set to `true` (if such deployment option is also envisioned)
 
+Example of how minimal env.js should look:
+
+```javascript	 
+'use strict';	 
+
+module.exports = require('mano').env = {	
+	port: 3000, // Port you had assigned for this instance
+	url: 'http://foo1-els.eregistrations.org/' // Domain you had assigned for this instance
+};	 
+```	
+
 ### 4. Compile eRegistrations dependencies
 
 In root of the cloned project do:
