@@ -50,7 +50,6 @@ Aside of ports mentioned below, each system user can in scope of his own account
 
 Restarts of above ports is similarly as in case of [production](#production-ports) handled by [designed developers](http://localhost:4001/installation/deployment/#deploy-assignments)
 
-
 ## Deploy assignments
 
 The deployment role for each production (and matching development) instance is assigned to one developer (to avoid eventual conflicts).
