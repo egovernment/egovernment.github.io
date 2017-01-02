@@ -71,11 +71,7 @@ Defaults to:
 
 ### cloudfront `object`
 
-Configuring [Amazon CloudFront CDN](https://aws.amazon.com/cloudfront/) enables fast serve of assets to all parts of the world. It's especially important if production server is placed on different continent than country it serves.
-Such setup is highly recommended in most cases.
-
-To configure CloudFront distribution for new port please contact: Vianney Lessafre
-
+Configuring [Amazon CloudFront CDN](https://aws.amazon.com/cloudfront/) enables fast serve of assets to all parts of the world. It's especially important if production server is placed on different continent than country it serves. Such setup is highly recommended in most cases.
 
 ```javascript		 
 {
