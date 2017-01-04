@@ -5,6 +5,9 @@
 		<li class="{% if page.ref == 'concept' %}active{% endif %}">
 				<a href="{{ site.baseurl }}{{ site.documentation-pages.concept.urls[page.lang] }}">{{ site.documentation-pages.concept.title[page.lang] }}</a>
 		</li>
+		<li class="{% if page.ref == 'core' %}active{% endif %}">
+				<a href="{{ site.baseurl }}{{ site.documentation-pages.core.urls[page.lang] }}">{{ site.documentation-pages.core.title[page.lang] }}</a>
+		</li>
 		<li>
 				<a class="has-child {% if page.category contains 'installation' %}active open{% endif %}">{{ site.documentation-pages.installation.title[page.lang]}}</a>
 				<ul>
