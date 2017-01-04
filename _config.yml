@@ -33,6 +33,13 @@ documentation-pages:
     urls:
       en: '/concept'
       es: '/concepto'
+  core:
+    title:
+      en: 'Core'
+      es: 'Nucleo'
+    urls:
+      en: '/core'
+      es: 'nucleo'
   installation:
     title:
       en: 'Installation'

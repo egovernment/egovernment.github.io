@@ -8,8 +8,7 @@ ref: codebase
 
 # eRegistrations Framework
 
-This category groups articles describing the technology stack of eRegistrations systems.
 
 ## Presentation slides
 
-<p><a href="https://framework-presentation.eregistrations.org/">framework-presentation.eregistrations.org</a></p>
+<p><a href="https://framework-presentation.eregistrations.org/">See here the presentation of the framework summarised in slides</a>.</p>
