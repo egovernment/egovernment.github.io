@@ -50,7 +50,7 @@ After that you may investigate any outcome of your debug script in log of runnin
 
 #### Usage example
 
-Let's check whether business process of id `8r9m15pi1R` resolves as complete at Part A.
+Let's check whether business process of id `8r9m15pi1nr` resolves as complete at Part A.
 
 Firstly we need to ensure that indeed the business process object is loaded into `memory-db` process.
 _The business process is only loaded if during the run of the server process there were any changes made on this object_. If you're sure that's not the case (e.g. server was just restarted), then you may invoke a change from browser which will force the object to be loaded. (for that you can do e.g.  `businessProcess.set('test', true)` in browser console).
@@ -65,7 +65,7 @@ var bp = db.BusinessProcess.getById('8r9m15pi1nr');
 console.log("Is complete at Part A:", bp.isSubmittedReady);
 ```
 
-After running above with `bin/ipc-level` we'll see the `console.log` outcome in log of a process.
+After running above with `bin/ipc-eval` we'll see the `console.log` outcome in log of a process.
 
 If the outcome is that `isSubmittedReady` resolves to unexpected value, usually you'd want to dig deeper and want to track the issue to it's source.
 
