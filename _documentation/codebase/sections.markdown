@@ -34,7 +34,7 @@ Sections are objects, hence they can be defined as nesteds on any `dbjs` object.
 
 The most common collections are: `User.prototype.dataForms` and `BusinessProcess.prototype.dataForms`.
 
-In both cases `dataForms` is of type `PropertyGroupsProcess` (`eregistrations/model/lib/property-groups-process.js`).
+In both cases `dataForms` is of type `PropertyGroupsProcess` [eregistrations/model/lib/property-groups-process.js](https://github.com/egovernment/eregistrations/blob/master/model/lib/property-groups-process.js).
 
 This means that you can easily browse the collection of applicable sections (ones which need to be filled by user) at a given time by calling
 
@@ -106,7 +106,7 @@ User.prototype.defineProperties({
 });
 
 // As explainWhyNotNice field should be shown conditionally, we define a condition for it.
-// This condition is a getter and it's name should follow convention.
+// This condition is a getter and its name should follow convention.
 // The convention to create such getter's name // is: is<CapitalizedNameOfProperty>Applicable, so
 // in our example it's isExplainWhyNotNiceApplicable. If we wanted to show name field conditionally
 // it would have been isNameApplicable.
@@ -125,7 +125,7 @@ h1('User Data');
 div(User.prototype.section.toDOMForm(document));
 ```
 
-We use section's toDOMForm method to display it on the view. Note, that we need to make sure that the client recieved proper binding, otherwise toDOMForm will not be available in the view.
+We use sections' toDOMForm method to display it in the view. Note, that we need to make sure that the client received proper binding, otherwise toDOMForm will not be available in the view.
 Above code should lead to display of the form. If the controllers are working (they still need to be configured manually) and we configured correct url in GeneralInfoFormSection.actionUrl, we should have fully working form by now.
 
 What if we want to have the same form but grouped in two subsections: Personal Information, Address Details? We would use FormSectionGroup for that:
@@ -205,31 +205,52 @@ For example a table of _partners_. There is a section class to handle such cases
 
 `FormEntitiesTable` is used for display of already created entities, but it does not provide configuration for forms with which we add or update given entity, as this again is done with _Sections_ configuration based on model of given entity (we just need to follow the same steps we used for user).
 
-As a matter of fact we should begin our work with partners (or any any other external entities we need to assign to `businessProcess`) with preparation of **Sections** config for them.
+As a matter of fact we should begin our work with partners (or any any other external entities we need to assign to `businessProcess` or `user`) with preparation of **Sections** config for them.
 Such setup might look like this:
 
 ```javascript
-// Some model to which we'll refer
+'use strict';
+
+var Partner               = require('../fields') //Model entity
+  , _                     = require('../../../../../i18n').bind("Model: Partner")
+  , db                    = require('../../../../../db')
+  , FormSection           = require('eregistrations/model/form-section')(db)
+  , PropertyGroupsProcess = require('eregistrations/model/lib/property-groups-process')(db);
+
+module.exports = Partner;
+
 Partner.prototype.defineProperties({
-    name: { type: db.StringLine }
-    isShareholder: { type: db.Boolean }
+	dataForms: {
+		type: PropertyGroupsProcess,
+		nested: true
+	}
 });
 
-var defineFormSections = require('eregistrations/model/form-sections')
-  , FormSection        = require('eregistrations/model/form-section');
-
-defineFormSections(Partner, 'formSections');
-
-FormSection.extend('PartnerFormSection', {
-    label: { value: "Partner information" },
-    actionUrl: { value: 'partner' },
-    propertyNames: { value: ['name', 'isShareholder'] }
+Partner.prototype.dataForms.map.define('main', {
+	nested: true,
+	type: FormSection
 });
 
-Partner.prototype.formSections.define('partnerFormSection', { type: db.PartnerFormSection });
+Partner.prototype.dataForms.map.main.setProperties({
+	label: _("Personal information"),
+	actionUrl: function () { return 'partner/' + this.propertyMaster.key; },
+	propertyMasterType: Partner,
+	propertyNames: ["name", "isShareholder"]
+});
+
 ```
 
-We need to pass `isChildEntity` option to `eregistrations/components/generate-form-sections` invocation in order for the partner form to build it's forms urls correctly.
+OK, so the above should look mostly familiar at least the sections defining part. One thing which needs an explanation is `PropertyGroupsProcess`.
+It's just the type which we normally use for section maps. By convention (It's a strong convention, so please use it) the sections collection of a given entity is defined on `dataForms` property.
+Another interesting thing is `propertyMasterType` property. You should be familiar with the concept of `this.master` used in getters.
+By default, when in the getter context when you use `this.master` you will get the nearest parent which is not a nested object, or (in case you are not nested) yourself.
+So, for every nested objects property setup on `BusinessProcess.prototype` `this.master` will refer to the parent business process object.
+The same behaviour will be seen in the sections getters (you can use `this.master`). However, you should not do this.
+In the context of the section you should use `this.propertyMaster` which by default is equal to `this.master`. However this can be changed.
+Since we're building the "Personal information" section around `Partner`, it's the `Partner`'s instance that is more interesting for us than its parent object.
+As said above, by default, the sections `this.propertyMaster` will reference the `this.master`, hence: first non nested parent object of the section which is not going to be `Partners` instance (as the `Partner` is going to be setup as nested).
+`propertyMasterType` allows us to setup the parent to be `Partners` instance. As you can see `propertyMasterType` expects constructor.
+Internally the `this.propertyMaster` will be setup to the nearest parent object of the type equal `propertyMasterType` (`Partner` in our case).
 
 ```javascript
 var generateFormSections = require('eregistrations/components/generate-form-sections');
