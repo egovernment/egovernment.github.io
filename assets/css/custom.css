@@ -96,6 +96,7 @@ h4 code {
 
 .sidenav li a {
 	line-height: 1.4;
+	cursor: pointer;
 }
 
 .post-content {

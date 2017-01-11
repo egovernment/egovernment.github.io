@@ -9,7 +9,7 @@ number: '252'
 introduction-text: ''
 introduction-img: '252.png'
 prevUrl: 251
-nextUrl: 301
+nextUrl: 253
 done: 'yes'
 lang: en
 ref: 252

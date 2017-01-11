@@ -17,15 +17,21 @@ ref: 201
 
 Every processing step is associated with at least one service. Each processing step has its own application (a directory in `apps` directory).
 
+While the system is configured to support any type of official application / processing step there are some predefined types supported by the generator. The name of the generated app determines the template used. Use the following convention to get a specific type of app:
+
+* **`official-revision`** - will generate application tailored for revision of business processes. Use `official-revision-*` to use this template for multiple revisions (for example for different services).
+* **`official-front-desk`** - generates front desk (single window) applications. Also supports `official-front-desk-*` prefix.
+* **`official-*`** - generic type of official application / processing step.
+
 Processing steps models are defined for a given service. There is a good reference point available which shows how a processing step is configured.
 
 I will reference it in the steps below:
 
 1. At the root of your project type: `node node_modules/eregistrations/bin/generate-app official-<your-step-name>` (be sure not to make a typo, especially in *"official"*). This will create most of the files needed by your step. You can check here to see what files should be created at this point: [(A) Official Processing app & role](https://github.com/egovernment/eregistrations-demo/commit/b1d460489c70093bf0cc58af54b011434d989594).
 2. Open file `model/user/roles.js`.
-3. Add new role; one entry in `db.Role.members`, setup `db.Role.meta.get('<yourStepName>').label`. You can see how it's done [here](https://github.com/egovernment/eregistrations-demo/commit/3256210ab5f2284418ffee5e8f1468b3c2cad009).
+3. Add new role; one entry in `db.Role.members`, setup `db.Role.meta.get('official<YourStepName>').label`. You can see how it's done [here](https://github.com/egovernment/eregistrations-demo/commit/3256210ab5f2284418ffee5e8f1468b3c2cad009).
 4. Create a file `model/<your-service>/processing-steps/<your-step-name>.js`.
-5. Define a model for a step in the file you created. You can check an example [here](https://github.com/egovernment/eregistrations-demo/blob/577c87c07a8077af1e849218c89f8f249774f890/model/business-process-demo/processing-steps/processing.js).
+5. Define a model for a step in the file you created. You can check an example [here](https://github.com/egovernment/eregistrations-demo/blob/577c87c07a8077af1e849218c89f8f249774f890/model/business-process-demo/processing-steps/processing.js). If generating a revision type of app use [RevisionProcessingStep](https://github.com/egovernment/eregistrations/blob/master/model/processing-steps/revision.js) as base type. For front desk, use [FrontDeskProcessingStep](https://github.com/egovernment/eregistrations/blob/master/model/processing-steps/front-desk.js).
 6. Setup paths for meta and map file. [See here](https://github.com/egovernment/eregistrations-demo/commit/577c87c07a8077af1e849218c89f8f249774f890) for reference.
 7. Ensure binding with Demo service. [See here](https://github.com/egovernment/eregistrations-demo/commit/0dbb6e43db3a599fe3274da9d14f02a088602579) for reference.
 8. Register controllers for your app. [See here](https://github.com/egovernment/eregistrations-demo/commit/fbdf2890eea6689c418187f8d58187733552fcbf) for reference.

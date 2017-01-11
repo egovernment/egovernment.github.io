@@ -2,11 +2,14 @@
 	<li class="{% if page.ref == 'index' %}active{% endif %}">
 				<a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ site.documentation-pages.overview.title[page.lang]}}</a>
 		</li>
-		    <li class="{% if page.ref == 'concept' %}active{% endif %}">
-        <a href="{{ site.baseurl }}{{ site.documentation-pages.concept.urls[page.lang] }}">{{ site.documentation-pages.concept.title[page.lang] }}</a>
-    </li>
+		<li class="{% if page.ref == 'concept' %}active{% endif %}">
+				<a href="{{ site.baseurl }}{{ site.documentation-pages.concept.urls[page.lang] }}">{{ site.documentation-pages.concept.title[page.lang] }}</a>
+		</li>
+		<li class="{% if page.ref == 'core' %}active{% endif %}">
+				<a href="{{ site.baseurl }}{{ site.documentation-pages.core.urls[page.lang] }}">{{ site.documentation-pages.core.title[page.lang] }}</a>
+		</li>
 		<li>
-				<a href="#" class="has-child {% if page.category contains 'installation' %}active open{% endif %}">{{ site.documentation-pages.installation.title[page.lang]}}</a>
+				<a class="has-child {% if page.category contains 'installation' %}active open{% endif %}">{{ site.documentation-pages.installation.title[page.lang]}}</a>
 				<ul>
 						{% assign installs = site.documentation | where: 'lang', page.lang | where: 'category', 'installation' | sort: 'weight' %}
 						{% for install in installs %}
@@ -14,8 +17,8 @@
 						{% endfor %}
 				</ul>
 		</li>
-		<li>
-				<a href="#" class="has-child {% if page.category contains 'fundamentals' %}active open{% endif %}">{{ site.documentation-pages.fundamentals.title[page.lang]}}</a>
+		<li class="{% if page.ref == 'fundamentals' %}active{% endif %}">
+				<a href="{{ site.baseurl }}{{ site.documentation-pages.fundamentals.urls[page.lang] }}" class="has-child {% if page.category contains 'fundamentals' %}active open{% endif %}">{{ site.documentation-pages.fundamentals.title[page.lang]}}</a>
 				<ul>
 						{% assign fundamentals = site.documentation | where: 'lang', page.lang | where: 'category', 'fundamentals' | sort: 'weight' %}
 						{% for fundamental in fundamentals %}
@@ -23,8 +26,8 @@
 						{% endfor %}
 				</ul>
 		</li>
-		<li>
-				<a href="#" class="has-child {% if page.category contains 'codebase' %}active open{% endif %}">{{ site.documentation-pages.codebase.title[page.lang]}}</a>
+		<li class="{% if page.ref == 'codebase' %}active{% endif %}">
+				<a href="{{ site.baseurl }}{{ site.documentation-pages.codebase.urls[page.lang] }}" class="has-child {% if page.category contains 'codebase' %}active open{% endif %}">{{ site.documentation-pages.codebase.title[page.lang]}}</a>
 				<ul>
 						{% assign codes = site.documentation | where: 'lang', page.lang | where: 'category', 'codebase' | sort: 'weight' %}
 						{% for code in codes %}
@@ -33,7 +36,7 @@
 				</ul>
 		</li>
 		<li>
-				<a href="#" class="has-child {% if page.category contains 'development' %}active open{% endif %}">{{ site.documentation-pages.development.title[page.lang]}}</a>
+				<a class="has-child {% if page.category contains 'development' %}active open{% endif %}">{{ site.documentation-pages.development.title[page.lang]}}</a>
 				<ul>
 						{% assign devs = site.documentation | where: 'lang', page.lang | where: 'category', 'development' | sort: 'weight' %}
 						{% for dev in devs %}

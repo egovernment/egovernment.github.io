@@ -33,6 +33,13 @@ documentation-pages:
     urls:
       en: '/concept'
       es: '/concepto'
+  core:
+    title:
+      en: 'Core'
+      es: 'Nucleo'
+    urls:
+      en: '/core'
+      es: 'nucleo'
   installation:
     title:
       en: 'Installation'
@@ -41,10 +48,16 @@ documentation-pages:
     title:
       en: 'JavaScript Basics'
       es: 'Fundamentos de JavaScript'
+    urls:
+      en: '/fundamentals'
+      es: '/fundamentos'
   codebase:
     title:
       en: 'Framework'
       es: 'Código base'
+    urls:
+      en: '/codebase'
+      es: '/codigo-base'
   development:
     title:
       en: 'Development'

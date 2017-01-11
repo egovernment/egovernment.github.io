@@ -1,11 +1,11 @@
 ---
 layout: doc-pages
-permalink: /framework/model/
-title: 'Service Rules (Model) Configuration'
+permalink: /framework/model-eregistrations/
+title: 'Database Model: eRegistrations (Service Rules Configuration)'
 category: 'codebase'
 lang: en
-ref: model
-weight: 6
+ref: model-eregistrations
+weight: 7
 ---
 
 <span class="label label-warning">To be updated</span>

@@ -38,7 +38,7 @@ En Windows, para cualquier aplicación que siga, debe utilizar la linea de coman
 Con esta ventana abierta, debe navegar hacia la carpeta __raíz__ del archivo cloneado y lanzar la línea de comando siguiente:
 
 ```
-npm rebuild phantomjs
+npm rebuild phantomjs-prebuilt
 ```
 
 Eso asegura que el programa [PhantomJS](http://phantomjs.org/) necesario para su sistema eRegistrations esta bien instalado y funciona como esperado. Este programa se requiere para que los archivos en formato PDF puedan ser generados correctamente.

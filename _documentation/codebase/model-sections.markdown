@@ -1,11 +1,11 @@
 ---
 layout: doc-pages
-permalink: /framework/sections/
-title: 'Sections (mechanism for forms configuration)'
+permalink: /framework/model-form-sections/
+title: 'Database Model: Form Sections'
 category: 'codebase'
 lang: en
-ref: sections
-weight: 7
+ref: model-sections
+weight: 8
 ---
 
 <span class="label label-warning">To be updated</span>
