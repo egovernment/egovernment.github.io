@@ -23,6 +23,8 @@ function userConnexion() {
 userConnexion.prototype.initFirebase = function() {
 	$(".user-waiter").removeClass('hidden');
 	$(".user-only").addClass('hidden');
+	$('.login-error').addClass('hidden');
+	this.autoConnect = true;
 	this.auth = firebase.auth();
 	this.auth.onAuthStateChanged(this.onAuthStateChanged.bind(this));
 }
@@ -30,10 +32,21 @@ userConnexion.prototype.initFirebase = function() {
 userConnexion.prototype.signIn = function() {
 	//this.auth.signInWithPopup(provider);
 	console.log();
+	$('.login-error').addClass('hidden');
+	this.autoConnect = false;
 	this.passwordInput = $('#login-password-input').val();
 	this.userInput = $('#login-user-input').val();
+
 	if(this.passwordInput != '' && this.userInput == "guest") {
-		this.auth.signInWithEmailAndPassword(this.emailInput, this.passwordInput);
+		this.auth.signInWithEmailAndPassword(this.emailInput, this.passwordInput).catch(function(error) {
+			var errorCode = error.code;
+			var errorMessage = error.message;
+			if(errorCode == "auth/wrong-password") {
+				$('.login-error').removeClass('hidden');
+			}
+		});;
+	}else{
+		$('.login-error').removeClass('hidden');
 	}
 }
 
@@ -49,6 +62,7 @@ userConnexion.prototype.signOut = function() {
 userConnexion.prototype.onAuthStateChanged = function(user) {
 	$(".user-waiter").removeClass('hidden');
 	$(".user-only").addClass('hidden');
+	$('.login-error').addClass('hidden');
 	console.log(user);
 	if(user) {
 		console.log("user logged");
@@ -67,6 +81,9 @@ userConnexion.prototype.onAuthStateChanged = function(user) {
 		console.log("user not logged");
 		$(".user-only").addClass('hidden');
 		$(".user-waiter").removeClass('hidden');
+		if(this.autoConnect == false) {
+			$('.login-error').removeClass('hidden');
+		}
 	}
 }
 
