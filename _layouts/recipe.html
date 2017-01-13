@@ -9,73 +9,76 @@
 
     <main class="container-fluid">
     	<div class="row">
-    		
+
     		<aside class="col-lg-2 col-md-3 col-sm-3 sidebar">
     			{% include sidemenu-recipes.html %}
     		</aside>
 
     		<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
-                <div class="row {% unless page.ref == 'how-to' %}recipe-content{% endunless %} {% if page.ref == 'how-to' %}recipe-content-2{% endif %}">
-                    <div class="col-md-12">
-                        {% unless page.ref == 'how-to' %}
-                        <div class="row">
-                            <div class="col-md-12">
-                                <span class="category-label pull-left">{{ page.category }} {% if page.sub-category != '' %}- {{ page.sub-category }}{% endif %} <small><span class="badge recipe-badge rate-{{ page.rate }}">{{ page.rate }}</span></small></span>
-                                
-                                {% assign nextp = site.how-to | where: 'number', page.nextUrl | where: 'lang', page.lang | first %}
-                                {% if page.nextUrl %}
-                                <a href="{{ nextp.url }}" class="next-link pull-right">
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                                {% endif %}
-                                
-                                <span class="label recipe-label label-default label-cat pull-right">{{ page.number }}</span>
-                                
-                                {% assign prevp = site.how-to | where: 'number', page.prevUrl | where: 'lang', page.lang | first %}
-                                {% if page.prevUrl %}
-                                <a href="{{ prevp.url }}" class="prev-link pull-right">
-                                    <i class="fa fa-angle-left"></i>
-                                </a>
-                                {% endif %}
-                                
-                            </div>
-                        </div>
-                        {% endunless %}
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="mt0">{{ page.title }}</h1>
-                            </div>
-                        </div>
-                        {% unless page.ref == 'how-to' %}
-                        <div class="row">
-                            {% if page.introduction-img %}
-                            <div class="col-md-5">
-                                <a href="../../img/recipes/{{ page.introduction-img }}" data-lity>
-                                    <img src="../../img/recipes/{{ page.introduction-img }}" class="img-responsive img-thumbnail">
-                                </a>
-                            </div>
-                            {% endif %}
-                            {% if page.introduction-text %}  
-                            <div class="{% if page.introduction-img %}col-md-7{% else %}col-md-12{% endif %}">
-                                {{ page.introduction-text | markdownify }}
-                            </div>
-                            {% endif %}
+          <div class="row {% unless page.ref == 'how-to' %}recipe-content{% endunless %} {% if page.ref == 'how-to' %}recipe-content-2{% endif %} {% if page.userOnly == true %}user-only{% endif %}">
+              <div class="col-md-12">
+                  {% unless page.ref == 'how-to' %}
+                  <div class="row">
+                      <div class="col-md-12">
+                          <span class="category-label pull-left">{{ page.category }} {% if page.sub-category != '' %}- {{ page.sub-category }}{% endif %} <small><span class="badge recipe-badge rate-{{ page.rate }}">{{ page.rate }}</span></small></span>
 
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <hr>
-                            </div>
-                        </div>
-                        {% endunless %}
-                        <div class="row">
-                            <div class="col-md-12">
-                            {{ content }}
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
+                          {% assign nextp = site.how-to | where: 'number', page.nextUrl | where: 'lang', page.lang | first %}
+                          {% if page.nextUrl %}
+                          <a href="{{ nextp.url }}" class="next-link pull-right">
+                              <i class="fa fa-angle-right"></i>
+                          </a>
+                          {% endif %}
+
+                          <span class="label recipe-label label-default label-cat pull-right">{{ page.number }}</span>
+
+                          {% assign prevp = site.how-to | where: 'number', page.prevUrl | where: 'lang', page.lang | first %}
+                          {% if page.prevUrl %}
+                          <a href="{{ prevp.url }}" class="prev-link pull-right">
+                              <i class="fa fa-angle-left"></i>
+                          </a>
+                          {% endif %}
+
+                      </div>
+                  </div>
+                  {% endunless %}
+                  <div class="row">
+                      <div class="col-md-12">
+                          <h1 class="mt0">{{ page.title }}</h1>
+                      </div>
+                  </div>
+                  {% unless page.ref == 'how-to' %}
+                  <div class="row">
+                      {% if page.introduction-img %}
+                      <div class="col-md-5">
+                          <a href="../../img/recipes/{{ page.introduction-img }}" data-lity>
+                              <img src="../../img/recipes/{{ page.introduction-img }}" class="img-responsive img-thumbnail">
+                          </a>
+                      </div>
+                      {% endif %}
+                      {% if page.introduction-text %}
+                      <div class="{% if page.introduction-img %}col-md-7{% else %}col-md-12{% endif %}">
+                          {{ page.introduction-text | markdownify }}
+                      </div>
+                      {% endif %}
+
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <hr>
+                      </div>
+                  </div>
+                  {% endunless %}
+                  <div class="row">
+                      <div class="col-md-12">
+                      {{ content }}
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+					<div class="row {% unless page.ref == 'how-to' %}recipe-content{% endunless %} {% if page.ref == 'how-to' %}recipe-content-2{% endif %} {% if page.userOnly == true %}user-waiter{% endif %}">
+						<a href="#" id="btn-login" class="btn btn-info btn-login" data-toggle="modal" data-target=".login-modal">Please log in to access this content.</a>
+					</div>
     		</article>
 
     	</div>

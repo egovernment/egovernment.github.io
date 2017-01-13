@@ -14,10 +14,13 @@
     			{% include sidemenu-documentation-fr.html %}
     		</aside>
 
-    		<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
-    			<div class="row post-content">
+				<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
+    			<div class="row post-content {% if page.userOnly == true %}user-only{% endif %}">
     				{{ content }}
     			</div>
+					<div class="row post-content {% if page.userOnly == true %}user-waiter{% endif %}">
+						<a href="#" id="btn-login" class="btn btn-info btn-login" data-toggle="modal" data-target=".login-modal">Please log in to access this content.</a>
+					</div>
     		</article>
 
     	</div>
