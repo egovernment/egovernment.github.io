@@ -8,7 +8,7 @@ rate: '1'
 number: '504'
 introduction-text: "This recipe covers the applicability of sections. It's about conditions which rule the section's visibility (both in terms of views as well as the validation flow)."
 prevUrl: 503
-nextUrl:
+nextUrl: 505
 done: 'yes'
 lang: en
 ref: 503
