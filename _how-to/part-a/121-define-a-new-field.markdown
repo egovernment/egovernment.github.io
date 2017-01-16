@@ -107,7 +107,36 @@ Other common properties of fields which you will encounter are:
 * `required`   (`Boolean`) - Determines if the field has to be non empty upon submission (`true` for when the field cannot be empty).
 * `trueLabel`  (`String`)  - Makes sense only when the `type` of the field is `db.Boolean`. Value of this property will be associated with input representing `true` value of the field.
 * `falseLabel` (`String`)  - Makes sense only when the `type` of the field is `db.Boolean`. Value of this property will be associated with input representing `false` value of the field.
-* `value`                  - Default value of a property, for example `5` (for a `db.Number` type property),
+* `value`                  - Default value of a property, for example `5` (for a `db.Number` type property).
+
+### Enum type
+
+The enum type is used quite often. Since its setup is not straight forward we will give an example of how to create an enum type in the end system.
+
+```javascript
+'use strict';
+
+var _          = require('../../i18n').bind("Some context")
+var db         = require('../../db');
+var Map        = require('es6-map')
+var StringLine = require('dbjs-ext/string/string-line')(db);
+
+require('dbjs-ext/create-enum')(db);
+
+var FavouriteColors = StringLine.createEnum('FavouriteColors', new Map([
+	['blue', { label: _("Blue") }],
+	['red', { label: _("Red") }],
+	['green', { label: _("Green") }]
+]));
+```
+
+Mind that after you have created an enum type and setup it as type on some fields descriptor, you will probably want to add `dbjs-dom` binding for the client.
+To add binding for client:
+
+1. Go to `apps/<your-app>/client/dbjs-dom.js`
+2. Make sure that `domEnum` util is required: `var domEnum = require('dbjs-dom/enum');`
+3. Wrap your type in the util: `domEnum(db.FavouriteColors)`
+
 
 ## Example
 
