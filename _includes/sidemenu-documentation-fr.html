@@ -12,7 +12,7 @@
 				<ul>
 						{% assign devs = site.documentation-fr | where: 'category', 'installation-fr' | sort: 'weight' %}
 						{% for dev in devs %}
-						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title }}</a></li>
+						<li class="{% if page.url == dev.url %}active{% endif %} {% if dev.userOnly == true %}user-only{% endif%}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title }}</a></li>
 						{% endfor %}
 				</ul>
 		</li>
@@ -22,7 +22,7 @@
 				<ul>
 						{% assign devs = site.documentation-fr | where: 'category', 'description-fr' | sort: 'weight' %}
 						{% for dev in devs %}
-						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title }}</a></li>
+						<li class="{% if page.url == dev.url %}active{% endif %} {% if dev.userOnly == true %}user-only{% endif%}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title }}</a></li>
 						{% endfor %}
 				</ul>
 		</li>
@@ -32,7 +32,7 @@
 				<ul>
 						{% assign devs = site.documentation-fr | where: 'category', 'architecture-fr' | sort: 'weight' %}
 						{% for dev in devs %}
-						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title }}</a></li>
+						<li class="{% if page.url == dev.url %}active{% endif %} {% if dev.userOnly == true %}user-only{% endif%}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title }}</a></li>
 						{% endfor %}
 				</ul>
 		</li>
