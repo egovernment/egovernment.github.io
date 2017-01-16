@@ -8,203 +8,126 @@ ref: model-eregistrations
 weight: 7
 ---
 
-<span class="label label-warning">To be updated</span>
+# Model
 
-# Model  
+## Organization
 
-## An overview of eregistrations model
+The basic model types can be found in [dbjs](https://github.com/medikoo/dbjs) and [dbjs-ext](https://github.com/medikoo/dbjs) projects, and are documented in [Basic types](/framework/model-basic/) section.
+
+The types specific to eRegistrations project are defined in eRegistrations package in [model](https://github.com/egovernment/eregistrations/tree/master/model) folder. This is where all reusable (not system specific) definitions for any eRegistrations system are placed.
+As eRegistrations came through different evolutions and not all systems reflect latest evolution, the model folder may contain definitions adequate for old version of systems (e.g. [business-process](https://github.com/egovernment/eregistrations/tree/master/model/business-process) folder contains old definition of `BusinessProcess` model, that's still in use by Lomas system, while recent one, as described by the diagram can be found in [business-process-new](https://github.com/egovernment/eregistrations/tree/master/model/business-process-new) folder).
+
+### Import of model definitions
+
+What model definitions land in given process is decided in one central file.
+It is `server/model.js` for server pocesses and `apps/{ appName }/client/model.js` for client processes. It's the only place were model definitions should be imported (required). In all other application modules all types should just be directly accessed on `db` object.
+
+## eRegistrations specific model
+
+Below you can find UML diagram showcasing eRegistrations model and also description of each core type
 
 <a href="/img/eregistrations-business-process.png" download="eregistrations-business-process.png"><img width="1000" src="/img/eregistrations-business-process.png" /></a>
 
-_Currently just a stub linking latest versions of models which will be used in new systems, and to which existing systems will be updated_.
+#### [`Person`](https://github.com/egovernment/eregistrations/blob/master/model/person.js)
 
-#### Person
+An abstract type to reprent a human person role.
 
-https://github.com/egovernment/eregistrations/blob/master/model/person.js
+#### [`User`](https://github.com/egovernment/eregistrations/tree/master/model/user) (extends `Person`)
 
-Base for User class, and other classes which describe some type of human person role.
+System account, comes with mandatory `email` and `password` properties. Each registered user in a system is represented as instance of a `User`
 
-#### User
-
-https://github.com/egovernment/eregistrations/tree/master/model/user
-
-User account class. Each registered user in a system is represented with user instance
-
-#### Institution
-
-https://github.com/egovernment/eregistrations/blob/master/model/institution.js
+#### [`Institution`](https://github.com/egovernment/eregistrations/blob/master/model/institution.js)
 
 Specific institutions are defined in specific projects as _named_ objects (so instances of `Institution` class)
 
----
+#### [`BusinessProcess`](https://github.com/egovernment/eregistrations/tree/master/model/business-process-new)
 
-#### BusinessProcess
+Business process is a main class in a system, that represents a registration service, that may include multiple registrations, resulting with multiple certificates issued by multiple institutions.
 
-https://github.com/egovernment/eregistrations/tree/master/model/business-process-new
+Business process is technically a registration flow that can be split into two parts:
 
-Business process is a main class in system, It represents a user request to e.g. obtain speciic registrations, or to update existing registration.
+- Part `A`, it's where user provides necessary data, uploads needed documents and pays necessary fees to obtain desired registration. When all his steps are complete he sends the file for official processing:
+- Part `B` It's the official part of a process where we have all data we need from investor and officers in institution look at them and issue requested certificates if application satisfies the requirements. In this part officer may send back file to investor for corrections, in such scenario while investor is again presented with Part A screen, logically we treat file as still being in Part B.
 
-`BusinessProcess` class definition is organised with following sub modules:
+##### Core components of Business Process service:
 
-##### base
+###### Registrations (represented at `registrations` namespace)
 
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/base.js
+Core entities of a service are __registrations__ which dictate full shape of a service (what data we request, what documents we ask to upload, what payments we ask to cover).
 
-Base properties
+They also dictate (by analysis) what questions do we ask in top left box of guide..
 
-##### Part A
+All possible service registrations are defined on `registrations.map` map.
+Then depending on configured rules we resolve all registrations that are:
 
-###### registrations
+- _applicable_ (accessible at `registrations.applicable`) All registrations that we know are applicable after having investor anwers in questions section.
+- _mandatory_ (accessible at `registrations.mandatory`). Out of applicable all that are _mandatory_. This collection doesn't have any influence on further flow. Its just to differentiate _mandatory_ registrations from _optional_ so they can be displayed in adequate section in guide
+- _optional_ (accessible at `registrations.optional`). Out of applicable all that are _not mandatory_. This collection doesn't have any influence on further flow. Its just to differentiate _mandatory_ registrations from _optional_ so they can be displayed in adequate section in guide.
+- _requested_ (accessible at `registrations.requested`). Out of applicable all that were _requested_ (checked in guide) by user. This is the collection out of which we resolve furhter requirems on which documents we expect investor to upload or payments to cover.
 
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/registrations.js
+Some services are purely about one registration that by all means in this context is applicable, and naturally should be assumed as requested for process to make sense. In such scenario we do not show _Registrations_ box in a guide, and model wise the only registration is both _applicable_ and _requested_.
 
-Resolution of requested registrations
+In further turn set of _requested_ registrations directly influences outcome of following entities collecitons:
 
-###### certificates
+###### Certificates (represented at `certificates` namespace)
 
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/certificates.js
+`certificates.map` has predefined all possible certificates for given services, and `certificates.applicable` reflect subset of all _appplicable_ certificates which is resolved out of `registrations.requested` collection.
 
-Resolution of certificates resolved out of requested registrations
+Certificate usually reflects 1 to 1 mapping to registration (e.g. NIT registrations resolves with NIT certificate), still there may be cases when one registration resolves with two different certificates, or that it resolves with some conditionally (e.g. in past in Salvador system we had NIT registration, which resolved either with NIT certificate or NITi if investor declared himself as importer)
 
-###### costs
+Resolved (applicable) certificates list is also not reflected in guide or any other page of Part B. It becomes a base for displaying certificate labels in table of business processes in Part B.
 
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/costs.js
+###### Requirements (represented at `requirements` namespace)
 
-Resolution of costs resolved out of requested registrations
+All (non payment) requirements we will have towards investor. In most common cases it's about documents to be further uploaded in documents section.
+Sometimes it can be just general information that we will require an `id` but what specificailly _id_ (whether national id or passport etc.) would have to be resolved in later part of a flow.
 
-###### requirements
+Resolved requirements are listed in top left part of a guide. Sometimes directly in this box given requirement may come with additional questions, e.g. in Salvador we have a requirement in which user have to decide wich one of the 12 documents he wishes to provide to receive registration.
 
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/requirements.js
+`requirements.map` has predefined all possible requirements. Then we have subset collections as:
 
-Resolution of requirements resolved out of requested registrations
+- _resolved_ (accessible at `requirements.resolved`) All requirements resolved out of `registrations.requested`. It's _applicable_ and no this list that it's treated as a final
+- _applicable_ (accessible at `requirements.applicable`) All _resolved_ requirements that have own `isApplicable` resolved to `true`.
+Normally this collection equals _resolved_ collection. Still there can be rare cases where some requirements are applicable conditionally dependening on resolution of some other requirements (e.g. we have requirement as general _Utility bill_ and other more specific _Electricity bill_, we don't want to request _Utility Bill_ when we also require _Electricity bill). It's strictly to address such cases why separation of `resolved` and `applicable` was made
 
-###### guide
+###### Costs (represented at `costs` namespace)
 
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/guide.js
+All costs that investor has to cover to apply for requested registrations. All resolved costs are listed in bottom right part of Guide.
+`costs.map` has predefined all possible costs. Then we have subset collections as:
 
-Step 0 in Part A
+- _applicable_ (accessible at `costs.applicable`) All costs resolves out of `registrations.requested`
+- _payable_ (accessible at `costs.payable`) All _applicable_ and non-zero costs. There can be situation where given cost resolves as applicable, but it's `amount` computes to `0`, in such case we do not cover that cost in further processing. That's why it's _payable_ that's collection that's treated as final collection of costs.
 
-Resolution of guide related properties and its progress
+###### Data forms (represented at `dataForms` namespace)
 
-###### data forms
+All form sections we require investor to fill. They're presented on next page after guide, marked as step `1` (guide is treated as step `0`).
+`dataForms.map` has predefined all possible data form sections, the final set of forms that is displayed ot the user is accessible at `dataForms.applicable`
 
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/data-forms.js
+###### Requirement uploads (represented at `requirementUploads` namespace)
 
-Step 1 in Part A
+All documents which we require to upload by investor in step `2`.
+`requirementUploads.map` has predefined all possible uploads, the final set of requirement uploads is resolved out of `requirements.applicable` and is accessible at `requirementUploads.applicable`.
 
-Resolution of data forms.
+###### Payment receipt uploads (represented at `paymentReceiptUploads` namespace)
 
-###### requirement uploads
+If there's no online payment integration we may require investor to upload payment receipts.
+In interface list of payment receipt is handled very similarly as requirement uploads, and it's presented on step that follows requirement uploads.
 
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/requirement-uploads.js
+`paymentReceiptUploads.map` has predefined all possible payment receipt uploads, the final applicable set is resolved out of `costs.applicable` and is accessible at `paymentReceipt.applicable`.
 
-Step 2 in Part A
+###### Submission forms (represented at `submissionForms` namespace)
 
-Resolution of requirement uploads resolved out of requirements resolved out of requested registrations
+Final form sections that we require investor to fill. This sections are not about pursued registration specifically, but more about who will pick the registrations in the counter and at which institution.
 
-###### payment receipt uploads
+They are organized similarily to Data Forms.  `submissionForms.map` has predefined all possible form sections, the final set of forms that is displayed ot the user is accessible at `submissionForms.applicable`.
 
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/payment-receipt-uploads.js
+In addition `submissionForms` come with `submissionForms.isAffidavitSigned` property at which we mark that user send the file to official part (Part B) confirming that all data is true.
 
-Step 3 in Part A
+###### Processing Steps (represented at `processingSteps` namespace)
 
-Resolution of payment receipt uploads resolved out of costs resolved out of requested registrations
+The flow of Part B is fully represented by Processing steps. Steps can be configured to run in any order and also to be in parallel against each other.
 
-###### submission forms
+All service steps are defined at `processingSteps.map`, then all _applicable_ are accessible at `processingSteps.applicable` collection.
 
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/submission-forms.js
-
-Step 4 in Part A
-
-Resolution of submission forms
-
-##### Part B
-
-###### flow
-
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/flow.js
-
-Resolution of process flow related properties (status, and isSubmitted, isRejected etc.)
-
-###### processing steps
-
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/processing-steps.js
-
-Resolution of official processing steps
-
-##### My Account
-
-###### derived
-
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/derived.js
-
-Resolution of related business processes, and whether they can be derived with other business processes
-
-###### documents
-
-https://github.com/egovernment/eregistrations/blob/master/model/business-process-new/documents.js
-
-Resolution of cumulated (certificates + requirement uploads) documents collections
-
-#### External classes used in BusinessProcess definitions
-
-##### Document
-
-https://github.com/egovernment/eregistrations/blob/master/model/document.js
-
-Describes a document which can be either an obtained certificate or uploaded requirement.
-
-Each specific document is represented with class that extends `Document`. Then documents are defined in model as _nested_ objects on `BusinessProcess.prototype`.
-
-Location of nested documents:
-* _certificates_, at `businessProcess.certificates.map` map as e.g. `businessProcess.certificates.map.municipalityCertificate`
-* _requirementUpload documents_ at `businessProcess.requirementUploads.map` map as e.g. `businessProcess.requirementUploads.map.passport.document`
-
-##### Registration
-
-https://github.com/egovernment/eregistrations/blob/master/model/registration-new.js
-
-Registrations are defined as _nested_ objects on `BusinessProcess.prototype.registrations.map`
-
-##### Cost
-
-https://github.com/egovernment/eregistrations/blob/master/model/document.js
-
-Registration cost. Costs are defined as _nested_ objects on `BusinessProcess.prototype.costs.map`
-
-##### Requirement
-
-https://github.com/egovernment/eregistrations/blob/master/model/requirement.js
-
-Requirements are defined as _nested_ objects on `BusinessProcess.prototype.requirements.map`
-
-##### RequirementUpload
-
-https://github.com/egovernment/eregistrations/blob/master/model/requirement-upload.js
-
-RequirementUploads are defined as _nested_ objects on `BusinessProcess.prototype.requirementUploads.map`
-
-##### PaymentReceiptUpload
-
-https://github.com/egovernment/eregistrations/blob/master/model/payment-receipt-upload.js
-
-PaymentReceiptUploads are defined as _nested_ objects on `BusinessProcess.prototype.paymentReceiptUploads.map`
-
-##### FormSection
-
-https://github.com/egovernment/eregistrations/blob/master/model/form-section-base.js  
-https://github.com/egovernment/eregistrations/blob/master/model/form-section.js  
-https://github.com/egovernment/eregistrations/blob/master/model/form-section-group.js  
-https://github.com/egovernment/eregistrations/blob/master/model/form-section-entities-table.js
-
-FormSections are defined as _nested_ objects at `BusinessProcess.prototype.dataForms` and `BusinessProcess.prototype.submissionForms`.  
-Additionally there's a guide determinants forms section defined at `BusinessProcess.prototype.determinants`,
-and each `ProcessingStep` and `Document` has defined `dataForm` form section nested instance.
-
-For documentation on form sections see: https://github.com/egovernment/eregistrations/blob/master/documentation/sections.md
-
-##### ProcessingStep
-
-https://github.com/egovernment/eregistrations/blob/master/model/processing-step.js
-
-ProcessingSteps are defined as _nested_ objects on `BusinessProcess.prototype.processingSteps.map`
+When file (business process) passes all steps, it is marked as an _approved_, which makes it _closed_.
+Other scenario of getting file closed is to reject it. It may happen if e.g. someone sends registration as a joke (e.g. sending pictures of Mickey Mouse). In such case officers do not ask for corrections but just permanently reject the file.
