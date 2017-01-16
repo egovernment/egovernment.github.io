@@ -1,6 +1,11 @@
 'use strict';
 
-var provider = new firebase.auth.GoogleAuthProvider();
+var provider = new firebase.auth.GithubAuthProvider();
+provider.addScope('repo');
+
+provider.setCustomParameters({
+  'allow_signup': 'false'
+});
 
 function userConnexion() {
 	this.checkSetup();
@@ -9,11 +14,25 @@ function userConnexion() {
 	//this.passwordInput = document.getElementById('login-password-input');
 	this.passwordInput = "";
 
-	//this.signInmodalButton = document.getElementById('login-btn-modal');
-	this.signInButton = document.getElementById('login-modal-button');
+	this.signInButton = document.getElementsByClassName('btn-login');
+	//this.signInButton = document.getElementById('login-modal-button');
 	this.signOutButton = document.getElementById('btn-logout');
 
-	this.signInButton.addEventListener('click', this.signIn.bind(this));
+	for(var i = 0; i< this.signInButton.length; i++) {
+		this.signInButton[i].addEventListener('click', this.signIn.bind(this));
+	}
+
+	/*for (var elem in this.signInButton) {
+		elem.addEventListener('click', this.signIn.bind(this));
+	}*/
+
+	/*this.signInButton.forEach(function(elem) {
+		elem.addEventListener('click', this.signIn.bind(this));
+	})*/
+	/*Array.filter( this.signInButton, function(elem) {
+		return elem.addEventListener('click', this.signIn.bind(this));
+	})*/
+	//this.signInButton.addEventListener('click', this.signIn.bind(this));
 	this.signOutButton.addEventListener('click', this.signOut.bind(this));
 	//this.signInmodalButton.addEventListener('click', this.openSignInForm.bind(this));
 
@@ -34,7 +53,7 @@ userConnexion.prototype.signIn = function() {
 	console.log();
 	$('.login-error').addClass('hidden');
 	this.autoConnect = false;
-	this.passwordInput = $('#login-password-input').val();
+	/*this.passwordInput = $('#login-password-input').val();
 	this.userInput = $('#login-user-input').val();
 
 	if(this.passwordInput != '' && this.userInput == "guest") {
@@ -47,7 +66,17 @@ userConnexion.prototype.signIn = function() {
 		});;
 	}else{
 		$('.login-error').removeClass('hidden');
-	}
+	}*/
+	firebase.auth().signInWithPopup(provider).then(function(result) {
+		var user = result.user;
+		console.log(user);
+	}).catch(function(error) {
+		console.log(error);
+		var errorCode = error.code;
+		var errorMessage = error.message;
+		var email = error.email;
+		var credential = error.credential;
+});
 }
 
 userConnexion.prototype.signOut = function() {
