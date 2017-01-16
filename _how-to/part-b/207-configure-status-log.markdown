@@ -10,52 +10,39 @@ introduction-text: 'This recipe describes how to configure status log (history o
 introduction-img: '207.png'
 prevUrl: 206
 nextUrl: 221
-done: ''
+done: 'yes'
 lang: en
 ref: 207
 ---
 
-Status logs are small text entries about operations done on the file during Part B flow.
-Usually a new status log entry whenever a status of the file changes (send back, rejection, approval).
-Some roles (like revision) come with predefined default status log entries triggered after some changes in the file.
+Status logs are small text entries about operations done on the file during Part B flow. Usually a new status log entry is added whenever a status of the file changes (send back, rejection, approval). Some roles (like revision) come with predefined default status log entries triggered after some changes in the file.
 
 In order to configure a status log:
 
 1. Create a file `status-log.js` in `apps/<your-official-app>/server/`.
 2. Define an array of status logs for the step and export it.
 
-The configuration array should contain configuration objects, see example for details.
-As you can see from example, two collections are specified: `preTrigger` and `trigger`.
-You should always define such two collections.
-The `trigger` collection reflects the main triggering logic, you can think of it:
-Whenever something gets to this collection, add status log entry.
-The `preTrigger` is also needed at the moment. It should provide some condition which occurs in the natural flow before the condition described by `trigger`.
-If unsure how to build your `preTrigger`, a good candidate is `isSubmitted` property for businessProcesses.
-You may wonder why is it needed. It's because at system startup, the recalculations will setup any dynamically calculated values.
-This may cause retriggering of any previously executed triggers, thus produce unwanted duplication of status logs.
-However, during recalculations, the values will not go into state you defined for `preTrigger` (you should define the `preTrigger` so that it will not happen).
-It is guaranteed by contract that the `trigger` will not execute unless the `preTrigger` has been executed.
-
+The configuration array should contain configuration objects, see example for details. As you can see from example, two collections are specified: `preTrigger` and `trigger`. You should always define such two collections. The `trigger` collection reflects the main triggering logic, you can think of it: Whenever something gets to this collection, add status log entry. The `preTrigger` is also needed at the moment. It should provide some condition which occurs in the natural flow before the condition described by `trigger`. If unsure how to build your `preTrigger`, a good candidate is `isSubmitted` property for businessProcesses. You may wonder why is it needed. It's because at system startup, the recalculations will setup any dynamically calculated values. This may cause retriggering of any previously executed triggers, thus produce unwanted duplication of status logs. However, during recalculations, the values will not go into state you defined for `preTrigger` (you should define the `preTrigger` so that it will not happen). It is guaranteed by contract that the `trigger` will not execute unless the `preTrigger` has been executed.
 
 ## Example
 
 In the branch "[configure-status-log](https://github.com/egovernment/eregistrations-demo/tree/configure-status-log)" of eregistrations-demo :
 
-Add status log to processing role. The log should add entry "Certificates issued".
+Add status log to processing role. The log should add entry "Certificates issued" after the business process gets approved in this step.
 
 ### Solution
 
 <div id="files" class="diff-view " onclick="window.open('https://github.com/egovernment/eregistrations-demo/compare/configure-status-log...configure-status-log-solution?#files')">
 
   <div class="js-diff-progressive-container">
-    
+
 <a name="diff-8993fc074913de7de7a3b84528398e4d"></a>
 <div id="diff-0" class="file js-file js-details-container Details
-             
-             
-             
-             
-             
+
+
+
+
+
               show-inline-notes
            ">
   <div class="file-header" data-path="apps/official-processing/server/status-log.js" data-short-path="8993fc0" data-anchor="diff-8993fc074913de7de7a3b84528398e4d">
@@ -79,14 +66,14 @@ Add status log to processing role. The log should add entry "Certificates issued
         apps/official-processing/server/status-log.js
       </a>
 
-      
+
     </div>
   </div>
   <div class="js-file-content">
 
         <div class="data highlight blob-wrapper">
           <table class="diff-table tab-size  " data-tab-size="8">
-            
+
       <tbody><tr data-position="0">
     <td id="diff-8993fc074913de7de7a3b84528398e4dL-1" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
     <td id="diff-8993fc074913de7de7a3b84528398e4dR0" class="blob-num blob-num-hunk non-expandable" data-line-number="..."></td>
