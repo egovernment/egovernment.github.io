@@ -37,6 +37,11 @@ I will reference it in the steps below:
 8. Register controllers for your app. [See here](https://github.com/egovernment/eregistrations-demo/commit/fbdf2890eea6689c418187f8d58187733552fcbf) for reference.
 9. Your processing step will most likely have a form, which needs to be filled and submitted.
 So we need to configure it (provide controller, view, and form section definition). [See here](https://github.com/egovernment/eregistrations-demo/commit/15c01b74497816510f055b674c2c6787dc7cbf63) for reference.
+10. Some processing steps need to add status-log entries. [See here for how-to configure such status-log](/how-to/configure-status-log/)
+
+Most of the processing steps are, by default, used in the flow for the associated services. Sometimes, however, we want the processing step to be in the flow conditionally.
+We call such condition "applicability condition" and we express it in the `isApplicable` property of the step. The `isApplicable` is a boolean getter.
+The processing step is taking part in the given file's flow only if its `isApplicable` returns `true`.
 
 ---
 
