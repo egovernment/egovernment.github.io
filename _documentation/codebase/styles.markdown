@@ -1,9 +1,9 @@
 ---
 layout: doc-pages
 permalink: /framework/styles/
-title: 'Styles & View Componenets'
+title: 'CSS Guidelines'
 category: codebase
-weight: 9
+weight: 10
 lang: en
 ref: styles
 ---
