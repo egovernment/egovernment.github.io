@@ -22,6 +22,88 @@ As eRegistrations came through many changes and not all systems reflect latest v
 What model definitions land in given process is decided in one central file.
 It is `server/model.js` for server processes and `apps/{ appName }/client/model.js` for client processes. It's the only place were model definitions should be imported (required). In all other application modules all types should just be directly accessed on `db` object.
 
+### Configuring computed properties
+
+Many of eRegistrations rules are configured through computed properties, which allow us express how given constrain changes together with values of some other properties.
+Computed properties are configured through funtion values, see e.g. below example for `fullName` resolution
+
+```javascript
+db.User.prototype.defineProperties({
+  fullName: { type: db.String, value: function () {
+    return this.firstName + " " + this.lastName;
+  }
+});
+
+var user = new User({ firstName: "John", lastName: "Smith" });
+user.fullName; // "John Smith"```
+```
+
+Provided functions should be [pure](https://en.wikipedia.org/wiki/Pure_function) in sense, that:
+
+- Result is determinist against state of other properties
+- It doesn't change values of any properties (it's just resolution logic, introducing any updates in it may have quite enexpected consequences and may lead to destabilization of a system)
+- You cannot rely on any variables from outer scope of a function. While it may feel natural that within a function you have access to them, in reality it's not the case as function when incorporated into engine is serialized and deserialized, therefore it's [closure](/fundamentals/closures/) context is lost.
+
+In a function you have only access to what natively language gives plus `this` context, on which additionally you have exposed following means:
+
+- `database` - Access to database instance, through that you can access some constructors directly if needed
+- `master` - Applicable to computed properties on nested object. `master` will refer to top most object, e.g. in computed defintion for `user.address.street.type` it will refer `user` object.
+- `parent` - Applicable to computed properties on nested object. `parent` will refer to parent object, e.g. in computed defintion for `user.address.street.type` it will refer `user.address` object (`this` refers to `user.address.street`)
+
+### Observability of computed properties
+
+Computed properties were designed to be observable in same way as those set with values directly, still there are some limitations which can be woraround with below described methods.
+
+#### Marking properties that influence result of computed property
+
+By default all properties accessed direclty on `this` are resolved by static analysis and behind the scenes are observed as triggers that invoke recomputation of computed value.
+
+If the result is influenced by some deeper property as e.g. `this.address.street` or `this.master.hasBranches`, then we need to wrap observables for this properties with `_observe` function (which we receives as first argument to getter). See below example:
+
+```javascript
+db.User.prototype.defineProperties({
+  fullName: { type: db.String, value: function (_observe) {
+    var fullName = this.firstName + " " + this.lastName;
+
+    if (_observe(this.address._city) === 'San Salvador') {
+      fullName += " (from San Salvador)";
+    }
+
+    return fullName;
+  }
+});
+```
+
+Mind that it's __observable__ for property and not property _value_ that we need to pass to `_observe_.
+The `_observe` will return us property _value_ that's read from observable, so we can naturally write our getters.
+
+#### Preparing getters to work in non-DBJS environemnts
+
+Some getters are extracted from database to power some legacy code that runs in old browsers.
+In those browsers we never run dbjs engine, we just reuse the getter functions to reevaluate same once written rules.
+
+This applies to getters that are:
+
+- Used in guide, so together with changes of values in form, the sets of requirements, costs, etc. are updated live also in old browsers
+- Used to state applicability of a form field against other fields in same form, so e.g. if we want to expose control (field) B, only if control (field) A has specified value. Properties that back such rules are named as `is{propertyName}Applicable` so they're easily to detect.
+
+In such getters we need to consider two scenarios, one in which getter is run in context of dbjs engine (so we have access to observables of properties) and one in which we do not (there are no observable object). The convention to detect the environement is to check existence for `_get` method on any database object, if it doesn't exist, the we're not in dbjs context.
+
+Therefore applying above constrains to above `fullName` computed property, may look as:
+
+```javascript
+db.User.prototype.defineProperties({
+  fullName: { type: db.String, value: function (_observe) {
+    var fullName = this.firstName + " " + this.lastName;
+    var city = this._get ? _observe(this.address._city) : this.address.city;
+    if (city === 'San Salvador') {
+      fullName += " (from San Salvador)";
+    }
+    return fullName;
+  }
+});
+```
+
 ## eRegistrations specific model
 
 Below you can find UML diagram showcasing eRegistrations model and also description of each core type
