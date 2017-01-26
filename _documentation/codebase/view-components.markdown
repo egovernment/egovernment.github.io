@@ -38,17 +38,17 @@ For template language we use [domjs](https://github.com/medikoo/domjs), therefor
 
 ## System specific customizations
 
-In eRegistrations we provide default view structure but we allow to customise chosen elements on system level.
+In eRegistrations we provide default view structure but we allow to customize chosen elements on system level.
 
-It is achieved by exposing a `_` prefixed exported function in view, which can be overriden in specific system. e.g. in eRegistrations in `user.js` view we expose [empty service box list](https://github.com/egovernment/eregistrations/blob/master/view/user.js#L83) then in end system will fill it, as e.g. in [demo project](https://github.com/egovernment/eregistrations-demo/blob/master/view/user.js#L23-L44)
+It is achieved by exposing a `_` prefixed exported function in view, which can be overridden in specific system. e.g. in eRegistrations in `user.js` view we expose [empty service box list](https://github.com/egovernment/eregistrations/blob/master/view/user.js#L83) then in end system will fill it, as e.g. in [demo project](https://github.com/egovernment/eregistrations-demo/blob/master/view/user.js#L23-L44)
 
 ## Reusable view components
 
-Reausable DOM structures are usually configured as view independent components in `view/components` folder. Thing is that view nodes itself or its direct content cannot be used in two different places of view tree. Therefore any components that may appear in more than one view node are generalized to `view/components` folder.
+Reusable DOM structures are usually configured as view independent components in `view/components` folder. Thing is that view nodes itself or its direct content cannot be used in two different places of view tree. Therefore any components that may appear in more than one view node are generalized to `view/components` folder.
 
 ## Styles for view components
 
-CSS rules are maintained separetely in CSS files, and that is well documented in [CSS Guideliness](/framework/styles) section.
+CSS rules are maintained separately in CSS files, and that is well documented in [CSS Guidelines](/framework/styles) section.
 
 ## Template functions
 
@@ -79,7 +79,29 @@ The elements as `ol`, `optgroup`, `select`, `tbody` and `ul`, support dedicated 
 
 #### `list(list, callback[, thisArg])`
 
-Container agnostic list configurator. It follows mechanisms described above. Still it doesn't come with a container. It means we can use this mechanims for not list dedicated elements (e.g. `div`) or use two list configurations for one list container (e.g. `ul(list(...), list(...))`)
+Container agnostic list configurator. It follows mechanisms described above. Still it doesn't come with a container. It means we can use this mechanisms for not list dedicated elements (e.g. `div`) or use two list configurations for one list container (e.g. `ul(list(...), list(...))`)
+
+### Form controls generation for DBJS properties
+
+Normally you generate forms through `section.toDOMForm` (see [Form Sections](http://localhost:4001/framework/model-form-sections/) documentation for more info on sections).
+
+Internally all controls are generated with renders configured at [dbjs-dom](https://github.com/medikoo/dbjs-dom#input-bindings) project. See it's documentation for description of each kind of control.
+
+Occasionally you may be forced to generate input for a property individually.
+There are two special ways to do that:
+
+- `field({ dbjs: obj._propertyName })` will generate input control together with label and statuses reflecting on whether value is required and whether it was saved. All other options aside `dbjs` will be passed directly to [dbjs-dom](https://github.com/medikoo/dbjs-dom#input-bindings) project
+- `input({ dbjs: obj._propertyName })` . All other options aside `dbjs` will be passed directly to [dbjs-dom](https://github.com/medikoo/dbjs-dom#input-bindings) project.
+
+### Form button - `postButton(attrs[, ...sideContent]`
+
+It will generate a button wrapped with a `<form>` element, and with `attrs` we pass attributes for `<form>` and content for a `<button>` (via `attrs.value`).
+Additionally we can designate specific `class` for a button via `attrs.buttonClass`.
+If `attrs.method` is not provided then `method` of `<form>` will be set to `post`.
+
+Additionally we may provide `attrs.confirm` (can be observable), through which we accompany button with `confirm` alert (`attrs.confirm` is expected to resolve with message we want to show).  If we rely on `attrs.confirm` we need to ensure that `domjs-ext/post-button.legacy` is loaded into `client/legacy` of app.
+
+Eventual `sideContent` is added aside a button (after `<button>` into wrapping `<p>` element, therefore it's expected to have _inline_ semantics).
 
 ### Script generation
 
@@ -89,7 +111,7 @@ It's important that within this function you should not relate in anyway to oute
 Side way we can pass arguments into script function. They can also be reactive observable values (handling of such is backed by [domjs-reactive-script](https://github.com/medikoo/domjs-reactive-script) handler.
 
 ```javascript
-// Internal function receives unserialized variables that were send after fucntion
+// Internal function receives unserialized variables that were send after function
 script(function (containerId, formId) { 
    // .. script content
 }, containerId, formId); // We send values to be provided to script functions
@@ -103,22 +125,12 @@ It is possible to generate dom out of HTML string. Still this method should be u
 html('<div>Some html string </div>); // Returns list of DOM nodes
 ```
 
-### Form button - `postButton(attrs[, ...sideContent]`
-
-It will generate a button wrapped with a `<form>` element, and with `attrs` we pass attributes for `<form>` and content for a `<button>` (via `attrs.value`).
-Additionally we can designate specific `class` for a button via `attrs.buttonClass`.
-If `attrs.method` is not provided then `method` of `<form>` will be set to `post`.
-
-Additionally we may provide `attrs.confirm` (can be observable), through which we accompany button with `confirm` alert (`attrs.confirm` is expected to resolve with message we want to show).  If we rely on `attrs.confirm` we need to ensure that `domjs-ext/post-button.legacy` is loaded into `client/legacy` of app.
-
-Eventual `sideContent` is added aside a button (after `<button>` into wrapping `<p>` element, therefore it's expected to have _inline_ semantics).
-
 ### Shortcut for calling `$` utils
 
-When we want to decorate some generated DOM with `$` util (e.g. `$.selectMatch`), then instaed of writing something as;
+When we want to decorate some generated DOM with `$` util (e.g. `$.selectMatch`), then instead of writing something as;
 
 ```javascript
-script(function () { $.seletctMatch(arg1, arg2); });
+script(function () { $.selectMatch(arg1, arg2); });
 ```
 
 We can rely on `legacy` shortcut:
@@ -131,8 +143,8 @@ It will be translated to DOM as generated directly with `script` function.
 
 ### URL builder - `url([pathToken1[, pathToken2[, ..pathTokenN]]])`
 
-With `url` we can provide dynamicaly resolved url to `href` or `action`, or we can just use it for claritiy of providing url tokens as separate arguments.
-Each token can be observable. If token starts with `?` it is assumed it contains part designated for _query_ parth, if token starts with `# it is assumed to contain `hash` that needs to be added at end of url.
+With `url` we can provide dynamically resolved url to `href` or `action`, or we can just use it for clarity of providing url tokens as separate arguments.
+Each token can be observable. If token starts with `?` it is assumed it contains part designated for _query_ part, if token starts with `# it is assumed to contain `hash` that needs to be added at end of url.
 
 ### Observability related extensions
 
@@ -178,7 +190,7 @@ Equivalent of less (`<`) operator.
 
 #### `mmap(value, callback)`
 
-Mapping function for observable value. It's `mmap` and not `map` to not shadow `map` domjs function that genearates `<map>` element.
+Mapping function for observable value. It's `mmap` and not `map` to not shadow `map` domjs function that generates `<map>` element.
 
 #### `not(value)`
 
