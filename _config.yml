@@ -97,6 +97,16 @@ markdown: kramdown
 
 # Collections
 collections:
+  new:
+    output: true
+    title:
+        en: 'New'
+        es: 'Nuevo'
+        fr: 'Nouveau'
+    baseurl:
+        en: '/new'
+        es: '/nuevo'
+        fr: '/nouveau'
   documentation-fr:
     output: true
   documentation:
