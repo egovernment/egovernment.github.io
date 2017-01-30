@@ -13,8 +13,53 @@
   </div>
 </footer>
 
+<!--<div id="login-modal" class="modal fade bs-example-modal-sm login-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Log in Help eRegistrations</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon" id="login-user"><i class="fa fa-user"></i></span>
+						<input id="login-user-input" type="text" class="form-control" placeholder="username" aria-describedby="login-user">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-addon" id="login-password"><i class="fa fa-lock"></i></span>
+						<input id="login-password-input" type="password" class="form-control" placeholder="password" aria-describedby="login-password">
+					</div>
+				</div>
+				<div class="form-group login-error">
+					<div class="alert alert-danger">Please verify your username and/or password.</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-info" id="login-modal-button">Log in</button>
+			</div>
+		</div>
+	</div>
+</div>-->
+
+<script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA84_GECP7JGpzMH5bfRTY2ShzGfbRGMNg",
+    authDomain: "help-eregistrations.firebaseapp.com",
+    databaseURL: "https://help-eregistrations.firebaseio.com",
+    storageBucket: "help-eregistrations.appspot.com",
+    messagingSenderId: "138349782768"
+  };
+  firebase.initializeApp(config);
+</script>
+
 <script type="text/javascript" src="{{ "/assets/js/theDocs.all.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/custom.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/auth.js" | prepend: site.baseurl }}"></script>
 <script>
 $(document).ready(function(e) {
     $('.language-selector').parent().on("mouseover", function(e) {

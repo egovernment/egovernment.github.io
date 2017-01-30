@@ -9,42 +9,45 @@
 
     <main class="container-fluid">
     	<div class="row">
-    		
+
     		<aside class="col-lg-2 col-md-3 col-sm-3 sidebar">
     			{% include sidemenu-trainings.html %}
     		</aside>
 
     		<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
-                <div class="row training-content">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="mt0">
-                                    {% if page.category == 'training' %}
-                                        {{ site.training-pages.title.single[page.lang]}} {{ page.number }}: {{ page.title }}{% if page.level %}<small> - {{ site.training-pages.sections.level[page.lang]}} {{ page.level }}</small>{% endif %}
-                                    {% else %}
-                                    {{ page.title }}
-                                    {% endif %}
-                                </h1>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                            {% if page.category == 'training' %}
-                            <p>{{ site.training-pages.sections.diploma[page.lang] }} "{{ page.diploma }}".</p>
-                            <h3>{{ site.training-pages.sections.objectives[page.lang]}}</h3>
-                            {% capture objectives %}{{ page.objectives }}{% endcapture %}
-                            <p>{{ objectives | markdownify}}</p>
-                            <hr>
-                            <h3>{{ site.training-pages.sections.duration[page.lang]}}</h3>
-                            {% capture duration %}{{ page.duration }}{% endcapture %}
-                            <p>{{ duration | markdownify }}</p>
-                            {% endif %}
-                            {{ content }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="row training-content {% if page.userOnly == true %}user-only{% endif %}">
+              <div class="col-md-12">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <h1 class="mt0">
+                              {% if page.category == 'training' %}
+                                  {{ site.training-pages.title.single[page.lang]}} {{ page.number }}: {{ page.title }}{% if page.level %}<small> - {{ site.training-pages.sections.level[page.lang]}} {{ page.level }}</small>{% endif %}
+                              {% else %}
+                              {{ page.title }}
+                              {% endif %}
+                          </h1>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                      {% if page.category == 'training' %}
+                      <p>{{ site.training-pages.sections.diploma[page.lang] }} "{{ page.diploma }}".</p>
+                      <h3>{{ site.training-pages.sections.objectives[page.lang]}}</h3>
+                      {% capture objectives %}{{ page.objectives }}{% endcapture %}
+                      <p>{{ objectives | markdownify}}</p>
+                      <hr>
+                      <h3>{{ site.training-pages.sections.duration[page.lang]}}</h3>
+                      {% capture duration %}{{ page.duration }}{% endcapture %}
+                      <p>{{ duration | markdownify }}</p>
+                      {% endif %}
+                      {{ content }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+					<div class="row training-content {% if page.userOnly == true %}user-waiter{% else %}hidden{% endif %}">
+						<a href="#" id="btn-login" class="btn btn-info btn-login" data-toggle="modal" data-target=".login-modal">Please log in to access this content.</a>
+					</div>
     		</article>
 
     	</div>
