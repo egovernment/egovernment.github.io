@@ -76,7 +76,7 @@
 
               </div>
           </div>
-					<div class="row {% unless page.ref == 'how-to' %}recipe-content{% endunless %} {% if page.ref == 'how-to' %}recipe-content-2{% endif %} {% if page.userOnly == true %}user-waiter{% endif %}">
+					<div class="row {% unless page.ref == 'how-to' %}recipe-content{% endunless %} {% if page.ref == 'how-to' %}recipe-content-2{% endif %} {% if page.userOnly == true %}user-waiter{% else %}hidden{% endif %}">
 						<a href="#" id="btn-login" class="btn btn-info btn-login" data-toggle="modal" data-target=".login-modal">Please log in to access this content.</a>
 					</div>
     		</article>
