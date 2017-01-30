@@ -36,7 +36,7 @@
           <li class="{% if page.url contains how.baseurl[page.lang] %}active{% endif %}">
             <a href="{{ site.baseurl }}{{ how.baseurl[page.lang] }}">{{ how.title[page.lang] }}</a>
           </li>
-          <li class="{% if page.url contains training.baseurl[page.lang] %}active{% endif %} user-only">
+          <li class="{% if page.url contains training.baseurl[page.lang] %}active{% endif %}">
             <a href="{{ site.baseurl }}{{ training.baseurl[page.lang] }}">{{ training.title[page.lang] }}</a>
           </li>
 					{% endunless %}
