@@ -43,6 +43,14 @@
           <li class="{% if page.url contains analysis.baseurl[page.lang] %}active{% endif %}">
             <a href="{{ site.baseurl }}{{ analysis.baseurl[page.lang] }}">{{ analysis.title[page.lang] }}</a>
           </li>
+					<li>
+						<a href="#" id="btn-login" class="btn-login" data-toggle="modal" data-target=".login-modal">
+							<i class="fa fa-lock"></i>
+						</a>
+						<a id="btn-logout" class="btn-logout hidden">
+							<i class="fa fa-power-off"></i>
+						</a>
+					</li>
           <li class="dropdown">
 						<a href="#" class="dropdown-toggle language-selector" data-toggle="dropdown">
 							<img src="{{ site.baseurl }}/img/{{ page.lang }}.png">

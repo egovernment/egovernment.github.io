@@ -13,7 +13,7 @@
 				<ul>
 						{% assign installs = site.documentation | where: 'lang', page.lang | where: 'category', 'installation' | sort: 'weight' %}
 						{% for install in installs %}
-						<li class="{% if page.url == install.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ install.url }}">{{ install.title | remove: 'eRegistrations - ' }}</a></li>
+						<li class="{% if page.url == install.url %}active{% endif %} {% if install.userOnly == true %}user-only{% endif%}"><a href="{{ site.baseurl }}{{ install.url }}">{{ install.title | remove: 'eRegistrations - ' }}</a></li>
 						{% endfor %}
 				</ul>
 		</li>
@@ -22,7 +22,7 @@
 				<ul>
 						{% assign fundamentals = site.documentation | where: 'lang', page.lang | where: 'category', 'fundamentals' | sort: 'weight' %}
 						{% for fundamental in fundamentals %}
-						<li class="{% if page.url == fundamental.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ fundamental.url }}">{{ fundamental.title | remove: 'eRegistrations - ' }}</a></li>
+						<li class="{% if page.url == fundamental.url %}active{% endif %} {% if fundamental.userOnly == true %}user-only{% endif%}"><a href="{{ site.baseurl }}{{ fundamental.url }}">{{ fundamental.title | remove: 'eRegistrations - ' }}</a></li>
 						{% endfor %}
 				</ul>
 		</li>
@@ -31,7 +31,7 @@
 				<ul>
 						{% assign codes = site.documentation | where: 'lang', page.lang | where: 'category', 'codebase' | sort: 'weight' %}
 						{% for code in codes %}
-						<li class="{% if page.url == code.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ code.url }}">{{ code.title | remove: 'eRegistrations - ' }}</a></li>
+						<li class="{% if page.url == code.url %}active{% endif %} {% if code.userOnly == true %}user-only{% endif%}"><a href="{{ site.baseurl }}{{ code.url }}">{{ code.title | remove: 'eRegistrations - ' }}</a></li>
 						{% endfor %}
 				</ul>
 		</li>
@@ -40,7 +40,7 @@
 				<ul>
 						{% assign devs = site.documentation | where: 'lang', page.lang | where: 'category', 'development' | sort: 'weight' %}
 						{% for dev in devs %}
-						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title | remove: 'eRegistrations - ' }}</a></li>
+						<li class="{% if page.url == dev.url %}active{% endif %} {% if dev.userOnly == true %}user-only{% endif%}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title | remove: 'eRegistrations - ' }}</a></li>
 						{% endfor %}
 				</ul>
 		</li>

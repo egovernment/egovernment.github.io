@@ -8,7 +8,7 @@
     {% assign howtos = site.how-to | where:"lang", page.lang | group_by: "category" | sort: "name" %}
 
     {% for howto in howtos %}
-    
+
         {% if howto.name != '' %}
         <li>
             <a href="#" class="has-child {% if page.path contains 'part-a' and howto.name == '1. Part A' %}active open{% elsif page.path contains 'part-b' and howto.name == '2. Part B' %}active open{% elsif page.path contains 'public-pages' and howto.name == '3. Public pages' %}active open{% elsif page.path contains 'design' and howto.name == '4. Design' %}active open{% elsif page.path contains 'other' and howto.name == '5. Other' %}active open{% endif %}">
@@ -19,7 +19,7 @@
 
             <ul>
                 {% for h in hows.items | sort: "number" %}
-                 <li class="{% if page.permalink contains h.permalink %}active{% endif %}">
+                 <li class="{% if page.permalink contains h.permalink %}active{% endif %} {% if h.userOnly == true %}user-only{% endif%}">
                     <a href="{{ h.url }}">{{ h.title }}</a>
                 </li>
                 {% endfor %}
