@@ -5,7 +5,7 @@ title: 'Linter Configuration'
 category: 'development'
 lang: en
 ref: lint
-weight: 3
+weight: 2
 ---
 
 <span class="label label-info">Coming soon</span>

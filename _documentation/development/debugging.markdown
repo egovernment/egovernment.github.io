@@ -5,7 +5,7 @@ title: 'Debugging'
 category: 'development'
 lang: en
 ref: debugging
-weight: 4
+weight: 3
 ---
 
 # Debugging
