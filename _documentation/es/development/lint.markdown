@@ -5,7 +5,7 @@ title: 'Configuración de Lint'
 category: 'development'
 lang: es
 ref: lint
-weight: 2
+weight: 3
 ---
 
 <span class="label label-info">Coming soon</span>

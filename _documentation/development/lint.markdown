@@ -5,7 +5,7 @@ title: 'Linter Configuration'
 category: 'development'
 lang: en
 ref: lint
-weight: 2
+weight: 3
 ---
 
 # Linter Configuration
@@ -17,7 +17,7 @@ Our XLint setup is configured to lint code with latest version of [JSLint](http:
 To see generated report run:
 
 	$ npm run lint
-	
+
 Be sure to run it once you checkout the project. Normally you should be presented with `100.00% OK` message. If you're on Windows and instead see a lot of whitespace errors, it means you need to make sure your editor or [git itself](https://help.github.com/articles/dealing-with-line-endings#platform-windows) doesn't update line endings for you. We strictly use unix style line endings in our code, and all your tools must play nice with that.
 
 If you want to access live console that observes current state of files (shows and clears errors as they're introduced) run:
