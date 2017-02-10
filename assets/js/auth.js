@@ -14,13 +14,13 @@ function userConnexion() {
 	//this.passwordInput = document.getElementById('login-password-input');
 	this.passwordInput = "";
 
-	this.signInButton = document.getElementsByClassName('btn-login');
-	//this.signInButton = document.getElementById('login-modal-button');
+	//this.signInButton = document.getElementsByClassName('btn-login');
+	this.signInButton = document.getElementById('login-modal-button');
 	this.signOutButton = document.getElementById('btn-logout');
 
-	for(var i = 0; i< this.signInButton.length; i++) {
+	/*for(var i = 0; i< this.signInButton.length; i++) {
 		this.signInButton[i].addEventListener('click', this.signIn.bind(this));
-	}
+	}*/
 
 	/*for (var elem in this.signInButton) {
 		elem.addEventListener('click', this.signIn.bind(this));
@@ -32,7 +32,7 @@ function userConnexion() {
 	/*Array.filter( this.signInButton, function(elem) {
 		return elem.addEventListener('click', this.signIn.bind(this));
 	})*/
-	//this.signInButton.addEventListener('click', this.signIn.bind(this));
+	this.signInButton.addEventListener('click', this.signIn.bind(this));
 	this.signOutButton.addEventListener('click', this.signOut.bind(this));
 	//this.signInmodalButton.addEventListener('click', this.openSignInForm.bind(this));
 
@@ -53,10 +53,10 @@ userConnexion.prototype.signIn = function() {
 	console.log();
 	$('.login-error').addClass('hidden');
 	this.autoConnect = false;
-	/*this.passwordInput = $('#login-password-input').val();
+	this.passwordInput = $('#login-password-input').val();
 	this.userInput = $('#login-user-input').val();
 
-	if(this.passwordInput != '' && this.userInput == "guest") {
+	if(this.passwordInput != '' && this.userInput == "unctad") {
 		this.auth.signInWithEmailAndPassword(this.emailInput, this.passwordInput).catch(function(error) {
 			var errorCode = error.code;
 			var errorMessage = error.message;
@@ -66,8 +66,8 @@ userConnexion.prototype.signIn = function() {
 		});;
 	}else{
 		$('.login-error').removeClass('hidden');
-	}*/
-	firebase.auth().signInWithPopup(provider).then(function(result) {
+	}
+	/*firebase.auth().signInWithPopup(provider).then(function(result) {
 		var user = result.user;
 		console.log(user);
 	}).catch(function(error) {
@@ -76,7 +76,7 @@ userConnexion.prototype.signIn = function() {
 		var errorMessage = error.message;
 		var email = error.email;
 		var credential = error.credential;
-});
+	});*/
 }
 
 userConnexion.prototype.signOut = function() {

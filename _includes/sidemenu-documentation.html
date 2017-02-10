@@ -40,7 +40,7 @@
 				<ul>
 						{% assign devs = site.documentation | where: 'lang', page.lang | where: 'category', 'development' | sort: 'weight' %}
 						{% for dev in devs %}
-						<li class="{% if page.url == dev.url %}active{% endif %} {% if dev.userOnly == true %}user-only{% endif%}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title | remove: 'eRegistrations - ' }}</a></li>
+						<li class="{% if page.url == dev.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ dev.url }}">{{ dev.title | remove: 'eRegistrations - ' }}</a></li>
 						{% endfor %}
 				</ul>
 		</li>

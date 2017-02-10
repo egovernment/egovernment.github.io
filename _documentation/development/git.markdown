@@ -5,7 +5,7 @@ title: 'Git Basics'
 category: 'development'
 lang: en
 ref: git
-weight: 1
+weight: 2
 ---
 
 # Git Basics

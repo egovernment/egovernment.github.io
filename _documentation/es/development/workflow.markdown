@@ -5,7 +5,7 @@ title: 'Flujo de trabajo'
 category: 'development'
 lang: es
 ref: workflow
-weight: 1
+weight: 2
 ---
 
 <span class="label label-info">Coming soon</span>
