@@ -521,6 +521,11 @@ h1 a:before, h2 a:before, h3 a:before {
 	display: none;
 }
 
+.recipe-content .print-link {
+	line-height: 38px;
+	margin-right: -25px;
+}
+
 /* responsive */
 @media screen and (max-width:767px) {
 	header {

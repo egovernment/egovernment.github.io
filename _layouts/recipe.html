@@ -22,6 +22,10 @@
                       <div class="col-md-12">
                           <span class="category-label pull-left">{{ page.category }} {% if page.sub-category != '' %}- {{ page.sub-category }}{% endif %} <small><span class="badge recipe-badge rate-{{ page.rate }}">{{ page.rate }}</span></small></span>
 
+													<a href class="print-link pull-right" onclick="javascript:window.print();">
+                              <i class="fa fa-print"></i>
+                          </a>
+
                           {% assign nextp = site.how-to | where: 'number', page.nextUrl | where: 'lang', page.lang | first %}
                           {% if page.nextUrl %}
                           <a href="{{ nextp.url }}" class="next-link pull-right">

@@ -1,0 +1,59 @@
+@page {
+	size: auto;
+	margin: 0mm;
+}
+
+a[href]:after {
+	font-size: 12px;
+	color:#999;
+}
+
+header,
+aside,
+footer,
+.print-link,
+.next-link,
+.prev-link {
+	display: none;
+}
+
+hr {
+	margin: 12px 0 !important;
+}
+
+#content {
+	padding: 0;
+}
+
+.img-thumbnail,
+img {
+	max-width: 80% !important;
+}
+
+.main-content {
+	font-size: 12px;
+}
+
+.category-label {
+	font-size: 16px !important;
+}
+
+h1 {
+	font-size: 28px !important;
+	margin-bottom: 22px;
+	line-height: normal;
+}
+
+h2 {
+	font-size: 18px;
+	margin-top: 18px;
+	line-height: normal !important;
+	margin-bottom: 12px;
+}
+
+h3 {
+	font-size: 16px;
+	margin-top: 18px;
+	margin-bottom: 12px;
+	line-height: normal !important;
+}
