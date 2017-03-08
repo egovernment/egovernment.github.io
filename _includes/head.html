@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="{{ "/assets/css/skin-teal.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/assets/css/custom.css" | prepend: site.baseurl }}">
 
+	{% if page.layout == 'recipe' %}<link rel="stylesheet" media="print" href="{{ "/assets/css/print-how-to.css" | prepend: site.baseurl }}">{% endif %}
+
   <!-- FONTS -->
   <link href="//fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400" rel="stylesheet" type="text/css">
 

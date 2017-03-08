@@ -1,0 +1,21 @@
+a[href]:after {
+	font-size: 12px;
+	color:#999;
+}
+
+header,
+aside,
+footer,
+.print-link,
+.next-link,
+.prev-link {
+	display: none;
+}
+
+hr {
+	margin: 12px 0 !important;
+}
+
+#content {
+	padding: 0;
+}
