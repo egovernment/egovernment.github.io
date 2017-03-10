@@ -11,7 +11,7 @@ a[href]:after {
 header,
 aside,
 footer,
-.print-link,
+.printer-link,
 .next-link,
 .prev-link {
 	display: none;
@@ -28,6 +28,7 @@ hr {
 .img-thumbnail,
 img {
 	max-width: 80% !important;
+	float: left;
 }
 
 .main-content {

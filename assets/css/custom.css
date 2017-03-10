@@ -105,6 +105,7 @@ h4 code {
     padding: 25px;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.15);
     box-shadow: 0 1px 1px rgba(0,0,0,.15);
+		position: relative;
 }
 
 .training-content {
@@ -524,6 +525,13 @@ h1 a:before, h2 a:before, h3 a:before {
 .recipe-content .print-link {
 	line-height: 38px;
 	margin-right: -25px;
+}
+
+.documentation .printer-link,
+.documentation-fr .printer-link {
+	position: absolute;
+	right: 24px;
+	top: 56px;
 }
 
 /* responsive */

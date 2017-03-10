@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="documentation">
 
     {% include header.html %}
 
@@ -16,6 +16,9 @@
 
 				<article class="col-lg-10 col-md-9 col-sm-9 main-content" role="main" id="content">
     			<div class="row post-content {% if page.userOnly == true %}user-only{% endif %}">
+						<a href class="printer-link" onclick="javascript:window.print();">
+								<i class="fa fa-print"></i>
+						</a>
     				{{ content }}
     			</div>
 					<div class="row post-content {% if page.userOnly == true %}user-waiter{% else %}hidden{% endif %}">
