@@ -12,6 +12,7 @@ nextUrl:
 done: ''
 lang: en
 ref: 505
+published: false
 ---
 
 The eregistrations systems are divided into Part A (end user forms) and Part B (certification procedure performed by officials).

@@ -11,6 +11,7 @@ nextUrl: 504
 done: 'yes'
 lang: en
 ref: 503
+published: false
 ---
 
 This recipe shows how to split a regular section (`FormSection` instance) into two sub-sections of a `FormSectionGroup` instance. For exhaustive overview of sections please see [Sections overview](/framework/sections/).
