@@ -13,6 +13,7 @@ nextUrl: 301
 done: 'yes'
 lang: en
 ref: 253
+published: false
 ---
 
 Every processing step is associated with at least one service. Each processing step has its own application (a directory in `apps` directory). In order to include an existing processing step for a new service, some steps has to be taken.
