@@ -13,6 +13,7 @@ nextUrl: 253
 done: 'yes'
 lang: en
 ref: 252
+published: false
 ---
 
 In a system with multiple processing steps, often divided by official unit that handles a registration, it's sometimes necessary to filter out the released certificates list for a business process. Also, as some processing steps deal with only a specific subset of user submitted data, in order to remove the clutter from their user interface, it's also possible to filter the documents and payment receipts list displayed for each business process.
