@@ -11,8 +11,11 @@ layout: default
 		</header>
 		{% endif %}
 
-		<div class="post-content">
+		<div class="post-content {% if page.userOnly == true %}user-only{% endif %}">
 			{{ content }}
+		</div>
+		<div class="post-content {% if page.userOnly == true %}user-waiter{% else %}hidden{% endif %}">
+			<a href="#" id="btn-login" class="btn btn-info btn-login" data-toggle="modal" data-target=".login-modal">Please log in to access this content.</a>
 		</div>
 
 	</div>

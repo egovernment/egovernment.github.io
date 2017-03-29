@@ -25,11 +25,12 @@
       {% assign how = site.collections | where: 'label', 'how-to' | first %}
       {% assign training = site.collections | where: 'label', 'trainings' | first %}
       {% assign analysis = site.collections | where: 'label', 'analysis' | first %}
+			{% assign sources = site.collections | where: 'label', 'sources' | first %}
 
       <!-- Top navbar -->
       <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
         <ul class="nav navbar-nav navbar-right">
-          <li class="{% unless page.url contains 'how-to' or page.url contains 'como' or page.url contains 'trainings' or page.url contains 'analysis' or page.url contains 'analisis' or page.url contains 'analyse' or page.url contains 'capacitaciones' or page.url contains '-fr' %}active{% endunless %}">
+          <li class="{% unless page.url contains 'how-to' or page.url contains 'como' or page.url contains 'trainings' or page.url contains 'analysis' or page.url contains 'analisis' or page.url contains 'analyse' or page.url contains 'capacitaciones' or page.url contains 'sources' or page.url contains 'fuentes' or page.url contains '-fr' %}active{% endunless %}">
             <a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ doc.title[page.lang] }}</a>
           </li>
 					{% unless page.lang contains 'fr' %}
@@ -42,6 +43,9 @@
 					{% endunless %}
           <li class="{% if page.url contains analysis.baseurl[page.lang] %}active{% endif %}">
             <a href="{{ site.baseurl }}{{ analysis.baseurl[page.lang] }}">{{ analysis.title[page.lang] }}</a>
+          </li>
+					<li class="{% if page.url contains sources.baseurl[page.lang] %}active{% endif %}">
+            <a href="{{ site.baseurl }}{{ sources.baseurl[page.lang] }}">{{ sources.title[page.lang] }}</a>
           </li>
 					<li>
 						<a href="#" id="btn-login" class="btn-login" data-toggle="modal" data-target=".login-modal">
@@ -70,6 +74,9 @@
 
               {% assign analysis=site.analysis | where:"ref", page.ref | sort: 'lang' %}
               {% for analys in analysis %} {% unless page.lang contains analys.lang %}<li><a href="{{ analys.url | prepend: site.baseurl }}" class="lang-select {{ analys.lang }}"><img src="{{ site.baseurl }}/img/{{ analys.lang }}.png"></a></li>{% endunless %} {% endfor %}
+
+							{% assign sources=site.sources | where:"ref", page.ref | sort: 'lang' %}
+              {% for source in sources %} {% unless page.lang contains source.lang %}<li><a href="{{ source.url | prepend: site.baseurl }}" class="lang-select {{ source.lang }}"><img src="{{ site.baseurl }}/img/{{ source.lang }}.png"></a></li>{% endunless %} {% endfor %}
 
               {% unless page.category contains 'analysis' %}
 							<li class="{% if page.lang contains 'fr' %}hidden{% endif %}"><a href="{{ site.baseurl }}/fr" class="lang-select fr"><img src="{{ site.baseurl }}/img/fr.png"></a></li>

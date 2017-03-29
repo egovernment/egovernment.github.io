@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+  {% include head.html %}
+
+  <body class="sources">
+
+    {% include header.html %}
+
+    <main class="container-fluid">
+    	<div class="row">
+
+				<article class="col-xs-12 main-content" role="main" id="content">
+    			<div class="row post-content {% if page.userOnly == true %}user-only{% endif %}">
+    				{{ content }}
+    			</div>
+					<div class="row post-content {% if page.userOnly == true %}user-waiter{% else %}hidden{% endif %}">
+						<a href="#" id="btn-login" class="btn btn-info btn-login" data-toggle="modal" data-target=".login-modal">Please log in to access this content.</a>
+					</div>
+    		</article>
+
+    	</div>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

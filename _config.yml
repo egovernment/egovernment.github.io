@@ -86,7 +86,7 @@ training-pages:
       en: 'Duration'
       es: 'Duración'
     level:
-      +en: 'level'
+      en: 'level'
       es: 'nivel'
     diploma:
       en: 'The result of this training is a UNCTAD diploma of'
@@ -145,3 +145,13 @@ collections:
         en: "/analysis"
         es: "/analisis"
         fr: "/analyse"
+  sources:
+    output: true
+    title:
+        en: "Sources"
+        es: "Fuentes"
+        fr: "Sources"
+    baseurl:
+        en: "/sources"
+        es: "/fuentes"
+        fr: "/sources"
